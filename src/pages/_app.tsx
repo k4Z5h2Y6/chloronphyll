@@ -35,10 +35,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
         }
         main {
-          width: 95vw;
+          width: 100vw;
           height: 100vh;
           margin: 0 auto;
-          background-color: pink;
         }
         .navMenuOopenedO {
           width: 25vw;
