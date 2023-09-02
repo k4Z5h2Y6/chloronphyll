@@ -42,7 +42,6 @@ export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
           right: 0;
           left: 0;
           z-index: 10;
-          background-color: red;
         }
         .logoO {
           width: 341px;
@@ -51,7 +50,6 @@ export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
           right: 2vw;
           bottom: 0;
           z-index: 11;
-          background-color: blue;
         }
       `}</style>
     </>
