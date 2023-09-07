@@ -9,11 +9,7 @@ type Props = {
 export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
   return (
     <>
-      <div
-        className='headerI'
-        onMouseEnter={() => {setIsNavOpened(true)}}
-        onMouseLeave={() => {setIsNavOpened(false)}}
-      >
+      <div className='headerI'>
         <Image
           src='/Header/soil.png'
           alt='soil'
@@ -21,7 +17,11 @@ export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
           height={400}
           layout='responsive'
         />
-        <div className='logoO'>
+        <div
+          className='logoO'
+          onMouseEnter={() => { setIsNavOpened(true) }}
+          onMouseLeave={() => { setIsNavOpened(false) }}
+        >
           <a href="">
             <Image
               src='/Header/logoA.png'
