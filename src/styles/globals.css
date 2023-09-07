@@ -91,18 +91,15 @@
 } */
 
 
-/* ---以下オリジナル設定--- */
+/* 
 
-/*
-命名規則
+-----以下オリジナル設定-----
 
+・命名規則
 ブランチ...(feature/bugの頭文字)(n.n)(機能名)
-className...(機能名か目的)(タグ名)(Outer/Innner)
-*/
+className...(機能名か目的)(タグ名)(Common)(Outer/Innner)
 
-/*
-テンプレート
-
+・テンプレート
 export const LayoutMainI = () => {
   return (
     <>
@@ -113,12 +110,32 @@ export const LayoutMainI = () => {
     </>
   )
 }
+
+グローバル管理
+・h1…クロロンフィルロゴ
+・h2…24px navmenu内
+・h3…32px pageタイトル
+・h4…page内サブタイトル
+
+border-radius: 16px;
+
+隙間
+8px
+16px
+24px…pageサブタイトル
+32px…pageタイトル
+48px
 */
+
+
+
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-weight: normal;
+  color: #E6E6E6;
 }
 
 html,
@@ -126,6 +143,16 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: #968E83;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 1;
 }
 
 a {

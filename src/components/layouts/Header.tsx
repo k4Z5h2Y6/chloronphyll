@@ -22,15 +22,13 @@ export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
           onMouseEnter={() => { setIsNavOpened(true) }}
           onMouseLeave={() => { setIsNavOpened(false) }}
         >
-          <a href="">
-            <Image
-              src='/Header/logoA.png'
-              alt='logo'
-              width={1080}
-              height={1080}
-              layout='responsive'
-            />
-          </a>
+          <Image
+            src='/Header/logoA.png'
+            alt='logo'
+            width={1080}
+            height={1080}
+            layout='responsive'
+          />
         </div>
       </div>
 
@@ -47,9 +45,10 @@ export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
           width: 341px;
           height: 294px;
           position: fixed;
-          right: 2vw;
+          right: 10vw;
           bottom: 0;
           z-index: 11;
+          transform: translateX(50%);
         }
       `}</style>
     </>

@@ -15,23 +15,29 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
         onMouseEnter={() => { setIsNavOpened(true) }}
         onMouseLeave={() => { setIsNavOpened(false) }}
       >
-        <div className="navMenuLogoO">
-          <Image
-            src='/Header/logoB.png'
-            alt=''
-            width={1080}
-            height={1080}
-            layout='responsive'
-          />
-        </div>
-
         <div className='navMenuNaO'>
           <nav>
             <ul className='navMenuUl'>
-              <li className='navMenuLi'><Link href='/settingManuel'>資料設定 input</Link></li>
-              <li className='navMenuLi'><Link href='/changeNote'>改変ノート output</Link></li>
-              <li className='navMenuLi'><Link href='/histry'>変更履歴</Link></li>
-              <li className='navMenuLi'><Link href='/document'>ドキュメント</Link></li>
+              <li className='navMenuLi'>
+                <Link href='/'>
+                  <h2>
+                    {/* <h1>
+                      <Image
+                        src='/Header/logoText.png'
+                        alt=''
+                        width={235}
+                        height={71}
+                        layout='responsive'
+                      />
+                    </h1> */}
+                    クロロンフィル
+                  </h2>
+                </Link>
+              </li>
+              <li className='navMenuLi'><Link href='/settingManuel'><h2>資料設定 input</h2></Link></li>
+              <li className='navMenuLi'><Link href='/changeNote'><h2>改変ノート output</h2></Link></li>
+              <li className='navMenuLi'><Link href='/histry'><h2>変更履歴</h2></Link></li>
+              <li className='navMenuLi'><Link href='/document'><h2>ドキュメント</h2></Link></li>
             </ul>
           </nav>
         </div>
@@ -42,21 +48,15 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
         .navMenuI {
           width: 100%;
           height: 100%;
-          display: flex;
-          flex-direction: column;
           padding: 20px;
-        }
-        .navMenuLogoO {
-          width: 10vw;
-          height: 10vw;
         }
         .navMenuNaO {
           width: 100%;
           height: fit-content;
-          max-height: 60vh;
+          max-height: 60vh;//
           padding: 20px;
           background-color: #7C7469;
-          border-radius: 20px;
+          border-radius: 16px;
         }
       `}</style>
     </>

@@ -1,15 +1,26 @@
 import { Header } from '@/components/layouts/Header'
-import { LayoutMainI } from '@/components/layouts/LayoutMainI'
 import { NavMenu } from '@/components/layouts/NavMenu'
 import '@/styles/globals.css'
+import { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import { useState } from 'react'
 
-export default function App({ Component, pageProps }: AppProps) {
+type NextPageWithLayout = NextPage & {
+  getLayout?: (page: React.ReactElement) => React.ReactNode
+}
+
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout
+}
+
+export default function App({ Component, pageProps }: AppPropsWithLayout) {
+
+  const getLayout = Component.getLayout ?? ((page) => page)
 
   const [isNavOpened, setIsNavOpened] = useState<boolean>(false);
   console.log(isNavOpened ? '開いている' : '閉まっている')
-  return (
+
+  return getLayout (
     <>
       <Header
         isNavOpened={isNavOpened}
@@ -29,18 +40,16 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <style jsx>{`
         .mainO {
-          width: 100vw;
-          height: 100vh;
+          width: 100vw; //
           overflow: hidden;
 
         }
         main {
-          width: 100vw;
-          height: 100vh;
+          width: 92vw; //
           margin: 0 auto;
         }
         .navMenuOopenedO {
-          width: 25vw;
+          width: 20vw;
           height: 100vh;
           transition: all 1s ease;
           position: fixed;
@@ -50,7 +59,7 @@ export default function App({ Component, pageProps }: AppProps) {
           background-color: rgba(124,116,105,0.45);
         }
         .navMenuClosedO {
-          width: 25vw;
+          width: 20vw;
           height: 100vh;
           transition: all 1s ease;
           position: fixed;
