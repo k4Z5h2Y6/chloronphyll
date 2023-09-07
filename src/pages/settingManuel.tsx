@@ -1,71 +1,229 @@
-import { ReactNode, useState } from 'react'
-import { Main } from '@/components/layouts/Main'
+import { useState } from 'react'
 
 export default function SettingManue() {
 
-  const [isContent1Opened, setIsContent1Opened] = useState<boolean>(false);
-  const [isContent2Opened, setIsContent2Opened] = useState<boolean>(false);
-  const [isContent3Opened, setIsContent3Opened] = useState<boolean>(false);
-  const [isContent4Opened, setIsContent4Opened] = useState<boolean>(false);
-  const [isContent5Opened, setIsContent5Opened] = useState<boolean>(false);
-  const [isContent6Opened, setIsContent6Opened] = useState<boolean>(false);
-  const [isContent7Opened, setIsContent7Opened] = useState<boolean>(false);
-  const [isContent8Opened, setIsContent8Opened] = useState<boolean>(false);
-  const [isContent9Opened, setIsContent9Opened] = useState<boolean>(false);
+  const [isSection1Opened, setIsSection1Opened] = useState<boolean>(false);
+  const [isSection2Opened, setIsSection2Opened] = useState<boolean>(false);
+  const [isSection3Opened, setIsSection3Opened] = useState<boolean>(false);
+  const [isSection4Opened, setIsSection4Opened] = useState<boolean>(false);
+  const [isSection5Opened, setIsSection5Opened] = useState<boolean>(false);
+  const [isSection6Opened, setIsSection6Opened] = useState<boolean>(false);
+  const [isSection7Opened, setIsSection7Opened] = useState<boolean>(false);
+  const [isSection8Opened, setIsSection8Opened] = useState<boolean>(false);
+  const [isSection9Opened, setIsSection9Opened] = useState<boolean>(false);
 
   return (
     <>
-      <div className='content0O'>
-        <div className='pageTitleOO'>
-          <div className='pageTitleO'>
-            <h3>設定資料</h3>
+      <section className='sectionCO'>
+        <div className='pageTitleCO'>
+          <h3>設定資料</h3>
+        </div>
+        <div className='section0contentO'>
+          <div className='section0ContentTextO'></div>
+          <div className='section0ContentMovieO'></div>
+        </div>
+      </section>
+
+      <section>
+        <div 
+          className='sectionTitleCBtn'
+          onClick={() => setIsSection1Opened(!isSection1Opened)}
+        >
+          <div className='sectionTitleCO'>
+            <h4>01 ヘア</h4>
           </div>
         </div>
-        <div className='content0I'>
-          <div className='content0TextO'></div>
-          <div className='content0MovieO'></div>
+        <div className={isSection1Opened ? 'section1OpenedO' : 'section1ClosedO'}>
+          
         </div>
-      </div>
+      </section>
 
-      <div className='contentCOO'>
-        <div
-          className='contentTitleCO'
-          onClick={() => setIsContent1Opened(!isContent1Opened)}
-        ></div>
-        <div className={'contentC0 ' + (isContent1Opened ? 'content1OpenedO' : 'content1OclosedO')}></div>
-      </div>
+      <section>
+        <div 
+          className='sectionTitleCBtn'
+          onClick={() => setIsSection2Opened(!isSection2Opened)}
+        >
+          <div className='sectionTitleCO'>
+            <h4>02 ケモ</h4>
+          </div>
+        </div>
+        <div className={isSection2Opened ? 'section2OpenedO' : 'section2ClosedO'}>
+          
+        </div>
+      </section>
 
+      <section>
+        <div 
+          className='sectionTitleCBtn'
+          onClick={() => setIsSection3Opened(!isSection3Opened)}
+        >
+          <div className='sectionTitleCO'>
+            <h4>03 ふく</h4>
+          </div>
+        </div>
+        <div className={isSection3Opened ? 'section3OpenedO' : 'section3ClosedO'}>
+          
+        </div>
+      </section>
 
+      <section>
+        <div 
+          className='sectionTitleCBtn'
+          onClick={() => setIsSection4Opened(!isSection4Opened)}
+        >
+          <div className='sectionTitleCO'>
+            <h4>04 Gesture</h4>
+          </div>
+        </div>
+        <div className={isSection4Opened ? 'section4OpenedO' : 'section4ClosedO'}>
+          
+        </div>
+      </section>
 
-      <div className={'contentCommonO ' + (isContent1Opened ? 'content2OpenedO' : 'content2OclosedO')}></div>
+      <section>
+        <div 
+          className='sectionTitleCBtn'
+          onClick={() => setIsSection5Opened(!isSection5Opened)}
+        >
+          <div className='sectionTitleCO'>
+            <h4>05 表情</h4>
+          </div>
+        </div>
+        <div className={isSection5Opened ? 'section5OpenedO' : 'section5ClosedO'}>
+          
+        </div>
+      </section>
+
+      <section>
+        <div 
+          className='sectionTitleCBtn'
+          onClick={() => setIsSection6Opened(!isSection6Opened)}
+        >
+          <div className='sectionTitleCO'>
+            <h4>06 アイテム</h4>
+          </div>
+        </div>
+        <div className={isSection6Opened ? 'section6OpenedO' : 'section6ClosedO'}>
+          
+        </div>
+      </section>
+
+      <section>
+        <div 
+          className='sectionTitleCBtn'
+          onClick={() => setIsSection7Opened(!isSection7Opened)}
+        >
+          <div className='sectionTitleCO'>
+            <h4>07 モーション</h4>
+          </div>
+        </div>
+        <div className={isSection7Opened ? 'section7OpenedO' : 'section7ClosedO'}>
+          
+        </div>
+      </section>
+
+      <section>
+        <div 
+          className='sectionTitleCBtn'
+          onClick={() => setIsSection8Opened(!isSection8Opened)}
+        >
+          <div className='sectionTitleCO'>
+            <h4>08 エモート</h4>
+          </div>
+        </div>
+        <div className={isSection8Opened ? 'section8OpenedO' : 'section8ClosedO'}>
+          
+        </div>
+      </section>
+
+      <section>
+        <div 
+          className='sectionTitleCBtn'
+          onClick={() => setIsSection9Opened(!isSection9Opened)}
+        >
+          <div className='sectionTitleCO'>
+            <h4>09 システム</h4>
+          </div>
+        </div>
+        <div className={isSection9Opened ? 'section9OpenedO' : 'section9ClosedO'}>
+          
+        </div>
+      </section>
+
+      {/* <section>
+        <div 
+          className='sectionTitleCBtn'
+          onClick={() => setIsSection1Opened(!isSection1Opened)}
+        >
+          <div className='sectionTitleCO'>
+            <h4>01 ヘア</h4>
+          </div>
+        </div>
+        <div className={isSection1Opened ? 'section1OpenedO' : 'section1ClosedO'}>
+          {isSection1Opened ? '空いてます' : '閉じてます'}
+        </div>
+      </section> */}
 
       <style jsx>{`
-        .content0O {
+        .sectionCO {
           width: 100%;
           height: 100vh;
-          padding: 24px 0;
           border-bottom: 1px solid black;
         }
-        .pageTitleOO {
+        .pageTitleCO {
           width: fit-content;
-          margin-left: -4vw;
-          padding-left: 4vw;
+          margin: 24px 0 24px -4vw;
+          padding: 16px 16px 16px calc(4vw + 16px);
           border-radius: 0 16px 16px 0;
           background-color: #ADA79E;
         }
-        .pageTitleO {
-          padding: 16px;//
-        }
-        .content0I {
-          width: 100%;
-        }
 
-        .contentCOO {
+        .sectionTitleCBtn {
+          width: 100%;
+          padding: 24px 0;
+        }
+        .sectionTitleCO {
+          width: fit-content;
+          padding: 16px;
+          border-radius: 16px;
+          background-color: #ADA79E;
+        }
+        .section1OpenedO,
+        .section2OpenedO,
+        .section3OpenedO,
+        .section4OpenedO,
+        .section5OpenedO,
+        .section6OpenedO,
+        .section7OpenedO,
+        .section8OpenedO,
+        .section9OpenedO {
+          width: 100%;
+          height: calc(100vh - 24px - 16px - 32px - 16px - 24px);
+          border-bottom: 1px solid black;
+          transition: all 1s ease;
+        }
+        .section1ClosedO,
+        .section2ClosedO,
+        .section3ClosedO,
+        .section4ClosedO,
+        .section5ClosedO,
+        .section6ClosedO,
+        .section7ClosedO,
+        .section8ClosedO,
+        .section9ClosedO {
+          width: 100%;
+          height: 0;
+          overflow: hidden;
+          border-bottom: 1px solid black;
+          transition: all 1s ease;
+        }
+        
+        
+
+        .xxx {
           width: 100%;
           height: 100vh;
-        }
-        .contentTitleO {
-          width: ;
+          background-color: hotpink;
         }
       `}</style>
     </>
@@ -75,3 +233,80 @@ export default function SettingManue() {
 // SettingManue.getLayout = (page: ReactNode) => {
 //   return <Main pageTitle={'設定資料'}>{page}</Main>
 // }
+
+
+
+{/* <>
+      <section className='sectionCO'>
+        <div className='pageTitleO'>
+          <div className='pageTitleI'>
+            <h3>設定資料</h3>
+          </div>
+        </div>
+        <div className='section0contentO'>
+          <div className='section0ContentTextO'></div>
+          <div className='section0ContentMovieO'></div>
+        </div>
+      </section>
+
+
+
+
+
+
+      <section className={'sectionCO ' + (isSection1Opened ? 'section1OpenedO' : 'section1ClosedO')}>
+        <div
+          className='sectionTitleCO'
+          onClick={() => setIsSection1Opened(!isSection1Opened)}
+        >
+          <div className='sectionTitleCI'>
+            <h4>01 ヘア</h4>
+          </div>
+        </div>
+        <div className={'sectionContentC0 ' + (isSection1Opened ? 'section1ContentOpenedO' : 'section1ContentClosedO')}>
+          {isSection1Opened ? '空いてます' : '閉じてます'}
+        </div>
+      </section>
+
+      <div className='xxx'></div>
+
+
+      <style jsx>{`
+        .sectionCO {
+          width: 100%;
+          height: 100vh;
+          padding-top: 24px;
+          border-bottom: 1px solid black;
+          transition: all 1s ease;
+        }
+        .pageTitleO {
+          width: fit-content;
+          margin-left: -4vw;
+          padding-left: 4vw;
+          border-radius: 0 16px 16px 0;
+          background-color: #ADA79E;
+        }
+        .pageTitleI {
+          padding: 16px;
+        }
+
+        .section1ClosedO {
+          height: calc(10vh + 10vh);  
+        }
+        .sectionTitleCO {
+          width: 100%;
+        }
+        .sectionTitleCI {
+          width: fit-content;
+          padding: 16px;
+          border-radius: 16px;
+          background-color: #ADA79E;
+        }
+
+        .xxx {
+          width: 100%;
+          height: 100vh;
+          background-color: hotpink;
+        }
+      `}</style>
+    </> */}
