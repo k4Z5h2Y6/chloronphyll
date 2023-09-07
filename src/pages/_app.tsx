@@ -5,22 +5,13 @@ import { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 import { useState } from 'react'
 
-type NextPageWithLayout = NextPage & {
-  getLayout?: (page: React.ReactElement) => React.ReactNode
-}
 
-type AppPropsWithLayout = AppProps & {
-  Component: NextPageWithLayout
-}
-
-export default function App({ Component, pageProps }: AppPropsWithLayout) {
-
-  const getLayout = Component.getLayout ?? ((page) => page)
+export default function App({ Component, pageProps }: AppProps) {
 
   const [isNavOpened, setIsNavOpened] = useState<boolean>(false);
   console.log(isNavOpened ? '開いている' : '閉まっている')
 
-  return getLayout (
+  return (
     <>
       <Header
         isNavOpened={isNavOpened}

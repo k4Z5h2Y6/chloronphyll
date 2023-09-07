@@ -150,7 +150,8 @@ export default function SettingManue() {
         </div>
       </section>
 
-      {/* <section>
+      {/* テンプレート
+      <section>
         <div 
           className='sectionTitleCBtn'
           onClick={() => setIsSection1Opened(!isSection1Opened)}
@@ -217,96 +218,7 @@ export default function SettingManue() {
           border-bottom: 1px solid black;
           transition: all 1s ease;
         }
-        
-        
-
-        .xxx {
-          width: 100%;
-          height: 100vh;
-          background-color: hotpink;
-        }
       `}</style>
     </>
   )
 }
-
-// SettingManue.getLayout = (page: ReactNode) => {
-//   return <Main pageTitle={'設定資料'}>{page}</Main>
-// }
-
-
-
-{/* <>
-      <section className='sectionCO'>
-        <div className='pageTitleO'>
-          <div className='pageTitleI'>
-            <h3>設定資料</h3>
-          </div>
-        </div>
-        <div className='section0contentO'>
-          <div className='section0ContentTextO'></div>
-          <div className='section0ContentMovieO'></div>
-        </div>
-      </section>
-
-
-
-
-
-
-      <section className={'sectionCO ' + (isSection1Opened ? 'section1OpenedO' : 'section1ClosedO')}>
-        <div
-          className='sectionTitleCO'
-          onClick={() => setIsSection1Opened(!isSection1Opened)}
-        >
-          <div className='sectionTitleCI'>
-            <h4>01 ヘア</h4>
-          </div>
-        </div>
-        <div className={'sectionContentC0 ' + (isSection1Opened ? 'section1ContentOpenedO' : 'section1ContentClosedO')}>
-          {isSection1Opened ? '空いてます' : '閉じてます'}
-        </div>
-      </section>
-
-      <div className='xxx'></div>
-
-
-      <style jsx>{`
-        .sectionCO {
-          width: 100%;
-          height: 100vh;
-          padding-top: 24px;
-          border-bottom: 1px solid black;
-          transition: all 1s ease;
-        }
-        .pageTitleO {
-          width: fit-content;
-          margin-left: -4vw;
-          padding-left: 4vw;
-          border-radius: 0 16px 16px 0;
-          background-color: #ADA79E;
-        }
-        .pageTitleI {
-          padding: 16px;
-        }
-
-        .section1ClosedO {
-          height: calc(10vh + 10vh);  
-        }
-        .sectionTitleCO {
-          width: 100%;
-        }
-        .sectionTitleCI {
-          width: fit-content;
-          padding: 16px;
-          border-radius: 16px;
-          background-color: #ADA79E;
-        }
-
-        .xxx {
-          width: 100%;
-          height: 100vh;
-          background-color: hotpink;
-        }
-      `}</style>
-    </> */}
