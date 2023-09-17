@@ -20,7 +20,7 @@ export const Main = ({ children, pageTitle }: Props) => {
           width: fit-content;
           margin: 2.5vw 0; //
           padding-left: 2.5vw;
-          border-radius: 0 12px 12px 0;
+          border-radius: 0 20px 20px 0;
           background-color: #ADA79E;
         }
 

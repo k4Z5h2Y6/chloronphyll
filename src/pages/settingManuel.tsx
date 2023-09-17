@@ -192,7 +192,7 @@ export default function SettingManue() {
           width: fit-content;
           margin: 24px 0 24px -4vw;
           padding: 16px 16px 16px calc(4vw + 16px);
-          border-radius: 0 16px 16px 0;
+          border-radius: 0 20px 20px 0;
           background-color: #ADA79E;
         }
 
@@ -232,7 +232,7 @@ export default function SettingManue() {
         .sectionTitleCO {
           width: fit-content;
           padding: 16px;
-          border-radius: 16px;
+          border-radius: 20px;
           background-color: #ADA79E;
         }
         .section1OpenedO,
