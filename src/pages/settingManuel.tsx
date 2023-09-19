@@ -1,3 +1,5 @@
+import { Movie } from '@/components/elements/Movie';
+import { Hair } from '@/components/settingManuel/Hair';
 import { useState } from 'react'
 
 export default function SettingManue() {
@@ -34,9 +36,7 @@ export default function SettingManue() {
           </div>
 
           <div className='section0ContentMovieOO'>
-            <div className='section0ContentMovieO'>
-              <video src='/SettingManuel/test10m.mov' autoPlay muted loop controls />
-            </div>
+            <Movie src='/SettingManuel/00SettingManuel/test10m1280_720.mov'/>
           </div>
         </div>
       </section>
@@ -51,7 +51,7 @@ export default function SettingManue() {
           </div>
         </div>
         <div className={isSection1Opened ? 'section1OpenedO' : 'section1ClosedO'}>
-
+          <Hair/>
         </div>
       </section>
 
@@ -167,21 +167,6 @@ export default function SettingManue() {
         </div>
       </section>
 
-      {/* テンプレート
-      <section>
-        <div 
-          className='sectionTitleCBtn'
-          onClick={() => setIsSection1Opened(!isSection1Opened)}
-        >
-          <div className='sectionTitleCO'>
-            <h4>01 ヘア</h4>
-          </div>
-        </div>
-        <div className={isSection1Opened ? 'section1OpenedO' : 'section1ClosedO'}>
-          {isSection1Opened ? '空いてます' : '閉じてます'}
-        </div>
-      </section> */}
-
       <style jsx>{`
         .sectionCO {
           width: 100%;
@@ -196,9 +181,10 @@ export default function SettingManue() {
           background-color: #ADA79E;
         }
 
+        //00
         .section0contentO {
           width: 100%;
-          height: calc(100% - 16px - 32px - 16px - 24px - 15vh);
+          height: calc(100% - 16px - 32px - 16px - 24px - 10vh);
           display: flex;
         }
         .section0ContentTextO {
@@ -217,14 +203,8 @@ export default function SettingManue() {
           align-items: center;
           justify-content: center;
         }
-        .section0ContentMovieO {
-          min-width: 100%;
-          min-height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
 
+        //アコーディオン
         .sectionTitleCBtn {
           width: 100%;
           padding: 24px 0;
@@ -245,10 +225,11 @@ export default function SettingManue() {
         .section8OpenedO,
         .section9OpenedO {
           width: 100%;
-          height: calc(100vh - 24px - 16px - 32px - 16px - 24px - 15vh);
+          height: calc(100vh - 24px - 16px - 32px - 16px - 24px);
+          padding-bottom: 7vh;
           border-bottom: 1px solid black;
           transition: all 1s ease;
-          background-color: pink;
+          position: relative;
         }
         .section1ClosedO,
         .section2ClosedO,
