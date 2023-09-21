@@ -61,7 +61,7 @@ export const Hair = () => {
         .yokogamiO {
           width: 75%;
           height: 70%;
-          padding: 8px;
+          padding: var(--settingManuel-p8);
           position: absolute;
           top: 0;
           left: 0;
@@ -70,13 +70,13 @@ export const Hair = () => {
           width: 100%;
           height: 100%;
           display: flex;
-          border-radius: 20px;
-          background-color: #ADA79E;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
         }
         .yokogamiMovieO {
           width: calc(100% / 3 * 2);
           height: 100%;
-          padding: 8px;
+          padding: var(--settingManuel-p8);
           display: flex;
         }
         .yokogamiTextO {
@@ -88,7 +88,7 @@ export const Hair = () => {
         .yokogamiTextI {
           width: 100%;
           height: calc(100% / 7 * 4);
-          padding: 8px;
+          padding: var(--settingManuel-p8);
           display: flex;
           flex-direction: column;
         }
@@ -102,7 +102,7 @@ export const Hair = () => {
         .maegamiO {
           width: 75%;
           height: 30%;
-          padding: 8px;
+          padding: var(--settingManuel-p8);
           position: absolute;
           top: 70%;
           left: 0;
@@ -111,19 +111,19 @@ export const Hair = () => {
           width: 100%;
           height: 100%;
           display: flex;
-          border-radius: 20px;
-          background-color: #ADA79E;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
         }
         .maegamiMovieO {
           width: calc(100% / 3 * 2);
           height: 100%;
-          padding: 8px;
+          padding: var(--settingManuel-p8);
           display: flex;
         }
         .maegamiTextO {
           width: calc(100% / 3);
           height: 100%;
-          padding: 8px;
+          padding: var(--settingManuel-p8);
           display: flex;
           flex-direction: column;
         }
@@ -131,29 +131,29 @@ export const Hair = () => {
         .mimikakeO {
           width: 25%;
           height: 80%;
-          padding: 8px;
+          padding: var(--settingManuel-p8);
           position: absolute;
           top: 0;
-          right: 0;
+          left: 75%;
         }
         .mimikakeI {
           width: 100%;
           height: 100%;
           display: flex;
           flex-direction: column;
-          border-radius: 20px;
-          background-color: #ADA79E;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
         }
         .mimikakeMovieO {
           width: 100%;
           height: calc(100% / 8 * 5);
-          padding: 8px;
+          padding: var(--settingManuel-p8);
           display: flex;
         }
         .mimikakeTextO {
           width: 100%;
           height: calc(100% / 8 * 3);
-          padding: 8px;
+          padding: var(--settingManuel-p8);
           display: flex;
           flex-direction: column;
         }

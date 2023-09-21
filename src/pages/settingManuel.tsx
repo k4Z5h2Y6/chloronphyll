@@ -1,5 +1,6 @@
 import { Movie } from '@/components/elements/Movie';
 import { Hair } from '@/components/settingManuel/Hair';
+import { Kemo } from '@/components/settingManuel/Kemo';
 import { useState } from 'react'
 
 export default function SettingManue() {
@@ -65,7 +66,7 @@ export default function SettingManue() {
           </div>
         </div>
         <div className={isSection2Opened ? 'section2OpenedO' : 'section2ClosedO'}>
-
+          <Kemo/>
         </div>
       </section>
 
@@ -177,8 +178,8 @@ export default function SettingManue() {
           width: fit-content;
           margin: 24px 0 24px -4vw;
           padding: 16px 16px 16px calc(4vw + 16px);
-          border-radius: 0 20px 20px 0;
-          background-color: #ADA79E;
+          border-radius: 0 var(--borderRadius-20) var(--borderRadius-20) 0;
+          background-color: var(--backgroundColor-item);
         }
 
         //00
@@ -212,8 +213,8 @@ export default function SettingManue() {
         .sectionTitleCO {
           width: fit-content;
           padding: 16px;
-          border-radius: 20px;
-          background-color: #ADA79E;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
         }
         .section1OpenedO,
         .section2OpenedO,

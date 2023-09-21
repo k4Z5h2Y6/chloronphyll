@@ -56,7 +56,7 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
           max-height: 60vh;//
           padding: 20px;
           background-color: #7C7469;
-          border-radius: 20px;
+          border-radius: var(--borderRadius-20);
         }
       `}</style>
     </>
