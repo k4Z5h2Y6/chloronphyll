@@ -1,7 +1,13 @@
 import { Movie } from '@/components/elements/Movie';
 import { Clothes } from '@/components/settingManual/Clothes';
+import { Emote } from '@/components/settingManual/Emote';
+import { Expression } from '@/components/settingManual/Expression';
+import { Gesture } from '@/components/settingManual/Gesture';
 import { Hair } from '@/components/settingManual/Hair';
+import { Item } from '@/components/settingManual/Item';
 import { Kemo } from '@/components/settingManual/Kemo';
+import { Motion } from '@/components/settingManual/Motion';
+import { System } from '@/components/settingManual/System';
 import { useState } from 'react'
 
 export default function SettingManual() {
@@ -95,7 +101,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection4Opened ? 'section4OpenedO' : 'section4ClosedO'}>
-
+          <Gesture/>
         </div>
       </section>
 
@@ -109,7 +115,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection5Opened ? 'section5OpenedO' : 'section5ClosedO'}>
-
+          <Expression/>
         </div>
       </section>
 
@@ -123,7 +129,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection6Opened ? 'section6OpenedO' : 'section6ClosedO'}>
-
+          <Item/>
         </div>
       </section>
 
@@ -137,7 +143,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection7Opened ? 'section7OpenedO' : 'section7ClosedO'}>
-
+          <Motion/>
         </div>
       </section>
 
@@ -151,7 +157,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection8Opened ? 'section8OpenedO' : 'section8ClosedO'}>
-
+          <Emote/>
         </div>
       </section>
 
@@ -165,7 +171,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection9Opened ? 'section9OpenedO' : 'section9ClosedO'}>
-
+          <System/>
         </div>
       </section>
 

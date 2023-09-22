@@ -1,6 +1,6 @@
 import { Movie } from "../elements/Movie"
 
-export const Clothes = () => {
+export const Emote = () => {
   return (
     <>
       <div className='sectionContentsCO'>
@@ -17,9 +17,3 @@ export const Clothes = () => {
     </>
   )
 }
-
-
-
-
-
-
