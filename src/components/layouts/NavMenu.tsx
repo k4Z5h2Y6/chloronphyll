@@ -34,7 +34,7 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
                   </h2>
                 </Link>
               </li>
-              <li className='navMenuLi'><Link href='/settingManuel'><h2>資料設定 input</h2></Link></li>
+              <li className='navMenuLi'><Link href='/settingManual'><h2>資料設定 input</h2></Link></li>
               <li className='navMenuLi'><Link href='/changeNote'><h2>改変ノート output</h2></Link></li>
               <li className='navMenuLi'><Link href='/histry'><h2>変更履歴</h2></Link></li>
               <li className='navMenuLi'><Link href='/document'><h2>ドキュメント</h2></Link></li>

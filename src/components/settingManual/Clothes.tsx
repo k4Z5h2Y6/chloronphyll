@@ -1,11 +1,11 @@
 import { Movie } from "../elements/Movie"
 
-export const Kemo = () => {
+export const Clothes = () => {
   return (
     <>
       <div className='sectionContentsCO'>
 
-        <div className='tsunoO'>
+        {/* <div className='tsunoO'>
           <div className='tsunoI'>
             <div className='tsunoMovieO'>
               <Movie src='/SettingManuel/01Hair/HairYokogami1280_720.mp4' />
@@ -61,7 +61,7 @@ export const Kemo = () => {
               <p>ヘアに合わせてUnityでシェイプを調整<br />ExMenuの実装はありません</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <style jsx>{`

@@ -8,7 +8,7 @@ export const Hair = () => {
         <div className='yokogamiO'>
           <div className='yokogamiI'>
             <div className='yokogamiMovieO'>
-              <Movie src='/SettingManuel/01Hair/HairYokogami1280_720.mp4' />
+              <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
             </div>
             <div className='yokogamiTextO'>
               <div className='yokogamiTextI'>
@@ -17,7 +17,7 @@ export const Hair = () => {
                 <p>2つ以上を組み合わせて<br />さらに個性を出せます<br />ほぼ全組み合わせ対応です<br />ExMenuでコーデしてみてください</p>
               </div>
               <div className='yokogamiSubMovieO'>
-                <Movie src='/SettingManuel/01Hair/HairYokogamiSub1280_720.mp4' />
+                <Movie src='/SettingManual/01Hair/HairYokogamiSub1280_720.mp4' />
               </div>
             </div>
           </div>
@@ -26,7 +26,7 @@ export const Hair = () => {
         <div className='maegamiO'>
           <div className='maegamiI'>
             <div className='maegamiMovieO'>
-              <Movie src='/SettingManuel/01Hair/HairMaegami1280_388.mp4' />
+              <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
             </div>
             <div className='maegamiTextO'>
               <h5>前髪</h5>
@@ -39,7 +39,7 @@ export const Hair = () => {
         <div className='mimikakeO'>
           <div className='mimikakeI'>
             <div className='mimikakeMovieO'>
-              <Movie src='/SettingManuel/01Hair/HairMimikake720_720.mp4' />
+              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
             </div>
             <div className='mimikakeTextO'>
               <h5>みみかけ4種類</h5>
@@ -61,7 +61,7 @@ export const Hair = () => {
         .yokogamiO {
           width: 75%;
           height: 70%;
-          padding: var(--settingManuel-p8);
+          padding: var(--settingManual-p8);
           position: absolute;
           top: 0;
           left: 0;
@@ -76,7 +76,7 @@ export const Hair = () => {
         .yokogamiMovieO {
           width: calc(100% / 3 * 2);
           height: 100%;
-          padding: var(--settingManuel-p8);
+          padding: var(--settingManual-p8);
           display: flex;
         }
         .yokogamiTextO {
@@ -88,7 +88,7 @@ export const Hair = () => {
         .yokogamiTextI {
           width: 100%;
           height: calc(100% / 7 * 4);
-          padding: var(--settingManuel-p8);
+          padding: var(--settingManual-p8);
           display: flex;
           flex-direction: column;
         }
@@ -102,7 +102,7 @@ export const Hair = () => {
         .maegamiO {
           width: 75%;
           height: 30%;
-          padding: var(--settingManuel-p8);
+          padding: var(--settingManual-p8);
           position: absolute;
           top: 70%;
           left: 0;
@@ -117,13 +117,13 @@ export const Hair = () => {
         .maegamiMovieO {
           width: calc(100% / 3 * 2);
           height: 100%;
-          padding: var(--settingManuel-p8);
+          padding: var(--settingManual-p8);
           display: flex;
         }
         .maegamiTextO {
           width: calc(100% / 3);
           height: 100%;
-          padding: var(--settingManuel-p8);
+          padding: var(--settingManual-p8);
           display: flex;
           flex-direction: column;
         }
@@ -131,7 +131,7 @@ export const Hair = () => {
         .mimikakeO {
           width: 25%;
           height: 80%;
-          padding: var(--settingManuel-p8);
+          padding: var(--settingManual-p8);
           position: absolute;
           top: 0;
           left: 75%;
@@ -147,13 +147,13 @@ export const Hair = () => {
         .mimikakeMovieO {
           width: 100%;
           height: calc(100% / 8 * 5);
-          padding: var(--settingManuel-p8);
+          padding: var(--settingManual-p8);
           display: flex;
         }
         .mimikakeTextO {
           width: 100%;
           height: calc(100% / 8 * 3);
-          padding: var(--settingManuel-p8);
+          padding: var(--settingManual-p8);
           display: flex;
           flex-direction: column;
         }

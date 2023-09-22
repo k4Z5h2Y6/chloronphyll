@@ -1,9 +1,10 @@
 import { Movie } from '@/components/elements/Movie';
-import { Hair } from '@/components/settingManuel/Hair';
-import { Kemo } from '@/components/settingManuel/Kemo';
+import { Clothes } from '@/components/settingManual/Clothes';
+import { Hair } from '@/components/settingManual/Hair';
+import { Kemo } from '@/components/settingManual/Kemo';
 import { useState } from 'react'
 
-export default function SettingManue() {
+export default function SettingManual() {
 
   const [isSection1Opened, setIsSection1Opened] = useState<boolean>(false);
   const [isSection2Opened, setIsSection2Opened] = useState<boolean>(false);
@@ -37,7 +38,7 @@ export default function SettingManue() {
           </div>
 
           <div className='section0ContentMovieOO'>
-            <Movie src='/SettingManuel/00SettingManuel/test10m1280_720.mov'/>
+            <Movie src='/SettingManual/00SettingManual/test10m1280_720.mov'/>
           </div>
         </div>
       </section>
@@ -80,7 +81,7 @@ export default function SettingManue() {
           </div>
         </div>
         <div className={isSection3Opened ? 'section3OpenedO' : 'section3ClosedO'}>
-
+          <Clothes/>
         </div>
       </section>
 
