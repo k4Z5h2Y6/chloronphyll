@@ -95,7 +95,7 @@ export const Hair = () => {
         .yokogamiSubMovieO {
           width: 100%;
           height: calc(100% / 7 * 3);
-          padding: 8px;
+          padding: var(--settingManual-p8);
           display: flex;
         }
         //前髪

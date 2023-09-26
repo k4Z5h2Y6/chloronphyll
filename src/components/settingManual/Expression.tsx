@@ -4,6 +4,50 @@ export const Expression = () => {
   return (
     <>
       <div className='sectionContentsCO'>
+
+        <div className='handsignO'>
+          <div className='handsignI'>
+            <div className='handsignMovieO'>
+              <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+            </div>
+            <div className='handsignTextO'>
+              <div className='handsignTextI'>
+                <div className='handsignKatateTextO'>
+                  <h5>片手ハンドサイン</h5>
+                  <p>hs1_よりめ<br />hs2_汗<br />hs3_ビリビリキラりん<br />hs4_ハート<br />hs5_ウィンク星<br />hs6_くるりんハイライト / ダイヤ<br />hs7_にこ</p>
+                </div>
+                <div className='handsignRyouteTextO'>
+                  <h5>両手ハンドサイン</h5>
+                  <p>hss1_ジト目ハム口<br />hss2_(None)<br />hss3_飛び目 / 白目 / ないしょ<br />hss4_キラキラ<br />hss5_(ランダム45種)<br />hss6_つり目ふにゃふにゃ<br />hss7_しょげ口</p>
+                </div>
+              </div>
+              <div className='handsignSubMovieO'>
+                <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='tobimeO'>
+          <div className='tobimeMovieO'>
+            <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+          </div>
+        </div>
+
+        <div className='shizukunonamidaO'>
+          <div className='shizukunonamidaMovieO'>
+            <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+          </div>
+        </div>
+
+        <div className='explanationO'>
+          <div className='explanationTextO'>
+            <p>ExMenu<br />→45種の表情固定 →まぶた固定<br />(無段階調整)(まぶた+追加表情)</p>
+            <p>各エモート , PB , Contact ,<br />走行 , ジャンプなどで変形</p>
+            <p>MMDモーフあり (JP.fbxのみ)</p>
+          </div>
+        </div>
+
       </div>
 
       <style jsx>{`
@@ -12,6 +56,105 @@ export const Expression = () => {
           width: 100%;
           height: 100%;
           position: relative;
+        }
+        //ハンドサイン
+        .handsignO {
+          width: 100%;
+          height: 70%;
+          padding: var(--settingManual-p8);
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .handsignI {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
+        }
+        .handsignMovieO {
+          width: 50%;
+          height: 100%;
+          padding: var(--settingManual-p8);
+          display: flex;
+        }
+        .handsignTextO {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+        .handsignTextI {
+          width: 100%;
+          height: calc(100% / 7 * 4);
+          display: flex;
+        }
+        .handsignKatateTextO {
+          width: 40%;
+          height: 100%;
+          padding: var(--settingManual-p8);
+          display: flex;
+          flex-direction: column;
+        }
+        .handsignRyouteTextO {
+          width: 60%;
+          height: 100%;
+          padding: var(--settingManual-p8);
+          display: flex;
+          flex-direction: column;
+        }
+        .handsignSubMovieO {
+          width: 100%;
+          height: calc(100% / 7 * 3);
+          padding: var(--settingManual-p8);
+          display: flex;
+        }
+        //飛び目
+        .tobimeO {
+          width: 40%;
+          height: 30%;
+          padding: var(--settingManual-p8);
+          position: absolute;
+          top: 70%;
+          left: 5%;
+        }
+        .tobimeMovieO {
+          width: 100%;
+          height: 100%;
+          padding: var(--settingManual-p8);
+          display: flex;
+        }
+        //しずくのなみだ
+        .shizukunonamidaO {
+          width: 25%;
+          height: 30%;
+          padding: var(--settingManual-p8);
+          position: absolute;
+          top: 70%;
+          left: 45%;
+        }
+        .shizukunonamidaMovieO {
+          width: 100%;
+          height: 100%;
+          padding: var(--settingManual-p8);
+          display: flex;
+        }
+        //説明
+        .explanationO {
+          width: 30%;
+          height: 30%;
+          padding: var(--settingManual-p8);
+          position: absolute;
+          top: 70%;
+          left: 70%;
+        }
+        .explanationTextO {
+          width: 100%;
+          height: 100%;
+          padding: var(--settingManual-p8);
+          border: 1px solid var(--borderColor);
+          border-radius: var(--borderRadius-20);
         }
       `}</style>
     </>

@@ -95,6 +95,7 @@ video {
 :root {
   --backgroundColor-base: #968E83;
   --backgroundColor-item: #ADA79E;
+  --borderColor: #7C7469;
   --textColor-base: #E6E6E6;
 
   --borderRadius-20: 20px;
