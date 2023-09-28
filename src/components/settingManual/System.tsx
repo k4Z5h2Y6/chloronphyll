@@ -46,7 +46,7 @@ export const System = () => {
                   <p><br />1 キャンディ木の実<br />2 両手パー全身固定<br />3 飛び目<br />4 ハンドサイン , Gesture<br />5 表情ランダム<br />6 フレミング<br />7 ハリケーン,ビリビリ,お星さま<br />8 空気</p>
                 </div>
                 <div className='onoffkinouFirstRightTextI'>
-                  <p>(発動条件)<br />gg1 両手グー<br />gg2 両手パー<br />gg3 両手point<br />全Gesture<br />gg5 両手rock 'n' roll<br />gg6 両手gun<br />各Gesture , 各Action<br />AFK , 移動</p>
+                  <p>(発動条件)<br />gg1 両手グー<br />gg2 両手パー<br />gg3 両手point<br />全Gesture<br />gg5 両手rock &apos;n&apos; roll<br />gg6 両手gun<br />各Gesture , 各Action<br />AFK , 移動</p>
                 </div>
               </div>
             </div>
