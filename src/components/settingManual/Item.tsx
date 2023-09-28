@@ -37,28 +37,14 @@ export const Item = () => {
             </div>
             <div className='ohoshisamaTextO'>
               <h5>z4_お星さま</h5>
-              <table>
-                <tr>
-                  <td>a_火花星</td>
-                  <td>Contact左手に触れられると発動</td>
-                </tr>
-                <tr>
-                  <td>b_ビックバン</td>
-                  <td>Contact右手に触れられると発動</td>
-                </tr>
-                <tr>
-                  <td>c_火花星</td>
-                  <td>(表情) ウィンク , 飛び目 とか..</td>
-                </tr>
-                <tr>
-                  <td>d_流れ星</td>
-                  <td>(表情) 両手ピース とか..</td>
-                </tr>
-                <tr>
-                  <td>e_星の雨</td>
-                  <td>AFK , フレミング とか..</td>
-                </tr>
-              </table>
+              <div className='ohoshisamaTextI'>
+                <div className='ohoshisamaLeftTextO'>
+                  <p>a_火花星<br />b_ビックバン<br />c_火花星<br />d_流れ星<br />e_星の雨</p>
+                </div>
+                <div className='ohoshisamaRightTextO'>
+                  <p>Contact左手に触れられると発動<br />Contact右手に触れられると発動<br />(表情) ウィンク , 飛び目 とか..<br />(表情) 両手ピース とか..<br />AFK , フレミング とか..</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -70,20 +56,14 @@ export const Item = () => {
             </div>
             <div className='kuukiTextO'>
               <h5>z5_空気</h5>
-              <table>
-                <tr>
-                  <td>a_空気</td>
-                  <td>すやすや , うとうと , V睡 で発動</td>
-                </tr>
-                <tr>
-                  <td>b_あしあと</td>
-                  <td>走行 , ズサー歩行 で発動</td>
-                </tr>
-                <tr>
-                  <td>c_空気のイス</td>
-                  <td>ON状態でもしゃがみの時だけ発動</td>
-                </tr>
-              </table>
+              <div className='kuukiTextI'>
+                <div className='kuukiLeftTextO'>
+                  <p>a_空気<br />b_あしあと<br />c_空気のイス</p>
+                </div>
+                <div className='kuukiRightTextO'>
+                  <p>すやすや , うとうと , V睡 で発動<br />走行 , ズサー歩行 で発動<br />ON状態でもしゃがみの時だけ発動</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -228,6 +208,16 @@ export const Item = () => {
           display: flex;
           flex-direction: column;
         }
+        .ohoshisamaTextI {
+          width: 100%;
+          display: flex;
+        }
+        .ohoshisamaLeftTextO {
+          width: calc(100% / 3);
+        }
+        .ohoshisamaRightTextO {
+          width: calc(100% / 3 * 2);
+        }
         //空気
         .kuukiO {
           width: 40%;
@@ -256,6 +246,16 @@ export const Item = () => {
           padding: var(--settingManual-p8);
           display: flex;
           flex-direction: column;
+        }
+        .kuukiTextI {
+          width: 100%;
+          display: flex;
+        }
+        .kuukiLeftTextO {
+          width: calc(100% / 3);
+        }
+        .kuukiRightTextO {
+          width: calc(100% / 3 * 2);
         }
         //ヘンルーダ
         .henrudaO {

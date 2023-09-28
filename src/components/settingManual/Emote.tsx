@@ -6,41 +6,87 @@ export const Emote = () => {
       <div className='sectionContentsCO'>
 
         <div className='curtsyO'>
-          <div className='curtsyO'>
-            <div className='curtsyO'></div>
-            <div className='curtsyO'></div>
+          <div className='curtsyI'>
+            <div className='curtsyMovieO'>
+              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+            </div>
+            <div className='curtsyTextO'>
+              <h5>e1_カーテシー</h5>
+              <p>ExMenuで発動 (VR , デスクトップ 両対応)<br />両手でスカートPBを伸ばすと反応 (VRのみ)</p>
+            </div>
+            <div className='curtsySubO'>
+              <div className='curtsySubMovieO'>
+                <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+              </div>
+              <div className='curtsySubTextO'>
+                <p>(スカートPBを伸ばすコツ)<br />肩からまっすぐに手を落として...<br />ほんの少し後ろから両手で掴んで..<br />引き上げる.</p>
+              </div>
+            </div>
           </div>
         </div>
 
         <div className='utoutoO'>
-          <div className='utoutoO'>
-            <div className='utoutoO'></div>
-            <div className='utoutoO'></div>
+          <div className='utoutoI'>
+            <div className='utoutoMovieO'>
+              <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+            </div>
+            <div className='utoutoTextO'>
+              <h5>e3_うとうと</h5>
+              <p>ExMenuで発動 / AFK中にスカートを掴まれると反応<br />各ポーズに対応しています<br />全身固定中はAFKでもうとうとします</p>
+            </div>
           </div>
         </div>
 
         <div className='vsuiO'>
-          <div className='vsuiO'>
-            <div className='vsuiO'></div>
-            <div className='vsuiO'></div>
+          <div className='vsuiI'>
+            <div className='vsuiMovieO'>
+              <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+            </div>
+            <div className='vsuiTextO'>
+              <h5>e4_V睡</h5>
+              <p>ExMenuでLR切り替え (V睡の発動は”ふせAFK”です)<br />全身固定すると目を開けて通常の表情に変わります</p>
+              <p>e4y_V睡高さ調整<br />ベッドが高い時に使えます (VR , デスクトップ 両対応)<br />(ViewPointは変わりませんがAFKなのでリアルが動ければokです)<br />10%以上高くするとしゃがみAFKにならずにV睡し続けます</p>
+            </div>
           </div>
         </div>
 
-        <div className='yesno'>
-          <div className='yesno'>
-            <div className='yesno'></div>
-            <div className='yesno'></div>
+        <div className='yesnoO'>
+          <div className='yesnoI'>
+            <div className='yesnoTextO'>
+              <h5>e2_Yes / No</h5>
+              <p>ExMenuで発動<br />各ポーズ対応</p>
+              <p>デスクトップ無言勢<br />になれます</p>
+            </div>
+            <div className='yesnoMovieO'>
+              <Movie src='/SettingManual/01Hair/HairYokogamiSub1280_720.mp4' />
+            </div>
           </div>
         </div>
 
         <div className='zenshinkoteiO'>
-          <div className='zenshinkoteiO'>
-            <div className='zenshinkoteiO'></div>
-            <div className='zenshinkoteiO'></div>
+          <div className='zenshinkoteiTextO'>
+            <div className='zenshinkoteiFirstTextO'>
+              <h5>e5_全身固定</h5>
+              <p>ExMenuで切り替え<br />Trackingしないシステム</p>
+              <p>演奏や劇を鑑賞する時に重宝します<br />アイテムやパーツが飛び出ることがないので、<br />周りの迷惑を気にせずに遊べます<br />じっとするべき場面で身体を動かしたい時にも使えます</p>
+            </div>
+            <div className='zenshinkoteiSecondTextO'>
+              <div className='zenshinkoteiSecondTextI'>
+                <div className='zenshinkoteiSecondLeftTextI'>
+                  <p>全身固定中<br />全身固定中のAFK<br />全身固定中のV睡<br />全身固定中のしゃがみ<br />全身固定中のふせ<br />全身固定中のSit<br />全身固定中のエモート<br />全身固定中のアイテム</p>
+                </div>
+                <div className='zenshinkoteiSecondRightTextI'>
+                  <p>→いろいろ無効化<br />→完全固定 (すやすやしない)<br />→目を開ける (寝転んで話せる)<br />→スカートがイスに貫通しない<br />→ちゃんとひじが地面に設置する<br />→イスから離脱しない<br />→開始と戻りのズレがない<br />→位置と角度を保ち続ける</p>
+                </div>
+              </div>
+            </div>
+            <div className='zenshinkoteiThirdTextO'>
+              <p>(無効化) Gesture , ハンドサイン , アイテム , 待機モーション<br />アイテムを出したくないだけの場合はONOFF機能です</p>
+            </div>
           </div>
         </div>
 
-      </div>
+      </div >
 
       <style jsx>{`
         //コンテンツアウター共通
@@ -48,6 +94,195 @@ export const Emote = () => {
           width: 100%;
           height: 100%;
           position: relative;
+        }
+        //カーテシー
+        .curtsyO {
+          width: 30%;
+          height: 100%;
+          padding: var(--settingManual-p8);
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .curtsyI {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
+        }
+        .curtsyMovieO {
+          width: 100%;
+          height: 60%;
+          padding: var(--settingManual-p8);
+          display: flex;
+        }
+        .curtsyTextO {
+          width: 100%;
+          height: 20%;
+          padding: var(--settingManual-p8);
+          display: flex;
+          flex-direction: column;
+        }
+        .curtsySubO {
+          width: 100%;
+          height: 20%;
+          display: flex;
+        }
+        .curtsySubMovieO {
+          width: calc(100% / 3);
+          height: 100%;
+          padding: var(--settingManual-p8);
+          display: flex;
+        }
+        .curtsySubTextO {
+          width: calc(100% / 3 * 2);
+          height: 100%;
+          padding: var(--settingManual-p8);
+        }
+        //うとうと
+        .utoutoO {
+          width: 35%;
+          height: 40%;
+          padding: var(--settingManual-p8);
+          position: absolute;
+          top: 0;
+          left: 30%;
+        }
+        .utoutoI {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
+        }
+        .utoutoMovieO {
+          width: 100%;
+          height: 50%;
+          padding: var(--settingManual-p8);
+          display: flex;
+        }
+        .utoutoTextO {
+          width: 100%;
+          height: 50%;
+          padding: var(--settingManual-p8);
+          display: flex;
+          flex-direction: column;
+        }
+        //v睡
+        .vsuiO {
+          width: 35%;
+          height: 60%;
+          padding: var(--settingManual-p8);
+          position: absolute;
+          top: 40%;
+          left: 30%;
+        }
+        .vsuiI {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
+        }
+        .vsuiMovieO {
+          width: 100%;
+          height: 50%;
+          padding: var(--settingManual-p8);
+          display: flex;
+        }
+        .vsuiTextO {
+          width: 100%;
+          height: 50%;
+          padding: var(--settingManual-p8);
+          display: flex;
+          flex-direction: column;
+        }
+        //yes/no
+        .yesnoO {
+          width: 35%;
+          height: 30%;
+          padding: var(--settingManual-p8);
+          position: absolute;
+          top: 0;
+          left: 65%;
+        }
+        .yesnoI {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
+        }
+        .yesnoTextO {
+          width: calc(100% / 7 * 3);
+          height: 100%;
+          padding: var(--settingManual-p8);
+          display: flex;
+          flex-direction: column;
+        }
+        .yesnoMovieO {
+          width: calc(100% / 7 * 4);
+          height: 100%;
+          padding: var(--settingManual-p8);
+          display: flex;
+        }
+        //全身固定
+        .zenshinkoteiO {
+          width: 35%;
+          height: 70%;
+          padding: var(--settingManual-p8);
+          position: absolute;
+          top: 30%;
+          left: 65%;
+        }
+        .zenshinkoteiTextO {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
+        }
+        .zenshinkoteiFirstTextO {
+          width: 100%;
+          height: calc(100% / 7 * 3);
+          padding: var(--settingManual-p8);
+          display: flex;
+          flex-direction: column;
+        }
+        .zenshinkoteiSecondTextO {
+          width: 100%;
+          height: calc(100% / 7 * 3);
+          padding: var(--settingManual-p8);
+        }
+        .zenshinkoteiSecondTextI {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          border: 1px solid var(--borderColor);
+          border-radius: var(--borderRadius-20);
+        }
+        .zenshinkoteiSecondLeftTextI {
+          width: calc(100% / 7 * 3);
+          height: 100%;
+          padding: var(--settingManual-p8);
+        }
+        .zenshinkoteiSecondRightTextI {
+          width: calc(100% / 7 * 4);
+          height: 100%;
+          padding: var(--settingManual-p8);
+        }
+        .zenshinkoteiThirdTextO {
+          width: 100%;
+          height: calc(100% / 7);
+          padding: var(--settingManual-p8);
+        }
+        .akarusachouseiMovieO {
+          
         }
       `}</style>
     </>
