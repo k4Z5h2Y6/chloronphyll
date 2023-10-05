@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  const [isNavOpened, setIsNavOpened] = useState<boolean>(false);
+  const [isNavOpened, setIsNavOpened] = useState<boolean>(true);
   console.log(isNavOpened ? '開いている' : '閉まっている')
 
   return (
@@ -36,11 +36,11 @@ export default function App({ Component, pageProps }: AppProps) {
 
         }
         main {
-          width: 92vw; //
+          width: 95vw; //
           margin: 0 auto;
         }
         .navMenuOopenedO {
-          width: 20vw;
+          width: 25vw;
           height: 100vh;
           transition: all 1s ease;
           position: fixed;
@@ -50,7 +50,7 @@ export default function App({ Component, pageProps }: AppProps) {
           background-color: rgba(124,116,105,0.45);
         }
         .navMenuClosedO {
-          width: 20vw;
+          width: 25vw;
           height: 100vh;
           transition: all 1s ease;
           position: fixed;

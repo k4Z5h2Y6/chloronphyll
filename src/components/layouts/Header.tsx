@@ -45,7 +45,7 @@ export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
           width: 341px;
           height: 294px;
           position: fixed;
-          right: 10vw;
+          right: 12.5vw;
           bottom: 0;
           z-index: 11;
           transform: translateX(50%);

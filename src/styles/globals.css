@@ -55,8 +55,9 @@ body {
 /* h1…navMenu内ホームリンク */
 /* h2…navMenu内リンク */
 h2 {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1;
+  white-space: nowrap;
 }
 /* h3…ページタイトル */
 h3 {
@@ -97,7 +98,7 @@ video {
   --backgroundColor-base: #968E83;
   --backgroundColor-item: #ADA79E;
   --borderColor: #7C7469;
-  --textColor-base: #E6E6E6;
+  --textColor-base: #B3B3B3;
 
   --borderRadius-20: 20px;
   --settingManual-p8: 8px;
