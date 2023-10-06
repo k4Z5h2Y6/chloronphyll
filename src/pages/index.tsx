@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import { useTheme } from 'next-themes';
 
 export default function Home() {
   return (
@@ -8,5 +8,5 @@ export default function Home() {
       <style jsx>{`
       `}</style>
     </>
-  )
+  );
 }

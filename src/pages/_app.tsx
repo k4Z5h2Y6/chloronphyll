@@ -1,42 +1,42 @@
-import { Header } from '@/components/layouts/Header'
-import { NavMenu } from '@/components/layouts/NavMenu'
-import '@/styles/globals.css'
-import { NextPage } from 'next'
-import type { AppProps } from 'next/app'
-import { useState } from 'react'
+import { Header } from '@/components/layouts/Header';
+import { NavMenu } from '@/components/layouts/NavMenu';
+import Providers from '@/components/layouts/Providers';
+import '@/styles/globals.css';
+import type { AppProps } from 'next/app';
+import { useState } from 'react';
 
 
 export default function App({ Component, pageProps }: AppProps) {
-
   const [isNavOpened, setIsNavOpened] = useState<boolean>(true);
-  console.log(isNavOpened ? '開いている' : '閉まっている')
 
   return (
     <>
-      <Header
-        isNavOpened={isNavOpened}
-        setIsNavOpened={setIsNavOpened}
-      />
-      <div className='mainO'>
-        <main>
+      <Providers>
+        <Header
+          isNavOpened={isNavOpened}
+          setIsNavOpened={setIsNavOpened}
+        />
+        <div className='mainO'>
+          <main>
             <Component {...pageProps} />
-        </main>
-        <div className={isNavOpened ? 'navMenuOopenedO' : 'navMenuClosedO'}>
-          <NavMenu
-            isNavOpened={isNavOpened}
-            setIsNavOpened={setIsNavOpened}
-          />
+          </main>
+          <div className={isNavOpened ? 'navMenuOopenedO' : 'navMenuClosedO'}>
+            <NavMenu
+              isNavOpened={isNavOpened}
+              setIsNavOpened={setIsNavOpened}
+            />
+          </div>
         </div>
-      </div>
+      </Providers>
 
       <style jsx>{`
         .mainO {
-          width: 100vw; //
+          width: 100vw;
           overflow: hidden;
 
         }
         main {
-          width: 95vw; //
+          width: 95vw;
           margin: 0 auto;
         }
         .navMenuOopenedO {
@@ -63,5 +63,5 @@ export default function App({ Component, pageProps }: AppProps) {
         }
       `}</style>
     </>
-  )
+  );
 }

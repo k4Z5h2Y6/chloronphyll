@@ -36,6 +36,28 @@ border-radius: 20px;
 
 */
 
+:root {
+  --backgroundColor-base: #968e83;
+  --backgroundColor-item: #ada79e;
+  --borderColor: #7c7469;
+  --textColor-base: #ffffff;
+  --textColor-navMenu: #b3b3b3;
+  --textColor-title: #e6e6e6;
+
+  --borderRadius-20: 20px;
+  --settingManual-p8: 8px;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --textColor-navMenu: #60646C;
+  }
+} */
+
+[data-theme='dark'] {
+  --backgroundColor-base: #60646c;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -58,15 +80,19 @@ h2 {
   font-size: 16px;
   line-height: 1;
   white-space: nowrap;
+  color: var(--textColor-navMenu);
+
 }
 /* h3…ページタイトル */
 h3 {
   font-size: 32px;
   line-height: 1;
+  color: var(--textColor-title);
 }
 /* h4…セクションタイトル */
 h4 {
-  font-size: 24px
+  font-size: 24px;
+  color: var(--textColor-title);
 }
 /* h5…コンテンツタイトル */
 h5 {
@@ -92,18 +118,6 @@ video {
   max-height: 100%;
   border-radius: var(--borderRadius-20);
 }
-
-
-:root {
-  --backgroundColor-base: #968E83;
-  --backgroundColor-item: #ADA79E;
-  --borderColor: #7C7469;
-  --textColor-base: #B3B3B3;
-
-  --borderRadius-20: 20px;
-  --settingManual-p8: 8px;
-}
-
 
 /*
 //幅が959px未満かつ横画面 (スマホ横)
