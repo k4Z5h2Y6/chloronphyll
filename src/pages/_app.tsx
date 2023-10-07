@@ -33,7 +33,6 @@ export default function App({ Component, pageProps }: AppProps) {
         .mainO {
           width: 100vw;
           overflow: hidden;
-
         }
         main {
           width: 95vw;

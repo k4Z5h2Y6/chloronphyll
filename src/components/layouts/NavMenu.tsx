@@ -159,6 +159,7 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
           position: relative;
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-navI);
+          transition: var(--transition1s);
         }
         .navMenuTextO {
           width: 100%;
