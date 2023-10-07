@@ -49,7 +49,7 @@ export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
         {/* @media screen and (max-width: 1024px) and (orientation: portrait) { */}
         @media screen and (max-width: 1024px) {
           .headerI {
-            top: calc(100vh - 10vw);
+            top: calc(100vh - 7vw);
           }
         }
       `}</style>
