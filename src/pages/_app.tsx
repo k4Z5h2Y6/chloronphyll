@@ -42,24 +42,23 @@ export default function App({ Component, pageProps }: AppProps) {
         .navMenuOopenedO {
           width: 25vw;
           height: 100vh;
-          transition: all 1s ease;
+          transition: var(--transition1s);
           position: fixed;
           top: 0;
           right: 0;
           z-index: 10;
-          background-color: rgba(124,116,105,0.45);
+          background-color: var(--backgroundColor-navO);
         }
         .navMenuClosedO {
           width: 25vw;
           height: 100vh;
-          transition: all 1s ease;
+          transition: var(--transition1s);
           position: fixed;
           top: 0;
           right: 0;
-          transform: translatex(100%);
           z-index: 10;
-          background-color: #7C7469;
-          opacity: 0.5;
+          background-color: var(--backgroundColor-navO);
+          transform: translatex(100%);
         }
       `}</style>
     </>
