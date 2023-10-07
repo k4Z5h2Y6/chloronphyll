@@ -41,6 +41,8 @@ export const Logo = ({ isNavOpened, setIsNavOpened }: Props) => {
         </div>
       }
 
+
+{/* 20vwbr */}
       <style jsx>{`
         .logoLightOnLightMode {
           width: 341px;
@@ -61,6 +63,15 @@ export const Logo = ({ isNavOpened, setIsNavOpened }: Props) => {
           z-index: 11;
           transform: translateX(50%);
           transition: all 1s ease;
+        }
+        @media screen and (max-width: 1024px) and (orientation: portrait) {
+          .logoLightOnLightMode, .logoDarkOnDarkMode {
+            width: 20vw;
+            height: 20vw;
+            right: 0;
+            bottom: 0;
+            transform: none;
+          }
         }
       `}</style>
     </>

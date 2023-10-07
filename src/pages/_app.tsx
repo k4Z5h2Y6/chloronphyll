@@ -3,10 +3,11 @@ import { NavMenu } from '@/components/layouts/NavMenu';
 import Providers from '@/components/layouts/Providers';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 export default function App({ Component, pageProps }: AppProps) {
+
   const [isNavOpened, setIsNavOpened] = useState<boolean>(true);
 
   return (
@@ -59,7 +60,17 @@ export default function App({ Component, pageProps }: AppProps) {
           background-color: var(--backgroundColor-navO);
           transform: translatex(100%);
         }
+        /* widthが1024px以下かつ縦画面(スマホ版） */
+        @media screen and (max-width: 1024px) and (orientation: portrait) {
+          main {
+            width: 92vw;
+          }
+          .navMenuOopenedO, .navMenuClosedO {
+            width: 70vw;
+          }
+        }
       `}</style>
     </>
   );
 }
+

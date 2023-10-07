@@ -45,25 +45,11 @@ export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
           left: 0;
           z-index: 10;
         }
-        .logoLightOnLightMode {
-          width: 341px;
-          height: 294px;
-          position: fixed;
-          right: 12.5vw;
-          bottom: 0;
-          z-index: 11;
-          transform: translateX(50%);
-          transition: all 1s ease;
-        }
-        .logoDarkOnDarkMode {
-          width: 341px;
-          height: 294px;
-          position: fixed;
-          right: 12.5vw;
-          bottom: 0;
-          z-index: 11;
-          transform: translateX(50%);
-          transition: all 1s ease;
+        /* widthが1024px以下かつ縦画面(スマホ版） */
+        @media screen and (max-width: 1024px) and (orientation: portrait) {
+          .headerI {
+            top: calc(100vh - 7vw);
+          }
         }
       `}</style>
     </>

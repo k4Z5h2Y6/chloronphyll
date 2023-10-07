@@ -39,7 +39,7 @@ border-radius: 20px;
 :root {
   --backgroundColor-base: #968e83;
   --backgroundColor-item: #ada79e;
-  --backgroundColor-navO: rgba(124,116,105,0.5);
+  --backgroundColor-navO: rgba(124, 116, 105, 0.5);
   --backgroundColor-navI: #7c7469;
   --borderColor: #7c7469;
   --textColor-base: #ffffff;
@@ -54,16 +54,10 @@ border-radius: 20px;
 
 [data-theme='dark'] {
   --backgroundColor-base: #60646c;
-  --backgroundColor-navO: rgba(72,75,81,0.5);
+  --backgroundColor-navO: rgba(72, 75, 81, 0.5);
   --backgroundColor-navI: #484b51;
-  --backgroundColor-item: #6E737C;
+  --backgroundColor-item: #6e737c;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --textColor-navMenu: #60646C;
-  }
-} */
 
 * {
   box-sizing: border-box;
@@ -124,6 +118,15 @@ video {
   max-width: 100%;
   max-height: 100%;
   border-radius: var(--borderRadius-20);
+}
+
+
+/* widthが1025x以上(pc版：デフォルト) */
+/* widthが1024px以下かつ縦画面(スマホ版） */
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  :root {
+    --backgroundColor-base: #33ff00;
+  }
 }
 
 /*
