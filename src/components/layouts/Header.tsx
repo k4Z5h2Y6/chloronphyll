@@ -46,9 +46,10 @@ export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
           z-index: 10;
         }
         /* widthが1024px以下かつ縦画面(スマホ版） */
-        @media screen and (max-width: 1024px) and (orientation: portrait) {
+        {/* @media screen and (max-width: 1024px) and (orientation: portrait) { */}
+        @media screen and (max-width: 1024px) {
           .headerI {
-            top: calc(100vh - 7vw);
+            top: calc(100vh - 10vw);
           }
         }
       `}</style>

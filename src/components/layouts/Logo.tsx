@@ -64,7 +64,8 @@ export const Logo = ({ isNavOpened, setIsNavOpened }: Props) => {
           transform: translateX(50%);
           transition: all 1s ease;
         }
-        @media screen and (max-width: 1024px) and (orientation: portrait) {
+        {/* @media screen and (max-width: 1024px) and (orientation: portrait) { */}
+        @media screen and (max-width: 1024px) {
           .logoLightOnLightMode, .logoDarkOnDarkMode {
             width: 20vw;
             height: 20vw;

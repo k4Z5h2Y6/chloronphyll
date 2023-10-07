@@ -123,7 +123,8 @@ video {
 
 /* widthが1025x以上(pc版：デフォルト) */
 /* widthが1024px以下かつ縦画面(スマホ版） */
-@media screen and (max-width: 1024px) and (orientation: portrait) {
+/* @media screen and (max-width: 1024px) and (orientation: portrait) { */
+@media screen and (max-width: 1024px) {
   :root {
     --backgroundColor-base: #33ff00;
   }

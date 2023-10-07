@@ -61,7 +61,8 @@ export default function App({ Component, pageProps }: AppProps) {
           transform: translatex(100%);
         }
         /* widthが1024px以下かつ縦画面(スマホ版） */
-        @media screen and (max-width: 1024px) and (orientation: portrait) {
+        {/* @media screen and (max-width: 1024px) and (orientation: portrait) { */}
+        @media screen and (max-width: 1024px) {
           main {
             width: 92vw;
           }
