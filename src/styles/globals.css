@@ -40,6 +40,7 @@ border-radius: 20px;
   --backgroundColor-base: #968e83;
   --backgroundColor-item: #ada79e;
   --backgroundColor-navO: rgba(124,116,105,0.5);
+  --backgroundColor-navI: #7c7469;
   --borderColor: #7c7469;
   --textColor-base: #ffffff;
   --textColor-navMenu: #b3b3b3;
@@ -54,6 +55,8 @@ border-radius: 20px;
 [data-theme='dark'] {
   --backgroundColor-base: #60646c;
   --backgroundColor-navO: rgba(72,75,81,0.5);
+  --backgroundColor-navI: #484b51;
+  --backgroundColor-item: #6E737C;
 }
 
 /* @media (prefers-color-scheme: dark) {

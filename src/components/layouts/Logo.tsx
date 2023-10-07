@@ -1,50 +1,47 @@
 import { useTheme } from 'next-themes';
 import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
-import { Logo } from './Logo';
 
 type Props = {
   isNavOpened: boolean;
   setIsNavOpened: Dispatch<SetStateAction<boolean>>;
 };
 
-export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
+export const Logo = ({ isNavOpened, setIsNavOpened }: Props) => {
   const { theme } = useTheme();
   return (
     <>
       {theme === 'light' ?
-        <div className='headerI'>
+        <div
+          className='logoLightOnLightMode'
+          onMouseEnter={() => { setIsNavOpened(true); }}
+          onMouseLeave={() => { setIsNavOpened(false); }}
+        >
           <Image
-            src='/Header/SoilLight1920_450.png'
-            alt='soil'
-            width={1920}
-            height={450}
+            src='/Header/LogoLight1024_1024.png'
+            alt='logo'
+            width={1024}
+            height={1024}
             layout='responsive'
           />
-          <Logo isNavOpened={isNavOpened} setIsNavOpened={setIsNavOpened} />
         </div>
         :
-        <div className='headerI'>
+        <div
+          className='logoDarkOnDarkMode'
+          onMouseEnter={() => { setIsNavOpened(true); }}
+          onMouseLeave={() => { setIsNavOpened(false); }}
+        >
           <Image
-            src='/Header/SoilDark1920_450.png'
-            alt='soil'
-            width={1920}
-            height={450}
+            src='/Header/LogoDark1024_1024.png'
+            alt='logo'
+            width={1024}
+            height={1024}
             layout='responsive'
           />
-          <Logo isNavOpened={isNavOpened} setIsNavOpened={setIsNavOpened} />
         </div>
       }
 
       <style jsx>{`
-        .headerI {
-          width: 100vw;
-          position: fixed;
-          top: 93vh;
-          right: 0;
-          left: 0;
-          z-index: 10;
-        }
         .logoLightOnLightMode {
           width: 341px;
           height: 294px;

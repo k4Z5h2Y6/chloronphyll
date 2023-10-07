@@ -37,7 +37,7 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
                   <Link href='/'>
                     <h1>
                       <Image
-                        src='/NavMenu/LogoMoji.png'
+                        src='/Header/LogoMoji.png'
                         alt=''
                         width={1280}
                         height={388}
@@ -158,7 +158,7 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
           height: 100%;
           position: relative;
           border-radius: var(--borderRadius-20);
-          background-color: var(--borderColor);
+          background-color: var(--backgroundColor-navI);
         }
         .navMenuTextO {
           width: 100%;
@@ -214,7 +214,6 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
           top: 8px;
           right: 8px;
           z-index: 10;
-          background-color: pink;
         }
         .lightIconOnLightMode, .darkIconOnDarkMode {
           width: 48px;
@@ -234,7 +233,8 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
           position: absolute;
           bottom: 0;
           left: 24px;
-          border: 1px solid var(--borderColor);
+          border: 1px solid #b3b3b3;
+          border-radius: 1px;
           transform-origin: 0 100%; 
           transform:rotate(-30deg);
           transition: all 1s ease;
@@ -245,7 +245,8 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
           position: absolute;
           bottom: 0;
           left: 40px;
-          border: 1px solid var(--borderColor);
+          border: 1px solid #b3b3b3;
+          border-radius: 1px;
           transform-origin: 0 100%; 
           transform:rotate(30deg);
           transition: all 1s ease;
