@@ -15,22 +15,18 @@ export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
       {theme === 'light' ?
         <div className='headerI'>
           <Image
-            src='/Header/SoilLight1920_450.png'
+            src='/Header/SoilLight1920_100.png'
             alt='soil'
-            width={1920}
-            height={450}
-            layout='responsive'
+            layout='fill'
           />
           <Logo isNavOpened={isNavOpened} setIsNavOpened={setIsNavOpened} />
         </div>
         :
         <div className='headerI'>
           <Image
-            src='/Header/SoilDark1920_450.png'
+            src='/Header/SoilDark1920_100.png'
             alt='soil'
-            width={1920}
-            height={450}
-            layout='responsive'
+            layout='fill'
           />
           <Logo isNavOpened={isNavOpened} setIsNavOpened={setIsNavOpened} />
         </div>
@@ -42,11 +38,11 @@ export const Header = ({ isNavOpened, setIsNavOpened }: Props) => {
           position: fixed;
           top: 93vh;
           right: 0;
+          bottom: 0;
           left: 0;
           z-index: 10;
         }
         /* widthが1024px以下かつ縦画面(スマホ版） */
-        {/* @media screen and (max-width: 1024px) and (orientation: portrait) { */}
         @media screen and (max-width: 1024px) {
           .headerI {
             top: calc(100vh - 7vw);
