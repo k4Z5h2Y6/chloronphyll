@@ -11,6 +11,7 @@ import { Motion } from '@/components/settingManual/Motion';
 import { System } from '@/components/settingManual/System';
 import { useState } from 'react'
 
+//todo:ボーダーカラー変更
 export default function SettingManual() {
 
   const [isSection1Opened, setIsSection1Opened] = useState<boolean>(false);

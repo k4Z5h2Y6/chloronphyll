@@ -14,17 +14,17 @@ export const  Soil = () => {
             src='/Header/SoilLight1920_288.png'
             alt='soil'
             width={1920}
-            height={144}
+            height={288}
             layout='responsive'
           />
         </div>
         :
         <div className='headerI'>
           <Image
-            src='/Header/SoilDark1920_100.png'
+            src='/Header/SoilDark1920_288.png'
             alt='soil'
             width={1920}
-            height={100}
+            height={288}
             layout='responsive'
           />
         </div>

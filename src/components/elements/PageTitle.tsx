@@ -1,7 +1,3 @@
-import { useTheme } from 'next-themes';
-import Image from "next/image";
-import { Dispatch, SetStateAction } from "react";
-
 type Props = {
   pageTitle: string;
 };
