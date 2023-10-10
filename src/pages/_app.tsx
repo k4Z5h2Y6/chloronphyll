@@ -1,9 +1,10 @@
-import { Header } from '@/components/layouts/Header';
+import { Soil } from '@/components/layouts/Soil';
 import { NavMenu } from '@/components/layouts/NavMenu';
 import Providers from '@/components/layouts/Providers';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { Logo } from '@/components/layouts/Logo';
 
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -13,10 +14,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Providers>
-        <Header
-          isNavOpened={isNavOpened}
-          setIsNavOpened={setIsNavOpened}
-        />
+        <Soil />
+        <Logo isNavOpened={isNavOpened} setIsNavOpened={setIsNavOpened} />
         <div className='mainO'>
           <main>
             <Component {...pageProps} />

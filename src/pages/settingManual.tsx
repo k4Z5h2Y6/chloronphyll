@@ -1,4 +1,5 @@
 import { Movie } from '@/components/elements/Movie';
+import { PageTitle } from '@/components/elements/PageTitle';
 import { Clothes } from '@/components/settingManual/Clothes';
 import { Emote } from '@/components/settingManual/Emote';
 import { Expression } from '@/components/settingManual/Expression';
@@ -25,9 +26,7 @@ export default function SettingManual() {
   return (
     <>
       <section className='sectionCO'>
-        <div className='pageTitleCO'>
-          <h3>設定資料</h3>
-        </div>
+        <PageTitle pageTitle='設定資料'/>
         <div className='section0contentO'>
           <div className='section0ContentTextO'>
             <ul>
@@ -176,18 +175,13 @@ export default function SettingManual() {
       </section>
 
       <style jsx>{`
+        //todo:hiroto:title本調整
         .sectionCO {
           width: 100%;
           height: 100vh;
           border-bottom: 1px solid black;
         }
-        .pageTitleCO {
-          width: fit-content;
-          margin: 24px 0 24px -4vw;
-          padding: 16px 16px 16px calc(4vw + 16px);
-          border-radius: 0 var(--borderRadius-20) var(--borderRadius-20) 0;
-          background-color: var(--backgroundColor-item);
-        }
+        
 
         //00
         .section0contentO {
