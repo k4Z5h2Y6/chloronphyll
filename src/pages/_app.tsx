@@ -9,7 +9,7 @@ import { Logo } from '@/components/layouts/Logo';
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  const [isNavOpened, setIsNavOpened] = useState<boolean>(true);
+  const [isNavOpened, setIsNavOpened] = useState<boolean>(false);
 
   return (
     <>
@@ -66,6 +66,7 @@ export default function App({ Component, pageProps }: AppProps) {
         @media screen and (max-width: 1024px) {
           main {
             width: 92vw;
+            min-height: calc(100vh - 20px);
           }
           .navMenuOopenedO, .navMenuClosedO {
             width: 70vw;

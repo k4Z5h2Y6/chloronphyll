@@ -20,6 +20,10 @@ export const PageTitle = ({ pageTitle }: Props) => {
           background-color: var(--backgroundColor-item);
         }
         @media screen and (max-width: 1024px) {
+          .pageTitleCO {
+            margin: 20px 0 20px -4vw; //var()関数が使えない
+            padding: 8px 8px 8px calc(4vw + 8px) //var()関数が使えない
+          }
         }
       `}</style>
     </>

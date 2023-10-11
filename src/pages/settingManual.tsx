@@ -9,7 +9,7 @@ import { Item } from '@/components/settingManual/Item';
 import { Kemo } from '@/components/settingManual/Kemo';
 import { Motion } from '@/components/settingManual/Motion';
 import { System } from '@/components/settingManual/System';
-import { useState } from 'react'
+import { useState } from 'react';
 
 //todo:ボーダーカラー変更
 export default function SettingManual() {
@@ -26,8 +26,8 @@ export default function SettingManual() {
 
   return (
     <>
-      <section className='sectionCO'>
-        <PageTitle pageTitle='設定資料'/>
+      <section className='topSct'>
+        <PageTitle pageTitle='設定資料' />
         <div className='section0contentO'>
           <div className='section0ContentTextO'>
             <ul>
@@ -44,7 +44,7 @@ export default function SettingManual() {
           </div>
 
           <div className='section0ContentMovieOO'>
-            <Movie src='/SettingManual/00SettingManual/test10m1280_720.mov'/>
+            <Movie src='/SettingManual/00SettingManual/test10m1280_720.mov' />
           </div>
         </div>
       </section>
@@ -59,7 +59,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection1Opened ? 'section1OpenedO' : 'section1ClosedO'}>
-          <Hair/>
+          <Hair />
         </div>
       </section>
 
@@ -73,7 +73,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection2Opened ? 'section2OpenedO' : 'section2ClosedO'}>
-          <Kemo/>
+          <Kemo />
         </div>
       </section>
 
@@ -87,7 +87,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection3Opened ? 'section3OpenedO' : 'section3ClosedO'}>
-          <Clothes/>
+          <Clothes />
         </div>
       </section>
 
@@ -101,7 +101,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection4Opened ? 'section4OpenedO' : 'section4ClosedO'}>
-          <Gesture/>
+          <Gesture />
         </div>
       </section>
 
@@ -115,7 +115,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection5Opened ? 'section5OpenedO' : 'section5ClosedO'}>
-          <Expression/>
+          <Expression />
         </div>
       </section>
 
@@ -129,7 +129,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection6Opened ? 'section6OpenedO' : 'section6ClosedO'}>
-          <Item/>
+          <Item />
         </div>
       </section>
 
@@ -143,7 +143,7 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection7Opened ? 'section7OpenedO' : 'section7ClosedO'}>
-          <Motion/>
+          <Motion />
         </div>
       </section>
 
@@ -157,11 +157,11 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection8Opened ? 'section8OpenedO' : 'section8ClosedO'}>
-          <Emote/>
+          <Emote />
         </div>
       </section>
 
-      <section>
+      <section className='endSct'>
         <div
           className='sectionTitleCBtn'
           onClick={() => setIsSection9Opened(!isSection9Opened)}
@@ -171,23 +171,20 @@ export default function SettingManual() {
           </div>
         </div>
         <div className={isSection9Opened ? 'section9OpenedO' : 'section9ClosedO'}>
-          <System/>
+          <System />
         </div>
       </section>
 
       <style jsx>{`
-        //todo:hiroto:title本調整
-        .sectionCO {
+        .topSct {
           width: 100%;
           height: 100vh;
-          border-bottom: 1px solid black;
+          border-bottom: 1px solid var(--borderColor-section);
         }
-        
-
         //00
         .section0contentO {
           width: 100%;
-          height: calc(100% - 16px - 32px - 16px - 24px - 10vh);
+          height: calc(100% - 16px - 32px - 16px - 24px - 7vh);
           display: flex;
         }
         .section0ContentTextO {
@@ -196,21 +193,21 @@ export default function SettingManual() {
           display: flex;
           align-items: center;
           justify-content: center;
-
         }
         .section0ContentMovieOO {
           width: 60%;
           height: 100%;
+          margin: 0 auto;
           padding: 24px;
           display: flex;
           align-items: center;
-          justify-content: center;
         }
-
         //アコーディオン
         .sectionTitleCBtn {
           width: 100%;
           padding: 24px 0;
+          display: flex;
+          align-items: center;
         }
         .sectionTitleCO {
           width: fit-content;
@@ -230,7 +227,7 @@ export default function SettingManual() {
           width: 100%;
           height: calc(100vh - 24px - 16px - 32px - 16px - 24px);
           padding-bottom: 7vh;
-          border-bottom: 1px solid black;
+          border-bottom: 1px solid var(--borderColor-section);
           transition: all 1s ease;
           position: relative;
         }
@@ -246,16 +243,42 @@ export default function SettingManual() {
           width: 100%;
           height: 0;
           overflow: hidden;
-          border-bottom: 1px solid black;
+          border-bottom: 1px solid var(--borderColor-section);
           transition: all 1s ease;
         }
-        .section9OpenedO {
-          margin-bottom: 7vh;
-        }
-        .section9ClosedO {
+        .endSct {
           margin-bottom: calc(7vh + 25vh);
+        }
+        @media screen and (max-width: 1024px) {
+          .topSct {
+            height: calc(100vh - 20px - 65vh);
+          }
+          .section0contentO {
+            height: calc(100% - 8px - 24px - 8px - 20px);
+          }
+          .section0ContentTextO {
+            display: none;
+          }
+          .section0ContentMovieOO {
+            height: 100%;
+            padding: 0 0 20px 0;
+            align-items: stretch;
+          }
+          .sectionTitleCBtn {
+            height: 6.5vh;
+            padding: 0;
+          }
+          .sectionTitleCO {
+            padding: 8px;
+          }
+          .section9OpenedO, .section9ClosedO {
+            border: none;
+          }
+          .endSct {
+            margin-bottom: 6.5vh;
+          }
         }
       `}</style>
     </>
-  )
+  );
 }

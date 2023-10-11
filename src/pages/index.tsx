@@ -25,12 +25,6 @@ export default function Home() {
               className={isHeroImgShown ? 'showHeroImgOnLight' : 'hideHeroImgOnLight'}
               onClick={() => { setIsHeroImgShown(!isHeroImgShown); }}
             >
-              {/* <Image
-                src='/Home/RueWalkFirst1280_720.gif'
-                alt=''
-                layout='fill'
-                objectFit='contain'
-              /> */}
               <img src='/Home/HomeLightZzz1280_388_a.png' alt='' />
             </div>
           </div>
@@ -49,12 +43,6 @@ export default function Home() {
               className={isHeroImgShown ? 'showHeroImgOndark' : 'hideHeroImgOndark'}
               onClick={() => { setIsHeroImgShown(!isHeroImgShown); }}
             >
-              {/* <Image
-                src='/Home/HomeDarkZzz1280_388_a.png'
-                alt=''
-                layout='fill'
-                objectFit='contain'
-              /> */}
               <img src='/Home/HomeDarkZzz1280_388_a.png' alt='' />
             </div>
           </div>
@@ -110,6 +98,13 @@ export default function Home() {
           z-index: 10;
           opacity: 0;
           transition: var(--transition1s);
+        }
+        @media screen and (max-width: 1024px) {
+          .heroImageO {
+            width: 80vw;
+            height: 30vh;
+            top: 20vh;
+          }
         }
       `}</style>
     </>
