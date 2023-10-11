@@ -32,10 +32,12 @@ export default function App({ Component, pageProps }: AppProps) {
       <style jsx>{`
         .mainO {
           width: 100vw;
+          min-height: 100vh;
           overflow: hidden;
         }
         main {
           width: 95vw;
+          min-height: 100vh;
           margin: 0 auto;
         }
         .navMenuOopenedO {
