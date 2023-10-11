@@ -25,12 +25,13 @@ export default function Home() {
               className={isHeroImgShown ? 'showHeroImgOnLight' : 'hideHeroImgOnLight'}
               onClick={() => { setIsHeroImgShown(!isHeroImgShown); }}
             >
-              <Image
+              {/* <Image
                 src='/Home/RueWalkFirst1280_720.gif'
                 alt=''
                 layout='fill'
                 objectFit='contain'
-              />
+              /> */}
+              <img src='/Home/HomeLightZzz1280_388_a.png' alt='' />
             </div>
           </div>
           :
@@ -48,18 +49,24 @@ export default function Home() {
               className={isHeroImgShown ? 'showHeroImgOndark' : 'hideHeroImgOndark'}
               onClick={() => { setIsHeroImgShown(!isHeroImgShown); }}
             >
-              <Image
+              {/* <Image
                 src='/Home/HomeDarkZzz1280_388_a.png'
                 alt=''
                 layout='fill'
                 objectFit='contain'
-              />
+              /> */}
+              <img src='/Home/HomeDarkZzz1280_388_a.png' alt='' />
             </div>
           </div>
         }
       </div>
 
       <style jsx>{`
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
         .heroImageO {
           width: 70vw;
           height: 40vh;
