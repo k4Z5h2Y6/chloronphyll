@@ -26,7 +26,7 @@ export default function Home() {
               onClick={() => { setIsHeroImgShown(!isHeroImgShown); }}
             >
               <Image
-                src='/Home/HeroLightFirst1920_388.png'
+                src='/Home/HomeLightZzz1280_388_a.png'
                 alt=''
                 layout='fill'
                 objectFit='contain'
@@ -49,7 +49,7 @@ export default function Home() {
               onClick={() => { setIsHeroImgShown(!isHeroImgShown); }}
             >
               <Image
-                src='/Home/HeroDarkFirst1920_388.png'
+                src='/Home/HomeDarkZzz1280_388_a.png'
                 alt=''
                 layout='fill'
                 objectFit='contain'
