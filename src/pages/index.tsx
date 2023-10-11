@@ -26,7 +26,7 @@ export default function Home() {
               onClick={() => { setIsHeroImgShown(!isHeroImgShown); }}
             >
               <Image
-                src='/Home/HomeLightZzz1280_388_a.png'
+                src='/Home/RueWalkFirst1280_720.gif'
                 alt=''
                 layout='fill'
                 objectFit='contain'
