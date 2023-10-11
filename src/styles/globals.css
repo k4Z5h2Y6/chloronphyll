@@ -126,7 +126,7 @@ video {
 /* widthが1024px以下(スマホ版） */
 @media screen and (max-width: 1024px) {
   :root {
-    --backgroundColor-base: #33ff00;
+    /* --backgroundColor-base: #33ff00; */
     --borderRadius-20: 12px;
   }
   /* h3…ページタイトル */
