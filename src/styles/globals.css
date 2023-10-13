@@ -100,7 +100,9 @@ h4 {
 }
 /* h5…コンテンツタイトル */
 h5 {
+  padding-bottom: 12px;
   font-size: 16px;
+  line-height: 18px;
 }
 
 a {
@@ -109,8 +111,8 @@ a {
 }
 
 p {
-  font-size: 8px;
-  padding-bottom: 4px;
+  font-size: 10px;
+  padding-bottom: 12px;
 }
 
 li {
@@ -127,8 +129,8 @@ video {
 /* widthが1024px以下(スマホ版） */
 @media screen and (max-width: 1024px) {
   :root {
-    /* --backgroundColor-base: #33ff00; */
     --borderRadius-20: 12px;
+    --settingManual-p8: 4px;
   }
   /* h3…ページタイトル */
   h3 {
@@ -140,8 +142,7 @@ video {
   }
   p {
     font-size: 10px;
-    zoom: 80%;
-    padding-bottom: 4px;
+    line-height: 12px;
   }
 }
 /* widthが1024px以下かつ横画面(スマホ版） */
