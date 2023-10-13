@@ -157,6 +157,70 @@ export const Hair = () => {
           display: flex;
           flex-direction: column;
         }
+        @media screen and (max-width: 1024px) {
+          //コンテンツアウター共通
+          .sectionContentsCO {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            position: static;
+          }
+          //横髪
+          .yokogamiO {
+            width: 100%;
+            height: 320px;
+            position: static;
+          }
+          .yokogamiI {
+            flex-direction: column;
+          }
+          .yokogamiMovieO {
+            width: 100%;
+            height: 50%;
+          }
+          .yokogamiTextO {
+            width: 100%;
+            height: 50%;
+            flex-direction: row-reverse;
+          }
+          .yokogamiTextI {
+            width: 60%;
+            height: 100%;
+          }
+          .yokogamiSubMovieO {
+            width: 40%;
+            height: 100%;
+          }
+          //前髪
+          .maegamiO {
+            width: 100%;
+            height: 120px;
+            position: static;
+          }
+          .maegamiMovieO {
+            width: 40%;
+          }
+          .maegamiTextO {
+            width: 60%;
+          }
+          //耳掛け
+          .mimikakeO {
+            width: 100%;
+            height: 120px;
+            position: static;
+          }
+          .mimikakeI {
+            flex-direction: row;
+          }
+          .mimikakeMovieO {
+            width: 40%;
+            height: 100%;
+          }
+          .mimikakeTextO {
+            width: 60%;
+            height: 100%;
+          }
+        }
       `}</style>
     </>
   )

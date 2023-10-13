@@ -228,7 +228,7 @@ export default function SettingManual() {
           height: calc(100vh - 24px - 16px - 32px - 16px - 24px);
           padding-bottom: 7vh;
           border-bottom: 1px solid var(--borderColor-section);
-          transition: all 1s ease;
+          transition: var(--transition1s);
           position: relative;
         }
         .section1ClosedO,
@@ -244,39 +244,56 @@ export default function SettingManual() {
           height: 0;
           overflow: hidden;
           border-bottom: 1px solid var(--borderColor-section);
-          transition: all 1s ease;
+          transition: var(--transition1s);
         }
         .endSct {
           margin-bottom: calc(7vh + 25vh);
         }
         @media screen and (max-width: 1024px) {
           .topSct {
-            height: calc(100vh - 20px - 65vh);
+            height: auto;
           }
           .section0contentO {
-            height: calc(100% - 8px - 24px - 8px - 20px);
+            height: 158px;
+            padding: 0;
           }
           .section0ContentTextO {
             display: none;
           }
           .section0ContentMovieOO {
             width: 100%;
-            height: 100%;
-            padding: 0 0 20px 0;
+            padding: 0 0 20px 0; 
             align-items: stretch;
           }
+          //アコーディオン
           .sectionTitleCBtn {
-            height: 6.5vh;
-            padding: 0;
+            padding: 8px 0;
           }
           .sectionTitleCO {
+            width: fit-content;
             padding: 8px;
+            border-radius: var(--borderRadius-20);
+            background-color: var(--backgroundColor-item);
+          }
+          .section1OpenedO {
+            height: 600px;
+          }
+          .section1OpenedO,
+          .section2OpenedO,
+          .section3OpenedO,
+          .section4OpenedO,
+          .section5OpenedO,
+          .section6OpenedO,
+          .section7OpenedO,
+          .section8OpenedO,
+          .section9OpenedO {
+            padding-bottom: 0;
           }
           .section9OpenedO, .section9ClosedO {
             border: none;
           }
           .endSct {
-            margin-bottom: 6.5vh;
+            margin-bottom: 50px;
           }
         }
       `}</style>
