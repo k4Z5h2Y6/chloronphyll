@@ -182,6 +182,50 @@ export const Motion = () => {
           padding: var(--settingManual-p8);
           display: flex;
         }
+        @media screen and (max-width: 1024px) {
+          //コンテンツアウター共通
+          .sectionContentsCO {
+            height: fit-content;
+          }
+          //モーション
+          .motionO {
+            width: 100%;
+            height: 440px;
+          }
+          .motionMovieO {
+            height: calc(100% / 11 * 5);
+          }
+          .motionTextO {
+            height: calc(100% / 11 * 6);
+            display: flex;
+            flex-wrap: wrap;
+          }
+          //共通
+          .tachiO, .syagamiO, .fuseO, .afkO {
+            width: 50%;
+            height: 50%;
+          }
+          //フルトラ
+          .furutoraO {
+            width: 100%;
+            height: 160px;
+            top: 440px;
+            left: 0;
+          }
+          //待機モーション
+          .taikimotionO {
+            width: 100%;
+            height: 160px;
+            top: 600px;
+            left: 0;
+          }
+          //シット
+          .sitO {
+            width: 100%;
+            height: 120px;
+            top: 760px;
+            left: 0;
+          }
       `}</style>
     </>
   )
