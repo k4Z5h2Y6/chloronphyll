@@ -190,7 +190,24 @@ export const Expression = () => {
           .handsignSubMovieO {
             height: calc(100% / 3);
           }
-          //paddingで問題発生
+          //飛び目
+          .tobimeO {
+            width: 100%;
+            height: 120px;
+            position: static;
+          }
+          //しずくのなみだ
+          .shizukunonamidaO {
+            width: 100%;
+            height: 120px;
+            position: static;
+          }
+          //説明
+          .explanationO {
+            width: 100%;
+            height: 160px;
+            position: static;
+          }
         }
       `}</style>
     </>
