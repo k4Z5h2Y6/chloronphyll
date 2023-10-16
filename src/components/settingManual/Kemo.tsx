@@ -1,4 +1,4 @@
-import { Movie } from "../elements/Movie"
+import { Movie } from "../elements/Movie";
 
 export const Kemo = () => {
   return (
@@ -212,9 +212,70 @@ export const Kemo = () => {
           display: flex;
           flex-direction: column;
         }
+        @media screen and (max-width: 1024px) {
+          //コンテンツアウター共通
+          .sectionContentsCO {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            position: static;
+          }
+          //つの
+          .tsunoO {
+            width: 100%;
+            height: 200px;
+            position: static;
+          }
+          //ケモ属性
+          .kemozokuseiO {
+            width: 100%;
+            height: 200px;
+            position: static;
+          }
+          //耳はね耳とじ
+          .mimihanemimitojiO {
+            width: 100%;
+            height: 160px;
+            position: static;
+          }
+          //しっぽ
+          .shippoO {
+            width: 100%;
+            height: 120px;
+            position: static;
+          }
+          .shippoI {
+            flex-direction: row;
+          }
+          .shippoMovieO {
+            width: 40%;
+            height: 100%;
+          }
+          .shippoTextO {
+            width: 60%;
+            height: 100%;
+          }
+          //ケモ耳
+          .kemomiminokatachiO {
+            width: 100%;
+            height: 160px;
+            position: static;
+          }
+          .kemomiminokatachiI {
+            flex-direction: row;
+          }
+          .kemomiminokatachiMovieO {
+            width: 40%;
+            height: 100%;
+          }
+          .kemomiminokatachiTextO {
+            width: 60%;
+            height: 100%;
+          }
+        }
       `}</style>
     </>
-  )
+  );
 }
 
 

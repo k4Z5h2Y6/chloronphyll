@@ -1,4 +1,4 @@
-import { Movie } from "../elements/Movie"
+import { Movie } from "../elements/Movie";
 
 export const Gesture = () => {
   return (
@@ -42,21 +42,25 @@ export const Gesture = () => {
           </div>
         </div>
 
-        <div className='kakatodachiO'>
-          <div className='kakatodachiMovieO'>
-            <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+        <div className='kakatoBilliardsSetsumeiO'>
+          <div className='kakatodachiO'>
+            <div className='kakatodachiMovieO'>
+              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+            </div>
           </div>
-        </div>
 
-        <div className='billiardsmodeO'>
-          <div className='billiardsmodeMovieO'>
-            <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
-          </div>
-        </div>
+          <div className='billiardsSetsumeiO'>
+            <div className='billiardsmodeO'>
+              <div className='billiardsmodeMovieO'>
+                <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+              </div>
+            </div>
 
-        <div className='setsumeiO'>
-          <div className='setsumeiI'>
-            <p>ここに表示していないGestureが<br />あと何種か存在します<br />各ポーズ , Actionで変形します</p>
+            <div className='setsumeiO'>
+              <div className='setsumeiI'>
+                <p>ここに表示していないGestureが<br />あと何種か存在します<br />各ポーズ , Actionで変形します</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -166,14 +170,20 @@ export const Gesture = () => {
           padding: var(--settingManual-p8);
           display: flex;
         }
-        //かかと立ち
-        .kakatodachiO {
-          width: 20%;
+        //かかと立ち、ビリヤードモード、説明
+        .kakatoBilliardsSetsumeiO {
+          width: 40%;
           height: 40%;
-          padding: var(--settingManual-p8);
+          display: flex;
           position: absolute;
           top: 60%;
           left: 20%;
+        }
+        //かかと立ち
+        .kakatodachiO {
+          width: 50%;
+          height: 100%;
+          padding: var(--settingManual-p8);
         }
         .kakatodachiMovieO {
           width: 100%;
@@ -181,14 +191,18 @@ export const Gesture = () => {
           padding: var(--settingManual-p8);
           display: flex;
         }
+        //ビリヤードモード、説明
+        .billiardsSetsumeiO {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
         //ビリヤードモード
         .billiardsmodeO {
-          width: 20%;
-          height: 20%;
+          width: 100%;
+          height: 50%;
           padding: var(--settingManual-p8);
-          position: absolute;
-          top: 60%;
-          left: 40%;
         }
         .billiardsmodeMovieO {
           width: 100%;
@@ -198,12 +212,9 @@ export const Gesture = () => {
         }
         //説明
         .setsumeiO {
-          width: 20%;
-          height: 20%;
+          width: 100%;
+          height: 50%;
           padding: var(--settingManual-p8);
-          position: absolute;
-          top: 80%;
-          left: 40%;
         }
         .setsumeiI {
           width: 100%;
@@ -258,7 +269,64 @@ export const Gesture = () => {
           padding: var(--settingManual-p8);
           display: flex;
         }
+        @media screen and (max-width: 1024px) {
+          //コンテンツアウター共通
+          .sectionContentsCO {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            position: static;
+          }
+          //片手ターンテーブル
+          .katateturntableO {
+            width: 100%;
+            height: 480px;
+            position: static;
+          }
+          .katateturntableI {
+            flex-direction: column;
+          }
+          .katateturntableMovieO {
+            width: 100%;
+            height: 240px;
+          }
+          .katateturntableTextO {
+            width: 100%;
+            height: 240px;
+          }
+          .katateturntableSubO {
+            width: 80%;
+            height: 80px;
+            margin: 0 auto;
+            padding: var(--settingManual-p8);
+            display: flex;
+          }
+          .katateturntableSubMovieO {
+            width: calc(100% / 8 * 3);
+          }
+          .katateturntableSubTextO {
+            width: calc(100% / 8 * 5);
+          }
+          //両手キラキラポーズ
+          .ryoutekirakiraposeO {
+            width: 100%;
+            height: 240px;
+            position: static;
+          }
+          //かかと立ち、ビリヤードモード、説明
+          .kakatoBilliardsSetsumeiO {
+            width: 100%;
+            height: 160px;
+            position: static;
+          }
+          //ペンを握る,水を掬う,植木鉢
+          .penwonigiruO, .mizuwosukuuO, .uekibachiO {
+            width: 100%;
+            height: 80px;
+            position: static;
+          }
+        }
       `}</style>
     </>
-  )
-}
+  );
+};

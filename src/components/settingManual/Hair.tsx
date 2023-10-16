@@ -206,7 +206,7 @@ export const Hair = () => {
           //耳掛け
           .mimikakeO {
             width: 100%;
-            height: 120px;
+            height: 160px;
             position: static;
           }
           .mimikakeI {

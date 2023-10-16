@@ -276,7 +276,16 @@ export default function SettingManual() {
             background-color: var(--backgroundColor-item);
           }
           .section1OpenedO {
-            height: 600px;
+            height: 640px;
+          }
+          .section2OpenedO {
+            height: 880px;
+          }
+          .section3OpenedO {
+            height: 640px;
+          }
+          .section4OpenedO {
+            height: 1160px;
           }
           .section1OpenedO,
           .section2OpenedO,

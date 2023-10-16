@@ -98,13 +98,18 @@ export const Clothes = () => {
           flex-wrap: wrap;
         }
         //skirtOのみ別指定
-        .fukuO, .sodeO, .scarfO, .eriO, .sodehenkeiO, .scarfhenkeiO, .kutsuO {
-          width: calc(100% / 3);
+        .fukuO, .sodeO, .eriO, .sodehenkeiO, .scarfhenkeiO, .kutsuO {
+          width: 30%;
+          height: calc(100% / 3);
+          padding: var(--settingManual-p8);
+        }
+        .scarfO, .scarfhenkeiO, .kutsuO {
+          width: 40%;
           height: calc(100% / 3);
           padding: var(--settingManual-p8);
         }
         .skirtO {
-          width: calc(100% / 3 * 2);
+          width: 60%;
           height: calc(100% / 3);
           padding: var(--settingManual-p8);
         }
@@ -118,7 +123,6 @@ export const Clothes = () => {
           border: 1px solid var(--borderColor);
           border-radius: var(--borderRadius-20);
         }
-
         .skirtI {
           width: 100%;
           height: 100%;
@@ -136,6 +140,21 @@ export const Clothes = () => {
           width: 50%;
           height: 100%;
           padding: var(--settingManual-p8) var(--settingManual-p8) var(--settingManual-p8) 0;
+        }
+        @media screen and (max-width: 1024px) {
+          .sectionContentsCO {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+          }
+          .clothesMovieO {
+            width: 100%;
+            height: 280px;
+          }
+          .clothesTextO {
+            width: 100%;
+            height: 320px;
+          }
         }
       `}</style>
     </>

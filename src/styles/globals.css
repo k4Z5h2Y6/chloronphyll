@@ -115,6 +115,10 @@ p {
   padding-bottom: 12px;
 }
 
+span {
+  font-size: 10px;
+}
+
 li {
   list-style: none;
 }

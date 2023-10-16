@@ -1,4 +1,4 @@
-import { Movie } from "../elements/Movie"
+import { Movie } from "../elements/Movie";
 
 export const Expression = () => {
   return (
@@ -156,7 +156,43 @@ export const Expression = () => {
           border: 1px solid var(--borderColor);
           border-radius: var(--borderRadius-20);
         }
+        @media screen and (max-width: 1024px) {
+          //コンテンツアウター共通
+          .sectionContentsCO {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            position: static;
+          }
+          //ハンドサイン
+          .handsignO {
+            width: 100%;
+            height: 400px;
+            position: static;
+          }
+          .handsignI {
+            flex-direction: column;
+          }
+          .handsignMovieO {
+            width: 100%;
+            height: 40%;
+          }
+          .handsignTextO {
+            width: 100%;
+            height: 60%;
+          }
+          .handsignTextI {
+            height: calc(100% / 3 * 2);
+          }
+          .handsignKatateTextO, .handsignRyouteTextO {
+            width: 50%;
+          }
+          .handsignSubMovieO {
+            height: calc(100% / 3);
+          }
+          //paddingで問題発生
+        }
       `}</style>
     </>
-  )
-}
+  );
+};
