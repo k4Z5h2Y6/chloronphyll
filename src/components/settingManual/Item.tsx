@@ -357,6 +357,112 @@ export const Item = () => {
           padding: var(--settingManual-p8);
           display: flex;
         }
+        @media screen and (max-width: 1024px) {
+          //コンテンツアウター共通
+          .sectionContentsCO {
+            height: fit-content;
+          }
+          //イメージボード
+          .imageboardO {
+            width: 100%;
+            height: 160px;
+            top: 0;
+            left: 0;
+          }
+          .imageboardI {
+            flex-direction: row-reverse;
+          }
+          .imageboardMovieO {
+            width: 20%;
+            height: 80px;
+          }
+          .imageboardTextO {
+            width: 80%;
+          }
+          //風船
+          .fuusenO {
+            width: 100%;
+            height: 120px;
+            top: 160px;
+          }
+          .fuusenMovieO {
+            width: 20%;
+            height: 80px;
+          }
+          .fuusenTextO {
+            width: 80%;
+          }
+          //キャンディ
+          .candyO {
+            width: 100%;
+            height: 120px;
+            top: 280px;
+          }
+          .candyMovieO {
+            width: 20%;
+            height: 80px;
+          }
+          .candyTextO {
+            width: 80%;
+          }
+          //フレミング
+          .flemingO {
+            width: 100%;
+            height: 200px;
+            top: 400px;
+            left: 0;
+          }
+          .flemingMovieO {
+            height: 80px;
+          }
+          //お星さま
+          .ohoshisamaO {
+            width: 100%;
+            height: 120px;
+            top: 600px;
+            left: 0;
+          }
+          .ohoshisamaMovieO {
+            width: 20%;
+            height: 80px;
+          }
+          .ohoshisamaTextO {
+            width: 80%;
+          }
+          //空気
+          .kuukiO {
+            width: 100%;
+            height: 120px;
+            top: 720px;
+            left: 0;
+          }
+          .kuukiMovieO {
+            width: 20%;
+            height: 80px;
+          }
+          .kuukiTextO {
+            width: 80%;
+            height: 100%;
+          }
+          //ヘンルーダ
+          .henrudaO {
+            width: 100%;
+            height: 120px;
+            top: 840px;
+            left: 0;
+          }
+          .henrudaI {
+            flex-direction: row;
+          }
+          .henrudaMovieO {
+            width: 40%;
+            height: 100%;
+          }
+          .henrudaTextO {
+            width: 60%;
+            height: 100%;
+          }
+        }
       `}</style>
     </>
   )
