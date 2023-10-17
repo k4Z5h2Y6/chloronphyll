@@ -25,6 +25,19 @@ export const Emote = () => {
           </div>
         </div>
 
+        <div className='yesnoO'>
+          <div className='yesnoI'>
+            <div className='yesnoTextO'>
+              <h5>e2_Yes / No</h5>
+              <p>ExMenuで発動<br />各ポーズ対応</p>
+              <p>デスクトップ無言勢<br />になれます</p>
+            </div>
+            <div className='yesnoMovieO'>
+              <Movie src='/SettingManual/01Hair/HairYokogamiSub1280_720.mp4' />
+            </div>
+          </div>
+        </div>
+
         <div className='utoutoO'>
           <div className='utoutoI'>
             <div className='utoutoMovieO'>
@@ -50,18 +63,7 @@ export const Emote = () => {
           </div>
         </div>
 
-        <div className='yesnoO'>
-          <div className='yesnoI'>
-            <div className='yesnoTextO'>
-              <h5>e2_Yes / No</h5>
-              <p>ExMenuで発動<br />各ポーズ対応</p>
-              <p>デスクトップ無言勢<br />になれます</p>
-            </div>
-            <div className='yesnoMovieO'>
-              <Movie src='/SettingManual/01Hair/HairYokogamiSub1280_720.mp4' />
-            </div>
-          </div>
-        </div>
+        
 
         <div className='zenshinkoteiO'>
           <div className='zenshinkoteiTextO'>
@@ -141,6 +143,35 @@ export const Emote = () => {
           height: 100%;
           padding: var(--settingManual-p8);
         }
+        //yes/no
+        .yesnoO {
+          width: 35%;
+          height: 30%;
+          padding: var(--settingManual-p8);
+          position: absolute;
+          top: 0;
+          left: 65%;
+        }
+        .yesnoI {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
+        }
+        .yesnoTextO {
+          width: calc(100% / 7 * 3);
+          height: 100%;
+          padding: var(--settingManual-p8);
+          display: flex;
+          flex-direction: column;
+        }
+        .yesnoMovieO {
+          width: calc(100% / 7 * 4);
+          height: 100%;
+          padding: var(--settingManual-p8);
+          display: flex;
+        }
         //うとうと
         .utoutoO {
           width: 35%;
@@ -201,35 +232,6 @@ export const Emote = () => {
           display: flex;
           flex-direction: column;
         }
-        //yes/no
-        .yesnoO {
-          width: 35%;
-          height: 30%;
-          padding: var(--settingManual-p8);
-          position: absolute;
-          top: 0;
-          left: 65%;
-        }
-        .yesnoI {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          border-radius: var(--borderRadius-20);
-          background-color: var(--backgroundColor-item);
-        }
-        .yesnoTextO {
-          width: calc(100% / 7 * 3);
-          height: 100%;
-          padding: var(--settingManual-p8);
-          display: flex;
-          flex-direction: column;
-        }
-        .yesnoMovieO {
-          width: calc(100% / 7 * 4);
-          height: 100%;
-          padding: var(--settingManual-p8);
-          display: flex;
-        }
         //全身固定
         .zenshinkoteiO {
           width: 35%;
@@ -281,9 +283,77 @@ export const Emote = () => {
           height: calc(100% / 7);
           padding: var(--settingManual-p8);
         }
-        .akarusachouseiMovieO {
-          
-        }
+        @media screen and (max-width: 1024px) {
+          //コンテンツアウター共通
+          .sectionContentsCO {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            position: static;
+          }
+          //カーテシー
+          .curtsyO {
+            width: 100%;
+            height: 480px;
+            position: static;
+          }
+          .curtsyMovieO {
+            height: calc(100% / 12 * 7);
+          }
+          .curtsyTextO {
+            height: 20%;
+            padding: var(--settingManual-p8);
+            display: flex;
+            flex-direction: column;
+          }
+          .curtsySubO {
+            height: 25%;
+          }
+          //yes/no
+          .yesnoO {
+            width: 100%;
+            height: 160px;
+            position: static;
+          }
+          .yesnoTextO {
+            width: 40%;
+          }
+          .yesnoMovieO {
+            width: 60%;
+          }
+          //うとうと
+          .utoutoO {
+            width: 100%;
+            height: 240px;
+            position: static;
+          }
+          //v睡
+          .vsuiO {
+            width: 100%;
+            height: 280px;
+            position: static;
+          }
+          .vsuiMovieO {
+            height: calc(100% / 7 * 3);
+          }
+          .vsuiTextO {
+            height: calc(100% / 7 * 4);
+          }
+          //全身固定
+          .zenshinkoteiO {
+            width: 100%;
+            height: 360px;
+            position: static;
+          }
+          .zenshinkoteiFirstTextO {
+            height: calc(100% / 9 * 4);
+          }
+          .zenshinkoteiSecondTextO {
+            height: calc(100% / 3);
+          }
+          .zenshinkoteiThirdTextO {
+            height: calc(100% / 9 * 2);
+          }
       `}</style>
     </>
   )

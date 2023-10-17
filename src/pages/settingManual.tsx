@@ -296,6 +296,12 @@ export default function SettingManual() {
           .section7OpenedO {
             height: 920px;
           }
+          .section8OpenedO {
+            height: 1560px;
+          }
+          .section9OpenedO {
+            height: 960px;
+          }
           .section1OpenedO,
           .section2OpenedO,
           .section3OpenedO,

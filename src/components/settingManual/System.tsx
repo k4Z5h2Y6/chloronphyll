@@ -174,6 +174,51 @@ export const System = () => {
           display: flex;
           flex-direction: column;
         }
+        @media screen and (max-width: 1024px) {
+          //コンテンツアウター共通
+          .sectionContentsCO {
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            position: static;
+          }
+          //MMD
+          .mmdmodeO {
+            width: 100%;
+            height: 200px;
+            position: static;
+          }
+          //ビリヤード
+          .billiardsmodeO {
+            width: 100%;
+            height: 200px;
+            position: static;
+          }
+          //明るさ
+          .akarusachouseiO {
+            width: 100%;
+            height: 200px;
+            position: static;
+          }
+          .akarusachouseiTextO {
+            height: calc(100% / 5 * 2);
+          }
+          .akarusachouseiMovieO {
+            height: calc(100% / 5 * 3);
+          }
+          //ONOFF
+          .onoffkinouO {
+            width: 100%;
+            height: 320px;
+            position: static;
+          }
+          .onoffkinouFirstTextO {
+            height: 50%;
+          }
+          .onoffkinouSecondTextO {
+            height: 50%;
+          }
+        }
       `}</style>
     </>
   )
