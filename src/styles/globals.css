@@ -112,7 +112,7 @@ a {
 
 p {
   font-size: 10px;
-  padding-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 span {
@@ -121,6 +121,10 @@ span {
 
 li {
   list-style: none;
+}
+
+td {
+  font-size: 10px;
 }
 
 video {

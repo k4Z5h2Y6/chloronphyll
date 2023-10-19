@@ -1,4 +1,6 @@
-import { Movie } from "../elements/Movie"
+import Link from 'next/link';
+import { Button } from '../elements/Button';
+import { Movie } from "../elements/Movie";
 
 export const System = () => {
   return (
@@ -10,7 +12,7 @@ export const System = () => {
             <h5>MMDモード</h5>
             <p>ExMenuでONにすると<br />MMDワールドで音楽に合わせて表情が変わります<br />(MMD担当アバターを再Upする必要はありません)</p>
             <p>Fxレイヤーを無効にするシステムなので<br />ヘア,ケモ,ふく,表情はUpload時の姿になります</p>
-            <p>改変した姿で踊る (Unity改変)</p>
+            <Button title='改変した姿で踊る (Unity改変)' />
             <p>ワールドを移動すると自動でOFFになります<br />(MMDモードで判定しているモーションが他にも<br />あるので常にONにする改変はオススメしません)</p>
           </div>
         </div>
@@ -19,8 +21,16 @@ export const System = () => {
           <div className='billiardsmodeTextO'>
             <h5>ビリヤードモード</h5>
             <p>ビリヤード特化になるのはGestureだけです<br />(無効化) キャンディ木の実 , 飛び目 , フレミング</p>
-            <p>左利き対応 (Unity改変)</p>
-            <p>オープンブリッジとスタンダードブリッジの<br />Animationの数値を公開しています</p>
+            <Button title='左利き対応 (Unity改変)' />
+            <div className='snsInButtonO'>
+              <Link href='/'>
+                <div className='snsInButtonI'>
+                  <p className='yajirushiP'>→</p>
+                  <p className='buttonTextP'>オープンブリッジとスタンダードブリッジの<br />Animationの数値を公開しています</p>
+                </div>
+              </Link>
+            </div>
+            {/* <p>オープンブリッジとスタンダードブリッジの<br />Animationの数値を公開しています</p> */}
             <p>実装手順の詳細は直接ルーに聞いてください!</p>
           </div>
         </div>
@@ -53,7 +63,7 @@ export const System = () => {
             <div className='onoffkinouSecondTextO'>
               <p>ExMenuでアイテムや表情の発動を制御できます<br />ワールド移動してもそのままなので<br />いらないと思ったものは常にOFFにできます</p>
               <p>アバターを再動作しても戻らないようにするには<br />Unityで1箇所書き換える必要があります</p>
-              <p>ONOFF機能のカスタムを維持する (Unity改変)</p>
+              <Button title='ONOFF機能のカスタムを維持する (Unity改変)' />
             </div>
           </div>
         </div>
@@ -174,6 +184,21 @@ export const System = () => {
           display: flex;
           flex-direction: column;
         }
+        //ボタン
+        .snsInButtonO {
+          width: fit-content;
+          padding: 4px;
+          border: 1px solid var(--borderColor);
+          border-radius: 8px;
+          background-color: var(--backgroundColor-base);
+        }
+        .snsInButtonI {
+          display: flex;
+        }
+        .buttonTextP {
+          text-decoration: underline;
+          margin-bottom: 0;
+        }
         @media screen and (max-width: 1024px) {
           //コンテンツアウター共通
           .sectionContentsCO {
@@ -221,5 +246,5 @@ export const System = () => {
         }
       `}</style>
     </>
-  )
-}
+  );
+};

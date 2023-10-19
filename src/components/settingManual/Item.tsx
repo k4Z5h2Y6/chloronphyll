@@ -1,3 +1,4 @@
+import { Button } from '../elements/Button';
 import { Movie } from "../elements/Movie"
 
 export const Item = () => {
@@ -104,7 +105,7 @@ export const Item = () => {
               <h5>z0_イメージボード</h5>
               <p>好きな画像を差し込んでUpload<br />計51枚の画像をVRChatで直感的に表示できます<br />(1枚画像×3)+(16Set画像×3)</p>
               <p>イメージを共有したい時に使ってください<br />(VR , デスクトップ 両対応)(全モーション対応)</p>
-              <p>イメージボード画像変更 (Unity改変)</p>
+              <Button title='イメージボード画像変更 (Unity改変)'/>
             </div>
             <div className='imageboardMovieO'>
               <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />

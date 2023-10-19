@@ -43,7 +43,7 @@ export default function SettingManual() {
             </ul>
           </div>
 
-          <div className='section0ContentMovieOO'>
+          <div className='section0ContentMovieO'>
             <Movie src='/SettingManual/00SettingManual/test10m1280_720.mov' />
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function SettingManual() {
           align-items: center;
           justify-content: center;
         }
-        .section0ContentMovieOO {
+        .section0ContentMovieO {
           width: 60%;
           height: 100%;
           margin: 0 auto;

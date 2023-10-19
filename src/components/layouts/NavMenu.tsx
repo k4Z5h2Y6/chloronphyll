@@ -59,7 +59,7 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
                 <li className='navMenuLi navMenuSubH2O'><Link href='/changeNote'><h2>　02 ヘア,ケモ,ふく改変</h2></Link></li>
                 <li className='navMenuLi navMenuSubH2O'><Link href='/changeNote'><h2>　03 表情改変</h2></Link></li>
                 <li className='navMenuLi navMenuSubH2O'><Link href='/changeNote'><h2>　04 イメージボード改変</h2></Link></li>
-                <li className='navMenuLi navMenuH2O'><Link href='/histry'><h2>変更履歴</h2></Link></li>
+                <li className='navMenuLi navMenuH2O'><Link href='/histry'><h2>更新履歴</h2></Link></li>
                 <li className='navMenuLi navMenuH2O'><Link href='/document'><h2>ドキュメント</h2></Link></li>
               </ul>
             </nav>

@@ -1,3 +1,4 @@
+import { Button } from '../elements/Button';
 import { Movie } from "../elements/Movie";
 
 export const Gesture = () => {
@@ -28,7 +29,7 @@ export const Gesture = () => {
                   </div>
                   <div className='katateturntableSubTextO'>
                     <p>ネイルサイズ (無段階調整)<br />ネイルアクセ (ONOFF)</p>
-                    <p>色変更はテクスチャです</p>
+                    <Button title='色変更はテクスチャです'/>
                   </div>
                 </div>
               </div>
