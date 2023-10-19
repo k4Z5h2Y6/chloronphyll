@@ -37,6 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
         }
         main {
           width: 95vw;
+          max-width: 2000px;
           min-height: 100vh;
           margin: 0 auto;
         }
@@ -66,6 +67,7 @@ export default function App({ Component, pageProps }: AppProps) {
         @media screen and (max-width: 1024px) {
           main {
             width: 92vw;
+            max-width: 520px;
             min-height: calc(100vh - 20px);
           }
           .navMenuOopenedO, .navMenuClosedO {

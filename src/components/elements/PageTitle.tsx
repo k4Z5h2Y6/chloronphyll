@@ -9,8 +9,6 @@ export const PageTitle = ({ pageTitle }: Props) => {
         <h3>{pageTitle}</h3>
       </div>
 
-
-      {/* 20vwbr */}
       <style jsx>{`
         .pageTitleCO {
           width: fit-content;
@@ -23,6 +21,12 @@ export const PageTitle = ({ pageTitle }: Props) => {
           .pageTitleCO {
             margin: 20px 0 20px -4vw; //var()関数が使えない
             padding: 8px 8px 8px calc(4vw + 8px) //var()関数が使えない
+          }
+        }
+        @media screen and (min-width: 566px) {
+          .pageTitleCO {
+            margin: 20px 0 20px calc(233px - 50vw); //var()関数が使えない
+            padding: 8px 8px 8px calc(50vw - 233px + 8px) //var()関数が使えない
           }
         }
       `}</style>
