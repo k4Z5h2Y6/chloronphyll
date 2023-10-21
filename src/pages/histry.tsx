@@ -8,7 +8,9 @@ export default function Histry() {
         <PageTitle pageTitle='更新履歴' />
         <div className='section0contentO'>
           <div className='section0ContentMovieO'>
-            <Movie src='/SettingManual/00SettingManual/test10m1280_720.mov' />
+            <div className='section0ContentMovieI'>
+              <Movie src='/SettingManual/00SettingManual/test10m1280_720.mov' />
+            </div>
           </div>
           <div className='section0ContentTextO'>
             <ul>
@@ -43,9 +45,14 @@ export default function Histry() {
         .section0ContentMovieO {
           width: 100%;
           height: 40%;
-          padding-bottom: 24px;
-          display: flex;
           border-bottom: 1px solid var(--borderColor);
+        }
+        .section0ContentMovieI {
+          width: 80%;
+          height: 100%;
+          padding-bottom: 24px;
+          margin: 0 auto;
+          display: flex;
         }
         .section0ContentTextO {
           width: 100%;
@@ -79,14 +86,24 @@ export default function Histry() {
           .topSct {
             height: fit-content;
           }
-          .section0ContentMovieO {
-            padding-bottom: 20px;
-          }
           .section0ContentTextO {
             margin: 20px 0;
           }
+          .section0ContentMovieO {
+            height: fit-content;
+          }
+          .section0ContentMovieI {
+            width: 140px;
+            height: 96px;
+            margin: 32px auto;
+            display: flex;
+          }
           ul {
             width: 280px;
+          }
+          li {
+            height: 40px;
+            margin-bottom: 20px;
           }
         }
       `}</style>
