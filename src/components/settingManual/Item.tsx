@@ -6,6 +6,20 @@ export const Item = () => {
     <>
       <div className='sectionContentsCO'>
 
+      <div className='imageboardO'>
+          <div className='imageboardI'>
+            <div className='imageboardTextO'>
+              <h5>z0_イメージボード</h5>
+              <p>好きな画像を差し込んでUpload<br />計51枚の画像をVRChatで直感的に表示できます<br />(1枚画像×3)+(16Set画像×3)</p>
+              <p>イメージを共有したい時に使ってください<br />(VR , デスクトップ 両対応)(全モーション対応)</p>
+              <Button title='イメージボード画像変更 (Unity改変)'/>
+            </div>
+            <div className='imageboardMovieO'>
+              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+            </div>
+          </div>
+        </div>
+
         <div className='fuusenO'>
           <div className='fuusenI'>
             <div className='fuusenMovieO'>
@@ -27,6 +41,24 @@ export const Item = () => {
               <h5>z2_キャンディ / 木の実</h5>
               <p>両手グーでどちらかの手にキャンディが出てきます<br />ケモ耳モードの時は木の実を持っています<br />くちに近づけると食べて無くなります (Contact)</p>
               <p>VRで2択の選択肢が欲しい時に使ってください<br />(VRモードのみ)(ONOFF機能あり)</p>
+            </div>
+          </div>
+        </div>
+
+        <div className='flemingO'>
+          <div className='flemingI'>
+            <div className='flemingMovieO'>
+              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+            </div>
+            <div className='flemingTextO'>
+              <div className='flemingTextI'>
+                <h5>z3_フレミングの左手の法則 / 右ねじの法則</h5>
+                <p>両手gunで発動 (ハンドサインgg6)</p>
+                <p>VRで電磁気学の議論をする時に使ってください<br />(VRモードのみ)(ONOFF機能あり)</p>
+              </div>
+              <div className='flemingSubMovieO'>
+                <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+              </div>
             </div>
           </div>
         </div>
@@ -77,38 +109,6 @@ export const Item = () => {
             <div className='henrudaTextO'>
               <h5>z6_ヘンルーダ</h5>
               <p>全モーション対応<br />全エモート対応<br />VRでも腕固定します</p>
-            </div>
-          </div>
-        </div>
-
-        <div className='flemingO'>
-          <div className='flemingI'>
-            <div className='flemingMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
-            </div>
-            <div className='flemingTextO'>
-              <div className='flemingTextI'>
-                <h5>z3_フレミングの左手の法則 / 右ねじの法則</h5>
-                <p>両手gunで発動 (ハンドサインgg6)</p>
-                <p>VRで電磁気学の議論をする時に使ってください<br />(VRモードのみ)(ONOFF機能あり)</p>
-              </div>
-              <div className='flemingSubMovieO'>
-                <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className='imageboardO'>
-          <div className='imageboardI'>
-            <div className='imageboardTextO'>
-              <h5>z0_イメージボード</h5>
-              <p>好きな画像を差し込んでUpload<br />計51枚の画像をVRChatで直感的に表示できます<br />(1枚画像×3)+(16Set画像×3)</p>
-              <p>イメージを共有したい時に使ってください<br />(VR , デスクトップ 両対応)(全モーション対応)</p>
-              <Button title='イメージボード画像変更 (Unity改変)'/>
-            </div>
-            <div className='imageboardMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
             </div>
           </div>
         </div>
@@ -362,13 +362,15 @@ export const Item = () => {
           //コンテンツアウター共通
           .sectionContentsCO {
             height: fit-content;
+            display: flex;
+            flex-direction: column;
+            position: static;
           }
           //イメージボード
           .imageboardO {
             width: 100%;
             height: 160px;
-            top: 0;
-            left: 0;
+            position: static;
           }
           .imageboardI {
             flex-direction: row-reverse;
@@ -384,7 +386,7 @@ export const Item = () => {
           .fuusenO {
             width: 100%;
             height: 120px;
-            top: 160px;
+            position: static;
           }
           .fuusenMovieO {
             width: 20%;
@@ -397,7 +399,7 @@ export const Item = () => {
           .candyO {
             width: 100%;
             height: 120px;
-            top: 280px;
+            position: static;
           }
           .candyMovieO {
             width: 20%;
@@ -410,8 +412,7 @@ export const Item = () => {
           .flemingO {
             width: 100%;
             height: 200px;
-            top: 400px;
-            left: 0;
+            position: static;
           }
           .flemingMovieO {
             height: 80px;
@@ -420,8 +421,7 @@ export const Item = () => {
           .ohoshisamaO {
             width: 100%;
             height: 120px;
-            top: 600px;
-            left: 0;
+            position: static;
           }
           .ohoshisamaMovieO {
             width: 20%;
@@ -434,8 +434,7 @@ export const Item = () => {
           .kuukiO {
             width: 100%;
             height: 120px;
-            top: 720px;
-            left: 0;
+            position: static;
           }
           .kuukiMovieO {
             width: 20%;
@@ -449,8 +448,7 @@ export const Item = () => {
           .henrudaO {
             width: 100%;
             height: 120px;
-            top: 840px;
-            left: 0;
+            position: static;
           }
           .henrudaI {
             flex-direction: row;
