@@ -60,6 +60,7 @@ border-radius: 20px;
   --backgroundColor-navO: rgba(72, 75, 81, 0.5);
   --backgroundColor-navI: #484b51;
   --backgroundColor-item: #6e737c;
+  --borderColor-section: #565A61;
 }
 
 * {

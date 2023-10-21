@@ -52,7 +52,7 @@ export const Item = () => {
             </div>
             <div className='flemingTextO'>
               <div className='flemingTextI'>
-                <h5>z3_フレミングの左手の法則 / 右ねじの法則</h5>
+                <h5>z3_フレミングの左手の法則<br/> / 右ねじの法則</h5>
                 <p>両手gunで発動 (ハンドサインgg6)</p>
                 <p>VRで電磁気学の議論をする時に使ってください<br />(VRモードのみ)(ONOFF機能あり)</p>
               </div>

@@ -30,7 +30,6 @@ export const System = () => {
                 </div>
               </Link>
             </div>
-            {/* <p>オープンブリッジとスタンダードブリッジの<br />Animationの数値を公開しています</p> */}
             <p>実装手順の詳細は直接ルーに聞いてください!</p>
           </div>
         </div>
@@ -188,6 +187,7 @@ export const System = () => {
         .snsInButtonO {
           width: fit-content;
           padding: 4px;
+          margin-bottom: 10px;
           border: 1px solid var(--borderColor);
           border-radius: 8px;
           background-color: var(--backgroundColor-base);

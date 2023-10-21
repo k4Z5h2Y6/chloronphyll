@@ -170,13 +170,13 @@ export default function Histry() {
           font-size: 16px;
         }
         .dateTd {
-          width: calc(100% / 12 * 4);
+          width: calc(100% / 12 * 3);
         }
         .volumeTd {
           width: calc(100% / 12 * 2);
         }
         .descriptionTd {
-          width: calc(100% / 12 * 6);
+          width: calc(100% / 12 * 7);
         }
         .endLi {
           height: 40px;
@@ -239,10 +239,10 @@ export default function Histry() {
           flex-direction: column;
         }
         .section1firstTd {
-          width: 50%;
+          width: calc(100% / 12 * 5);
         }
         .section1secondTd {
-          width: 50%;
+          width: calc(100% / 12 * 5);
         }
         @media screen and (max-width: 1024px) {
           .topSct {
@@ -289,6 +289,15 @@ export default function Histry() {
           }
           .dateTd, .volumeTd , .descriptionTd, .section1firstTd, .section1secondTd {
             font-size: 10px;
+          }
+          .dateTd {
+            width: calc(100% / 12 * 4);
+          }
+          .volumeTd {
+            width: calc(100% / 12 * 2);
+          }
+          .descriptionTd {
+            width: calc(100% / 12 * 6);
           }
           .endLi {
             height: 32px;
