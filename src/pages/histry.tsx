@@ -70,15 +70,21 @@ export default function Histry() {
           height: 40%;
           padding-bottom: 24px;
           display: flex;
+          border-bottom: 1px solid var(--borderColor-section);
+        }
+        .section0ContentMovieI {
+          width: 20%;
+          height: 100%;
+          margin: 0 auto 80px auto;
         }
         .section0ContentTextO {
           width: 100%;
-          margin-top: 24px;
           display: flex;
           justify-content: center;
         }
         .section0Ul {
           width: 60%;
+          margin: 80px 0;
         }
         li {
           width: 100%;
@@ -90,6 +96,9 @@ export default function Histry() {
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
         }
+        .dateTd, .volumeTd , .descriptionTd {
+          font-size: 16px;
+        }
         .dateTd {
           width: calc(100% / 12 * 3);
         }
@@ -98,9 +107,6 @@ export default function Histry() {
         }
         .descriptionTd {
           width: calc(100% / 12 * 7);
-        }
-        .dateTd, .volumeTd , .descriptionTd {
-          font-size: 16px;
         }
         .endLi {
           flex-direction: column;
@@ -120,6 +126,7 @@ export default function Histry() {
           border-radius: 50%;
           background-color: var(--backgroundColor-item);
         }
+        //エンドセクション
         .endSec {
           width: 100%;
           height: fit-content;
@@ -130,7 +137,7 @@ export default function Histry() {
           margin: 0 auto;
           display: flex;
           flex-direction: column;
-          border: 2px solid var(--borderColor-section);
+          border: 1px solid var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
         .section1titleO {
@@ -141,7 +148,7 @@ export default function Histry() {
         .section1titleI {
           width: 100%;
           height: 100%;
-          border: 2px solid var(--borderColor-section);
+          border: 1px solid var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
         .section1titleP {
@@ -183,8 +190,41 @@ export default function Histry() {
             margin: 32px auto;
             display: flex;
           }
-          ul {
+          .section0Ul {
             width: 280px;
+            margin: 32px 0;
+          }
+          li {
+            width: 280px;
+            height: 32px;
+            margin-bottom: 16px;
+            padding: 0 8px;
+          }
+          .dateTd, .volumeTd , .descriptionTd {
+            font-size: 10px;
+          }
+          .dot {
+            width: 4px;
+            height: 4px;
+          }
+          //エンドセクション
+          .endSec {
+            margin-bottom: 80px;
+          }
+          .section1contentO {
+            width: 100%;
+          }
+          .section1titleO {
+            width: 100%;
+            height: 32px;
+            padding: 4px;
+          }
+          .section1titleP {
+            line-height: 20px;
+          }
+          .section1Ul {
+            width: fit-content;
+            padding: 32px 4px 0 4px;
           }
         }
       `}</style>
