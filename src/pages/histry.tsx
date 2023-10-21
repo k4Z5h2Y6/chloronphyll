@@ -100,13 +100,13 @@ export default function Histry() {
           font-size: 16px;
         }
         .dateTd {
-          width: calc(100% / 12 * 3);
+          width: calc(100% / 12 * 4);
         }
         .volumeTd {
           width: calc(100% / 12 * 2);
         }
         .descriptionTd {
-          width: calc(100% / 12 * 7);
+          width: calc(100% / 12 * 6);
         }
         .endLi {
           flex-direction: column;
@@ -166,10 +166,10 @@ export default function Histry() {
           flex-direction: column;
         }
         .section1firstTd {
-          width: calc(100% / 12 * 5);
+          width: 50%;
         }
         .section1secondTd {
-          width: calc(100% / 12 * 7);
+          width: 50%;
         }
         @media screen and (max-width: 1024px) {
           .topSct {
