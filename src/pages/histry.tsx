@@ -285,6 +285,7 @@ export default function Histry() {
           .section0LiTitleO,
           .section1LiTitleO {
             height: 32px;
+            padding: 0 8px;
             line-height: 32px;
           }
           .dateTd, .volumeTd , .descriptionTd, .section1firstTd, .section1secondTd {
