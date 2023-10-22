@@ -19,7 +19,7 @@ export default function Home() {
               objectFit='contain'
             />
             <div className='homeDescriptionO'>
-              <p className='homeDescriptionI'>VRChatでの使用を想定した3Dモデル<br /><span> フキ </span>の攻略サイト</p>
+              <p className='homeDescriptionI'>VRChatでの使用を想定した3Dモデル<br /><span className='fukiO'> フキ </span>の攻略サイト</p>
             </div>
             <div
               className={isHeroImgShown ? 'showHeroImgOnLight' : 'hideHeroImgOnLight'}
@@ -37,7 +37,7 @@ export default function Home() {
               objectFit='contain'
             />
             <div className='homeDescriptionO'>
-              <p className='homeDescriptionI'>VRChatでの使用を想定した3Dモデル<br /><span> フキ </span>の攻略サイト</p>
+              <p className='homeDescriptionI'>VRChatでの使用を想定した3Dモデル<br /><span className='fukiO'> フキ </span>の攻略サイト</p>
             </div>
             <div
               className={isHeroImgShown ? 'showHeroImgOndark' : 'hideHeroImgOndark'}
@@ -80,6 +80,12 @@ export default function Home() {
         .homeDescriptionI {
           width: 100%;
           text-align: center;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .fukiO {
+          font-size: 32px;
+          line-height: 36px;
         }
         .showHeroImgOnLight, .showHeroImgOndark {
           width: 100%;
@@ -104,6 +110,14 @@ export default function Home() {
             width: 80vw;
             height: 30vh;
             top: 20vh;
+          }
+          .homeDescriptionI {
+            font-size: 10px;
+            line-height: 12px;
+          }
+          .fukiO {
+            font-size: 20px;
+            line-height: 22px;
           }
         }
       `}</style>
