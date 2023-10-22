@@ -109,7 +109,7 @@ export const Gesture = () => {
           background-color: var(--backgroundColor-item);
         }
         .katateturntableMovieO {
-          width: 50%;
+          width: calc(50% - 8px - 8px);
           height: 100%;
           padding: var(--settingManual-p8);
           display: flex;
@@ -291,7 +291,7 @@ export const Gesture = () => {
           }
           .katateturntableMovieO {
             width: 100%;
-            height: 240px;
+            height: calc(240px - 4px - 4px);
           }
           .katateturntableTextO {
             width: 100%;
@@ -299,8 +299,8 @@ export const Gesture = () => {
           }
           .katateturntableSubO {
             width: 80%;
-            height: 72px;
-            margin: 4px auto 4px auto;
+            height: calc(100% / 3);
+            margin: 0 auto;
             padding: var(--settingManual-p8);
             display: flex;
           }
