@@ -42,7 +42,7 @@ export const Expression = () => {
 
         <div className='explanationO'>
           <div className='explanationTextO'>
-            <p>ExMenu<br />→45種の表情固定 →まぶた固定<br />(無段階調整)(まぶた+追加表情)</p>
+            <p>ExMenu<br />→45種の表情固定<br />→まぶた固定 (無段階調整)(まぶた+追加表情)</p>
             <p>各エモート , PB , Contact ,<br />走行 , ジャンプなどで変形</p>
             <p>MMDモーフあり (JP.fbxのみ)</p>
           </div>
@@ -153,7 +153,7 @@ export const Expression = () => {
           width: 100%;
           height: 100%;
           padding: var(--settingManual-p8);
-          border: 1px solid var(--borderColor);
+          border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
         @media screen and (max-width: 1024px) {

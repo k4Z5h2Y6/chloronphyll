@@ -107,7 +107,7 @@ export default function Histry() {
           height: 40%;
           padding-bottom: 24px;
           display: flex;
-          border-bottom: 1px solid var(--borderColor-section);
+          border-bottom: var(--borderColor-section);
         }
         .section0ContentMovieI {
           width: 20%;
@@ -137,7 +137,7 @@ export default function Histry() {
           width: 100%;
           height: 80px;
           border-radius: var(--borderRadius-20);
-          background-color: var(--backgroundColor-historyLi);
+          background-color: var(--backgroundColor-item);
           transition: var(--transition1s);
         }
         .section0Li1Opened,
@@ -148,7 +148,7 @@ export default function Histry() {
           display: flex;
           flex-direction: column;
           border-radius: var(--borderRadius-20);
-          background-color: var(--backgroundColor-historyLi);
+          background-color: var(--backgroundColor-item);
           transition: var(--transition1s);
         }
         .section0LiTitleO,
@@ -209,7 +209,7 @@ export default function Histry() {
           margin: 0 auto;
           display: flex;
           flex-direction: column;
-          border: 1px solid var(--borderColor-section);
+          border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
         .section1titleO {
@@ -220,7 +220,7 @@ export default function Histry() {
         .section1titleI {
           width: 100%;
           height: 100%;
-          border: 1px solid var(--borderColor-section);
+          border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
         .section1titleP {

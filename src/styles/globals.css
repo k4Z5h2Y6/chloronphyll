@@ -38,11 +38,11 @@ border-radius: 20px;
 
 :root {
   --backgroundColor-base: #968e83;
-  --backgroundColor-item: #ada79e;
+  --backgroundColor-item: #a19a91;
   --backgroundColor-navO: rgba(124, 116, 105, 0.5);
   --backgroundColor-navI: #7c7469;
-  --backgroundColor-historyLi: #A19A91;
-  --borderColor-section: #6e675e;
+  --backgroundColor-title: #ada79e;
+  --borderColor-section: 1.5px solid #6e675e;
   --borderColor: #7c7469;
   --textColor-base: #ffffff;
   --textColor-navMenu: #b3b3b3;
@@ -59,8 +59,9 @@ border-radius: 20px;
   --backgroundColor-base: #60646c;
   --backgroundColor-navO: rgba(72, 75, 81, 0.5);
   --backgroundColor-navI: #484b51;
-  --backgroundColor-item: #6e737c;
-  --borderColor-section: #565A61;
+  --backgroundColor-item: #696e77;
+  --backgroundColor-title: #6e737c;
+  --borderColor-section: 2px solid #565A61;
 }
 
 * {
@@ -102,9 +103,9 @@ h4 {
 }
 /* h5…コンテンツタイトル */
 h5 {
-  padding-bottom: 12px;
-  font-size: 16px;
-  line-height: 18px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 a {
@@ -113,8 +114,9 @@ a {
 }
 
 p {
-  font-size: 10px;
-  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 16px;
 }
 
 span {
@@ -139,7 +141,7 @@ video {
 /* widthが1024px以下(スマホ版） */
 @media screen and (max-width: 1024px) {
   :root {
-    --borderRadius-20: 12px;
+    --borderRadius-20: 10px;
     --settingManual-p8: 4px;
   }
   /* h3…ページタイトル */
@@ -150,9 +152,16 @@ video {
   h4 {
     font-size: 18px;
   }
+  h5 {
+    /* padding-bottom: 12px; */
+    padding-bottom: 12px;
+    font-size: 12px;
+    line-height: 14px;
+  }
   p {
     font-size: 10px;
     line-height: 12px;
+    margin-bottom: 10px;
   }
 }
 /* widthが1024px以下かつ横画面(スマホ版） */

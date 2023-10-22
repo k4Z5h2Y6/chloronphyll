@@ -1,4 +1,4 @@
-import { Movie } from "../elements/Movie"
+import { Movie } from "../elements/Movie";
 
 export const Motion = () => {
   return (
@@ -41,8 +41,10 @@ export const Motion = () => {
 
         <div className='furutoraO'>
           <div className='furutoraTextO'>
-            <h5>フルトラ</h5>
-            <p>(4点以上) 通常通りフルトラで自由に動けます<br />(VIVE2.0 , mocopiで動作確認済み)</p>
+            <div className='furutoraTextI'>
+              <h5>フルトラ</h5><p>(4点以上)</p>
+            </div>
+            <p>通常通りフルトラで自由に動けます<br />(VIVE2.0 , mocopiで動作確認済み)</p>
             <p>両手パーか全身固定(ExMenu)でポーズ状態になります<br />ONOFF機能(ExMenu)で<br />両手パーでもTrackingを維持することができます</p>
           </div>
         </div>
@@ -114,7 +116,7 @@ export const Motion = () => {
           width: 100%;
           height: 100%;
           padding: var(--settingManual-p8);
-          border: 1px solid var(--borderColor);
+          border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
         //フルトラ
@@ -134,6 +136,9 @@ export const Motion = () => {
           flex-direction: column;
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
+        }
+        .furutoraTextI {
+          display: flex;
         }
         //待機モーション
         .taikimotionO {
@@ -228,5 +233,5 @@ export const Motion = () => {
           }
       `}</style>
     </>
-  )
-}
+  );
+};

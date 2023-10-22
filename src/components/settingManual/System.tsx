@@ -187,8 +187,8 @@ export const System = () => {
         .snsInButtonO {
           width: fit-content;
           padding: 4px;
-          margin-bottom: 10px;
-          border: 1px solid var(--borderColor);
+          margin-bottom: 16px;
+          border: var(--borderColor-section);
           border-radius: 8px;
           background-color: var(--backgroundColor-base);
         }

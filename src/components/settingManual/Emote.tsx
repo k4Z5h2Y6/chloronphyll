@@ -265,7 +265,7 @@ export const Emote = () => {
           width: 100%;
           height: 100%;
           display: flex;
-          border: 1px solid var(--borderColor);
+          border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
         .zenshinkoteiSecondLeftTextI {

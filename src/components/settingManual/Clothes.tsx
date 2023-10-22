@@ -41,14 +41,14 @@ export const Clothes = () => {
 
           <div className='sodehenkeiO'>
             <div className='sodehenkeiI'>
-              <h5>そで変形<span className='phOut'>無段階</span></h5>
+              <h5>そで変形 <span className='phOut'>無段階</span></h5>
               <p>・パワーショルダー<br />・ボリュームスリーブ</p>
             </div>
           </div>
 
           <div className='scarfhenkeiO'>
             <div className='scarfhenkeiI'>
-              <h5>スカーフ変形<span className='phOut'>無段階</span></h5>
+              <h5>スカーフ変形 <span className='phOut'>無段階</span></h5>
               <p>・ショートスカーフ<br />・ロングスカーフ<br />・風スカーフ<br />・たてスカーフ<br />・スリムスカーフ</p>
             </div>
           </div>
@@ -120,14 +120,14 @@ export const Clothes = () => {
           padding: var(--settingManual-p8);
           display: flex;
           flex-direction: column;
-          border: 1px solid var(--borderColor);
+          border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
         .skirtI {
           width: 100%;
           height: 100%;
           display: flex;
-          border: 1px solid var(--borderColor);
+          border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
         .skirtMovieO {
@@ -140,9 +140,6 @@ export const Clothes = () => {
           width: 50%;
           height: 100%;
           padding: var(--settingManual-p8) var(--settingManual-p8) var(--settingManual-p8) 0;
-        }
-        .phOut {
-          display: none;
         }
         @media screen and (max-width: 1024px) {
           .sectionContentsCO {
@@ -157,6 +154,9 @@ export const Clothes = () => {
           .clothesTextO {
             width: 100%;
             height: 320px;
+          }
+          .phOut {
+            display: none;
           }
         }
       `}</style>

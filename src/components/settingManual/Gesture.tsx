@@ -28,8 +28,8 @@ export const Gesture = () => {
                     <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
                   </div>
                   <div className='katateturntableSubTextO'>
-                    <p>ネイルサイズ (無段階調整)<br />ネイルアクセ (ONOFF)</p>
-                    <Button title='色変更はテクスチャです'/>
+                    <p className='katateturntableSubTextP'>ネイルサイズ (無段階調整)<br />ネイルアクセ (ONOFF)</p>
+                    <Button title='色変更はテクスチャです' />
                   </div>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export const Gesture = () => {
           width: 100%;
           height: 100%;
           display: flex;
-          border: 1px solid var(--borderColor);
+          border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
         .katateturntableSubMovieO {
@@ -155,6 +155,8 @@ export const Gesture = () => {
           width: calc(100% / 3 * 2);
           height: 100%;
           padding: var(--settingManual-p8);
+          display: flex;
+          flex-direction: column;
         }
         //両手キラキラポーズ
         .ryoutekirakiraposeO {
@@ -222,7 +224,7 @@ export const Gesture = () => {
           height: 100%;
           padding: var(--settingManual-p8);
           display: flex;
-          border: 1px solid var(--borderColor);
+          border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
         //ペンを握る
@@ -297,8 +299,8 @@ export const Gesture = () => {
           }
           .katateturntableSubO {
             width: 80%;
-            height: 80px;
-            margin: 0 auto;
+            height: 72px;
+            margin: 4px auto 4px auto;
             padding: var(--settingManual-p8);
             display: flex;
           }
@@ -307,6 +309,9 @@ export const Gesture = () => {
           }
           .katateturntableSubTextO {
             width: calc(100% / 8 * 5);
+          }
+          .katateturntableSubTextP {
+            margin-bottom: 4px;
           }
           //両手キラキラポーズ
           .ryoutekirakiraposeO {

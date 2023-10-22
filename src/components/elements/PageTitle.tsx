@@ -15,7 +15,7 @@ export const PageTitle = ({ pageTitle }: Props) => {
           margin: 24px 0 24px -2.5vw; //var()関数が使えない
           padding: 16px 16px 16px calc(2.5vw + 16px); //var()関数が使えない
           border-radius: 0 var(--borderRadius-20) var(--borderRadius-20) 0;
-          background-color: var(--backgroundColor-item);
+          background-color: var(--backgroundColor-title);
         }
         @media screen and (max-width: 566px) {
           .pageTitleCO {

@@ -11,7 +11,7 @@ export const Kemo = () => {
               <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
             </div>
             <div className='tsunoTextO'>
-              <h5>ツノ16種類<span>(ExMenuで選択)</span></h5>
+              <h5>ツノ16種類 <span>(ExMenuで選択)</span></h5>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@ export const Kemo = () => {
               <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
             </div>
             <div className='mimihanemimitojiTextO'>
-              <h5>耳はね、耳とじ<span>(ハンドサインで発動)</span></h5>
+              <h5>耳はね、耳とじ <span>(ハンドサインで発動)</span></h5>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ export const Kemo = () => {
               <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
             </div>
             <div className='shippoTextO'>
-              <h5>しっぽ<span>(ハンドサインで発動)</span></h5>
+              <h5>しっぽ <span>(ハンドサインで発動)</span></h5>
               <p>・ゆらゆらしっぽ<br />・くるりんしっぽ<br />・しっぽ曲げ (Sit時)</p>
             </div>
           </div>

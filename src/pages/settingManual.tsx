@@ -179,7 +179,7 @@ export default function SettingManual() {
         .topSct {
           width: 100%;
           height: 100vh;
-          border-bottom: 1px solid var(--borderColor-section);
+          border-bottom: var(--borderColor-section);
         }
         //00
         .section0contentO {
@@ -213,7 +213,7 @@ export default function SettingManual() {
           width: fit-content;
           padding: 16px;
           border-radius: var(--borderRadius-20);
-          background-color: var(--backgroundColor-item);
+          background-color: var(--backgroundColor-title);
         }
         .section1OpenedO,
         .section2OpenedO,
@@ -227,7 +227,7 @@ export default function SettingManual() {
           width: 100%;
           height: calc(100vh - 24px - 16px - 32px - 16px - 24px);
           padding-bottom: 7vh;
-          border-bottom: 1px solid var(--borderColor-section);
+          border-bottom: var(--borderColor-section);
           transition: var(--transition1s);
           position: relative;
         }
@@ -243,7 +243,7 @@ export default function SettingManual() {
           width: 100%;
           height: 0;
           overflow: hidden;
-          border-bottom: 1px solid var(--borderColor-section);
+          border-bottom: var(--borderColor-section);
           transition: var(--transition1s);
         }
         .endSct {
