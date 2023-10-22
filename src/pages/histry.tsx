@@ -105,14 +105,14 @@ export default function Histry() {
         .section0ContentMovieO {
           width: 100%;
           height: 40%;
-          padding-bottom: 24px;
+          padding-bottom: 40px;
           display: flex;
           border-bottom: var(--borderColor-section);
         }
         .section0ContentMovieI {
           width: 20%;
           height: 100%;
-          margin: 0 auto 80px auto;
+          margin: 0 auto;
         }
         .section0ContentTextO {
           width: 100%;
@@ -121,21 +121,21 @@ export default function Histry() {
         }
         .section0Ul {
           width: 60%;
-          margin: 80px 0;
+          margin: 40px auto;
           display: flex;
           flex-direction: column;
         }
         li {
           width: 100%;
           height: fit-content;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
           border-radius: var(--borderRadius-20);
         }
         .section0Li1Closed,
         .section0Li2Closed,
         .section1Li1Closed {
           width: 100%;
-          height: 80px;
+          height: 40px;
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
           transition: var(--transition1s);
@@ -144,7 +144,7 @@ export default function Histry() {
         .section0Li2Opened,
         .section1Li1Opened {
           width: 100%;
-          height: calc(80px + 400px);
+          height: calc(40px + 400px);
           display: flex;
           flex-direction: column;
           border-radius: var(--borderRadius-20);
@@ -154,13 +154,13 @@ export default function Histry() {
         .section0LiTitleO,
         .section1LiTitleO {
           width: 100%;
-          height: 80px;
+          height: 40px;
           padding: 0 20px;
           display: flex;
           align-items: center;
-          line-height: 80px;
+          line-height: 40px;
           border-radius: var(--borderRadius-20);
-          background-color: var(--backgroundColor-item);
+          background-color: var(--backgroundColor-title);
         }
         .section0LiContentO {
           width: 100%;
@@ -180,6 +180,7 @@ export default function Histry() {
         }
         .endLi {
           height: 40px;
+          margin-bottom: 0;
           display: flex;
           flex-direction: column;
           align-items: stretch;
@@ -187,13 +188,13 @@ export default function Histry() {
         }
         .dotO {
           width: 100%;
-          height: calc(80px / 3);
+          height: calc(40px / 3);
           display: flex;
           align-items: center;
         }
         .dot {
-          width: 10px;
-          height: 10px;
+          width: 8px;
+          height: 8px;
           margin: 0 auto;
           border-radius: 50%;
           background-color: var(--backgroundColor-item);
@@ -214,8 +215,8 @@ export default function Histry() {
         }
         .section1titleO {
           width: 100%;
-          height: 80px;
-          padding: 8px;
+          height: 40px;
+          padding: 4px;
         }
         .section1titleI {
           width: 100%;
@@ -227,14 +228,13 @@ export default function Histry() {
           width: 100%;
           height: 100%;
           text-align: center;
-          line-height: 64px;
+          line-height: 32px;
           font-size: 16px;
         }
         .section1Ul {
           width: calc(100% / 7 * 6);
           height: fit-content;
-          margin: 0 auto;
-          padding-top: 80px;
+          margin: 40px auto;
           display: flex;
           flex-direction: column;
         }
@@ -246,7 +246,7 @@ export default function Histry() {
         }
         @media screen and (max-width: 1024px) {
           .topSct {
-            height: fit-content;
+            min-height: fit-content;
           }
           .section0ContentMovieO {
             padding-bottom: 20px;
@@ -323,7 +323,7 @@ export default function Histry() {
           }
           .section1Ul {
             width: fit-content;
-            padding: 32px 4px 0 4px;
+            margin: 32px auto;
           }
         }
       `}</style>
