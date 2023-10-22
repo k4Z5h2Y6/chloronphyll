@@ -42,7 +42,7 @@ export const Motion = () => {
         <div className='furutoraO'>
           <div className='furutoraTextO'>
             <div className='furutoraTextI'>
-              <h5>フルトラ</h5><p>(4点以上)</p>
+              <h5>フルトラ <span>(4点以上)</span></h5>
             </div>
             <p>通常通りフルトラで自由に動けます<br />(VIVE2.0 , mocopiで動作確認済み)</p>
             <p>両手パーか全身固定(ExMenu)でポーズ状態になります<br />ONOFF機能(ExMenu)で<br />両手パーでもTrackingを維持することができます</p>
