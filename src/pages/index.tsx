@@ -19,7 +19,7 @@ export default function Home() {
               objectFit='contain'
             />
             <div className='homeDescriptionO'>
-              <p className='homeDescriptionI'>VRChatでの使用を想定した3Dモデル<br /><span className='fukiO'> フキ </span>の攻略サイト</p>
+              <p className='homeDescriptionP'>VRChatでの使用を想定した3Dモデル<br /><span className='fukiO'> フキ </span>の攻略サイト</p>
             </div>
             <div
               className={isHeroImgShown ? 'showHeroImgOnLight' : 'hideHeroImgOnLight'}
@@ -37,7 +37,7 @@ export default function Home() {
               objectFit='contain'
             />
             <div className='homeDescriptionO'>
-              <p className='homeDescriptionI'>VRChatでの使用を想定した3Dモデル<br /><span className='fukiO'> フキ </span>の攻略サイト</p>
+              <p className='homeDescriptionP'>VRChatでの使用を想定した3Dモデル<br /><span className='fukiO'> フキ </span>の攻略サイト</p>
             </div>
             <div
               className={isHeroImgShown ? 'showHeroImgOndark' : 'hideHeroImgOndark'}
@@ -77,8 +77,9 @@ export default function Home() {
           display: flex;
           align-items: center;
         }
-        .homeDescriptionI {
+        .homeDescriptionP {
           width: 100%;
+          margin-bottom: 0;
           text-align: center;
           font-size: 16px;
           line-height: 20px;
@@ -111,7 +112,7 @@ export default function Home() {
             height: 30vh;
             top: 20vh;
           }
-          .homeDescriptionI {
+          .homeDescriptionP {
             font-size: 10px;
             line-height: 12px;
           }
