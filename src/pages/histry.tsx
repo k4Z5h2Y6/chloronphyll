@@ -228,7 +228,7 @@ export default function Histry() {
           width: 100%;
           height: 100%;
           text-align: center;
-          line-height: 32px;
+          line-height: 28px;
           font-size: 16px;
         }
         .section1Ul {
