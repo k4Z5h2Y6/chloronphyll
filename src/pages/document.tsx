@@ -10,8 +10,8 @@ export default function Document() {
           <div className='seihinOtoiawaseO'>
             <div className='seihinO'>
               <div className='seihinI'>
-                <div className='seihinTitleO'>
-                  <div className='seihinTitleI'>
+                <div className='documentTitleCO'>
+                  <div className='documentTitleCI'>
                     <h5 className='documentH5'>製品</h5>
                   </div>
                 </div>
@@ -44,8 +44,8 @@ export default function Document() {
             </div>
             <div className='otoiawaseO'>
               <div className='otoiawaseI'>
-                <div className='otoiawaseTitleO'>
-                  <div className='otoiawaseTitleI'>
+                <div className='documentTitleCO'>
+                  <div className='documentTitleCI'>
                     <h5 className='documentH5'>お問い合わせ</h5>
                   </div>
                 </div>
@@ -118,8 +118,8 @@ export default function Document() {
           </div>
           <div className='riyoukiyakuO'>
             <div className='riyoukiyakuI'>
-              <div className='riyoukiyakuTitleO'>
-                <div className='riyoukiyakuTitleI'>
+              <div className='documentTitleCO'>
+                <div className='documentTitleCI'>
                   <h5 className='documentH5'>利用規約</h5>
                 </div>
               </div>
@@ -280,8 +280,8 @@ export default function Document() {
 
       <section className='middleSec'>
         <div className='section1contentO'>
-          <div className='doukondataTitleO'>
-            <div className='doukondataTitleI'>
+          <div className='documentTitleCO'>
+            <div className='documentTitleCI'>
               <h5 className='documentH5'>同梱データ</h5>
             </div>
           </div>
@@ -307,7 +307,7 @@ export default function Document() {
           <div className='seisakuO'>
             <div className='seisakuIconImgO'>
               <Image
-                src='/Document/DocumentMaru256_256.png'
+                src='/Document/DocumentLogo256_256.png'
                 alt=''
                 width={256}
                 height={256}
@@ -322,7 +322,7 @@ export default function Document() {
           <div className='kanriO'>
             <div className='kanriIconImgO'>
               <Image
-                src='/Document/DocumentMaru256_256.png'
+                src='/Document/DocumentRue256_256.png'
                 alt=''
                 width={256}
                 height={256}
@@ -366,17 +366,6 @@ export default function Document() {
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
         }
-        .seihinTitleO {
-          width: 100%;
-          height: 40px;
-          padding: var(--document-4px);
-        }
-        .seihinTitleI {
-          width: 100%;
-          height: 100%;
-          border: var(--borderColor-section);
-          border-radius: var(--borderRadius-20);
-        }
         .seihinContentO {
           width: 100%;
           height: calc(100% - 40px);
@@ -396,17 +385,6 @@ export default function Document() {
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
         }
-        .otoiawaseTitleO {
-          width: 100%;
-          height: 40px;
-          padding: var(--document-4px);
-        }
-        .otoiawaseTitleI {
-          width: 100%;
-          height: 100%;
-          border: var(--borderColor-section);
-          border-radius: var(--borderRadius-20);
-        }
         .otoiawaseContentO {
           width: 100%;
           height: calc(100% - 40px);
@@ -425,17 +403,6 @@ export default function Document() {
           height: 100%;
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
-        }
-        .riyoukiyakuTitleO {
-          width: 100%;
-          height: 40px;
-          padding: var(--document-4px);
-        }
-        .riyoukiyakuTitleI {
-          width: 100%;
-          height: 100%;
-          border: var(--borderColor-section);
-          border-radius: var(--borderRadius-20);
         }
         .riyoukiyakuContentO {
           width: 100%;
@@ -502,6 +469,17 @@ export default function Document() {
           border-radius: var(--borderRadius-20);
         }
         //h5,td,icon,共通
+        .documentTitleCO {
+          width: 100%;
+          height: 40px;
+          padding: var(--document-4px);
+        }
+        .documentTitleCI {
+          width: 100%;
+          height: 100%;
+          border: var(--borderColor-section);
+          border-radius: var(--borderRadius-20);
+        }
         .documentH5 {
           width: 100%;
           height: 100%;
@@ -545,17 +523,6 @@ export default function Document() {
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
         }
-        .doukondataTitleO {
-          width: 100%;
-          height: 40px;
-          padding: var(--document-4px);
-        }
-        .doukondataTitleI {
-          width: 100%;
-          height: 100%;
-          border: var(--borderColor-section);
-          border-radius: var(--borderRadius-20);
-        }
         .doukondataMovieO {
           width: 100%;
           height: calc(100% - 40px);
@@ -574,14 +541,14 @@ export default function Document() {
           padding-bottom: 112px;
         }
         .section2contentO {
-          width: 368px;
-          height: 80px;
+          width: fit-content;
+          height: fit-content;
           margin: 0 auto;
           display: flex;
           flex-direction: column;
         }
         .seisakuO, .kanriO {
-          width: 368px;
+          width: fit-content;
           height: 32px;
           margin-bottom: 8px;
           display: flex;
@@ -593,11 +560,61 @@ export default function Document() {
           margin-right: 16px;
         }
         .seisakuTextP, .kanriTextP {
-          width: 320px;
+          width: fit-content;
           line-height: 32px;
         }
         @media screen and (max-width: 1024px) {
-        }
+          .topSct {
+            height: fit-content;
+          }
+          .section0contentO {
+            flex-direction: column;
+          }
+          //製品
+          .seihinOtoiawaseO {
+            width: 100%;
+          }
+          .seihinO {
+            height: fit-content;
+          }
+          //お問い合わせ
+          .otoiawaseO {
+            height: fit-content;
+          }
+          //利用規約
+          .riyoukiyakuO {
+            width: 100%;
+            height: fit-content;
+          }
+          .riyoukiyakuContentO {
+            flex-direction: column;
+          }
+          //まる
+          .maruSearchO {
+            width: 100%;
+          }
+          .maruO {
+            height: fit-content;
+          }
+          //サーチ
+          .searchO {
+            height: fit-content;
+          }
+          //ばつ
+          .batsuO {
+            width: 100%;
+            height: fit-content;
+          }
+          //セクション１
+          .middleSec {
+            height: fit-content;
+            margin-bottom: 74px;
+          }
+          .doukondataMovieI {
+            width: 80%;
+            height: 200px;
+            margin: 8px auto 20px auto;
+          }
       `}</style>
     </>
   );
