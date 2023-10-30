@@ -124,113 +124,31 @@ export default function Document() {
                 </div>
               </div>
               <div className='riyoukiyakuContentO'>
-                <div className='maruSearchO'>
-                  <div className='maruO'>
-                    <div className='maruI'>
-                      <div className='IconImgO'>
-                        <Image
-                          src='/Document/DocumentMaru256_256.png'
-                          alt=''
-                          width={256}
-                          height={256}
-                          style={{
-                            width: '48px',
-                            height: '48px',
-                          }}
-                        />
-                      </div>
-                      <p>許可 (営利、非営利を問いません)</p>
-                      <p>
-                        ・個人利用 (法人利用はお問い合わせください)<br />
-                        ・映像作品、配信<br />
-                        ・二次創作<br />
-                        ・性的表現<br />
-                        ・対応衣装でのボーン、ウェイトのコピー
-                      </p>
+                <div className='maruO'>
+                  <div className='maruI'>
+                    <div className='IconImgO'>
+                      <Image
+                        src='/Document/DocumentMaru256_256.png'
+                        alt=''
+                        width={256}
+                        height={256}
+                        style={{
+                          width: '48px',
+                          height: '48px',
+                        }}
+                      />
                     </div>
-                  </div>
-                  <div className='searchO'>
-                    <div className='searchI'>
-                      <div className='IconImgO'>
-                        <Image
-                          src='/Document/DocumentLoupe256_256.png'
-                          alt=''
-                          width={256}
-                          height={256}
-                          style={{
-                            width: '48px',
-                            height: '48px',
-                          }}
-                        />
-                      </div>
-                      <p>
-                        この一覧はわかりやすく記載しているものです。<br />
-                        PDFの利用規約も兼ねてご確認ください。<br />
-                        (VN3ライセンスhttps://www.vn3.org/ を使用しています。)
-                      </p>
-
-                      <ul className='filesUl'>
-                        <li className='fileLi'>
-                          <div className='fileO'>
-                            <Image
-                              src='/Document/DocumentJP256_256.png'
-                              alt=''
-                              width={256}
-                              height={256}
-                              style={{
-                                width: '100%',
-                                height: 'auto',
-                              }}
-                            />
-                          </div>
-                        </li>
-                        <li className='fileLi'>
-                          <div className='fileO'>
-                            <Image
-                              src='/Document/DocumentEN256_256.png'
-                              alt=''
-                              width={256}
-                              height={256}
-                              style={{
-                                width: '100%',
-                                height: 'auto',
-                              }}
-                            />
-                          </div>
-                        </li>
-                        <li className='fileLi'>
-                          <div className='fileO'>
-                            <Image
-                              src='/Document/DocumentKO256_256.png'
-                              alt=''
-                              width={256}
-                              height={256}
-                              style={{
-                                width: '100%',
-                                height: 'auto',
-                              }}
-                            />
-                          </div>
-                        </li>
-                        <li className='fileLi'>
-                          <div className='fileO'>
-                            <Image
-                              src='/Document/DocumentZH256_256.png'
-                              alt=''
-                              width={256}
-                              height={256}
-                              style={{
-                                width: '100%',
-                                height: 'auto',
-                              }}
-                            />
-                          </div>
-                        </li>
-                      </ul>
-
-                    </div>
+                    <p>許可 (営利、非営利を問いません)</p>
+                    <p>
+                      ・個人利用 (法人利用はお問い合わせください)<br />
+                      ・映像作品、配信<br />
+                      ・二次創作<br />
+                      ・性的表現<br />
+                      ・対応衣装でのボーン、ウェイトのコピー
+                    </p>
                   </div>
                 </div>
+
                 <div className='batsuO'>
                   <div className='batsuI'>
                     <div className='IconImgO'>
@@ -270,6 +188,86 @@ export default function Document() {
                       製品を使用して発生したトラブルや損害は一切責任を負いません。<br />
                       予告なく価格を変更する場合がございます。
                     </p>
+                  </div>
+                </div>
+
+                <div className='searchO'>
+                  <div className='searchI'>
+                    <div className='IconImgO'>
+                      <Image
+                        src='/Document/DocumentLoupe256_256.png'
+                        alt=''
+                        width={256}
+                        height={256}
+                        style={{
+                          width: '48px',
+                          height: '48px',
+                        }}
+                      />
+                    </div>
+                    <p>
+                      この一覧はわかりやすく記載しているものです。<br />
+                      PDFの利用規約も兼ねてご確認ください。<br />
+                      (VN3ライセンスhttps://www.vn3.org/ を使用しています。)
+                    </p>
+                    <ul className='filesUl'>
+                      <li className='fileLi'>
+                        <div className='fileO'>
+                          <Image
+                            src='/Document/DocumentJP256_256.png'
+                            alt=''
+                            width={256}
+                            height={256}
+                            style={{
+                              width: '100%',
+                              height: 'auto',
+                            }}
+                          />
+                        </div>
+                      </li>
+                      <li className='fileLi'>
+                        <div className='fileO'>
+                          <Image
+                            src='/Document/DocumentEN256_256.png'
+                            alt=''
+                            width={256}
+                            height={256}
+                            style={{
+                              width: '100%',
+                              height: 'auto',
+                            }}
+                          />
+                        </div>
+                      </li>
+                      <li className='fileLi'>
+                        <div className='fileO'>
+                          <Image
+                            src='/Document/DocumentKO256_256.png'
+                            alt=''
+                            width={256}
+                            height={256}
+                            style={{
+                              width: '100%',
+                              height: 'auto',
+                            }}
+                          />
+                        </div>
+                      </li>
+                      <li className='fileLi'>
+                        <div className='fileO'>
+                          <Image
+                            src='/Document/DocumentZH256_256.png'
+                            alt=''
+                            width={256}
+                            height={256}
+                            style={{
+                              width: '100%',
+                              height: 'auto',
+                            }}
+                          />
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -408,17 +406,16 @@ export default function Document() {
           width: 100%;
           height: calc(100% - 40px);
           display: flex;
+          position: relative;
         }
-        .maruSearchO {
-          width: 50%;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-        }
+        //まる
         .maruO {
-          width: 100%;
+          width: 50%;
           height: calc(100% / 9 * 4);
           padding: var(--document-8px);
+          position: absolute;
+          top: 0;
+          left: 0;
         }
         .maruI {
           width: 100%;
@@ -429,10 +426,14 @@ export default function Document() {
           border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
+        //検索
         .searchO {
-          width: 100%;
+          width: 50%;
           height: calc(100% / 9 * 5);
           padding: var(--document-8px);
+          position: absolute;
+          top: calc(100% / 9 * 4);
+          left: 0;
         }
         .searchI {
           width: 100%;
@@ -454,10 +455,14 @@ export default function Document() {
           width: 100%;
           display: flex;
         }
+        //ばつ
         .batsuO {
           width: 50%;
           height: 100%;
           padding: var(--document-8px);
+          position: absolute;
+          top: 0;
+          right: 0;
         }
         .batsuI {
           width: 100%;
@@ -590,20 +595,22 @@ export default function Document() {
             flex-direction: column;
           }
           //まる
-          .maruSearchO {
-            width: 100%;
-          }
           .maruO {
+            width: 100%;
             height: fit-content;
+            position: static;
           }
           //サーチ
           .searchO {
+            width: 100%;
             height: fit-content;
+            position: static;
           }
           //ばつ
           .batsuO {
             width: 100%;
             height: fit-content;
+            position: static;
           }
           //セクション１
           .middleSec {
