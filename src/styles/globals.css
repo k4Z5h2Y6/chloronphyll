@@ -50,6 +50,7 @@ border-radius: 20px;
 
   --borderRadius-20: 20px;
   --settingManual-p8: 8px;
+  --document-8px: 8px;
   --main-marginLR: 2.5vw;
 
   --transition1s: all 1s ease;
@@ -144,6 +145,7 @@ video {
   :root {
     --borderRadius-20: 10px;
     --settingManual-p8: 4px;
+    --document-8px: 4px;
   }
   /* h3…ページタイトル */
   h3 {
