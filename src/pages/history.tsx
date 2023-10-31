@@ -1,8 +1,10 @@
 import { Movie } from '@/components/elements/Movie';
 import { PageTitle } from '@/components/elements/PageTitle';
 import { useState } from 'react';
+import Image from "next/image";
 
-export default function Histry() {
+
+export default function History() {
 
   const [isSection0Li1Opened, setIsSection0Li1Opened] = useState<boolean>(false);
   const [isSection0Li2Opened, setIsSection0Li2Opened] = useState<boolean>(false);
@@ -15,7 +17,14 @@ export default function Histry() {
         <div className='section0contentO'>
           <div className='section0ContentMovieO'>
             <div className='section0ContentMovieI'>
-              <Movie src='/SettingManual/00SettingManual/test10m1280_720.mov' />
+              <Image
+                src='/History/RueWalkFirst1280_720.gif'
+                alt=''
+                width={1280}
+                height={720}
+                layout='responsive'
+              />
+              {/* <Movie src='/SettingManual/00SettingManual/test10m1280_720.mov' /> */}
             </div>
           </div>
           <div className='section0ContentTextO'>
@@ -24,7 +33,7 @@ export default function Histry() {
               <li>
                 <div
                   className={isSection0Li1Opened ? 'section0Li1Opened' : 'section0Li1Closed'}
-                  onClick={() => { setIsSection0Li1Opened(!isSection0Li1Opened) }}
+                  onClick={() => { setIsSection0Li1Opened(!isSection0Li1Opened); }}
                 >
                   <div className='section0LiTitleO'>
                     <td className='dateTd'>0000/00/00</td>
@@ -38,7 +47,7 @@ export default function Histry() {
               <li>
                 <div
                   className={isSection0Li2Opened ? 'section0Li2Opened' : 'section0Li2Closed'}
-                  onClick={() => { setIsSection0Li2Opened(!isSection0Li2Opened) }}
+                  onClick={() => { setIsSection0Li2Opened(!isSection0Li2Opened); }}
                 >
                   <div className='section0LiTitleO'>
                     <td className='dateTd'>0000/00/00</td>
@@ -72,7 +81,7 @@ export default function Histry() {
             <li>
               <div
                 className={isSection1Li1Opened ? 'section1Li1Opened' : 'section1Li1Closed'}
-                onClick={() => { setIsSection1Li1Opened(!isSection1Li1Opened) }}
+                onClick={() => { setIsSection1Li1Opened(!isSection1Li1Opened); }}
               >
                 <div className='section1LiTitleO'>
                   <td className='section1firstTd'>(…未確認)</td>
@@ -113,6 +122,10 @@ export default function Histry() {
           width: 20%;
           height: 100%;
           margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          border-radius: var(--borderRadius-20);
+          overflow: hidden;
         }
         .section0ContentTextO {
           width: 100%;

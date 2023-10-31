@@ -31,7 +31,6 @@ export default function Home() {
                 layout='fill'
                 objectFit='contain'
               />
-              {/* <img src='/Home/HomeLightZzz1280_388_a.png' alt='' /> */}
             </div>
           </div>
           :
@@ -55,7 +54,6 @@ export default function Home() {
                 layout='fill'
                 objectFit='contain'
               />
-              {/* <img src='/Home/HomeDarkZzz1280_388_a.png' alt='' /> */}
             </div>
           </div>
         }
