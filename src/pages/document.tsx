@@ -320,7 +320,7 @@ export default function Document() {
           <div className='kanriO'>
             <div className='kanriIconImgO'>
               <Image
-                src='/Document/IconRue256_256.png'
+                src='/Document/IconLogo256_256.png'
                 alt=''
                 width={256}
                 height={256}
