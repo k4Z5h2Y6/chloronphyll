@@ -25,7 +25,13 @@ export default function Home() {
               className={isHeroImgShown ? 'showHeroImgOnLight' : 'hideHeroImgOnLight'}
               onClick={() => { setIsHeroImgShown(!isHeroImgShown); }}
             >
-              <img src='/Home/HomeLightZzz1280_388_a.png' alt='' />
+              <Image
+                src='/Home/HomeLightFirst1280_388.gif'
+                alt=''
+                layout='fill'
+                objectFit='contain'
+              />
+              {/* <img src='/Home/HomeLightZzz1280_388_a.png' alt='' /> */}
             </div>
           </div>
           :
@@ -43,7 +49,13 @@ export default function Home() {
               className={isHeroImgShown ? 'showHeroImgOndark' : 'hideHeroImgOndark'}
               onClick={() => { setIsHeroImgShown(!isHeroImgShown); }}
             >
-              <img src='/Home/HomeDarkZzz1280_388_a.png' alt='' />
+              <Image
+                src='/Home/HomeDarkFirst1280_388.gif'
+                alt=''
+                layout='fill'
+                objectFit='contain'
+              />
+              {/* <img src='/Home/HomeDarkZzz1280_388_a.png' alt='' /> */}
             </div>
           </div>
         }

@@ -305,7 +305,7 @@ export default function Document() {
           <div className='seisakuO'>
             <div className='seisakuIconImgO'>
               <Image
-                src='/Document/DocumentLogo256_256.png'
+                src='/Document/IconRue256_256.png'
                 alt=''
                 width={256}
                 height={256}
@@ -320,7 +320,7 @@ export default function Document() {
           <div className='kanriO'>
             <div className='kanriIconImgO'>
               <Image
-                src='/Document/DocumentRue256_256.png'
+                src='/Document/IconRue256_256.png'
                 alt=''
                 width={256}
                 height={256}
@@ -517,8 +517,9 @@ export default function Document() {
         //セクション１
         .middleSec {
           width: 100%;
-          height: 100vh;
+          height: 80vh;
           padding: var(--document-8px);
+          margin-bottom: 20vh;
         }
         .section1contentO {
           width: 100%;
@@ -534,7 +535,7 @@ export default function Document() {
         }
         .doukondataMovieI {
           width: 90%;
-          height: 60%;
+          height: 60vh;
           margin: 5% auto auto auto;
           display: flex;
           justify-content: center;
