@@ -121,7 +121,7 @@ export default function Home() {
             width: 80vw;
             height: 30vh;
             top: 35vh;
-            left: 50%;
+            {/* left: 50%; */}
             transform: translateX(-50%) translateY(-50%);
             {/* top: 20vh; */}
             {/* justify-content: center; */}
