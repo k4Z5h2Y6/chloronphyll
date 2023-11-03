@@ -60,11 +60,11 @@ export default function Home() {
       </div>
 
       <style jsx>{`
-        img {
+        {/* img {
           width: 100%;
           height: 100%;
           object-fit: contain;
-        }
+        } */}
         .heroImageO {
           width: 70vw;
           height: 40vh;
@@ -120,7 +120,11 @@ export default function Home() {
           .heroImageO {
             width: 80vw;
             height: 30vh;
-            top: 20vh;
+            top: 35vh;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            {/* top: 20vh; */}
+            {/* justify-content: center; */}
           }
           .homeDescriptionP {
             font-size: 10px;

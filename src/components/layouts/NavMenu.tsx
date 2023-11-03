@@ -50,15 +50,15 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
                   </Link>
                 </li>
                 <li className='navMenuLi navMenuH2O'><Link href='/settingManual'><h2 className='dark'>資料設定 input</h2></Link></li>
-                <li className='navMenuLi navMenuH2O'><Link href='/changeNote'><h2>改変ノート output</h2></Link></li>
-                <li className='navMenuLi navMenuSubH2O'><Link href='/changeNote'><h2>　アップロード手順</h2></Link></li>
-                <li className='navMenuLi navMenuSubH2O'><Link href='/changeNote'><h2>　パフォーマンスランク</h2></Link></li>
-                <li className='navMenuLi navMenuSubH2O'><Link href='/changeNote'><h2>　シェイプキー</h2></Link></li>
-                <li className='navMenuLi navMenuSubH2O'><Link href='/changeNote'><h2>　ExParameters / ExMenu</h2></Link></li>
-                <li className='navMenuLi navMenuSubH2O'><Link href='/changeNote'><h2>　01 いろ改変</h2></Link></li>
-                <li className='navMenuLi navMenuSubH2O'><Link href='/changeNote'><h2>　02 ヘア,ケモ,ふく改変</h2></Link></li>
-                <li className='navMenuLi navMenuSubH2O'><Link href='/changeNote'><h2>　03 表情改変</h2></Link></li>
-                <li className='navMenuLi navMenuSubH2O'><Link href='/changeNote'><h2>　04 イメージボード改変</h2></Link></li>
+                <li className='navMenuLi navMenuH2O'><Link href='/kaihenNote'><h2>改変ノート output</h2></Link></li>
+                <li className='navMenuLi navMenuSubH2O'><Link href='/'><h2>　アップロード手順</h2></Link></li>
+                <li className='navMenuLi navMenuSubH2O'><Link href='/'><h2>　パフォーマンスランク</h2></Link></li>
+                <li className='navMenuLi navMenuSubH2O'><Link href='/'><h2>　シェイプキー</h2></Link></li>
+                <li className='navMenuLi navMenuSubH2O'><Link href='/'><h2>　ExParameters / ExMenu</h2></Link></li>
+                <li className='navMenuLi navMenuSubH2O'><Link href='/'><h2>　01 いろ改変</h2></Link></li>
+                <li className='navMenuLi navMenuSubH2O'><Link href='/'><h2>　02 ヘア,ケモ,ふく改変</h2></Link></li>
+                <li className='navMenuLi navMenuSubH2O'><Link href='/'><h2>　03 表情改変</h2></Link></li>
+                <li className='navMenuLi navMenuSubH2O'><Link href='/'><h2>　04 イメージボード改変</h2></Link></li>
                 <li className='navMenuLi navMenuH2O'><Link href='/history'><h2>更新履歴</h2></Link></li>
                 <li className='navMenuLi navMenuH2O'><Link href='/document'><h2>ドキュメント</h2></Link></li>
               </ul>

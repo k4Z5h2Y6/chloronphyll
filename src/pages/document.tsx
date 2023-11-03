@@ -1,7 +1,14 @@
 import { PageTitle } from '@/components/elements/PageTitle';
 import Image from "next/image";
+import { useEffect, useState } from 'react';
 
 export default function Document() {
+
+  const [isModalShown, setIsModalShown] = useState<boolean>(false);
+  useEffect(() => {
+    setIsModalShown(false);
+  }, []);
+
   return (
     <>
       <section className='topSct'>
@@ -284,7 +291,10 @@ export default function Document() {
             </div>
           </div>
           <div className='doukondataMovieO'>
-            <div className='doukondataMovieI'>
+            <div
+              className='doukondataMovieI'
+              onClick={() => setIsModalShown(true)}
+            >
               <Image
                 src='/Document/DocumentZH256_256.png'
                 alt=''
@@ -334,6 +344,32 @@ export default function Document() {
           </div>
         </div>
       </section>
+
+      <div className={isModalShown ? 'modalShownO' : 'modalClosedO'}>
+        {/* <div className='enlargedDoukondataImgO' > */}
+          <Image
+            src='/Document/DocumentZH256_256.png'
+            alt=''
+            layout='fill'
+            objectFit='contain'
+          />
+        {/* </div> */}
+        <div
+          className='closingModalO'
+          onClick={() => setIsModalShown(false)}
+        >
+          <Image
+            src='/Document/DocumentBatu256_256.png'
+            alt=''
+            width={256}
+            height={256}
+            style={{
+              width: '48px',
+              height: '48px',
+            }}
+          />
+        </div>
+      </div>
 
 
       <style jsx>{`
@@ -483,7 +519,7 @@ export default function Document() {
           width: 100%;
           height: 100%;
           border: var(--borderColor-section);
-          border-radius: var(--borderRadius-20);
+          border-radius: var(--borderRadius-16);
         }
         .documentH5 {
           width: 100%;
@@ -569,6 +605,37 @@ export default function Document() {
           width: fit-content;
           line-height: 32px;
         }
+        //モーダル
+        .modalShownO {
+          width: 95vw;
+          height: 95vh;
+          position: fixed;
+          top: 2.5vh;
+          left: 2.5vw;
+          z-index: 11;// ロゴ上？下？
+          opacity: 1;
+          background-color: gray;
+          transition: var(--transition1s);
+        }
+        .modalClosedO {
+          width: 95vw;
+          height: 95vh;
+          position: fixed;
+          top: 2.5vh;
+          left: 2.5vw;
+          z-index: -10;// ロゴ上？下？
+          opacity: 0;
+          background-color: gray;
+          transition: var(--transition1s);
+        }
+        {/* .enlargedDoukondataImgO { アニメーション時に必要？
+        } */}
+        .closingModalO {
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+
         @media screen and (max-width: 1024px) {
           .topSct {
             height: fit-content;

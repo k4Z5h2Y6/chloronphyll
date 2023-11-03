@@ -236,7 +236,7 @@ export default function History() {
           width: 100%;
           height: 100%;
           border: var(--borderColor-section);
-          border-radius: var(--borderRadius-20);
+          border-radius: var(--borderRadius-16);
         }
         .section1titleP {
           width: 100%;
