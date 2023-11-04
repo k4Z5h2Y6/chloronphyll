@@ -60,24 +60,20 @@ export default function Home() {
       </div>
 
       <style jsx>{`
-        {/* img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-        } */}
         .heroImageO {
-          width: 70vw;
+          width: 100vw;
           height: 40vh;
-          margin: 0 auto;
+          margin: 0 calc(50% - 50vw);
           display: flex;
           position: relative;
           top: 10vh;
         }
         .kokubanO {
-          width: 100%;
+          width: 70%;
           height: 100%;
-          display: flex;
           margin: 0 auto;
+          display: flex;
+          position: relative;
         }
         .homeDescriptionO {
           width: 100%;
@@ -118,13 +114,11 @@ export default function Home() {
         }
         @media screen and (max-width: 1024px) {
           .heroImageO {
-            width: 80vw;
             height: 30vh;
-            top: 35vh;
-            {/* left: 50%; */}
-            transform: translateX(-50%) translateY(-50%);
-            {/* top: 20vh; */}
-            {/* justify-content: center; */}
+            top: 20vh;
+          }
+          .kokubanO {
+            width: 80%;
           }
           .homeDescriptionP {
             font-size: 10px;

@@ -295,15 +295,11 @@ export default function Document() {
               className='doukondataImgI'
               onClick={() => setIsModalShown(true)}
             >
-{/* ---------------------------------------- */}
               <Image
                 src='/Document/DoukonDate1280_720.png'
                 alt=''
-                width={1280}
-                height={720}
-                objectFit="contain"
-                // layout='fill'
-                // layout='responsive'
+                layout='fill'
+                objectFit='contain'
               />
             </div>
           </div>
@@ -346,15 +342,14 @@ export default function Document() {
       </section>
 
       <div className={isModalShown ? 'modalShownO' : 'modalClosedO'}>
-        {/* <div className='enlargedDoukondataImgO' > */}
-        <Image
-          src='/Document/DoukonDate1280_720.png'
-          alt=''
-          width={1280}
-          height={720}
-          layout='responsive'
-        />
-        {/* </div> */}
+        <div className='enlargedDoukondataImgO' >
+          <Image
+            src='/Document/DoukonDate1280_720.png'
+            alt=''
+            layout='fill'
+            objectFit='contain'
+          />
+        </div>
         <div
           className='closingModalO'
           onClick={() => setIsModalShown(false)}
@@ -551,7 +546,7 @@ export default function Document() {
         .IconImgO {
           margin-bottom: 16px;
         }
-        //セクション１、同梱データ
+        //セクション１、同梱データ--------------------------
         .middleSec {
           width: 100%;
           height: 80vh;
@@ -574,8 +569,8 @@ export default function Document() {
           width: 90%;
           height: 60vh;
           margin: 5% auto auto auto;
-          {/* margin: 0 auto; */}
           display: flex;
+          position: relative;
           justify-content: center;
         }
         //セクション２
@@ -611,14 +606,14 @@ export default function Document() {
         .modalShownO {
           width: 95vw;
           height: 95vh;
+          padding: var(--document-8px);
           position: fixed;
           top: 2.5vh;
           left: 2.5vw;
-          z-index: 11;// ロゴ上？下？
+          z-index: 11;
           border-radius: var(--borderRadius-20);
           opacity: 1;
           background-color: rgba(128, 128, 128, 0.8);
-          transition: var(--transition1s);
         }
         .modalClosedO {
           width: 95vw;
@@ -626,13 +621,15 @@ export default function Document() {
           position: fixed;
           top: 2.5vh;
           left: 2.5vw;
-          z-index: -10;// ロゴ上？下？
+          z-index: -10;
           opacity: 0;
           background-color: gray;
-          transition: var(--transition1s);
         }
-        {/* .enlargedDoukondataImgO { アニメーション時に必要？
-        } */}
+        .enlargedDoukondataImgO {
+          width: 100%;
+          height: 100%;
+          position: relative;
+        }
         .closingModalO {
           position: absolute;
           top: var(--document-8px);
@@ -687,6 +684,9 @@ export default function Document() {
           .middleSec {
             height: fit-content;
             margin-bottom: 74px;
+          }
+          .doukondataImgO {
+            height: fit-content;
           }
           .doukondataImgI {
             width: 80%;
