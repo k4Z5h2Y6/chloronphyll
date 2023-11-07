@@ -55,7 +55,7 @@ td調整
 
   --borderRadius-20: 20px;
   --borderRadius-16: 16px;
-  --settingManual-p8: 8px;
+  --settingManual-8px: 8px;
   --document-8px: 8px;
   --document-4px: 4px;
   --main-marginLR: 2.5vw;
@@ -97,18 +97,21 @@ h2 {
   white-space: nowrap;
   color: var(--textColor-navMenu);
 }
+
 /* h3…ページタイトル */
 h3 {
   font-size: 32px;
   line-height: 1;
   color: var(--textColor-title);
 }
+
 /* h4…セクションタイトル */
 h4 {
   font-size: 24px;
   line-height: 1;
   color: var(--textColor-title);
 }
+
 /* h5…コンテンツタイトル */
 h5 {
   padding-bottom: 16px;
@@ -125,7 +128,10 @@ p {
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 16px;
+  animation: fade-in 5s ease 0s 1 normal none running;
 }
+
+
 
 span {
   font-size: 12px;
@@ -151,37 +157,42 @@ video {
 @media screen and (max-width: 1024px) {
   :root {
     --borderRadius-20: 10px;
-    --settingManual-p8: 4px;
+    --settingManual-8px: 4px;
     --document-8px: 8px;
   }
+
   /* h3…ページタイトル */
   h3 {
     font-size: 24px;
   }
+
   /* h4…セクションタイトル */
   h4 {
     font-size: 18px;
   }
+
   h5 {
     /* padding-bottom: 12px; */
     padding-bottom: 12px;
     font-size: 12px;
     line-height: 14px;
   }
+
   p {
     font-size: 10px;
     line-height: 12px;
     margin-bottom: 10px;
   }
+
   span {
     font-size: 10px;
     line-height: 12px;
     margin-bottom: 10px;
   }
 }
+
 /* widthが1024px以下かつ横画面(スマホ版） */
-@media screen and (max-width: 1024px) and (orientation: landscape) {
-}
+@media screen and (max-width: 1024px) and (orientation: landscape) {}
 
 /*
 //幅が959px未満かつ横画面 (スマホ横)

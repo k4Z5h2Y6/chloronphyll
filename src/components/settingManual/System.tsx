@@ -80,7 +80,7 @@ export const System = () => {
         .mmdmodeO {
           width: 35%;
           height: 50%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 0;
@@ -88,7 +88,7 @@ export const System = () => {
         .mmdmodeTextO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
           border-radius: var(--borderRadius-20);
@@ -98,7 +98,7 @@ export const System = () => {
         .billiardsmodeO {
           width: 35%;
           height: 50%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 50%;
           left: 0;
@@ -106,7 +106,7 @@ export const System = () => {
         .billiardsmodeTextO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
           border-radius: var(--borderRadius-20);
@@ -116,7 +116,7 @@ export const System = () => {
         .akarusachouseiO {
           width: 30%;
           height: 60%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 35%;
@@ -132,21 +132,21 @@ export const System = () => {
         .akarusachouseiTextO {
           width: 100%;
           height: calc(100% / 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
         .akarusachouseiMovieO {
           width: 100%;
           height: calc(100% / 3 * 2);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //ONOFF
         .onoffkinouO {
           width: 35%;
           height: 70%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 65%;
@@ -162,7 +162,7 @@ export const System = () => {
         .onoffkinouFirstTextO {
           width: 100%;
           height: calc(100% / 7 * 4);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -179,7 +179,7 @@ export const System = () => {
         .onoffkinouSecondTextO {
           width: 100%;
           height: calc(100% / 7 * 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }

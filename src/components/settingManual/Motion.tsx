@@ -82,7 +82,7 @@ export const Motion = () => {
         .motionO {
           width: 65%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 0;
@@ -98,7 +98,7 @@ export const Motion = () => {
         .motionMovieO {
           width: 100%;
           height: 70%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .motionTextO {
@@ -110,12 +110,12 @@ export const Motion = () => {
         .tachiO, .syagamiO, .fuseO, .afkO {
           width: 25%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         .tachiI, .syagamiI, .fuseI, .afkI {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }
@@ -123,7 +123,7 @@ export const Motion = () => {
         .furutoraO {
           width: 35%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 65%;
@@ -131,7 +131,7 @@ export const Motion = () => {
         .furutoraTextO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
           border-radius: var(--borderRadius-20);
@@ -144,7 +144,7 @@ export const Motion = () => {
         .taikimotionO {
           width: 35%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 30%;
           left: 65%;
@@ -152,7 +152,7 @@ export const Motion = () => {
         .taikimotionTextO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
           border-radius: var(--borderRadius-20);
@@ -162,7 +162,7 @@ export const Motion = () => {
         .sitO {
           width: 35%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 60%;
           left: 65%;
@@ -177,14 +177,14 @@ export const Motion = () => {
         .sitTextO {
           width: calc(100% / 7 * 3);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
         .sitMovieO {
           width: calc(100% / 7 * 4);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         @media screen and (max-width: 1024px) {

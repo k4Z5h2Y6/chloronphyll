@@ -75,7 +75,7 @@ export const Kemo = () => {
         .tsunoO {
           width: 45%;
           height: 60%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 0;
@@ -91,20 +91,20 @@ export const Kemo = () => {
         .tsunoMovieO {
           width: 100%;
           height: calc(100% / 6 * 5);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .tsunoTextO {
           width: 100%;
           height: calc(100% / 6);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //ケモ属性
         .kemozokuseiO {
           width: 45%;
           height: 40%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 60%;
           left: 0;
@@ -119,7 +119,7 @@ export const Kemo = () => {
         .kemozokuseiTextO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -127,7 +127,7 @@ export const Kemo = () => {
         .mimihanemimitojiO {
           width: 30%;
           height: 40%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 45%;
@@ -143,20 +143,20 @@ export const Kemo = () => {
         .mimihanemimitojiMovieO {
           width: 100%;
           height: calc(100% / 4 * 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .mimihanemimitojiTextO {
           width: 100%;
           height: calc(100% / 4);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //しっぽ
         .shippoO {
           width: 30%;
           height: 60%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 40%;
           left: 45%;
@@ -172,13 +172,13 @@ export const Kemo = () => {
         .shippoMovieO {
           width: 100%;
           height: calc(100% / 6 * 4);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .shippoTextO {
           width: 100%;
           height: calc(100% / 6 * 2);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -186,7 +186,7 @@ export const Kemo = () => {
         .kemomiminokatachiO {
           width: 25%;
           height: 90%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 75%;
@@ -202,13 +202,13 @@ export const Kemo = () => {
         .kemomiminokatachiMovieO {
           width: 100%;
           height: calc(100% / 9 * 5);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .kemomiminokatachiTextO {
           width: 100%;
           height: calc(100% / 9 * 4);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }

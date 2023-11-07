@@ -52,7 +52,7 @@ export const Logo = ({ isNavOpened, setIsNavOpened }: Props) => {
           bottom: 0;
           z-index: 11;
           transform: translateX(50%);
-          transition: all 1s ease;
+          transition: var(--transition1s);
         }
         .logoDarkOnDarkMode {
           width: 341px;
@@ -62,7 +62,7 @@ export const Logo = ({ isNavOpened, setIsNavOpened }: Props) => {
           bottom: 0;
           z-index: 11;
           transform: translateX(50%);
-          transition: all 1s ease;
+          transition: var(--transition1s);
         }
         {/* @media screen and (max-width: 1024px) and (orientation: portrait) { */}
         @media screen and (max-width: 1024px) {

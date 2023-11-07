@@ -220,13 +220,13 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
           width: 48px;
           height: 48px;
           display: flex;
-          transition: all 1s ease;
+          transition: var(--transition1s);
         }
         .darkIconOnLightMode, .lightIconOnDarkMode {
           width: 16px;
           height: 16px;
           display: flex;
-          transition: all 1s ease;
+          transition: var(--transition1s);
         }
         .separateLineOnDarkMode {
           width: 0;
@@ -238,7 +238,7 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
           border-radius: 1px;
           transform-origin: 0 100%; 
           transform:rotate(-30deg);
-          transition: all 1s ease;
+          transition: var(--transition1s);
         }
         .separateLineOnLightMode {
           width: 0;
@@ -250,7 +250,7 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
           border-radius: 1px;
           transform-origin: 0 100%; 
           transform:rotate(30deg);
-          transition: all 1s ease;
+          transition: var(--transition1s);
         }
       `}</style>
     </>

@@ -88,7 +88,7 @@ export const Clothes = () => {
         .clothesMovieO {
           width: 50%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .clothesTextO {
@@ -101,23 +101,23 @@ export const Clothes = () => {
         .fukuO, .sodeO, .eriO, .sodehenkeiO, .scarfhenkeiO, .kutsuO {
           width: 30%;
           height: calc(100% / 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         .scarfO, .scarfhenkeiO, .kutsuO {
           width: 40%;
           height: calc(100% / 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         .skirtO {
           width: 60%;
           height: calc(100% / 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         //兼textO、skirtIのみ別指定
         .fukuI, .sodeI, .scarfI, .eriI, .sodehenkeiI, .scarfhenkeiI, .kutsuI {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
           border: var(--borderColor-section);
@@ -133,13 +133,13 @@ export const Clothes = () => {
         .skirtMovieO {
           width: 50%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .skirtTextO {
           width: 50%;
           height: 100%;
-          padding: var(--settingManual-p8) var(--settingManual-p8) var(--settingManual-p8) 0;
+          padding: var(--settingManual-8px) var(--settingManual-8px) var(--settingManual-8px) 0;
         }
         @media screen and (max-width: 1024px) {
           .sectionContentsCO {

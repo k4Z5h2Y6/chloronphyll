@@ -96,7 +96,7 @@ export const Gesture = () => {
         .katateturntableO {
           width: 60%;
           height: 60%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 0;
@@ -111,7 +111,7 @@ export const Gesture = () => {
         .katateturntableMovieO {
           width: calc(50% - 8px - 8px);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .katateturntableTextO {
@@ -128,14 +128,14 @@ export const Gesture = () => {
         .katateturntableTextLeftO, .katateturntableTextRightO {
           width: 50%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
         .katateturntableSubO {
           width: 100%;
           height: calc(100% / 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .katateturntableSubI {
@@ -148,13 +148,13 @@ export const Gesture = () => {
         .katateturntableSubMovieO {
           width: calc(100% / 3);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .katateturntableSubTextO {
           width: calc(100% / 3 * 2);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -162,7 +162,7 @@ export const Gesture = () => {
         .ryoutekirakiraposeO {
           width: 20%;
           height: 40%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 60%;
           left: 0;
@@ -170,7 +170,7 @@ export const Gesture = () => {
         .ryoutekirakiraposeMovieO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //かかと立ち、ビリヤードモード、説明
@@ -186,12 +186,12 @@ export const Gesture = () => {
         .kakatodachiO {
           width: 50%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         .kakatodachiMovieO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //ビリヤードモード、説明
@@ -205,24 +205,24 @@ export const Gesture = () => {
         .billiardsmodeO {
           width: 100%;
           height: 50%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         .billiardsmodeMovieO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //説明
         .setsumeiO {
           width: 100%;
           height: 50%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         .setsumeiI {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
@@ -231,7 +231,7 @@ export const Gesture = () => {
         .penwonigiruO {
           width: 40%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 60%;
@@ -239,14 +239,14 @@ export const Gesture = () => {
         .penwonigiruMovieO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //水を掬う
         .mizuwosukuuO {
           width: 40%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 30%;
           left: 60%;
@@ -254,14 +254,14 @@ export const Gesture = () => {
         .mizuwosukuuMovieO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //植木鉢
         .uekibachiO {
           width: 40%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 60%;
           left: 60%;
@@ -269,7 +269,7 @@ export const Gesture = () => {
         .uekibachiMovieO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         @media screen and (max-width: 1024px) {
@@ -301,7 +301,7 @@ export const Gesture = () => {
             width: 80%;
             height: calc(100% / 3);
             margin: 0 auto;
-            padding: var(--settingManual-p8);
+            padding: var(--settingManual-8px);
             display: flex;
           }
           .katateturntableSubMovieO {

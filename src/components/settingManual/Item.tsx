@@ -126,7 +126,7 @@ export const Item = () => {
         .fuusenO {
           width: 40%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 0;
@@ -141,13 +141,13 @@ export const Item = () => {
         .fuusenMovieO {
           width: 25%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .fuusenTextO {
           width: 75%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -155,7 +155,7 @@ export const Item = () => {
         .candyO {
           width: 40%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 30%;
           left: 0;
@@ -170,13 +170,13 @@ export const Item = () => {
         .candyMovieO {
           width: 25%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .candyTextO {
           width: 75%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -184,7 +184,7 @@ export const Item = () => {
         .ohoshisamaO {
           width: 40%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 40%;
@@ -199,13 +199,13 @@ export const Item = () => {
         .ohoshisamaMovieO {
           width: 25%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .ohoshisamaTextO {
           width: 75%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -223,7 +223,7 @@ export const Item = () => {
         .kuukiO {
           width: 40%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 30%;
           left: 40%;
@@ -238,13 +238,13 @@ export const Item = () => {
         .kuukiMovieO {
           width: 25%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .kuukiTextO {
           width: 75%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -262,7 +262,7 @@ export const Item = () => {
         .henrudaO {
           width: 20%;
           height: 60%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 80%;
@@ -278,13 +278,13 @@ export const Item = () => {
         .henrudaMovieO {
           width: 100%;
           height: calc(100% / 3 * 2);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .henrudaTextO {
           width: 100%;
           height: calc(100% / 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -292,7 +292,7 @@ export const Item = () => {
         .flemingO {
           width: 50%;
           height: 40%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 60%;
           left: 0;
@@ -307,7 +307,7 @@ export const Item = () => {
         .flemingMovieO {
           width: 20%;
           height: 75%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .flemingTextO {
@@ -319,21 +319,21 @@ export const Item = () => {
         .flemingTextI {
           width: 100%;
           height: 50%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
         .flemingSubMovieO {
           width: 100%;
           height: 50%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //イメージボード
         .imageboardO {
           width: 50%;
           height: 40%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 60%;
           left: 50%;
@@ -348,14 +348,14 @@ export const Item = () => {
         .imageboardTextO {
           width: 60%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
         .imageboardMovieO {
           width: 40%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         @media screen and (max-width: 1024px) {

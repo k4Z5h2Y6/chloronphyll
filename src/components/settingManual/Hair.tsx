@@ -13,7 +13,7 @@ export const Hair = () => {
             <div className='yokogamiTextO'>
               <div className='yokogamiTextI'>
                 <h5>横髪</h5>
-                <p>a_ボブ<br />b_パーマ<br />c_きのこヘア<br />d_ミディアムヘア<br />e_もふヘア</p>
+                <p className="xxx">a_ボブ<br />b_パーマ<br />c_きのこヘア<br />d_ミディアムヘア<br />e_もふヘア</p>
                 <p>2つ以上を組み合わせて<br />さらに個性を出せます<br />ほぼ全組み合わせ対応です<br />ExMenuでコーデしてみてください</p>
               </div>
               <div className='yokogamiSubMovieO'>
@@ -61,7 +61,7 @@ export const Hair = () => {
         .yokogamiO {
           width: 75%;
           height: 70%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 0;
@@ -76,7 +76,7 @@ export const Hair = () => {
         .yokogamiMovieO {
           width: calc(100% / 3 * 2);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .yokogamiTextO {
@@ -88,21 +88,21 @@ export const Hair = () => {
         .yokogamiTextI {
           width: 100%;
           height: calc(100% / 7 * 4);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
         .yokogamiSubMovieO {
           width: 100%;
           height: calc(100% / 7 * 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //前髪
         .maegamiO {
           width: 75%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 70%;
           left: 0;
@@ -117,13 +117,13 @@ export const Hair = () => {
         .maegamiMovieO {
           width: calc(100% / 3 * 2);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .maegamiTextO {
           width: calc(100% / 3);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -131,7 +131,7 @@ export const Hair = () => {
         .mimikakeO {
           width: 25%;
           height: 80%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 75%;
@@ -147,13 +147,13 @@ export const Hair = () => {
         .mimikakeMovieO {
           width: 100%;
           height: calc(100% / 8 * 5);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .mimikakeTextO {
           width: 100%;
           height: calc(100% / 8 * 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }

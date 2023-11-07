@@ -61,7 +61,7 @@ export const Expression = () => {
         .handsignO {
           width: 100%;
           height: 70%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 0;
@@ -76,7 +76,7 @@ export const Expression = () => {
         .handsignMovieO {
           width: 50%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .handsignTextO {
@@ -93,28 +93,28 @@ export const Expression = () => {
         .handsignKatateTextO {
           width: 40%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
         .handsignRyouteTextO {
           width: 60%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
         .handsignSubMovieO {
           width: 100%;
           height: calc(100% / 7 * 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //飛び目
         .tobimeO {
           width: 40%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 70%;
           left: 5%;
@@ -122,14 +122,14 @@ export const Expression = () => {
         .tobimeMovieO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //しずくのなみだ
         .shizukunonamidaO {
           width: 25%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 70%;
           left: 45%;
@@ -137,14 +137,14 @@ export const Expression = () => {
         .shizukunonamidaMovieO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //説明
         .explanationO {
           width: 30%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 70%;
           left: 70%;
@@ -152,7 +152,7 @@ export const Expression = () => {
         .explanationTextO {
           width: 100%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           border: var(--borderColor-section);
           border-radius: var(--borderRadius-20);
         }

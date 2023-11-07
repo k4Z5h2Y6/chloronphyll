@@ -101,7 +101,7 @@ export const Emote = () => {
         .curtsyO {
           width: 30%;
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 0;
@@ -117,13 +117,13 @@ export const Emote = () => {
         .curtsyMovieO {
           width: 100%;
           height: 60%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .curtsyTextO {
           width: 100%;
           height: 20%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -135,19 +135,19 @@ export const Emote = () => {
         .curtsySubMovieO {
           width: calc(100% / 3);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .curtsySubTextO {
           width: calc(100% / 3 * 2);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         //yes/no
         .yesnoO {
           width: 35%;
           height: 30%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 65%;
@@ -162,21 +162,21 @@ export const Emote = () => {
         .yesnoTextO {
           width: calc(100% / 7 * 3);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
         .yesnoMovieO {
           width: calc(100% / 7 * 4);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         //うとうと
         .utoutoO {
           width: 35%;
           height: 40%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 0;
           left: 30%;
@@ -192,13 +192,13 @@ export const Emote = () => {
         .utoutoMovieO {
           width: 100%;
           height: 50%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .utoutoTextO {
           width: 100%;
           height: 50%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -206,7 +206,7 @@ export const Emote = () => {
         .vsuiO {
           width: 35%;
           height: 60%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 40%;
           left: 30%;
@@ -222,13 +222,13 @@ export const Emote = () => {
         .vsuiMovieO {
           width: 100%;
           height: 50%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
         }
         .vsuiTextO {
           width: 100%;
           height: 50%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
@@ -236,7 +236,7 @@ export const Emote = () => {
         .zenshinkoteiO {
           width: 35%;
           height: 70%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           position: absolute;
           top: 30%;
           left: 65%;
@@ -252,14 +252,14 @@ export const Emote = () => {
         .zenshinkoteiFirstTextO {
           width: 100%;
           height: calc(100% / 7 * 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
           display: flex;
           flex-direction: column;
         }
         .zenshinkoteiSecondTextO {
           width: 100%;
           height: calc(100% / 7 * 3);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         .zenshinkoteiSecondTextI {
           width: 100%;
@@ -271,17 +271,17 @@ export const Emote = () => {
         .zenshinkoteiSecondLeftTextI {
           width: calc(100% / 7 * 3);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         .zenshinkoteiSecondRightTextI {
           width: calc(100% / 7 * 4);
           height: 100%;
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         .zenshinkoteiThirdTextO {
           width: 100%;
           height: calc(100% / 7);
-          padding: var(--settingManual-p8);
+          padding: var(--settingManual-8px);
         }
         @media screen and (max-width: 1024px) {
           //コンテンツアウター共通
@@ -302,7 +302,7 @@ export const Emote = () => {
           }
           .curtsyTextO {
             height: 20%;
-            padding: var(--settingManual-p8);
+            padding: var(--settingManual-8px);
             display: flex;
             flex-direction: column;
           }
