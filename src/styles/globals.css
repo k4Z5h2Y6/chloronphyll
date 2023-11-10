@@ -47,6 +47,7 @@ td調整
   --backgroundColor-navO: rgba(124, 116, 105, 0.5);
   --backgroundColor-navI: #7c7469;
   --backgroundColor-title: #ada79e;
+  --backgroundColor-kaihenItem: rgba(150, 142, 131, 0.8);
   --borderColor-section: 1.5px solid #6e675e;
   --borderColor: #7c7469;
   --textColor-base: #ffffff;
@@ -69,6 +70,7 @@ td調整
   --backgroundColor-navI: #484b51;
   --backgroundColor-item: #696e77;
   --backgroundColor-title: #6e737c;
+  --backgroundColor-kaihenItem: rgba(96, 100, 108, 0.8);
   --borderColor-section: 2px solid #565A61;
 }
 

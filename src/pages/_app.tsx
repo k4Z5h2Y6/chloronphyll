@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
         main {
           width: 95vw;
           max-width: 2000px;
-          min-height: 100vh;
+          {/* min-height: 100vh; 指定すると改変ノートでトラブル起こる*/}
           margin: 0 auto;
         }
         .navMenuOopenedO {
