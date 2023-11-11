@@ -79,7 +79,7 @@ export default function Document() {
                   <div className='gmailRowO'>
                     <p className='gmailP'>
                       <td className='snsTd'>Gmail</td>
-                      <td className='snsAccountTd'>: 6666rue@gmail.com</td>
+                      <td className='snsAccountTd'>: 1753rue@gmail.com</td>
                     </p>
                     <div className='gmailIconO'>
                       <Image
