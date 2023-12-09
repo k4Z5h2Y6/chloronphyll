@@ -28,7 +28,7 @@ export default function facial() {
         //todo:全体要整理
         .topSct {
           width: 100%;
-          height: 100vh;
+          height: calc(100vh - 24px);
         }
         .section0contentO {
           height: calc(100% - 16px - 32px - 16px - 24px - 7vh);

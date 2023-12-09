@@ -18,7 +18,7 @@ export default function Shape() {
         //
         .topSct {
           width: 100%;
-          height: 100vh;
+          height: calc(100vh - 24px);
         }
         .section0contentO {
           width: 100%;
