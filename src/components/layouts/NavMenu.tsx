@@ -22,6 +22,7 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
+  
   return (
     <>
       <div
