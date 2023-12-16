@@ -1,8 +1,9 @@
-import { PageTitle } from "@/components/elements/PageTitle";
+import { PageTitle } from '@/components/elements/PageTitle';
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export default function Document() {
+
   const [isModalShown, setIsModalShown] = useState<boolean>(false);
   useEffect(() => {
     setIsModalShown(false);
@@ -10,38 +11,37 @@ export default function Document() {
 
   return (
     <>
-      <section className="topSct">
-        <PageTitle pageTitle="ドキュメント" />
-        <div className="section0contentO">
-          <div className="seihinOtoiawaseO">
-            <div className="seihinO">
-              <div className="seihinI">
-                <div className="documentTitleCO">
-                  <div className="documentTitleCI">
-                    <h5 className="documentH5">製品</h5>
+      <section className='topSct'>
+        <PageTitle pageTitle='ドキュメント' />
+        <div className='section0contentO'>
+          <div className='seihinOtoiawaseO'>
+            <div className='seihinO'>
+              <div className='seihinI'>
+                <div className='documentTitleCO'>
+                  <div className='documentTitleCI'>
+                    <h5 className='documentH5'>製品</h5>
                   </div>
                 </div>
-                <div className="seihinContentO">
+                <div className='seihinContentO'>
                   <p>
-                    VRChatでの使用を想定したオリジナル3Dモデルです。
-                    <br />
-                    名前はフキ。
-                    <br />
-                    植物のフキをイメージして作っています。
-                    <br />
+                    VRChatでの使用を想定したオリジナル3Dモデルです。<br />
+                    名前はフキ。<br />
+                    植物のフキをイメージして作っています。<br />
                     #Fuki3D (フキ関係のSNS投稿の際にお使いください)
                   </p>
-                  <div className="boothRowO">
-                    <p className="boothP">BOOTHで販売しています。</p>
-                    <div className="boothIconO">
+                  <div className='boothRowO'>
+                    <p className='boothP'>
+                      BOOTHで販売しています。
+                    </p>
+                    <div className='boothIconO'>
                       <Image
-                        src="/NavMenu/iconBooth.png"
-                        alt=""
+                        src='/NavMenu/iconBooth.png'
+                        alt=''
                         width={64}
                         height={64}
                         style={{
-                          width: "48px",
-                          height: "48px",
+                          width: '48px',
+                          height: '48px',
                         }}
                       />
                     </div>
@@ -49,77 +49,72 @@ export default function Document() {
                 </div>
               </div>
             </div>
-            <div className="otoiawaseO">
-              <div className="otoiawaseI">
-                <div className="documentTitleCO">
-                  <div className="documentTitleCI">
-                    <h5 className="documentH5">お問い合わせ</h5>
+            <div className='otoiawaseO'>
+              <div className='otoiawaseI'>
+                <div className='documentTitleCO'>
+                  <div className='documentTitleCI'>
+                    <h5 className='documentH5'>お問い合わせ</h5>
                   </div>
                 </div>
-                <div className="otoiawaseContentO">
+                <div className='otoiawaseContentO'>
                   <p>ご連絡はTwitterのDMかGmailでお受けします。</p>
-                  <div className="twitterRowO">
-                    <p className="twitterP">
-                      <td className="snsTd">Twitter</td>
-                      <td className="snsAccountTd">: @Rue_3D</td>
+                  <div className='twitterRowO'>
+                    <p className='twitterP'>
+                      <td className='snsTd'>Twitter</td>
+                      <td className='snsAccountTd'>: @Rue_3D</td>
                     </p>
-                    <div className="twitterIconO">
+                    <div className='twitterIconO'>
                       <Image
-                        src="/NavMenu/iconBooth.png"
-                        alt=""
+                        src='/NavMenu/iconBooth.png'
+                        alt=''
                         width={64}
                         height={64}
                         style={{
-                          width: "48px",
-                          height: "48px",
+                          width: '48px',
+                          height: '48px',
                         }}
                       />
                     </div>
                   </div>
-                  <div className="gmailRowO">
-                    <p className="gmailP">
-                      <td className="snsTd">Gmail</td>
-                      <td className="snsAccountTd">: 1753rue@gmail.com</td>
+                  <div className='gmailRowO'>
+                    <p className='gmailP'>
+                      <td className='snsTd'>Gmail</td>
+                      <td className='snsAccountTd'>: 1753rue@gmail.com</td>
                     </p>
-                    <div className="gmailIconO">
+                    <div className='gmailIconO'>
                       <Image
-                        src="/NavMenu/iconBooth.png"
-                        alt=""
+                        src='/NavMenu/iconBooth.png'
+                        alt=''
                         width={64}
                         height={64}
                         style={{
-                          width: "48px",
-                          height: "48px",
+                          width: '48px',
+                          height: '48px',
                         }}
                       />
                     </div>
                   </div>
                   <p>
-                    [直接相談]
-                    <br />
-                    VRChatでお会いできれば対面で会話できます。
-                    <br />
-                    夜明けからお昼までの時間帯によく居ます。
-                    <br />
-                    事前にTwitterのDMで連絡くださると
-                    <br />
+                    [直接相談]<br />
+                    VRChatでお会いできれば対面で会話できます。<br />
+                    夜明けからお昼までの時間帯によく居ます。<br />
+                    事前にTwitterのDMで連絡くださると<br />
                     予定を組めてなにかとスムーズです。
                   </p>
-                  <div className="vrchatRowO">
-                    <p className="vrchatP">
-                      VRChatのフレンド申請をしておくと、
-                      <br />
+                  <div className='vrchatRowO'>
+                    <p className='vrchatP'>
+                      VRChatのフレンド申請をしておくと、<br />
                       お会いするまでの道しるべとなります。
                     </p>
-                    <div className="vrchatIconO">
+                    <div className='vrchatIconO'>
                       <Image
-                        src="/NavMenu/iconBooth.png"
-                        alt=""
+                        src='/NavMenu/iconBooth.png'
+                        alt=''
                         width={64}
                         height={64}
                         style={{
-                          width: "48px",
-                          height: "48px",
+                          width: '48px',
+                          height: '48px',
                         }}
                       />
                     </div>
@@ -128,171 +123,153 @@ export default function Document() {
               </div>
             </div>
           </div>
-          <div className="riyoukiyakuO">
-            <div className="riyoukiyakuI">
-              <div className="documentTitleCO">
-                <div className="documentTitleCI">
-                  <h5 className="documentH5">利用規約</h5>
+          <div className='riyoukiyakuO'>
+            <div className='riyoukiyakuI'>
+              <div className='documentTitleCO'>
+                <div className='documentTitleCI'>
+                  <h5 className='documentH5'>利用規約</h5>
                 </div>
               </div>
-              <div className="riyoukiyakuContentO">
-                <div className="maruO">
-                  <div className="maruI">
-                    <div className="IconImgO">
+              <div className='riyoukiyakuContentO'>
+                <div className='maruO'>
+                  <div className='maruI'>
+                    <div className='IconImgO'>
                       <Image
-                        src="/Document/DocumentMaru256_256.png"
-                        alt=""
+                        src='/Document/DocumentMaru256_256.png'
+                        alt=''
                         width={256}
                         height={256}
                         style={{
-                          width: "48px",
-                          height: "48px",
+                          width: '48px',
+                          height: '48px',
                         }}
                       />
                     </div>
                     <p>許可 (営利、非営利を問いません)</p>
                     <p>
-                      ・個人利用 (法人利用はお問い合わせください)
-                      <br />
-                      ・映像作品、配信
-                      <br />
-                      ・二次創作
-                      <br />
-                      ・性的表現
-                      <br />
+                      ・個人利用 (法人利用はお問い合わせください)<br />
+                      ・映像作品、配信<br />
+                      ・二次創作<br />
+                      ・性的表現<br />
                       ・対応衣装でのボーン、ウェイトのコピー
                     </p>
                   </div>
                 </div>
 
-                <div className="batsuO">
-                  <div className="batsuI">
-                    <div className="IconImgO">
+                <div className='batsuO'>
+                  <div className='batsuI'>
+                    <div className='IconImgO'>
                       <Image
-                        src="/Document/DocumentBatu256_256.png"
-                        alt=""
+                        src='/Document/DocumentBatu256_256.png'
+                        alt=''
                         width={256}
                         height={256}
                         style={{
-                          width: "48px",
-                          height: "48px",
+                          width: '48px',
+                          height: '48px',
                         }}
                       />
                     </div>
                     <p>禁止</p>
                     <p>
-                      ・パブリックでのアップロード
-                      <br />
-                      ・未購入者にデータ転送
-                      <br />
-                      ・転売 , 再配布
-                      <br />
+                      ・パブリックでのアップロード<br />
+                      ・未購入者にデータ転送<br />
+                      ・転売 , 再配布<br />
                       ・暴力表現 , 政治活用
                     </p>
                     <p>
-                      blender、Unityの内部データを、
-                      <br />
-                      スクリーンショットを撮るなどして無許可で公開しないでください。
-                      <br />
+                      blender、Unityの内部データを、<br />
+                      スクリーンショットを撮るなどして無許可で公開しないでください。<br />
                       公開を希望する場合は直接ご相談ください。
                     </p>
                     <p>
-                      VRChatのMMDダンスワールドで使われている音源は
-                      <br />
-                      利用許可されていないものが多いです。
-                      <br />
+                      VRChatのMMDダンスワールドで使われている音源は<br />
+                      利用許可されていないものが多いです。<br />
                       SNSで動画投稿する際は無音にしてください。
                     </p>
                     <p>
-                      [注意事項]
-                      <br />
-                      ダウンロード製品の購入後のキャンセル、返金はできません。
-                      <br />
-                      購入された時、またはギフトを受け取った時に、
-                      <br />
-                      利用規約が適用されます。
-                      <br />
-                      製品を使用して発生したトラブルや損害は一切責任を負いません。
-                      <br />
+                      [注意事項]<br />
+                      ダウンロード製品の購入後のキャンセル、返金はできません。<br />
+                      購入された時、またはギフトを受け取った時に、<br />
+                      利用規約が適用されます。<br />
+                      製品を使用して発生したトラブルや損害は一切責任を負いません。<br />
                       予告なく価格を変更する場合がございます。
                     </p>
                   </div>
                 </div>
 
-                <div className="searchO">
-                  <div className="searchI">
-                    <div className="IconImgO">
+                <div className='searchO'>
+                  <div className='searchI'>
+                    <div className='IconImgO'>
                       <Image
-                        src="/Document/DocumentLoupe256_256.png"
-                        alt=""
+                        src='/Document/DocumentLoupe256_256.png'
+                        alt=''
                         width={256}
                         height={256}
                         style={{
-                          width: "48px",
-                          height: "48px",
+                          width: '48px',
+                          height: '48px',
                         }}
                       />
                     </div>
                     <p>
-                      この一覧はわかりやすく記載しているものです。
-                      <br />
-                      PDFの利用規約も兼ねてご確認ください。
-                      <br />
+                      この一覧はわかりやすく記載しているものです。<br />
+                      PDFの利用規約も兼ねてご確認ください。<br />
                       (VN3ライセンスhttps://www.vn3.org/ を使用しています。)
                     </p>
-                    <ul className="filesUl">
-                      <li className="fileLi">
-                        <div className="fileO">
+                    <ul className='filesUl'>
+                      <li className='fileLi'>
+                        <div className='fileO'>
                           <Image
-                            src="/Document/DocumentJP256_256.png"
-                            alt=""
+                            src='/Document/DocumentJP256_256.png'
+                            alt=''
                             width={256}
                             height={256}
                             style={{
-                              width: "100%",
-                              height: "auto",
+                              width: '100%',
+                              height: 'auto',
                             }}
                           />
                         </div>
                       </li>
-                      <li className="fileLi">
-                        <div className="fileO">
+                      <li className='fileLi'>
+                        <div className='fileO'>
                           <Image
-                            src="/Document/DocumentEN256_256.png"
-                            alt=""
+                            src='/Document/DocumentEN256_256.png'
+                            alt=''
                             width={256}
                             height={256}
                             style={{
-                              width: "100%",
-                              height: "auto",
+                              width: '100%',
+                              height: 'auto',
                             }}
                           />
                         </div>
                       </li>
-                      <li className="fileLi">
-                        <div className="fileO">
+                      <li className='fileLi'>
+                        <div className='fileO'>
                           <Image
-                            src="/Document/DocumentKO256_256.png"
-                            alt=""
+                            src='/Document/DocumentKO256_256.png'
+                            alt=''
                             width={256}
                             height={256}
                             style={{
-                              width: "100%",
-                              height: "auto",
+                              width: '100%',
+                              height: 'auto',
                             }}
                           />
                         </div>
                       </li>
-                      <li className="fileLi">
-                        <div className="fileO">
+                      <li className='fileLi'>
+                        <div className='fileO'>
                           <Image
-                            src="/Document/DocumentZH256_256.png"
-                            alt=""
+                            src='/Document/DocumentZH256_256.png'
+                            alt=''
                             width={256}
                             height={256}
                             style={{
-                              width: "100%",
-                              height: "auto",
+                              width: '100%',
+                              height: 'auto',
                             }}
                           />
                         </div>
@@ -306,88 +283,90 @@ export default function Document() {
         </div>
       </section>
 
-      <section className="middleSec">
-        <div className="section1contentO">
-          <div className="documentTitleCO">
-            <div className="documentTitleCI">
-              <h5 className="documentH5">同梱データ</h5>
+      <section className='middleSec'>
+        <div className='section1contentO'>
+          <div className='documentTitleCO'>
+            <div className='documentTitleCI'>
+              <h5 className='documentH5'>同梱データ</h5>
             </div>
           </div>
-          <div className="doukondataImgO">
+          <div className='doukondataImgO'>
             <div
-              className="doukondataImgI"
+              className='doukondataImgI'
               onClick={() => setIsModalShown(true)}
             >
               <Image
-                src="/Document/DoukonDate1280_720.png"
-                alt=""
-                layout="fill"
-                objectFit="contain"
+                src='/Document/DoukonDate1280_720.png'
+                alt=''
+                layout='fill'
+                objectFit='contain'
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="endSec">
-        <div className="section2contentO">
-          <div className="seisakuO">
-            <div className="seisakuIconImgO">
+      <section className='endSec'>
+        <div className='section2contentO'>
+          <div className='seisakuO'>
+            <div className='seisakuIconImgO'>
               <Image
-                src="/Document/IconRue256_256.png"
-                alt=""
+                src='/Document/IconRue256_256.png'
+                alt=''
                 width={256}
                 height={256}
                 style={{
-                  width: "32px",
-                  height: "32px",
+                  width: '32px',
+                  height: '32px',
                 }}
               />
             </div>
-            <p className="seisakuTextP">制作 : ルー (blender , Unity全行程)</p>
+            <p className='seisakuTextP'>制作 : ルー (blender , Unity全行程)</p>
           </div>
-          <div className="kanriO">
-            <div className="kanriIconImgO">
+          <div className='kanriO'>
+            <div className='kanriIconImgO'>
               <Image
-                src="/Document/IconLogo256_256.png"
-                alt=""
+                src='/Document/IconLogo256_256.png'
+                alt=''
                 width={256}
                 height={256}
                 style={{
-                  width: "32px",
-                  height: "32px",
+                  width: '32px',
+                  height: '32px',
                 }}
               />
             </div>
-            <p className="kanriTextP">
-              管理 : クロロンフィル (ルーの個人サークル)
-            </p>
+            <p className='kanriTextP'>管理 : クロロンフィル (ルーの個人サークル)</p>
           </div>
         </div>
       </section>
 
-      <div className={isModalShown ? "modalShownO" : "modalClosedO"}>
-        <div className="enlargedDoukondataImgO">
+      <div className={isModalShown ? 'modalShownO' : 'modalClosedO'}>
+        <div className='enlargedDoukondataImgO' >
           <Image
-            src="/Document/DoukonDate1280_720.png"
-            alt=""
-            layout="fill"
-            objectFit="contain"
+            src='/Document/DoukonDate1280_720.png'
+            alt=''
+            layout='fill'
+            objectFit='contain'
           />
         </div>
-        <div className="closingModalO" onClick={() => setIsModalShown(false)}>
+        <div
+          className='closingModalO'
+          onClick={() => setIsModalShown(false)}
+        >
           <Image
-            src="/Document/DocumentBatu256_256.png"
-            alt=""
+            src='/Document/DocumentBatu256_256.png'
+            alt=''
             width={256}
             height={256}
             style={{
-              width: "48px",
-              height: "48px",
+              width: '48px',
+              height: '48px',
             }}
           />
         </div>
       </div>
+
 
       <style jsx>{`
         //todo:全体要整理
