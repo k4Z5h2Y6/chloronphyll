@@ -48,7 +48,7 @@ export const DropDownBoxC = ({ title, description }: Props) => {
           background-color: var(--backgroundColor-title);
         }
         .titleP {
-          width: 184px;
+          width: 198px; //
           height: 100%;
           margin: 0 auto;
           line-height: 32px;
@@ -66,7 +66,7 @@ export const DropDownBoxC = ({ title, description }: Props) => {
           overflow: hidden;
         }
         .descriptionP {
-          width: 184px;
+          width: 198px; //
           height: 100%;
           margin: 16px auto;
           font-size: 10px;
