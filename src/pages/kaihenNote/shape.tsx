@@ -220,7 +220,7 @@ export default function Shape() {
             />
             <DropDownBoxC
               title={'z_MMD'}
-              description={`あ/い/う/え/お/nん\nワ\n□\nヘ\n▲\nω\nω□\n|\nまばたき\n笑い\nウィンク\nウィンク2\nウィンク右\nｳｨﾝｸ2右\nつり目\nじと目\nびっくり\nたれ目\nにや\n|\nはぅ\nなごみ\nｷﾞｭｯ\nおこ\n星目\nはぁと\n丸目\n瞳小\n涙\n汗\n|\n真面目\nｷﾘｯ\nにこり\n困る\n怒り\n悲しい\n上\n下`}
+              description={`あ/い/う/え/お\nん\nワ\n□\nヘ\n▲\nω\nω□\n|\nまばたき\n笑い\nウィンク\nウィンク2\nウィンク右\nｳｨﾝｸ2右\nつり目\nじと目\nびっくり\nたれ目\nにや\n|\nはぅ\nなごみ\nｷﾞｭｯ\nおこ\n星目\nはぁと\n丸目\n瞳小\n涙\n汗\n|\n真面目\nｷﾘｯ\nにこり\n困る\n怒り\n悲しい\n上\n下`}
             />
           </div>
         </div>
