@@ -136,7 +136,7 @@ export default function Shape() {
             />
           </div>
         </div>
-        
+
         {/* 3列目 */}
         <div className='dropDownBoxesO'>
           <div className='dropDownBoxesI'>
@@ -310,6 +310,45 @@ export default function Shape() {
           height: calc(14.25vw / 3.3);
           margin: 0 auto 16px auto;
           position: relative;
+        }
+        @media screen and (max-width: 1024px) {
+          .topSct {
+            height: fit-content;
+          }
+          //
+          .section0contentO {
+            flex-direction: column;
+          }
+          .section0ContentMovieO {
+            width: 80vw;
+            margin: 0 auto;
+            padding: 0 0 20px 0;
+          }
+          .section0ContentTextO {
+            width: 100%;
+          }
+          .section0ContentTextI {
+            width: 100%;
+          }
+          .vrchatImgO {
+            margin-bottom: 12px;
+          }
+          .section0ContentTextTitleP {
+            font-size: 12px;
+            line-height: 14px;
+          }
+          .section0ContentTextEndP {
+            margin-bottom: 12px;
+          }
+          //
+          .endSct {
+            margin-bottom: 80px;
+            flex-direction: column;
+          }
+          //
+          .dropDownBoxesO {
+            width: 100%;
+          }
         }
       `}</style>
     </>
