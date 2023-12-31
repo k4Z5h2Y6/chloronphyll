@@ -1,5 +1,4 @@
 import { Movie } from "../elements/Movie";
-import Image from "next/image";
 import { SettingManualJPG } from "../elements/SettingManualJPG";
 
 export const Emote = () => {
