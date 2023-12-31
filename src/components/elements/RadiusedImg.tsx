@@ -2,7 +2,7 @@ type Props = {
   src: string;
 };
 
-export const SettingManualJPG = ({ src }: Props) => {
+export const RadiusedImg = ({ src }: Props) => {
   return (
     <>
       <div className="jpgO">
@@ -21,6 +21,9 @@ export const SettingManualJPG = ({ src }: Props) => {
           max-width: 100%;
           max-height: 100%;
           border-radius: var(--borderRadius-20);
+        }
+        @media screen and (max-width: 1024px) {
+          
         }
       `}</style>
     </>

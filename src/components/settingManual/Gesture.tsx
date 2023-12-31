@@ -2,7 +2,7 @@ import SettingManual from "@/pages/settingManual";
 import { Button } from "../elements/Button";
 import { Movie } from "../elements/Movie";
 import Image from "next/image";
-import { SettingManualJPG } from "../elements/SettingManualJPG";
+import { RadiusedImg } from "../elements/RadiusedImg";
 
 export const Gesture = () => {
   return (
@@ -83,14 +83,14 @@ export const Gesture = () => {
         <div className="kakatoBilliardsSetsumeiO">
           <div className="kakatodachiO">
             <div className="kakatodachiImgO">
-              <SettingManualJPG src="/SettingManual/gesture_kakatodachi_720_720.jpg" />
+              <RadiusedImg src="/SettingManual/gesture_kakatodachi_720_720.jpg" />
             </div>
           </div>
 
           <div className="billiardsSetsumeiO">
             <div className="billiardsmodeO">
               <div className="billiardsmodeImgO">
-                <SettingManualJPG src="/SettingManual/gesture_shutterpose_1280_720.jpg" />
+                <RadiusedImg src="/SettingManual/gesture_shutterpose_1280_720.jpg" />
               </div>
             </div>
 
@@ -110,19 +110,19 @@ export const Gesture = () => {
 
         <div className="penwonigiruO">
           <div className="penwonigiruImgO">
-            <SettingManualJPG src="/SettingManual/gesture_penwonigiru_1280_388.jpg" />
+            <RadiusedImg src="/SettingManual/gesture_penwonigiru_1280_388.jpg" />
           </div>
         </div>
 
         <div className="mizuwosukuuO">
           <div className="mizuwosukuuImgO">
-            <SettingManualJPG src="/SettingManual/gesture_mizuwosukuu_1280_388.jpg" />
+            <RadiusedImg src="/SettingManual/gesture_mizuwosukuu_1280_388.jpg" />
           </div>
         </div>
 
         <div className="uekibachiO">
           <div className="uekibachiImgO">
-            <SettingManualJPG src="/SettingManual/gesture_uekibachi_1280_388.jpg" />
+            <RadiusedImg src="/SettingManual/gesture_uekibachi_1280_388.jpg" />
           </div>
         </div>
       </div>

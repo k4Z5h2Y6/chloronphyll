@@ -1,5 +1,5 @@
 import { Movie } from "../elements/Movie";
-import { SettingManualJPG } from "../elements/SettingManualJPG";
+import { RadiusedImg } from "../elements/RadiusedImg";
 
 export const Emote = () => {
   return (
@@ -20,7 +20,7 @@ export const Emote = () => {
             </div>
             <div className="curtsySubO">
               <div className="curtsySubImgO">
-                <SettingManualJPG src="/SettingManual/emote_curtsy_sub_720_720.jpg" />
+                <RadiusedImg src="/SettingManual/emote_curtsy_sub_720_720.jpg" />
               </div>
               <div className="curtsySubTextO">
                 <p>

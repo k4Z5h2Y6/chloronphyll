@@ -1,5 +1,6 @@
 import { Movie } from '@/components/elements/Movie';
 import { PageTitle } from '@/components/elements/PageTitle';
+import { RadiusedImg } from '@/components/elements/RadiusedImg';
 import { DropDownBoxA } from '@/components/kaihenNote/DropDownBoxA';
 import { DropDownBoxB } from '@/components/kaihenNote/DropDownBoxB';
 import { DropDownBoxC } from '@/components/kaihenNote/DropDownBoxC';
@@ -62,11 +63,7 @@ export default function Shape() {
               </div>
             </div>
             <div className='dropDownBoxesImgO'>
-              <Image
-                src='/History/RueWalkFirst1280_720.gif'
-                alt=''
-                layout='fill'
-              />
+              <RadiusedImg src='/History/RueWalkFirst1280_720.gif' />
             </div>
             <DropDownBoxA
               title={'00_素体'}
@@ -100,11 +97,7 @@ export default function Shape() {
               </div>
             </div>
             <div className='dropDownBoxesImgO'>
-              <Image
-                src='/History/RueWalkFirst1280_720.gif'
-                alt=''
-                layout='fill'
-              />
+              <RadiusedImg src='/History/RueWalkFirst1280_720.gif' />
             </div>
             <DropDownBoxB
               title={'11_hs_片手ハンドサイン'}
@@ -146,11 +139,7 @@ export default function Shape() {
               </div>
             </div>
             <div className='dropDownBoxesImgO'>
-              <Image
-                src='/History/RueWalkFirst1280_720.gif'
-                alt=''
-                layout='fill'
-              />
+              <RadiusedImg src='/History/RueWalkFirst1280_720.gif' />
             </div>
             <DropDownBoxC
               title={'21_h_ヘア'}
@@ -192,11 +181,7 @@ export default function Shape() {
               </div>
             </div>
             <div className='dropDownBoxesImgO'>
-              <Image
-                src='/History/RueWalkFirst1280_720.gif'
-                alt=''
-                layout='fill'
-              />
+              <RadiusedImg src='/History/RueWalkFirst1280_720.gif' />
             </div>
             <DropDownBoxB
               title={'30_z0_イメージボード'}
@@ -228,7 +213,7 @@ export default function Shape() {
 
 
       <style jsx>{`
-        //
+        //top
         .topSct {
           width: 100%;
           height: calc(100vh - 24px);
@@ -306,10 +291,10 @@ export default function Shape() {
           margin-bottom: 0;
         }
         .dropDownBoxesImgO {
-          width: 14.25vw;
-          height: calc(14.25vw / 3.3);
+          width: 63%; //
+          height: 8vh; //
+          display: flex;
           margin: 0 auto 16px auto;
-          position: relative;
         }
         @media screen and (max-width: 1024px) {
           .topSct {
@@ -320,7 +305,7 @@ export default function Shape() {
             flex-direction: column;
           }
           .section0ContentMovieO {
-            width: 80vw;
+            width: 80%;
             margin: 0 auto;
             padding: 0 0 20px 0;
           }
