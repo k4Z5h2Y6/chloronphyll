@@ -1,118 +1,188 @@
-import { Button } from '../elements/Button';
-import { Movie } from "../elements/Movie"
+import { Button } from "../elements/Button";
+import { Movie } from "../elements/Movie";
+import Image from "next/image";
+import { SettingManualJPG } from "../elements/SettingManualJPG";
 
 export const Item = () => {
   return (
     <>
-      <div className='sectionContentsCO'>
-
-      <div className='imageboardO'>
-          <div className='imageboardI'>
-            <div className='imageboardTextO'>
+      <div className="sectionContentsCO">
+        <div className="imageboardO">
+          <div className="imageboardI">
+            <div className="imageboardTextO">
               <h5>z0_イメージボード</h5>
-              <p>好きな画像を差し込んでUpload<br />計51枚の画像をVRChatで直感的に表示できます<br />(1枚画像×3)+(16Set画像×3)</p>
-              <p>イメージを共有したい時に使ってください<br />(VR , デスクトップ 両対応)(全モーション対応)</p>
-              <Button title='イメージボード画像変更 (Unity改変)'/>
+              <p>
+                好きな画像を差し込んでUpload
+                <br />
+                計51枚の画像をVRChatで直感的に表示できます
+                <br />
+                (1枚画像×3)+(16Set画像×3)
+              </p>
+              <p>
+                イメージを共有したい時に使ってください
+                <br />
+                (VR , デスクトップ 両対応)(全モーション対応)
+              </p>
+              <Button title="イメージボード画像変更 (Unity改変)" />
             </div>
-            <div className='imageboardMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+            <div className="imageboardImgO">
+              <SettingManualJPG src="/SettingManual/item_imageboard_720_720.jpg" />
             </div>
           </div>
         </div>
 
-        <div className='fuusenO'>
-          <div className='fuusenI'>
-            <div className='fuusenMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+        <div className="fuusenO">
+          <div className="fuusenI">
+            <div className="fuusenImgO">
+              <SettingManualJPG src="/SettingManual/item_fuusen_720_720.jpg" />
             </div>
-            <div className='fuusenTextO'>
+            <div className="fuusenTextO">
               <h5>z1_ふうせん</h5>
-              <p>ExMenuで発動<br />反重力PBでどの角度にしても宙に浮きます<br />形はノーマルとハート型バルーンの2種です<br />色改変はテクスチャでできます</p>
+              <p>
+                ExMenuで発動
+                <br />
+                反重力PBでどの角度にしても宙に浮きます
+                <br />
+                形はノーマルとハート型バルーンの2種です
+                <br />
+                色改変はテクスチャでできます
+              </p>
             </div>
           </div>
         </div>
 
-        <div className='candyO'>
-          <div className='candyI'>
-            <div className='candyMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+        <div className="candyO">
+          <div className="candyI">
+            <div className="candyImgO">
+              <SettingManualJPG src="/SettingManual/item_candy_720_720.jpg" />
             </div>
-            <div className='candyTextO'>
+            <div className="candyTextO">
               <h5>z2_キャンディ / 木の実</h5>
-              <p>両手グーでどちらかの手にキャンディが出てきます<br />ケモ耳モードの時は木の実を持っています<br />くちに近づけると食べて無くなります (Contact)</p>
-              <p>VRで2択の選択肢が欲しい時に使ってください<br />(VRモードのみ)(ONOFF機能あり)</p>
+              <p>
+                両手グーでどちらかの手にキャンディが出てきます
+                <br />
+                ケモ耳モードの時は木の実を持っています
+                <br />
+                くちに近づけると食べて無くなります (Contact)
+              </p>
+              <p>
+                VRで2択の選択肢が欲しい時に使ってください
+                <br />
+                (VRモードのみ)(ONOFF機能あり)
+              </p>
             </div>
           </div>
         </div>
 
-        <div className='flemingO'>
-          <div className='flemingI'>
-            <div className='flemingMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+        <div className="flemingO">
+          <div className="flemingI">
+            <div className="flemingImgO">
+              <SettingManualJPG src="/SettingManual/item_fleming_720_720.jpg" />
             </div>
-            <div className='flemingTextO'>
-              <div className='flemingTextI'>
+            <div className="flemingTextO">
+              <div className="flemingTextI">
                 <h5>z3_フレミングの左手の法則 / 右ねじの法則</h5>
                 <p>両手gunで発動 (ハンドサインgg6)</p>
-                <p>VRで電磁気学の議論をする時に使ってください<br />(VRモードのみ)(ONOFF機能あり)</p>
+                <p>
+                  VRで電磁気学の議論をする時に使ってください
+                  <br />
+                  (VRモードのみ)(ONOFF機能あり)
+                </p>
               </div>
-              <div className='flemingSubMovieO'>
-                <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+              <div className="flemingSubMovieO">
+                <Movie src="/SettingManual/01Hair/HairMaegami1280_388.mp4" />
               </div>
             </div>
           </div>
         </div>
 
-        <div className='ohoshisamaO'>
-          <div className='ohoshisamaI'>
-            <div className='ohoshisamaMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+        <div className="ohoshisamaO">
+          <div className="ohoshisamaI">
+            <div className="ohoshisamaImgO">
+              <SettingManualJPG src="/SettingManual/item_ohoshisama_720_720.jpg" />
             </div>
-            <div className='ohoshisamaTextO'>
+            <div className="ohoshisamaTextO">
               <h5>z4_お星さま</h5>
-              <div className='ohoshisamaTextI'>
-                <div className='ohoshisamaLeftTextO'>
-                  <p>a_火花星<br />b_ビックバン<br />c_火花星<br />d_流れ星<br />e_星の雨</p>
+              <div className="ohoshisamaTextI">
+                <div className="ohoshisamaLeftTextO">
+                  <p>
+                    a_火花星
+                    <br />
+                    b_ビックバン
+                    <br />
+                    c_火花星
+                    <br />
+                    d_流れ星
+                    <br />
+                    e_星の雨
+                  </p>
                 </div>
-                <div className='ohoshisamaRightTextO'>
-                  <p>Contact左手に触れられると発動<br />Contact右手に触れられると発動<br />(表情) ウィンク , 飛び目 とか..<br />(表情) 両手ピース とか..<br />AFK , フレミング とか..</p>
+                <div className="ohoshisamaRightTextO">
+                  <p>
+                    Contact左手に触れられると発動
+                    <br />
+                    Contact右手に触れられると発動
+                    <br />
+                    (表情) ウィンク , 飛び目 とか..
+                    <br />
+                    (表情) 両手ピース とか..
+                    <br />
+                    AFK , フレミング とか..
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='kuukiO'>
-          <div className='kuukiI'>
-            <div className='kuukiMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+        <div className="kuukiO">
+          <div className="kuukiI">
+            <div className="kuukiImgO">
+              <SettingManualJPG src="/SettingManual/item_kuuki_720_720.jpg" />
             </div>
-            <div className='kuukiTextO'>
+            <div className="kuukiTextO">
               <h5>z5_空気</h5>
-              <div className='kuukiTextI'>
-                <div className='kuukiLeftTextO'>
-                  <p>a_空気<br />b_あしあと<br />c_空気のイス</p>
+              <div className="kuukiTextI">
+                <div className="kuukiLeftTextO">
+                  <p>
+                    a_空気
+                    <br />
+                    b_あしあと
+                    <br />
+                    c_空気のイス
+                  </p>
                 </div>
-                <div className='kuukiRightTextO'>
-                  <p>すやすや , うとうと , V睡 で発動<br />走行 , ズサー歩行 で発動<br />ON状態でもしゃがみの時だけ発動</p>
+                <div className="kuukiRightTextO">
+                  <p>
+                    すやすや , うとうと , V睡 で発動
+                    <br />
+                    走行 , ズサー歩行 で発動
+                    <br />
+                    ON状態でもしゃがみの時だけ発動
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='henrudaO'>
-          <div className='henrudaI'>
-            <div className='henrudaMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+        <div className="henrudaO">
+          <div className="henrudaI">
+            <div className="henrudaMovieO">
+              <Movie src="/SettingManual/01Hair/HairMimikake720_720.mp4" />
             </div>
-            <div className='henrudaTextO'>
+            <div className="henrudaTextO">
               <h5>z6_ヘンルーダ</h5>
-              <p>全モーション対応<br />全エモート対応<br />VRでも腕固定します</p>
+              <p>
+                全モーション対応
+                <br />
+                全エモート対応
+                <br />
+                VRでも腕固定します
+              </p>
             </div>
           </div>
         </div>
-
       </div>
 
       <style jsx>{`
@@ -120,6 +190,36 @@ export const Item = () => {
         .sectionContentsCO {
           width: 100%;
           height: 100%;
+          position: relative;
+        }
+        //イメージボード
+        .imageboardO {
+          width: 50%;
+          height: 40%;
+          padding: var(--settingManual-8px);
+          position: absolute;
+          top: 60%;
+          left: 50%;
+        }
+        .imageboardI {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          border-radius: var(--borderRadius-20);
+          background-color: var(--backgroundColor-item);
+        }
+        .imageboardTextO {
+          width: 60%;
+          height: 100%;
+          padding: var(--settingManual-8px);
+          display: flex;
+          flex-direction: column;
+        }
+        .imageboardImgO {
+          width: 40%;
+          height: 100%;
+          padding: var(--settingManual-8px);
+          display: flex;
           position: relative;
         }
         //風船
@@ -138,11 +238,12 @@ export const Item = () => {
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
         }
-        .fuusenMovieO {
+        .fuusenImgO {
           width: 25%;
           height: 100%;
           padding: var(--settingManual-8px);
           display: flex;
+          position: relative;
         }
         .fuusenTextO {
           width: 75%;
@@ -167,11 +268,12 @@ export const Item = () => {
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
         }
-        .candyMovieO {
+        .candyImgO {
           width: 25%;
           height: 100%;
           padding: var(--settingManual-8px);
           display: flex;
+          position: relative;
         }
         .candyTextO {
           width: 75%;
@@ -196,11 +298,12 @@ export const Item = () => {
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
         }
-        .ohoshisamaMovieO {
+        .ohoshisamaImgO {
           width: 25%;
           height: 100%;
           padding: var(--settingManual-8px);
           display: flex;
+          position: relative;
         }
         .ohoshisamaTextO {
           width: 75%;
@@ -235,11 +338,12 @@ export const Item = () => {
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
         }
-        .kuukiMovieO {
+        .kuukiImgO {
           width: 25%;
           height: 100%;
           padding: var(--settingManual-8px);
           display: flex;
+          position: relative;
         }
         .kuukiTextO {
           width: 75%;
@@ -304,11 +408,12 @@ export const Item = () => {
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
         }
-        .flemingMovieO {
+        .flemingImgO {
           width: 20%;
           height: 75%;
           padding: var(--settingManual-8px);
           display: flex;
+          position: relative;
         }
         .flemingTextO {
           width: 80%;
@@ -329,35 +434,6 @@ export const Item = () => {
           padding: var(--settingManual-8px);
           display: flex;
         }
-        //イメージボード
-        .imageboardO {
-          width: 50%;
-          height: 40%;
-          padding: var(--settingManual-8px);
-          position: absolute;
-          top: 60%;
-          left: 50%;
-        }
-        .imageboardI {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          border-radius: var(--borderRadius-20);
-          background-color: var(--backgroundColor-item);
-        }
-        .imageboardTextO {
-          width: 60%;
-          height: 100%;
-          padding: var(--settingManual-8px);
-          display: flex;
-          flex-direction: column;
-        }
-        .imageboardMovieO {
-          width: 40%;
-          height: 100%;
-          padding: var(--settingManual-8px);
-          display: flex;
-        }
         @media screen and (max-width: 1024px) {
           //コンテンツアウター共通
           .sectionContentsCO {
@@ -375,7 +451,7 @@ export const Item = () => {
           .imageboardI {
             flex-direction: row-reverse;
           }
-          .imageboardMovieO {
+          .imageboardImgO {
             width: 20%;
             height: 80px;
           }
@@ -388,7 +464,7 @@ export const Item = () => {
             height: 120px;
             position: static;
           }
-          .fuusenMovieO {
+          .fuusenImgO {
             width: 20%;
             height: 80px;
           }
@@ -401,7 +477,7 @@ export const Item = () => {
             height: 120px;
             position: static;
           }
-          .candyMovieO {
+          .candyImgO {
             width: 20%;
             height: 80px;
           }
@@ -423,7 +499,7 @@ export const Item = () => {
             height: 120px;
             position: static;
           }
-          .ohoshisamaMovieO {
+          .ohoshisamaImgO {
             width: 20%;
             height: 80px;
           }
@@ -436,7 +512,7 @@ export const Item = () => {
             height: 120px;
             position: static;
           }
-          .kuukiMovieO {
+          .kuukiImgO {
             width: 20%;
             height: 80px;
           }
@@ -453,7 +529,7 @@ export const Item = () => {
           .henrudaI {
             flex-direction: row;
           }
-          .henrudaMovieO {
+          .henrudaImgO {
             width: 40%;
             height: 100%;
           }
@@ -464,5 +540,5 @@ export const Item = () => {
         }
       `}</style>
     </>
-  )
-}
+  );
+};

@@ -41,7 +41,7 @@ export const System = () => {
               <p>ExMenuでアバターの明るさを調整できます<br />本来写真が撮りづらいワールドでも<br />背景に馴染むことができます</p>
             </div>
             <div className='akarusachouseiMovieO'>
-              <Movie src='/SettingManual/01Hair/HairYokogamiSub1280_720.mp4' />
+              <Movie src='/SettingManual/system_akarusachousei_852_480.mp4' />
             </div>
           </div>
         </div>

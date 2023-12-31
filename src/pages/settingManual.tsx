@@ -44,7 +44,7 @@ export default function SettingManual() {
           </div>
 
           <div className='section0ContentMovieO'>
-            <Movie src='/SettingManual/00SettingManual/test10m1280_720.mov' />
+            <Movie src='/SettingManual/section0_content_852_480.mp4' />
           </div>
         </div>
       </section>

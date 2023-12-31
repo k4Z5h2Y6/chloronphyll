@@ -8,7 +8,7 @@ export const Kemo = () => {
         <div className='tsunoO'>
           <div className='tsunoI'>
             <div className='tsunoMovieO'>
-              <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+              <Movie src='/SettingManual/kemo_tsuno_1280_720.mp4' />
             </div>
             <div className='tsunoTextO'>
               <h5>ツノ16種類 <span>(ExMenuで選択)</span></h5>
@@ -30,7 +30,7 @@ export const Kemo = () => {
         <div className='mimihanemimitojiO'>
           <div className='mimihanemimitojiI'>
             <div className='mimihanemimitojiMovieO'>
-              <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+              <Movie src='/SettingManual/kemo_mimihanemimitoji_1280_720.mp4' />
             </div>
             <div className='mimihanemimitojiTextO'>
               <h5>耳はね、耳とじ <span>(ハンドサインで発動)</span></h5>
@@ -41,7 +41,7 @@ export const Kemo = () => {
         <div className='shippoO'>
           <div className='shippoI'>
             <div className='shippoMovieO'>
-              <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+              <Movie src='/SettingManual/kemo_shippo_1280_720.mp4' />
             </div>
             <div className='shippoTextO'>
               <h5>しっぽ <span>(ハンドサインで発動)</span></h5>
@@ -53,7 +53,7 @@ export const Kemo = () => {
         <div className='kemomiminokatachiO'>
           <div className='kemomiminokatachiI'>
             <div className='kemomiminokatachiMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+              <Movie src='/SettingManual/kemo_kemomiminokatachi_720_720.mp4' />
             </div>
             <div className='kemomiminokatachiTextO'>
               <h5>ケモ耳のかたち</h5>

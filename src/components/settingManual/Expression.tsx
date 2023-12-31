@@ -8,7 +8,7 @@ export const Expression = () => {
         <div className='handsignO'>
           <div className='handsignI'>
             <div className='handsignMovieO'>
-              <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+              <Movie src='/SettingManual/facial_handsign_1280_720.mp4' />
             </div>
             <div className='handsignTextO'>
               <div className='handsignTextI'>
@@ -22,7 +22,7 @@ export const Expression = () => {
                 </div>
               </div>
               <div className='handsignSubMovieO'>
-                <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+                <Movie src='/SettingManual/facial_handsign_sub_1280_388.mp4' />
               </div>
             </div>
           </div>
@@ -30,13 +30,13 @@ export const Expression = () => {
 
         <div className='tobimeO'>
           <div className='tobimeMovieO'>
-            <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+            <Movie src='/SettingManual/facial_tobime_1280_388.mp4' />
           </div>
         </div>
 
         <div className='shizukunonamidaO'>
           <div className='shizukunonamidaMovieO'>
-            <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+            <Movie src='/SettingManual/facial_shizukunonamida_1280_720.mp4' />
           </div>
         </div>
 

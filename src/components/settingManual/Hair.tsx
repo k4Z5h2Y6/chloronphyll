@@ -8,7 +8,7 @@ export const Hair = () => {
         <div className='yokogamiO'>
           <div className='yokogamiI'>
             <div className='yokogamiMovieO'>
-              <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+              <Movie src='/SettingManual/hair_yokogami_1280_720.mp4' />
             </div>
             <div className='yokogamiTextO'>
               <div className='yokogamiTextI'>
@@ -17,7 +17,7 @@ export const Hair = () => {
                 <p>2つ以上を組み合わせて<br />さらに個性を出せます<br />ほぼ全組み合わせ対応です<br />ExMenuでコーデしてみてください</p>
               </div>
               <div className='yokogamiSubMovieO'>
-                <Movie src='/SettingManual/01Hair/HairYokogamiSub1280_720.mp4' />
+                <Movie src='/SettingManual/hair_yokogami_sub_1280_720.mp4' />
               </div>
             </div>
           </div>
@@ -26,7 +26,7 @@ export const Hair = () => {
         <div className='maegamiO'>
           <div className='maegamiI'>
             <div className='maegamiMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+              <Movie src='/SettingManual/hair_maegami_1280_388.mp4' />
             </div>
             <div className='maegamiTextO'>
               <h5>前髪</h5>
@@ -39,7 +39,7 @@ export const Hair = () => {
         <div className='mimikakeO'>
           <div className='mimikakeI'>
             <div className='mimikakeMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+              <Movie src='/SettingManual/hair_mimikake_720_720.mp4' />
             </div>
             <div className='mimikakeTextO'>
               <h5>みみかけ4種類</h5>

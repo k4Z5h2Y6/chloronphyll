@@ -6,7 +6,7 @@ export const Clothes = () => {
       <div className='sectionContentsCO'>
 
         <div className='clothesMovieO'>
-          <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+          <Movie src='/SettingManual/clothes_all_1280_1280.mp4' />
         </div>
 
         <div className='clothesTextO'>
@@ -56,7 +56,7 @@ export const Clothes = () => {
           <div className='skirtO'>
             <div className='skirtI'>
               <div className='skirtMovieO'>
-                <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+                <Movie src='/SettingManual/clothes_skirt_720_720.mp4' />
               </div>
               <div className='skirtTextO'>
                 <h5>スカート</h5>

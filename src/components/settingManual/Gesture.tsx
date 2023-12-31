@@ -1,35 +1,72 @@
-import { Button } from '../elements/Button';
+import SettingManual from "@/pages/settingManual";
+import { Button } from "../elements/Button";
 import { Movie } from "../elements/Movie";
+import Image from "next/image";
+import { SettingManualJPG } from "../elements/SettingManualJPG";
 
 export const Gesture = () => {
   return (
     <>
-      <div className='sectionContentsCO'>
-
-        <div className='katateturntableO'>
-          <div className='katateturntableI'>
-            <div className='katateturntableMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+      <div className="sectionContentsCO">
+        <div className="katateturntableO">
+          <div className="katateturntableI">
+            <div className="katateturntableMovieO">
+              <Movie src="/SettingManual/gesture_katateturntableI_720_720.mp4" />
             </div>
-            <div className='katateturntableTextO'>
-              <div className='katateturntableTextI'>
-                <div className='katateturntableTextLeftO'>
+            <div className="katateturntableTextO">
+              <div className="katateturntableTextI">
+                <div className="katateturntableTextLeftO">
                   <h5>片手Gesture</h5>
-                  <p>g0_フキの手<br />g1_グー<br />g2_パー(~)<br />g3_ご案内する手<br />g4_無敵のぴーす(~)<br />g5_okサイン<br />g6_スティックを握る手<br />g7_ものをつまむ手(~)</p>
+                  <p>
+                    g0_フキの手
+                    <br />
+                    g1_グー
+                    <br />
+                    g2_パー(~)
+                    <br />
+                    g3_ご案内する手
+                    <br />
+                    g4_無敵のぴーす(~)
+                    <br />
+                    g5_okサイン
+                    <br />
+                    g6_スティックを握る手
+                    <br />
+                    g7_ものをつまむ手(~)
+                  </p>
                 </div>
-                <div className='katateturntableTextRightO'>
+                <div className="katateturntableTextRightO">
                   <h5>両手Gesture</h5>
-                  <p><br />gg1_(キャンディ発動)<br />gg2_((擬似AFK))<br />gg3_ないしょ<br />gg4_無力のぴーす(~)<br />gg5_シャッターポーズ<br />gg6_(フレミング発動)<br />gg7_水を掬う手</p>
+                  <p>
+                    <br />
+                    gg1_(キャンディ発動)
+                    <br />
+                    gg2_((擬似AFK))
+                    <br />
+                    gg3_ないしょ
+                    <br />
+                    gg4_無力のぴーす(~)
+                    <br />
+                    gg5_シャッターポーズ
+                    <br />
+                    gg6_(フレミング発動)
+                    <br />
+                    gg7_水を掬う手
+                  </p>
                 </div>
               </div>
-              <div className='katateturntableSubO'>
-                <div className='katateturntableSubI'>
-                  <div className='katateturntableSubMovieO'>
-                    <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+              <div className="katateturntableSubO">
+                <div className="katateturntableSubI">
+                  <div className="katateturntableSubMovieO">
+                    <Movie src="/SettingManual/gesture_katateturntable_sub_720_720.mp4" />
                   </div>
-                  <div className='katateturntableSubTextO'>
-                    <p className='katateturntableSubTextP'>ネイルサイズ (無段階調整)<br />ネイルアクセ (ONOFF)</p>
-                    <Button title='色変更はテクスチャです' />
+                  <div className="katateturntableSubTextO">
+                    <p className="katateturntableSubTextP">
+                      ネイルサイズ (無段階調整)
+                      <br />
+                      ネイルアクセ (ONOFF)
+                    </p>
+                    <Button title="色変更はテクスチャです" />
                   </div>
                 </div>
               </div>
@@ -37,52 +74,57 @@ export const Gesture = () => {
           </div>
         </div>
 
-        <div className='ryoutekirakiraposeO'>
-          <div className='ryoutekirakiraposeMovieO'>
-            <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+        <div className="ryoutekirakiraposeO">
+          <div className="ryoutekirakiraposeMovieO">
+            <Movie src="/SettingManual/gesture_ryoutekirakirapose_720_720.mp4" />
           </div>
         </div>
 
-        <div className='kakatoBilliardsSetsumeiO'>
-          <div className='kakatodachiO'>
-            <div className='kakatodachiMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+        <div className="kakatoBilliardsSetsumeiO">
+          <div className="kakatodachiO">
+            <div className="kakatodachiImgO">
+              <SettingManualJPG src="/SettingManual/gesture_kakatodachi_720_720.jpg" />
             </div>
           </div>
 
-          <div className='billiardsSetsumeiO'>
-            <div className='billiardsmodeO'>
-              <div className='billiardsmodeMovieO'>
-                <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+          <div className="billiardsSetsumeiO">
+            <div className="billiardsmodeO">
+              <div className="billiardsmodeImgO">
+                <SettingManualJPG src="/SettingManual/gesture_shutterpose_1280_720.jpg" />
               </div>
             </div>
 
-            <div className='setsumeiO'>
-              <div className='setsumeiI'>
-                <p>ここに表示していないGestureが<br />あと何種か存在します<br />各ポーズ , Actionで変形します</p>
+            <div className="setsumeiO">
+              <div className="setsumeiI">
+                <p>
+                  ここに表示していないGestureが
+                  <br />
+                  あと何種か存在します
+                  <br />
+                  各ポーズ , Actionで変形します
+                </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='penwonigiruO'>
-          <div className='penwonigiruMovieO'>
-            <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+        <div className="penwonigiruO">
+          <div className="penwonigiruImgO">
+            <SettingManualJPG src="/SettingManual/gesture_penwonigiru_1280_388.jpg" />
           </div>
         </div>
 
-        <div className='mizuwosukuuO'>
-          <div className='mizuwosukuuMovieO'>
-            <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+        <div className="mizuwosukuuO">
+          <div className="mizuwosukuuImgO">
+            <SettingManualJPG src="/SettingManual/gesture_mizuwosukuu_1280_388.jpg" />
           </div>
         </div>
 
-        <div className='uekibachiO'>
-          <div className='uekibachiMovieO'>
-            <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+        <div className="uekibachiO">
+          <div className="uekibachiImgO">
+            <SettingManualJPG src="/SettingManual/gesture_uekibachi_1280_388.jpg" />
           </div>
         </div>
-
       </div>
 
       <style jsx>{`
@@ -125,7 +167,8 @@ export const Gesture = () => {
           height: calc(100% / 3 * 2);
           display: flex;
         }
-        .katateturntableTextLeftO, .katateturntableTextRightO {
+        .katateturntableTextLeftO,
+        .katateturntableTextRightO {
           width: 50%;
           height: 100%;
           padding: var(--settingManual-8px);
@@ -188,7 +231,7 @@ export const Gesture = () => {
           height: 100%;
           padding: var(--settingManual-8px);
         }
-        .kakatodachiMovieO {
+        .kakatodachiImgO {
           width: 100%;
           height: 100%;
           padding: var(--settingManual-8px);
@@ -207,7 +250,7 @@ export const Gesture = () => {
           height: 50%;
           padding: var(--settingManual-8px);
         }
-        .billiardsmodeMovieO {
+        .billiardsmodeImgO {
           width: 100%;
           height: 100%;
           padding: var(--settingManual-8px);
@@ -236,11 +279,12 @@ export const Gesture = () => {
           top: 0;
           left: 60%;
         }
-        .penwonigiruMovieO {
+        .penwonigiruImgO {
           width: 100%;
           height: 100%;
           padding: var(--settingManual-8px);
           display: flex;
+          position: relative;
         }
         //水を掬う
         .mizuwosukuuO {
@@ -251,11 +295,12 @@ export const Gesture = () => {
           top: 30%;
           left: 60%;
         }
-        .mizuwosukuuMovieO {
+        .mizuwosukuuImgO {
           width: 100%;
           height: 100%;
           padding: var(--settingManual-8px);
           display: flex;
+          position: relative;
         }
         //植木鉢
         .uekibachiO {
@@ -266,11 +311,12 @@ export const Gesture = () => {
           top: 60%;
           left: 60%;
         }
-        .uekibachiMovieO {
+        .uekibachiImgO {
           width: 100%;
           height: 100%;
           padding: var(--settingManual-8px);
           display: flex;
+          position: relative;
         }
         @media screen and (max-width: 1024px) {
           //コンテンツアウター共通
@@ -326,7 +372,9 @@ export const Gesture = () => {
             position: static;
           }
           //ペンを握る,水を掬う,植木鉢
-          .penwonigiruO, .mizuwosukuuO, .uekibachiO {
+          .penwonigiruO,
+          .mizuwosukuuO,
+          .uekibachiO {
             width: 100%;
             height: 80px;
             position: static;

@@ -1,94 +1,178 @@
-import { Movie } from "../elements/Movie"
+import { Movie } from "../elements/Movie";
+import Image from "next/image";
+import { SettingManualJPG } from "../elements/SettingManualJPG";
 
 export const Emote = () => {
   return (
     <>
-      <div className='sectionContentsCO'>
-
-        <div className='curtsyO'>
-          <div className='curtsyI'>
-            <div className='curtsyMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+      <div className="sectionContentsCO">
+        <div className="curtsyO">
+          <div className="curtsyI">
+            <div className="curtsyMovieO">
+              <Movie src="/SettingManual/emote_curtsy_720_720.mp4" />
             </div>
-            <div className='curtsyTextO'>
+            <div className="curtsyTextO">
               <h5>e1_カーテシー</h5>
-              <p>ExMenuで発動 (VR , デスクトップ 両対応)<br />両手でスカートPBを伸ばすと反応 (VRのみ)</p>
+              <p>
+                ExMenuで発動 (VR , デスクトップ 両対応)
+                <br />
+                両手でスカートPBを伸ばすと反応 (VRのみ)
+              </p>
             </div>
-            <div className='curtsySubO'>
-              <div className='curtsySubMovieO'>
-                <Movie src='/SettingManual/01Hair/HairMimikake720_720.mp4' />
+            <div className="curtsySubO">
+              <div className="curtsySubImgO">
+                <SettingManualJPG src="/SettingManual/emote_curtsy_sub_720_720.jpg" />
               </div>
-              <div className='curtsySubTextO'>
-                <p>(スカートPBを伸ばすコツ)<br />肩からまっすぐに手を落として...<br />ほんの少し後ろから両手で掴んで..<br />引き上げる.</p>
+              <div className="curtsySubTextO">
+                <p>
+                  (スカートPBを伸ばすコツ)
+                  <br />
+                  肩からまっすぐに手を落として...
+                  <br />
+                  ほんの少し後ろから両手で掴んで..
+                  <br />
+                  引き上げる.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='yesnoO'>
-          <div className='yesnoI'>
-            <div className='yesnoTextO'>
+        <div className="yesnoO">
+          <div className="yesnoI">
+            <div className="yesnoTextO">
               <h5>e2_Yes / No</h5>
-              <p>ExMenuで発動<br />各ポーズ対応</p>
-              <p>デスクトップ無言勢<br />になれます</p>
+              <p>
+                ExMenuで発動
+                <br />
+                各ポーズ対応
+              </p>
+              <p>
+                デスクトップ無言勢
+                <br />
+                になれます
+              </p>
             </div>
-            <div className='yesnoMovieO'>
-              <Movie src='/SettingManual/01Hair/HairYokogamiSub1280_720.mp4' />
+            <div className="yesnoMovieO">
+              <Movie src="/SettingManual/emote_yesno_852_480.mp4" />
             </div>
           </div>
         </div>
 
-        <div className='utoutoO'>
-          <div className='utoutoI'>
-            <div className='utoutoMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+        <div className="utoutoO">
+          <div className="utoutoI">
+            <div className="utoutoMovieO">
+              <Movie src="/SettingManual/emote_utouto_640_194.mp4" />
             </div>
-            <div className='utoutoTextO'>
+            <div className="utoutoTextO">
               <h5>e3_うとうと</h5>
-              <p>ExMenuで発動 / AFK中にスカートを掴まれると反応<br />各ポーズに対応しています<br />全身固定中はAFKでもうとうとします</p>
+              <p>
+                ExMenuで発動 / AFK中にスカートを掴まれると反応
+                <br />
+                各ポーズに対応しています
+                <br />
+                全身固定中はAFKでもうとうとします
+              </p>
             </div>
           </div>
         </div>
 
-        <div className='vsuiO'>
-          <div className='vsuiI'>
-            <div className='vsuiMovieO'>
-              <Movie src='/SettingManual/01Hair/HairMaegami1280_388.mp4' />
+        <div className="vsuiO">
+          <div className="vsuiI">
+            <div className="vsuiMovieO">
+              <Movie src="/SettingManual/emote_vsui_640_194.mp4" />
             </div>
-            <div className='vsuiTextO'>
+            <div className="vsuiTextO">
               <h5>e4_V睡</h5>
-              <p>ExMenuでLR切り替え (V睡の発動は”ふせAFK”です)<br />全身固定すると目を開けて通常の表情に変わります</p>
-              <p>e4y_V睡高さ調整<br />ベッドが高い時に使えます (VR , デスクトップ 両対応)<br />(ViewPointは変わりませんがAFKなのでリアルが動ければokです)<br />10%以上高くするとしゃがみAFKにならずにV睡し続けます</p>
+              <p>
+                ExMenuでLR切り替え (V睡の発動は”ふせAFK”です)
+                <br />
+                全身固定すると目を開けて通常の表情に変わります
+              </p>
+              <p>
+                e4y_V睡高さ調整
+                <br />
+                ベッドが高い時に使えます (VR , デスクトップ 両対応)
+                <br />
+                (ViewPointは変わりませんがAFKなのでリアルが動ければokです)
+                <br />
+                10%以上高くするとしゃがみAFKにならずにV睡し続けます
+              </p>
             </div>
           </div>
         </div>
 
-        
-
-        <div className='zenshinkoteiO'>
-          <div className='zenshinkoteiTextO'>
-            <div className='zenshinkoteiFirstTextO'>
+        <div className="zenshinkoteiO">
+          <div className="zenshinkoteiTextO">
+            <div className="zenshinkoteiFirstTextO">
               <h5>e5_全身固定</h5>
-              <p>ExMenuで切り替え<br />Trackingしないシステム</p>
-              <p>演奏や劇を鑑賞する時に重宝します<br />アイテムやパーツが飛び出ることがないので、<br />周りの迷惑を気にせずに遊べます<br />じっとするべき場面で身体を動かしたい時にも使えます</p>
+              <p>
+                ExMenuで切り替え
+                <br />
+                Trackingしないシステム
+              </p>
+              <p>
+                演奏や劇を鑑賞する時に重宝します
+                <br />
+                アイテムやパーツが飛び出ることがないので、
+                <br />
+                周りの迷惑を気にせずに遊べます
+                <br />
+                じっとするべき場面で身体を動かしたい時にも使えます
+              </p>
             </div>
-            <div className='zenshinkoteiSecondTextO'>
-              <div className='zenshinkoteiSecondTextI'>
-                <div className='zenshinkoteiSecondLeftTextI'>
-                  <p>全身固定中<br />全身固定中のAFK<br />全身固定中のV睡<br />全身固定中のしゃがみ<br />全身固定中のふせ<br />全身固定中のSit<br />全身固定中のエモート<br />全身固定中のアイテム</p>
+            <div className="zenshinkoteiSecondTextO">
+              <div className="zenshinkoteiSecondTextI">
+                <div className="zenshinkoteiSecondLeftTextI">
+                  <p>
+                    全身固定中
+                    <br />
+                    全身固定中のAFK
+                    <br />
+                    全身固定中のV睡
+                    <br />
+                    全身固定中のしゃがみ
+                    <br />
+                    全身固定中のふせ
+                    <br />
+                    全身固定中のSit
+                    <br />
+                    全身固定中のエモート
+                    <br />
+                    全身固定中のアイテム
+                  </p>
                 </div>
-                <div className='zenshinkoteiSecondRightTextI'>
-                  <p>→いろいろ無効化<br />→完全固定 (すやすやしない)<br />→目を開ける (寝転んで話せる)<br />→スカートがイスに貫通しない<br />→ちゃんとひじが地面に設置する<br />→イスから離脱しない<br />→開始と戻りのズレがない<br />→位置と角度を保ち続ける</p>
+                <div className="zenshinkoteiSecondRightTextI">
+                  <p>
+                    →いろいろ無効化
+                    <br />
+                    →完全固定 (すやすやしない)
+                    <br />
+                    →目を開ける (寝転んで話せる)
+                    <br />
+                    →スカートがイスに貫通しない
+                    <br />
+                    →ちゃんとひじが地面に設置する
+                    <br />
+                    →イスから離脱しない
+                    <br />
+                    →開始と戻りのズレがない
+                    <br />
+                    →位置と角度を保ち続ける
+                  </p>
                 </div>
               </div>
             </div>
-            <div className='zenshinkoteiThirdTextO'>
-              <p>(無効化) Gesture , ハンドサイン , アイテム , 待機モーション<br />アイテムを出したくないだけの場合はONOFF機能です</p>
+            <div className="zenshinkoteiThirdTextO">
+              <p>
+                (無効化) Gesture , ハンドサイン , アイテム , 待機モーション
+                <br />
+                アイテムを出したくないだけの場合はONOFF機能です
+              </p>
             </div>
           </div>
         </div>
-
-      </div >
+      </div>
 
       <style jsx>{`
         //コンテンツアウター共通
@@ -132,11 +216,12 @@ export const Emote = () => {
           height: 20%;
           display: flex;
         }
-        .curtsySubMovieO {
+        .curtsySubImgO {
           width: calc(100% / 3);
           height: 100%;
           padding: var(--settingManual-8px);
           display: flex;
+          position: relative;
         }
         .curtsySubTextO {
           width: calc(100% / 3 * 2);
@@ -356,5 +441,5 @@ export const Emote = () => {
           }
       `}</style>
     </>
-  )
-}
+  );
+};

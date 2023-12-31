@@ -8,7 +8,7 @@ export const Motion = () => {
         <div className='motionO'>
           <div className='motionI'>
             <div className='motionMovieO'>
-              <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+              <Movie src='/SettingManual/motion_all_852_480.mp4' />
             </div>
             <div className='motionTextO'>
               <div className='tachiO'>
@@ -64,7 +64,7 @@ export const Motion = () => {
               <p>全エモート対応<br />両手パーで腰固定<br />全身固定で腰固定</p>
             </div>
             <div className='sitMovieO'>
-              <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+              <Movie src='/SettingManual/motion_sit_852_480.mp4' />
             </div>
           </div>
         </div>
