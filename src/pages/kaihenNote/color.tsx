@@ -1,48 +1,108 @@
-import { PageTitle } from '@/components/elements/PageTitle';
+import { PageTitle } from "@/components/elements/PageTitle";
 import Image from "next/image";
+import { Movie } from "@/components/elements/Movie";
 
 export default function color() {
-
   return (
     <>
-      <section className='topSct'>
-        <PageTitle pageTitle='01 いろ改変' />
-        <div className='section0contentO'>
-          <div className='comingImgO'>
-            <Image
-              src='/KaihenNote/coming640_360.png'
-              alt=''
-              width={640}
-              height={360}
-              style={{
-                width: '100%',
-                height: 'auto',
-              }}
-            />
+      <section className="topSct">
+        <PageTitle pageTitle="01 いろ改変" />
+        <div className="section0contentO">
+          <div className="section0ContentMovieO">
+            <Movie src="/SettingManual/01Hair/HairYokogami1280_720.mp4" />
+          </div>
+          <div className="section0ContentTextO">
+            <div className="section0ContentTextI">
+              <div className="vrchatImgO">
+                <Image
+                  src="/KaihenNote/vrchatLogo516_225.png"
+                  alt=""
+                  width={516}
+                  height={225}
+                  style={{
+                    width: "auto",
+                    height: "100%",
+                  }}
+                />
+              </div>
+              <p className="section0ContentTextTitleP">
+                アバターの色を変える方法
+              </p>
+              <p>
+                blenderソフトでTextureを作成します。
+                <br />
+                PSDファイルは存在しません。協力者を探しています。
+              </p>
+              <p className="section0ContentTextEndP">
+                blender内で、アバターの見た目を確認しながら色を調整できるので、
+                理想の見た目に近づけやすいです。
+              </p>
+              <Image
+                src="/Document/DoukonDate1280_720.png"
+                alt=""
+                width={1280}
+                height={720}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </div>
           </div>
         </div>
       </section>
 
+      <section className="endSct">
+      </section>
 
       <style jsx>{`
-        //todo:全体要整理
+        //top
         .topSct {
           width: 100%;
           height: calc(100vh - 24px);
         }
         .section0contentO {
+          width: 100%;
           height: calc(100% - 16px - 32px - 16px - 24px - 7vh);
           display: flex;
+          flex-direction: row-reverse;
         }
-        //
-        .comingImgO {
-          width: 30vw;
+        .section0ContentMovieO {
+          width: 60%;
           height: 100%;
-          margin: 0 auto;
+          padding: 24px;
+        }
+        .section0ContentTextO {
+          width: 40%;
+          height: 100%;
           display: flex;
+          justify-content: center;
           align-items: center;
         }
+        .section0ContentTextI {
+          width: calc(100% / 8 * 5);
+          height: fit-content;
+        }
+        .vrchatImgO {
+          width: 100%;
+          height: 24px;
+          margin-bottom: 16px;
+        }
+        .section0ContentTextTitleP {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .section0ContentTextEndP {
+          margin-bottom: 32px;
+        }
+        //end
+        .endSct {
+          width: 100%;
+          height: fit-content;
+          padding-bottom: 40px;
+        }
+
       `}</style>
     </>
   );
-};
+}
