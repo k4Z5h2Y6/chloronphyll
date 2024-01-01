@@ -1,12 +1,11 @@
 type Props = {
   src: string;
-}
+};
 
 export const Movie = ({ src }: Props) => {
   return (
     <>
-      <div className='MovieO'>
-        {/* <video src={src} autoPlay muted loop controls playsInline /> */}
+      <div className="MovieO">
         <video src={src} muted loop controls playsInline />
       </div>
 
@@ -18,7 +17,12 @@ export const Movie = ({ src }: Props) => {
           align-items: center;
           justify-content: center;
         }
+        video {
+          max-width: 100%;
+          max-height: 100%;
+          border-radius: var(--borderRadius-20);
+        }
       `}</style>
     </>
-  )
-}
+  );
+};

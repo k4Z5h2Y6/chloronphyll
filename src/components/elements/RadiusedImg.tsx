@@ -22,15 +22,7 @@ export const RadiusedImg = ({ src }: Props) => {
           max-height: 100%;
           border-radius: var(--borderRadius-20);
         }
-        @media screen and (max-width: 1024px) {
-          
-        }
       `}</style>
     </>
   );
 };
-
-{
-  /* min-width: 100%;
-          min-height: 100%; */
-}
