@@ -90,7 +90,7 @@ export const Item = () => {
                 </p>
               </div>
               <div className="flemingSubMovieO">
-                <Movie src="/SettingManual/01Hair/HairMaegami1280_388.mp4" />
+                <Movie src="/SettingManual/item_fleming_sub_1280_388.mp4" />
               </div>
             </div>
           </div>
@@ -169,7 +169,7 @@ export const Item = () => {
         <div className="henrudaO">
           <div className="henrudaI">
             <div className="henrudaMovieO">
-              <Movie src="/SettingManual/01Hair/HairMimikake720_720.mp4" />
+              <Movie src="/SettingManual/item_henruda_720_720.mp4" />
             </div>
             <div className="henrudaTextO">
               <h5>z6_ヘンルーダ</h5>
@@ -529,7 +529,7 @@ export const Item = () => {
           .henrudaI {
             flex-direction: row;
           }
-          .henrudaImgO {
+          .henrudaMovieO {
             width: 40%;
             height: 100%;
           }
