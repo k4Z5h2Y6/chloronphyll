@@ -1,6 +1,8 @@
 import { PageTitle } from "@/components/elements/PageTitle";
 import Image from "next/image";
 import { Movie } from "@/components/elements/Movie";
+import { DropDownContainerA } from "@/components/elements/DropDownContainerA";
+import { DropDownContainerB } from "@/components/elements/DropDownContainerB";
 
 export default function color() {
   return (
@@ -9,7 +11,7 @@ export default function color() {
         <PageTitle pageTitle="01 いろ改変" />
         <div className="section0contentO">
           <div className="section0ContentMovieO">
-            <Movie src="/SettingManual/01Hair/HairYokogami1280_720.mp4" />
+            <Movie src="/KaihenNote/Color/color1920_1080.mp4" />
           </div>
           <div className="section0ContentTextO">
             <div className="section0ContentTextI">
@@ -38,7 +40,7 @@ export default function color() {
                 理想の見た目に近づけやすいです。
               </p>
               <Image
-                src="/Document/DoukonDate1280_720.png"
+                src="/KaihenNote/Color/colorTime1280_720.png"
                 alt=""
                 width={1280}
                 height={720}
@@ -53,6 +55,31 @@ export default function color() {
       </section>
 
       <section className="endSct">
+        <DropDownContainerA
+          img={"/KaihenNote/Color/colorStep0_1920_1080.jpg"}
+          title={"Step0. 準備"}
+          content={`blenderソフトをダウンロード\nhttps://www.blender.org/download/\n↓\nBOOTHから “Fuki_v01.zip” をダウンロード\nhttps://chloronphyll.booth.pm/\n↓\nblenderデータの “Color_Studio” を開く`}
+        />
+
+{/* ここに値を入れてみる */}
+        <DropDownContainerB contents={[
+          {
+            img: "",
+            title: "",
+            content: "",
+          },
+          {
+            img: "",
+            title: "",
+            content: "",
+          },
+          {
+            img: "",
+            title: "",
+            content: "",
+          },
+        ]}
+        />
       </section>
 
       <style jsx>{`
@@ -99,9 +126,23 @@ export default function color() {
         .endSct {
           width: 100%;
           height: fit-content;
-          padding-bottom: 40px;
+          padding-top: 40px;
         }
-
+        @media screen and (max-width: 1024px) {
+          .section0contentO {
+            flex-direction: column;
+          }
+          .section0ContentMovieO {
+            width: 80%;
+            margin: 0 auto;
+          }
+          .section0ContentTextO {
+            width: 100%;
+          }
+          .section0ContentTextI {
+            width: 100%;
+          }
+        }
       `}</style>
     </>
   );

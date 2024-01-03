@@ -37,10 +37,6 @@ export const DropDownBoxA = ({ title, description }: Props) => {
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-item);
         }
-
-        .descriptionP {
-          white-space: pre-wrap;
-        }
         .dropDownBoxTitleO {
           width: 100%;
           height: 32px;
@@ -53,6 +49,14 @@ export const DropDownBoxA = ({ title, description }: Props) => {
           margin: 0 auto;
           line-height: 32px;
         }
+        .descriptionP {
+          width: 198px;//
+          height: 100%;
+          margin: 16px auto;
+          font-size: 10px;
+          line-height: 12px;
+          white-space: pre-wrap;
+        }
         .dropDownBoxDescriptionOOpened {
           width: 100%;
           height: 212px; //
@@ -64,13 +68,6 @@ export const DropDownBoxA = ({ title, description }: Props) => {
           height: 0px;
           transition: var(--transition1s);
           overflow: hidden;
-        }
-        .descriptionP {
-          width: 198px;//
-          height: 100%;
-          margin: 16px auto;
-          font-size: 10px;
-          line-height: 12px;
         }
       `}</style>
     </>
