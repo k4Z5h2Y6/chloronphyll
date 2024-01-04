@@ -1,18 +1,40 @@
+<<<<<<< HEAD
 import { DropDownContainerSingleType } from "@/libs/colorData";
 
 export const DropDownContainerA = (DropDownContainerData: DropDownContainerSingleType) => {
   console.log(DropDownContainerData.contents)
+=======
+type Props = {
+  img: string;
+  title: string;
+  content: string;
+};
+
+export const DropDownContainerA = ({
+  img,
+  title,
+  content,
+}: Props) => {
+>>>>>>> 855871c8e4413ce3929a9f14568145440278472d
   return (
     <>
       <div className="DropDownContainerAO">
         <div className="DropDownContainerAI">
           <div className="contentO">
             <div className="textO">
+<<<<<<< HEAD
               {/* <h5>{DropDownContainerData.title}</h5> */}
               {/* <p className="descriptionP">{data.contents.description}</p> */}
             </div>
             <div className="imgO">
               {/* <img src={data.contents.img} alt="" /> */}
+=======
+              <h5>{title}</h5>
+              <p className="descriptionP">{content}</p>
+            </div>
+            <div className="imgO">
+              <img src={img} alt="" />
+>>>>>>> 855871c8e4413ce3929a9f14568145440278472d
             </div>
           </div>
           <div className="buttonO"></div>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { DropDownContainerType } from "@/libs/colorData";
 import Image from "next/image";
 import { useState } from "react";
@@ -6,6 +7,18 @@ export const DropDownContainerB = ({
   title,
   contents,
 }: DropDownContainerType) => {
+=======
+import Image from "next/image";
+import { useState } from "react";
+
+type Props = {
+  img: string;
+  title: string;
+  content: string;
+};
+
+export const DropDownContainerB = (contents: [Props]) => {
+>>>>>>> 855871c8e4413ce3929a9f14568145440278472d
   const [isContainerOpened, setIsContainerOpened] = useState(false);
   return (
     <>
@@ -13,11 +26,19 @@ export const DropDownContainerB = ({
         <div className="DropDownContainerAI">
           <div className="contentO">
             <div className="textO">
+<<<<<<< HEAD
               <h5>{title}</h5>
               <p className="descriptionP">{contents[0].description}</p>
             </div>
             <div className="imgO">
               <img src={contents[0].img} alt="" />
+=======
+              {/* <h5>{contents[0].title}</h5> */}
+              {/* <p className="descriptionP">{contents[0].content}</p> */}
+            </div>
+            <div className="imgO">
+              {/* <img src={contents[0].img} alt="" /> */}
+>>>>>>> 855871c8e4413ce3929a9f14568145440278472d
             </div>
           </div>
           <div className="buttonO">
