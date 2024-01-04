@@ -1,24 +1,12 @@
-<<<<<<< HEAD
 import { DropDownContainerType } from "@/libs/colorData";
 import Image from "next/image";
 import { useState } from "react";
 
 export const DropDownContainerB = ({
-  title,
-  contents,
-}: DropDownContainerType) => {
-=======
-import Image from "next/image";
-import { useState } from "react";
-
-type Props = {
-  img: string;
-  title: string;
-  content: string;
-};
-
-export const DropDownContainerB = (contents: [Props]) => {
->>>>>>> 855871c8e4413ce3929a9f14568145440278472d
+  data,
+}: {
+  data: DropDownContainerType;
+}) => {
   const [isContainerOpened, setIsContainerOpened] = useState(false);
   return (
     <>
@@ -26,32 +14,68 @@ export const DropDownContainerB = (contents: [Props]) => {
         <div className="DropDownContainerAI">
           <div className="contentO">
             <div className="textO">
-<<<<<<< HEAD
-              <h5>{title}</h5>
-              <p className="descriptionP">{contents[0].description}</p>
+              <h5>{data.title}</h5>
+              <p className="descriptionP">{data.contents[0].description}</p>
             </div>
             <div className="imgO">
-              <img src={contents[0].img} alt="" />
-=======
-              {/* <h5>{contents[0].title}</h5> */}
-              {/* <p className="descriptionP">{contents[0].content}</p> */}
-            </div>
-            <div className="imgO">
-              {/* <img src={contents[0].img} alt="" /> */}
->>>>>>> 855871c8e4413ce3929a9f14568145440278472d
+              <img src={data.contents[0].img} alt="" />
             </div>
           </div>
-          <div className="buttonO">
-            <Image
-              src={"/KaihenNote/accordion160_80.png"}
-              alt={""}
-              width={160}
-              height={80}
-              style={{
-                width: "40px",
-                height: "20px",
-              }}
-            />
+
+
+
+
+
+          <div>
+            {data.contents.map((contents) => {
+              return (
+                <>
+                  <div className="textO">
+                    <p className="descriptionP">{contents.description}</p>
+                  </div>
+                  <div className="imgO">
+                    <img src={contents.img} alt="" />
+                  </div>
+                </>
+              );
+            })}
+          </div>
+
+
+
+
+
+
+
+          <div
+            className="buttonO"
+            onClick={() => {
+              setIsContainerOpened(!isContainerOpened);
+            }}
+          >
+            {isContainerOpened ? (
+              <Image
+                src={"/KaihenNote/dropDownContainerOpenedButton160_80.png"}
+                alt={""}
+                width={160}
+                height={80}
+                style={{
+                  width: "40px",
+                  height: "20px",
+                }}
+              />
+            ) : (
+              <Image
+                src={"/KaihenNote/dropDownContainerClosedButton160_80.png"}
+                alt={""}
+                width={160}
+                height={80}
+                style={{
+                  width: "40px",
+                  height: "20px",
+                }}
+              />
+            )}
           </div>
         </div>
       </div>
@@ -65,8 +89,7 @@ export const DropDownContainerB = (contents: [Props]) => {
         }
         .DropDownContainerAI {
           width: 100%;
-          height: 100%;
-          padding-bottom: 40px;
+          height: fit-content;
           display: flex;
           flex-direction: column;
           border: var(--borderColor-section);
@@ -74,7 +97,7 @@ export const DropDownContainerB = (contents: [Props]) => {
         }
         .contentO {
           width: 100%;
-          height: 100%;
+          height: calc(100% - 40px);
           display: flex;
         }
         .textO {
@@ -98,6 +121,11 @@ export const DropDownContainerB = (contents: [Props]) => {
           border-radius: var(--borderRadius-20);
         }
         .buttonO {
+          width: 100%;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         @media screen and (max-width: 1024px) {
           .DropDownContainerAO {

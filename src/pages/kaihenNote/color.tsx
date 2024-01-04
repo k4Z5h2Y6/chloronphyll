@@ -1,9 +1,11 @@
 import { PageTitle } from "@/components/elements/PageTitle";
 import Image from "next/image";
 import { Movie } from "@/components/elements/Movie";
+import { DropDownContainerA } from "@/components/elements/DropDownContainerA";
+import { colorData0, colorData1 } from "@/libs/colorData";
+import { DropDownContainerB } from "@/components/elements/DropDownContainerB";
 
 export default function color() {
-
   return (
     <>
       <section className="topSct">
@@ -54,6 +56,8 @@ export default function color() {
       </section>
 
       <section className="endSct">
+        <DropDownContainerA data={colorData0} />
+        <DropDownContainerB data={colorData1} />
       </section>
 
       <style jsx>{`

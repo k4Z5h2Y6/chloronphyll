@@ -10,18 +10,14 @@ export type DropDownContainerType = {
 
 export type DropDownContainerSingleType = {
   title: string;
-  contents: {
-    description: string;
-    img: string;
-  };
+  description: string;
+  img: string;
 };
 
 export const colorData0: DropDownContainerSingleType = {
   title: "Step0. 準備",
-  contents: {
-    description: `blenderソフトをダウンロード\nhttps://www.blender.org/download/\n↓\nBOOTHから “Fuki_v01.zip” をダウンロード\nhttps://chloronphyll.booth.pm/\n↓\nblenderデータの “Color_Studio” を開く`,
-    img: "/KaihenNote/Color/Data/colorStep0_1920_1080.jpg",
-  },
+  description: `blenderソフトをダウンロード\nhttps://www.blender.org/download/\n↓\nBOOTHから “Fuki_v01.zip” をダウンロード\nhttps://chloronphyll.booth.pm/\n↓\nblenderデータの “Color_Studio” を開く`,
+  img: "/KaihenNote/Color/Data/colorStep0_1920_1080.jpg",
 };
 
 export const colorData1: DropDownContainerType = {
