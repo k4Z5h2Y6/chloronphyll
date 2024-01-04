@@ -1,15 +1,20 @@
 import { PageTitle } from "@/components/elements/PageTitle";
 import Image from "next/image";
 import { Movie } from "@/components/elements/Movie";
+import { DropDownContainerA } from "@/components/elements/DropDownContainerA";
+import { DropDownContainerB } from "@/components/elements/DropDownContainerB";
+import { title } from "process";
+import { colorData0, colorData1 } from "@/libs/colorData";
 
 export default function color() {
+
   return (
     <>
       <section className="topSct">
         <PageTitle pageTitle="01 いろ改変" />
         <div className="section0contentO">
           <div className="section0ContentMovieO">
-            <Movie src="/SettingManual/01Hair/HairYokogami1280_720.mp4" />
+            <Movie src="/KaihenNote/Color/color1920_1080.mp4" />
           </div>
           <div className="section0ContentTextO">
             <div className="section0ContentTextI">
@@ -38,7 +43,7 @@ export default function color() {
                 理想の見た目に近づけやすいです。
               </p>
               <Image
-                src="/Document/DoukonDate1280_720.png"
+                src="/KaihenNote/Color/colorTime1280_720.png"
                 alt=""
                 width={1280}
                 height={720}
@@ -53,6 +58,8 @@ export default function color() {
       </section>
 
       <section className="endSct">
+        <DropDownContainerA DropDownContainerData={colorData0}/>
+        {/* <DropDownContainerB data={colorData1} /> */}
       </section>
 
       <style jsx>{`
@@ -99,9 +106,23 @@ export default function color() {
         .endSct {
           width: 100%;
           height: fit-content;
-          padding-bottom: 40px;
+          padding-top: 40px;
         }
-
+        @media screen and (max-width: 1024px) {
+          .section0contentO {
+            flex-direction: column;
+          }
+          .section0ContentMovieO {
+            width: 80%;
+            margin: 0 auto;
+          }
+          .section0ContentTextO {
+            width: 100%;
+          }
+          .section0ContentTextI {
+            width: 100%;
+          }
+        }
       `}</style>
     </>
   );
