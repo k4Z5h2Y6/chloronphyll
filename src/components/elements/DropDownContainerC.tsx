@@ -2,7 +2,7 @@ import { DropDownContainerType } from "@/libs/colorData";
 import Image from "next/image";
 import { useState } from "react";
 
-export const DropDownContainerB = ({
+export const DropDownContainerC = ({
   data,
 }: {
   data: DropDownContainerType;
@@ -46,6 +46,43 @@ export const DropDownContainerB = ({
                 <img src={data.contents[1].img} alt="" />
               </div>
             </li>
+
+            <li className="contentO">
+              <div className="textO">
+                <p className="descriptionP">{data.contents[2].description}</p>
+              </div>
+              <div className="imgO">
+                <img src={data.contents[2].img} alt="" />
+              </div>
+            </li>
+
+            <li className="contentO">
+              <div className="textO">
+                <p className="descriptionP">{data.contents[3].description}</p>
+              </div>
+              <div className="imgO">
+                <img src={data.contents[3].img} alt="" />
+              </div>
+            </li>
+
+            <li className="contentO">
+              <div className="textO">
+                <p className="descriptionP">{data.contents[4].description}</p>
+              </div>
+              <div className="imgO">
+                <img src={data.contents[4].img} alt="" />
+              </div>
+            </li>
+
+            <li className="contentO">
+              <div className="textO">
+                <p className="descriptionP">{data.contents[5].description}</p>
+              </div>
+              <div className="imgO">
+                <img src={data.contents[5].img} alt="" />
+              </div>
+            </li>
+
           </ul>
 
           <div
@@ -124,7 +161,7 @@ export const DropDownContainerB = ({
 
         .dropDownContentsOOpened {
           width: 100%;
-          height: 560px;//
+          height: 1680px;//
           transition: var(--transition1s);
           display: flex;
           flex-direction: column;

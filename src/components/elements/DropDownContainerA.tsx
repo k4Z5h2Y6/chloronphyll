@@ -3,8 +3,8 @@ import { DropDownContainerSingleType } from "@/libs/colorData";
 export const DropDownContainerA = ({data}: { data: DropDownContainerSingleType }) => {
   return (
     <>
-      <div className="DropDownContainerAO">
-        <div className="DropDownContainerAI">
+      <div className="DropDownContainerO">
+        <div className="DropDownContainerI">
           <div className="contentO">
             <div className="textO">
               <h5>{data.title}</h5>
@@ -19,13 +19,13 @@ export const DropDownContainerA = ({data}: { data: DropDownContainerSingleType }
       </div>
 
       <style jsx>{`
-        .DropDownContainerAO {
+        .DropDownContainerO {
           width: 70%;
           height: 400px;
           margin: 0 auto;
           padding: 40px 0;
         }
-        .DropDownContainerAI {
+        .DropDownContainerI {
           width: 100%;
           height: 100%;
           padding-bottom: 40px;
