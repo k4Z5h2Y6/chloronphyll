@@ -60,7 +60,7 @@ export const DropDownContainerA = ({data}: { data: DropDownContainerSingleType }
           border-radius: var(--borderRadius-20);
         }
         @media screen and (max-width: 1024px) {
-          .DropDownContainerAO {
+          .DropDownContainerO {
             width: 100%;
             height: fit-content;
           }
@@ -77,6 +77,7 @@ export const DropDownContainerA = ({data}: { data: DropDownContainerSingleType }
           }
           .imgO {
             width: 100%;
+            height: 100%;
             padding: 16px;
           }
         }
