@@ -291,8 +291,8 @@ export default function Shape() {
           margin-bottom: 0;
         }
         .dropDownBoxesImgO {
-          width: 63%; //
-          height: 8vh; //
+          width: 88%; //
+          height: 80px; //
           display: flex;
           margin: 0 auto 16px auto;
         }
@@ -333,6 +333,10 @@ export default function Shape() {
           //
           .dropDownBoxesO {
             width: 100%;
+          }
+          .dropDownBoxesTitleP {
+            font-size: 16px;
+            line-height: 29px;
           }
         }
       `}</style>
