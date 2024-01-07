@@ -14,7 +14,7 @@ export default function Shape() {
         <PageTitle pageTitle='シェイプキー' />
         <div className='section0contentO'>
           <div className='section0ContentMovieO'>
-            <Movie src='/SettingManual/01Hair/HairYokogami1280_720.mp4' />
+            <Movie src='/KaihenNote/Shape/shape_1280_720.mp4' />
           </div>
           <div className='section0ContentTextO'>
             <div className='section0ContentTextI'>
@@ -37,7 +37,7 @@ export default function Shape() {
                 これらを調整すると、より個性を出すことができます。
               </p>
               <Image
-                src='/Document/DoukonDate1280_720.png'
+                src='/KaihenNote/Shape/shape_sub_1280_720.png'
                 alt=''
                 width={1280}
                 height={720}
@@ -59,11 +59,11 @@ export default function Shape() {
           <div className='dropDownBoxesI'>
             <div className='dropDownBoxesTitleO'>
               <div className='dropDownBoxesTitleI'>
-                <p className='dropDownBoxesTitleP'>表情</p>
+                <p className='dropDownBoxesTitleP'>改変用</p>
               </div>
             </div>
             <div className='dropDownBoxesImgO'>
-              <RadiusedImg src='/History/RueWalkFirst1280_720.gif' />
+              <RadiusedImg src='/KaihenNote/Shape/shape_kaihen_640_194.gif' />
             </div>
             <DropDownBoxA
               title={'00_素体'}
@@ -97,7 +97,7 @@ export default function Shape() {
               </div>
             </div>
             <div className='dropDownBoxesImgO'>
-              <RadiusedImg src='/History/RueWalkFirst1280_720.gif' />
+              <RadiusedImg src='/KaihenNote/Shape/shape_facial_640_194.gif' />
             </div>
             <DropDownBoxB
               title={'11_hs_片手ハンドサイン'}
@@ -139,7 +139,7 @@ export default function Shape() {
               </div>
             </div>
             <div className='dropDownBoxesImgO'>
-              <RadiusedImg src='/History/RueWalkFirst1280_720.gif' />
+              <RadiusedImg src='/KaihenNote/Shape/shape_fashion_640_194.gif' />
             </div>
             <DropDownBoxC
               title={'21_h_ヘア'}
@@ -181,7 +181,7 @@ export default function Shape() {
               </div>
             </div>
             <div className='dropDownBoxesImgO'>
-              <RadiusedImg src='/History/RueWalkFirst1280_720.gif' />
+              <RadiusedImg src='/KaihenNote/Shape/shape_item_640_194.gif' />
             </div>
             <DropDownBoxB
               title={'30_z0_イメージボード'}
