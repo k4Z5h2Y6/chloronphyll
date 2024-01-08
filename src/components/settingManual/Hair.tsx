@@ -1,4 +1,5 @@
 import { Movie } from "../elements/Movie"
+import { Movie2 } from "../elements/Movie2"
 
 export const Hair = () => {
   return (
@@ -8,7 +9,7 @@ export const Hair = () => {
         <div className='yokogamiO'>
           <div className='yokogamiI'>
             <div className='yokogamiMovieO'>
-              <Movie src='/SettingManual/hair_yokogami_1280_720.mp4' />
+              <Movie2 src='/SettingManual/hair_yokogami_1280_720.mp4' />
             </div>
             <div className='yokogamiTextO'>
               <div className='yokogamiTextI'>
