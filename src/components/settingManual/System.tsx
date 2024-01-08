@@ -36,13 +36,16 @@ export const System = () => {
 
         <div className='akarusachouseiO'>
           <div className='akarusachouseiI'>
+            
+            <div className='akarusachouseiMovieO'>
+              <MovieMaxWidth src='/SettingManual/system_akarusachousei_852_480.mp4' />
+            </div>
+            
             <div className='akarusachouseiTextO'>
               <h5>明るさ調整</h5>
               <p>ExMenuでアバターの明るさを調整できます<br />本来写真が撮りづらいワールドでも<br />背景に馴染むことができます</p>
             </div>
-            <div className='akarusachouseiMovieO'>
-              <MovieMaxWidth src='/SettingManual/system_akarusachousei_852_480.mp4' />
-            </div>
+            
           </div>
         </div>
 
