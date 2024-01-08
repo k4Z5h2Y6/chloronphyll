@@ -1,4 +1,4 @@
-import { Movie } from "../elements/Movie";
+import { MovieMaxWidth } from "../elements/MovieMaxWidth";
 
 export const Expression = () => {
   return (
@@ -8,7 +8,7 @@ export const Expression = () => {
         <div className='handsignO'>
           <div className='handsignI'>
             <div className='handsignMovieO'>
-              <Movie src='/SettingManual/facial_handsign_1280_720.mp4' />
+              <MovieMaxWidth src='/SettingManual/facial_handsign_1280_720.mp4' />
             </div>
             <div className='handsignTextO'>
               <div className='handsignTextI'>
@@ -22,7 +22,7 @@ export const Expression = () => {
                 </div>
               </div>
               <div className='handsignSubMovieO'>
-                <Movie src='/SettingManual/facial_handsign_sub_1280_388.mp4' />
+                <MovieMaxWidth src='/SettingManual/facial_handsign_sub_1280_388.mp4' />
               </div>
             </div>
           </div>
@@ -30,13 +30,13 @@ export const Expression = () => {
 
         <div className='tobimeO'>
           <div className='tobimeMovieO'>
-            <Movie src='/SettingManual/facial_tobime_1280_388.mp4' />
+            <MovieMaxWidth src='/SettingManual/facial_tobime_1280_388.mp4' />
           </div>
         </div>
 
         <div className='shizukunonamidaO'>
           <div className='shizukunonamidaMovieO'>
-            <Movie src='/SettingManual/facial_shizukunonamida_1280_720.mp4' />
+            <MovieMaxWidth src='/SettingManual/facial_shizukunonamida_1280_720.mp4' />
           </div>
         </div>
 

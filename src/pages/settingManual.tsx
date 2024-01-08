@@ -1,4 +1,4 @@
-import { Movie } from '@/components/elements/Movie';
+import { MovieMaxWidth } from '@/components/elements/MovieMaxWidth';
 import { PageTitle } from '@/components/elements/PageTitle';
 import { Clothes } from '@/components/settingManual/Clothes';
 import { Emote } from '@/components/settingManual/Emote';
@@ -44,7 +44,7 @@ export default function SettingManual() {
           </div>
 
           <div className='section0ContentMovieO'>
-            <Movie src='/SettingManual/section0_content_852_480.mp4' />
+            <MovieMaxWidth src='/SettingManual/section0_content_852_480.mp4' />
           </div>
         </div>
       </section>

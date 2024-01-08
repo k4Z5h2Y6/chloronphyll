@@ -1,6 +1,6 @@
 import { PageTitle } from "@/components/elements/PageTitle";
 import Image from "next/image";
-import { Movie } from "@/components/elements/Movie";
+import { MovieMaxWidth } from "@/components/elements/MovieMaxWidth";
 import { DropDownContainerA } from "@/components/elements/DropDownContainerA";
 import { colorData0, colorData1, colorData2 } from "@/libs/colorData";
 import { DropDownContainerB } from "@/components/elements/DropDownContainerB";
@@ -13,7 +13,7 @@ export default function color() {
         <PageTitle pageTitle="01 いろ改変" />
         <div className="section0contentO">
           <div className="section0ContentMovieO">
-            <Movie src="/KaihenNote/Color/color1920_1080.mp4" />
+            <MovieMaxWidth src="/KaihenNote/Color/color1920_1080.mp4" />
           </div>
           <div className="section0ContentTextO">
             <div className="section0ContentTextI">

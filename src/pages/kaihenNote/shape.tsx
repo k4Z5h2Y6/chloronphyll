@@ -1,4 +1,4 @@
-import { Movie } from '@/components/elements/Movie';
+import { MovieMaxWidth } from '@/components/elements/MovieMaxWidth';
 import { PageTitle } from '@/components/elements/PageTitle';
 import { RadiusedImg } from '@/components/elements/RadiusedImg';
 import { DropDownBoxA } from '@/components/kaihenNote/DropDownBoxA';
@@ -14,7 +14,7 @@ export default function Shape() {
         <PageTitle pageTitle='シェイプキー' />
         <div className='section0contentO'>
           <div className='section0ContentMovieO'>
-            <Movie src='/KaihenNote/Shape/shape_1280_720.mp4' />
+            <MovieMaxWidth src='/KaihenNote/Shape/shape_1280_720.mp4' />
           </div>
           <div className='section0ContentTextO'>
             <div className='section0ContentTextI'>

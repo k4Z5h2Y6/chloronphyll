@@ -2,7 +2,7 @@ type Props = {
   src: string;
 };
 
-export const Movie = ({ src }: Props) => {
+export const MovieMaxWidth = ({ src }: Props) => {
   return (
     <>
       <div className="MovieO">

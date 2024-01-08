@@ -1,5 +1,5 @@
 import { Button } from "../elements/Button";
-import { Movie } from "../elements/Movie";
+import { MovieMaxWidth } from "../elements/MovieMaxWidth";
 import Image from "next/image";
 import { RadiusedImg } from "../elements/RadiusedImg";
 
@@ -90,7 +90,7 @@ export const Item = () => {
                 </p>
               </div>
               <div className="flemingSubMovieO">
-                <Movie src="/SettingManual/item_fleming_sub_1280_388.mp4" />
+                <MovieMaxWidth src="/SettingManual/item_fleming_sub_1280_388.mp4" />
               </div>
             </div>
           </div>
@@ -169,7 +169,7 @@ export const Item = () => {
         <div className="henrudaO">
           <div className="henrudaI">
             <div className="henrudaMovieO">
-              <Movie src="/SettingManual/item_henruda_720_720.mp4" />
+              <MovieMaxWidth src="/SettingManual/item_henruda_720_720.mp4" />
             </div>
             <div className="henrudaTextO">
               <h5>z6_ヘンルーダ</h5>

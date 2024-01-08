@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Button } from '../elements/Button';
-import { Movie } from "../elements/Movie";
+import { MovieMaxWidth } from "../elements/MovieMaxWidth";
 
 export const System = () => {
   return (
@@ -41,7 +41,7 @@ export const System = () => {
               <p>ExMenuでアバターの明るさを調整できます<br />本来写真が撮りづらいワールドでも<br />背景に馴染むことができます</p>
             </div>
             <div className='akarusachouseiMovieO'>
-              <Movie src='/SettingManual/system_akarusachousei_852_480.mp4' />
+              <MovieMaxWidth src='/SettingManual/system_akarusachousei_852_480.mp4' />
             </div>
           </div>
         </div>
@@ -66,7 +66,6 @@ export const System = () => {
             </div>
           </div>
         </div>
-
       </div>
 
       <style jsx>{`

@@ -1,4 +1,4 @@
-import { Movie } from '@/components/elements/Movie';
+import { MovieMaxWidth } from '@/components/elements/MovieMaxWidth';
 import { PageTitle } from '@/components/elements/PageTitle';
 import { useState } from 'react';
 import Image from "next/image";
@@ -24,7 +24,7 @@ export default function History() {
                 height={720}
                 layout='responsive'
               />
-              {/* <Movie src='/SettingManual/00SettingManual/test10m1280_720.mov' /> */}
+              {/* <MovieMaxWidth src='/SettingManual/00SettingManual/test10m1280_720.mov' /> */}
             </div>
           </div>
           <div className='section0ContentTextO'>

@@ -2,7 +2,7 @@ type Props = {
   src: string;
 };
 
-export const Movie2 = ({ src }: Props) => {
+export const MovieMaxhight = ({ src }: Props) => {
   return (
     <>
       <div className="MovieO">
@@ -12,14 +12,14 @@ export const Movie2 = ({ src }: Props) => {
       <style jsx>{`
         .MovieO {
           min-height: 100%;
-          min-width: 100%;
+          min-width: auto;
           display: flex;
           align-items: center;
           justify-content: center;
         }
         video {
           max-height: 100%;
-          max-width: 100%;
+          max-width: auto;
           border-radius: var(--borderRadius-20);
         }
       `}</style>

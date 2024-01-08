@@ -1,4 +1,4 @@
-import { Movie } from "../elements/Movie";
+import { MovieMaxWidth } from "../elements/MovieMaxWidth";
 import { RadiusedImg } from "../elements/RadiusedImg";
 
 export const Emote = () => {
@@ -8,7 +8,7 @@ export const Emote = () => {
         <div className="curtsyO">
           <div className="curtsyI">
             <div className="curtsyMovieO">
-              <Movie src="/SettingManual/emote_curtsy_720_720.mp4" />
+              <MovieMaxWidth src="/SettingManual/emote_curtsy_720_720.mp4" />
             </div>
             <div className="curtsyTextO">
               <h5>e1_カーテシー</h5>
@@ -53,7 +53,7 @@ export const Emote = () => {
               </p>
             </div>
             <div className="yesnoMovieO">
-              <Movie src="/SettingManual/emote_yesno_852_480.mp4" />
+              <MovieMaxWidth src="/SettingManual/emote_yesno_852_480.mp4" />
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ export const Emote = () => {
         <div className="utoutoO">
           <div className="utoutoI">
             <div className="utoutoMovieO">
-              <Movie src="/SettingManual/emote_utouto_640_194.mp4" />
+              <MovieMaxWidth src="/SettingManual/emote_utouto_640_194.mp4" />
             </div>
             <div className="utoutoTextO">
               <h5>e3_うとうと</h5>
@@ -79,7 +79,7 @@ export const Emote = () => {
         <div className="vsuiO">
           <div className="vsuiI">
             <div className="vsuiMovieO">
-              <Movie src="/SettingManual/emote_vsui_640_194.mp4" />
+              <MovieMaxWidth src="/SettingManual/emote_vsui_640_194.mp4" />
             </div>
             <div className="vsuiTextO">
               <h5>e4_V睡</h5>

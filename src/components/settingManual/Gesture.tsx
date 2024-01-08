@@ -1,7 +1,6 @@
 import SettingManual from "@/pages/settingManual";
 import { Button } from "../elements/Button";
-import { Movie } from "../elements/Movie";
-import Image from "next/image";
+import { MovieMaxWidth } from "../elements/MovieMaxWidth";
 import { RadiusedImg } from "../elements/RadiusedImg";
 
 export const Gesture = () => {
@@ -11,7 +10,7 @@ export const Gesture = () => {
         <div className="katateturntableO">
           <div className="katateturntableI">
             <div className="katateturntableMovieO">
-              <Movie src="/SettingManual/gesture_katateturntableI_720_720.mp4" />
+              <MovieMaxWidth src="/SettingManual/gesture_katateturntableI_720_720.mp4" />
             </div>
             <div className="katateturntableTextO">
               <div className="katateturntableTextI">
@@ -58,7 +57,7 @@ export const Gesture = () => {
               <div className="katateturntableSubO">
                 <div className="katateturntableSubI">
                   <div className="katateturntableSubMovieO">
-                    <Movie src="/SettingManual/gesture_katateturntable_sub_720_720.mp4" />
+                    <MovieMaxWidth src="/SettingManual/gesture_katateturntable_sub_720_720.mp4" />
                   </div>
                   <div className="katateturntableSubTextO">
                     <p className="katateturntableSubTextP">
@@ -76,7 +75,7 @@ export const Gesture = () => {
 
         <div className="ryoutekirakiraposeO">
           <div className="ryoutekirakiraposeMovieO">
-            <Movie src="/SettingManual/gesture_ryoutekirakirapose_720_720.mp4" />
+            <MovieMaxWidth src="/SettingManual/gesture_ryoutekirakirapose_720_720.mp4" />
           </div>
         </div>
 
