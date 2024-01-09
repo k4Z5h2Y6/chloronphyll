@@ -1,3 +1,4 @@
+import { MovieMaxhight } from "../elements/Movie2"
 import { MovieMaxWidth } from "../elements/MovieMaxWidth"
 
 export const Hair = () => {
@@ -8,12 +9,12 @@ export const Hair = () => {
         <div className='yokogamiO'>
           <div className='yokogamiI'>
             <div className='yokogamiMovieO'>
-              <MovieMaxWidth src='/SettingManual/hair_yokogami_1280_720.mp4' />
+              <MovieMaxhight src='/SettingManual/hair_yokogami_1280_720.mp4' />
             </div>
             <div className='yokogamiTextO'>
               <div className='yokogamiTextI'>
                 <h5>横髪</h5>
-                <p className="xxx">a_ボブ<br />b_パーマ<br />c_きのこヘア<br />d_ミディアムヘア<br />e_もふヘア</p>
+                <p>a_ボブ<br />b_パーマ<br />c_きのこヘア<br />d_ミディアムヘア<br />e_もふヘア</p>
                 <p>2つ以上を組み合わせて<br />さらに個性を出せます<br />ほぼ全組み合わせ対応です<br />ExMenuでコーデしてみてください</p>
               </div>
               <div className='yokogamiSubMovieO'>
@@ -177,6 +178,7 @@ export const Hair = () => {
           .yokogamiMovieO {
             width: 100%;
             height: 50%;
+            justify-content: center;
           }
           .yokogamiTextO {
             width: 100%;
