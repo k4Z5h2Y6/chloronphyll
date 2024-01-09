@@ -2,7 +2,7 @@ type Props = {
   src: string;
 };
 
-export const MovieMaxWidth = ({ src }: Props) => {
+export const MovieMaxHeight = ({ src }: Props) => {
   return (
     <>
       <div className="MovieO">
@@ -24,10 +24,10 @@ export const MovieMaxWidth = ({ src }: Props) => {
         }
         @media screen and (max-width: 1024px) {
           .MovieO {
-            min-width: inherit;
+            min-width: auto;
           }
           video {
-            max-width: inherit;
+            max-width: auto;
           }
         }
       `}</style>

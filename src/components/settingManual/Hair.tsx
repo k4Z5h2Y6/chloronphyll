@@ -1,4 +1,4 @@
-import { MovieMaxhight } from "../elements/Movie2"
+import { MovieMaxHeight } from "../elements/MovieMaxHeight"
 import { MovieMaxWidth } from "../elements/MovieMaxWidth"
 
 export const Hair = () => {
@@ -9,7 +9,7 @@ export const Hair = () => {
         <div className='yokogamiO'>
           <div className='yokogamiI'>
             <div className='yokogamiMovieO'>
-              <MovieMaxhight src='/SettingManual/hair_yokogami_1280_720.mp4' />
+              <MovieMaxHeight src='/SettingManual/hair_yokogami_1280_720.mp4' />
             </div>
             <div className='yokogamiTextO'>
               <div className='yokogamiTextI'>
