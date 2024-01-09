@@ -24,7 +24,7 @@ export const MovieMaxHeight = ({ src }: Props) => {
         }
         @media screen and (max-width: 1024px) {
           .MovieO {
-            min-width: min-content;
+            min-width: max-content;
           }
           video {
             max-width: min-content;
