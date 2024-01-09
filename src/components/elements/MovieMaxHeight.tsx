@@ -24,10 +24,10 @@ export const MovieMaxHeight = ({ src }: Props) => {
         }
         @media screen and (max-width: 1024px) {
           .MovieO {
-            min-width: auto;
+            min-width: inherit;
           }
           video {
-            max-width: auto;
+            max-width: inherit;
           }
         }
       `}</style>
