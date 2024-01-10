@@ -247,7 +247,8 @@ export const Hair = () => {
             height: 50%;
           }
           .video {
-            width: auto;
+            height: 100%;
+            max-height: inherit;
             max-width: min-content;
           }
 

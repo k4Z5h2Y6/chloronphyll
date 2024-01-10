@@ -31,7 +31,7 @@ export default function SettingManual() {
         <div className='section0contentO'>
           <div className='section0ContentTextO'>
             <ul>
-              <li className=''>01 ヘア (6種)(200パターン)</li>
+              <li>01 ヘア (6種)(200パターン)</li>
               <li>02 ケモ (16種)</li>
               <li>03 ふく (整数73万パターン)</li>
               <li>04 Gesture (23種)</li>
