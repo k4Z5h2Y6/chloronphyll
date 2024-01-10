@@ -2,6 +2,7 @@ import SettingManual from "@/pages/settingManual";
 import { Button } from "../elements/Button";
 import { MovieMaxWidth } from "../elements/MovieMaxWidth";
 import { RadiusedImg } from "../elements/RadiusedImg";
+import { RadiusedImgForHeight } from "../elements/RadiusedImgForHeight";
 
 export const Gesture = () => {
   return (
@@ -89,7 +90,8 @@ export const Gesture = () => {
           <div className="billiardsSetsumeiO">
             <div className="billiardsmodeO">
               <div className="billiardsmodeImgO">
-                <RadiusedImg src="/SettingManual/gesture_shutterpose_1280_720.jpg" />
+                <RadiusedImgForHeight src="/SettingManual/gesture_shutterpose_1280_720.jpg" />
+                {/* <RadiusedImg src="/SettingManual/gesture_shutterpose_1280_720.jpg" /> */}
               </div>
             </div>
 
