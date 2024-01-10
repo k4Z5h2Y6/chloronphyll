@@ -1,51 +1,99 @@
-import { MovieMaxHeight } from "../elements/MovieMaxHeight"
-import { MovieMaxWidth } from "../elements/MovieMaxWidth"
+import { MovieMaxHeight } from "../elements/MovieMaxHeight";
+import { MovieMaxWidth } from "../elements/MovieMaxWidth";
 
 export const Hair = () => {
   return (
     <>
-      <div className='sectionContentsCO'>
-
-        <div className='yokogamiO'>
-          <div className='yokogamiI'>
-            <div className='yokogamiMovieO'>
-              <MovieMaxHeight src='/SettingManual/hair_yokogami_1280_720.mp4' />
+      <div className="sectionContentsCO">
+        <div className="yokogamiO">
+          <div className="yokogamiI">
+            <div className="yokogamiMovieO">
+              {/* <MovieMaxHeight src='/SettingManual/hair_yokogami_1280_720.mp4' /> */}
+              <div className="MovieO">
+                <video
+                  className="video"
+                  src="/SettingManual/hair_yokogami_1280_720.mp4"
+                  muted
+                  loop
+                  controls
+                  playsInline
+                />
+              </div>
+              {/*  */}
             </div>
-            <div className='yokogamiTextO'>
-              <div className='yokogamiTextI'>
+            <div className="yokogamiTextO">
+              <div className="yokogamiTextI">
                 <h5>横髪</h5>
-                <p>a_ボブ<br />b_パーマ<br />c_きのこヘア<br />d_ミディアムヘア<br />e_もふヘア</p>
-                <p>2つ以上を組み合わせて<br />さらに個性を出せます<br />ほぼ全組み合わせ対応です<br />ExMenuでコーデしてみてください</p>
+                <p>
+                  a_ボブ
+                  <br />
+                  b_パーマ
+                  <br />
+                  c_きのこヘア
+                  <br />
+                  d_ミディアムヘア
+                  <br />
+                  e_もふヘア
+                </p>
+                <p>
+                  2つ以上を組み合わせて
+                  <br />
+                  さらに個性を出せます
+                  <br />
+                  ほぼ全組み合わせ対応です
+                  <br />
+                  ExMenuでコーデしてみてください
+                </p>
               </div>
-              <div className='yokogamiSubMovieO'>
-                <MovieMaxWidth src='/SettingManual/hair_yokogami_sub_1280_720.mp4' />
+              <div className="yokogamiSubMovieO">
+                <MovieMaxWidth src="/SettingManual/hair_yokogami_sub_1280_720.mp4" />
               </div>
             </div>
           </div>
         </div>
 
-        <div className='maegamiO'>
-          <div className='maegamiI'>
-            <div className='maegamiMovieO'>
-              <MovieMaxWidth src='/SettingManual/hair_maegami_1280_388.mp4' />
+        <div className="maegamiO">
+          <div className="maegamiI">
+            <div className="maegamiMovieO">
+              <MovieMaxWidth src="/SettingManual/hair_maegami_1280_388.mp4" />
             </div>
-            <div className='maegamiTextO'>
+            <div className="maegamiTextO">
               <h5>前髪</h5>
-              <p>・ぱっつん+3種<br />・長さ 無段階調整<br />・サイドイン</p>
-              <p>ExMenuで調整<br />まゆげが見えると印象が変わります</p>
+              <p>
+                ・ぱっつん+3種
+                <br />
+                ・長さ 無段階調整
+                <br />
+                ・サイドイン
+              </p>
+              <p>
+                ExMenuで調整
+                <br />
+                まゆげが見えると印象が変わります
+              </p>
             </div>
           </div>
         </div>
 
-        <div className='mimikakeO'>
-          <div className='mimikakeI'>
-            <div className='mimikakeMovieO'>
-              <MovieMaxWidth src='/SettingManual/hair_mimikake_720_720.mp4' />
+        <div className="mimikakeO">
+          <div className="mimikakeI">
+            <div className="mimikakeMovieO">
+              <MovieMaxWidth src="/SettingManual/hair_mimikake_720_720.mp4" />
             </div>
-            <div className='mimikakeTextO'>
+            <div className="mimikakeTextO">
               <h5>みみかけ4種類</h5>
-              <p>ケモみみの時は<br />(シェイプ)22_c6_ケモノみみかけ<br />を足す必要があります</p>
-              <p>Parameterが上限に達しているので<br />デフォルトの実装はありません</p>
+              <p>
+                ケモみみの時は
+                <br />
+                (シェイプ)22_c6_ケモノみみかけ
+                <br />
+                を足す必要があります
+              </p>
+              <p>
+                Parameterが上限に達しているので
+                <br />
+                デフォルトの実装はありません
+              </p>
             </div>
           </div>
         </div>
@@ -80,6 +128,24 @@ export const Hair = () => {
           padding: var(--settingManual-8px);
           display: flex;
         }
+
+
+
+        .MovieO {
+          min-height: 100%;
+          min-width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .video {
+          max-height: 100%;
+          max-width: 100%;
+          border-radius: var(--borderRadius-20);
+        }
+
+
+
         .yokogamiTextO {
           width: calc(100% / 3);
           height: 100%;
@@ -158,6 +224,7 @@ export const Hair = () => {
           display: flex;
           flex-direction: column;
         }
+
         @media screen and (max-width: 1024px) {
           //コンテンツアウター共通
           .sectionContentsCO {
@@ -179,6 +246,15 @@ export const Hair = () => {
             width: 100%;
             height: 50%;
           }
+          .video {
+            width: auto;
+            max-width: min-content;
+          }
+
+
+
+
+
           .yokogamiTextO {
             width: 100%;
             height: 50%;
@@ -224,11 +300,5 @@ export const Hair = () => {
         }
       `}</style>
     </>
-  )
-}
-
-
-
-
-
-
+  );
+};
