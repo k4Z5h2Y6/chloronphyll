@@ -1,3 +1,4 @@
+import { MovieMaxHeight } from "../elements/MovieMaxHeight";
 import { MovieMaxWidth } from "../elements/MovieMaxWidth";
 import { RadiusedImg } from "../elements/RadiusedImg";
 
@@ -8,7 +9,7 @@ export const Emote = () => {
         <div className="curtsyO">
           <div className="curtsyI">
             <div className="curtsyMovieO">
-              <MovieMaxWidth src="/SettingManual/emote_curtsy_720_720.mp4" />
+              <MovieMaxHeight src="/SettingManual/emote_curtsy_720_720.mp4" />
             </div>
             <div className="curtsyTextO">
               <h5>e1_カーテシー</h5>

@@ -23,11 +23,9 @@ export const MovieMaxHeight = ({ src }: Props) => {
           border-radius: var(--borderRadius-20);
         }
         @media screen and (max-width: 1024px) {
-          .MovieO {
-            min-width: max-content;
-          }
           video {
-            width: auto;
+            height: 100%;
+            max-height: inherit;
             max-width: min-content;
           }
         }

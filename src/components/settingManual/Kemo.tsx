@@ -1,3 +1,4 @@
+import { MovieMaxHeight } from "../elements/MovieMaxHeight";
 import { MovieMaxWidth } from "../elements/MovieMaxWidth";
 
 export const Kemo = () => {
@@ -8,7 +9,7 @@ export const Kemo = () => {
         <div className='tsunoO'>
           <div className='tsunoI'>
             <div className='tsunoMovieO'>
-              <MovieMaxWidth src='/SettingManual/kemo_tsuno_1280_720.mp4' />
+              <MovieMaxHeight src='/SettingManual/kemo_tsuno_1280_720.mp4' />
             </div>
             <div className='tsunoTextO'>
               <h5>ツノ16種類 <span>(ExMenuで選択)</span></h5>
@@ -30,7 +31,7 @@ export const Kemo = () => {
         <div className='mimihanemimitojiO'>
           <div className='mimihanemimitojiI'>
             <div className='mimihanemimitojiMovieO'>
-              <MovieMaxWidth src='/SettingManual/kemo_mimihanemimitoji_1280_720.mp4' />
+              <MovieMaxHeight src='/SettingManual/kemo_mimihanemimitoji_1280_720.mp4' />
             </div>
             <div className='mimihanemimitojiTextO'>
               <h5>耳はね、耳とじ <span>(ハンドサインで発動)</span></h5>

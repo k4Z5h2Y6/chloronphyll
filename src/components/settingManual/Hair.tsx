@@ -8,18 +8,7 @@ export const Hair = () => {
         <div className="yokogamiO">
           <div className="yokogamiI">
             <div className="yokogamiMovieO">
-              {/* <MovieMaxHeight src='/SettingManual/hair_yokogami_1280_720.mp4' /> */}
-              <div className="MovieO">
-                <video
-                  className="video"
-                  src="/SettingManual/hair_yokogami_1280_720.mp4"
-                  muted
-                  loop
-                  controls
-                  playsInline
-                />
-              </div>
-              {/*  */}
+              <MovieMaxHeight src='/SettingManual/hair_yokogami_1280_720.mp4' />
             </div>
             <div className="yokogamiTextO">
               <div className="yokogamiTextI">
@@ -128,24 +117,6 @@ export const Hair = () => {
           padding: var(--settingManual-8px);
           display: flex;
         }
-
-
-
-        .MovieO {
-          min-height: 100%;
-          min-width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        .video {
-          max-height: 100%;
-          max-width: 100%;
-          border-radius: var(--borderRadius-20);
-        }
-
-
-
         .yokogamiTextO {
           width: calc(100% / 3);
           height: 100%;
@@ -224,7 +195,6 @@ export const Hair = () => {
           display: flex;
           flex-direction: column;
         }
-
         @media screen and (max-width: 1024px) {
           //コンテンツアウター共通
           .sectionContentsCO {
@@ -246,16 +216,6 @@ export const Hair = () => {
             width: 100%;
             height: 50%;
           }
-          .video {
-            height: 100%;
-            max-height: inherit;
-            max-width: min-content;
-          }
-
-
-
-
-
           .yokogamiTextO {
             width: 100%;
             height: 50%;

@@ -1,3 +1,4 @@
+import { MovieMaxHeight } from "../elements/MovieMaxHeight"
 import { MovieMaxWidth } from "../elements/MovieMaxWidth"
 
 export const Clothes = () => {
@@ -6,7 +7,7 @@ export const Clothes = () => {
       <div className='sectionContentsCO'>
 
         <div className='clothesMovieO'>
-          <MovieMaxWidth src='/SettingManual/clothes_all_1280_1280.mp4' />
+          <MovieMaxHeight src='/SettingManual/clothes_all_1280_1280.mp4' />
         </div>
 
         <div className='clothesTextO'>

@@ -1,3 +1,4 @@
+import { MovieMaxHeight } from "../elements/MovieMaxHeight";
 import { MovieMaxWidth } from "../elements/MovieMaxWidth";
 
 export const Expression = () => {
@@ -8,7 +9,7 @@ export const Expression = () => {
         <div className='handsignO'>
           <div className='handsignI'>
             <div className='handsignMovieO'>
-              <MovieMaxWidth src='/SettingManual/facial_handsign_1280_720.mp4' />
+              <MovieMaxHeight src='/SettingManual/facial_handsign_1280_720.mp4' />
             </div>
             <div className='handsignTextO'>
               <div className='handsignTextI'>
