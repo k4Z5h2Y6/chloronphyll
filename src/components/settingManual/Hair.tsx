@@ -178,7 +178,7 @@ export const Hair = () => {
           .yokogamiMovieO {
             width: 100%;
             height: 50%;
-            justify-content: center;
+            {/* justify-content: center; */}
           }
           .yokogamiTextO {
             width: 100%;
