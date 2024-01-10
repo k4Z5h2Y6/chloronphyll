@@ -115,6 +115,7 @@ export default function color() {
           .section0ContentMovieO {
             width: 80%;
             margin: 0 auto;
+            padding: 0 0 20px 0;
           }
           .section0ContentTextO {
             width: 100%;
