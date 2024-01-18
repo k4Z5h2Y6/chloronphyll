@@ -1,13 +1,39 @@
-import { DropDownContainerType } from "@/libs/colorData";
+import {
+  DropDownContainerContentsType,
+  DropDownContainerType,
+} from "@/libs/colorData";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
+import { Modal } from "./Modal";
 
 export const DropDownContainerB = ({
   data,
 }: {
   data: DropDownContainerType;
 }) => {
-  const [isContainerOpened, setIsContainerOpened] = useState(false);
+  const [isContainerOpened, setIsContainerOpened] = useState<boolean>(false);
+  const [isModalShown, setIsModalShown] = useState<boolean>(false);
+
+  const [firstContent, setFirstContent] =
+    useState<DropDownContainerContentsType>();
+  const [exceptFirstContent, setExceptFirstContent] =
+    useState<DropDownContainerContentsType[]>();
+  const dataContents: DropDownContainerContentsType[] = data.contents;
+
+  useEffect(() => {
+    setIsModalShown(false);
+  }, []);
+
+  useLayoutEffect(() => {
+    setFirstContent(dataContents.shift());
+    setExceptFirstContent(dataContents);
+  }, []);
+
+  const handleModalShow = (index: number) => {
+    setIsModalShown(true);
+    console.log(index)
+  };
+
   return (
     <>
       <div className="DropDownContainerO">
@@ -15,13 +41,12 @@ export const DropDownContainerB = ({
           <div className="contentO">
             <div className="textO">
               <h5>{data.title}</h5>
-              <p className="descriptionP">{data.description}</p>
+              <p className="descriptionP">{firstContent?.description}</p>
             </div>
-            <div className="imgO">
-              <img src={data.img} alt="" />
+            <div className="imgO" onClick={() => handleModalShow(-1)}>
+              <img src={firstContent?.img} alt="" />
             </div>
           </div>
-
           <ul
             className={
               isContainerOpened
@@ -29,23 +54,19 @@ export const DropDownContainerB = ({
                 : "dropDownContentsOClosed"
             }
           >
-            <li className="contentO">
-              <div className="textO">
-                <p className="descriptionP">{data.contents[0].description}</p>
-              </div>
-              <div className="imgO">
-                <img src={data.contents[0].img} alt="" />
-              </div>
-            </li>
-
-            <li className="contentO">
-              <div className="textO">
-                <p className="descriptionP">{data.contents[1].description}</p>
-              </div>
-              <div className="imgO">
-                <img src={data.contents[1].img} alt="" />
-              </div>
-            </li>
+            {exceptFirstContent?.map(
+              (e: DropDownContainerContentsType, index: number) => (
+                <li className="contentO" key={index}>
+                  <div className="textO">
+                    <p className="descriptionP">{e.description}</p>
+                  </div>
+                  {/* <div className="imgO" onClick={() => setIsModalShown(true)}> */}
+                  <div className="imgO" onClick={() => handleModalShow(index)}>
+                    <img src={e.img} alt="" />
+                  </div>
+                </li>
+              )
+            )}
           </ul>
 
           <div
@@ -81,6 +102,33 @@ export const DropDownContainerB = ({
         </div>
       </div>
 
+      {/* <Modal isModalShown={isModalShown} setIsModalShown={setIsModalShown} /> */}
+
+      <div className={isModalShown ? "modalShownO" : "modalClosedO"}>
+        <div className="enlargedDoukondataImgO">
+          <Image
+            src="/Document/DoukonDate1280_720.png"
+            alt=""
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
+        <div className="closingModalO" onClick={() => setIsModalShown(false)}>
+          <Image
+            src="/Document/DocumentBatu256_256.png"
+            alt=""
+            width={256}
+            height={256}
+            style={{
+              width: "48px",
+              height: "48px",
+            }}
+          />
+        </div>
+      </div>
+
+      {/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */}
+
       <style jsx>{`
         .DropDownContainerO {
           width: 70%;
@@ -98,7 +146,7 @@ export const DropDownContainerB = ({
         }
         .contentO {
           width: 100%;
-          height: 280px;//
+          height: 280px; //
           display: flex;
         }
         .textO {
@@ -124,7 +172,7 @@ export const DropDownContainerB = ({
 
         .dropDownContentsOOpened {
           width: 100%;
-          height: 560px;//
+          height: 560px; //
           transition: var(--transition1s);
           display: flex;
           flex-direction: column;
@@ -143,6 +191,64 @@ export const DropDownContainerB = ({
           display: flex;
           justify-content: center;
           align-items: center;
+        }
+        //モーダル
+        .modalShownO {
+          width: 95vw;
+          height: 95vh;
+          padding: var(--document-8px);
+          position: fixed;
+          top: 2.5vh;
+          left: 2.5vw;
+          z-index: 11;
+          border-radius: var(--borderRadius-20);
+          background-color: rgba(128, 128, 128, 0.8); //
+          animation: fade-in 0.5s ease 0s 1 normal none running;
+        }
+        .modalClosedO {
+          width: 95vw;
+          height: 95vh;
+          padding: var(--document-8px);
+          position: fixed;
+          top: 2.5vh;
+          left: 2.5vw;
+          z-index: -10;
+          border-radius: var(--borderRadius-20);
+          background-color: rgba(128, 128, 128, 0.8); //
+          animation: fade-out 0.5s ease 0s 1 normal none running;
+        }
+        .enlargedDoukondataImgO {
+          width: 100%;
+          height: 100%;
+          position: relative;
+        }
+        .closingModalO {
+          position: absolute;
+          top: var(--document-8px);
+          right: var(--document-8px);
+        }
+        //アニメーション
+        @keyframes fade-in {
+          0%{
+            opacity: 0;
+          }
+          100%{
+            opacity: 1;
+          }
+        }
+        @keyframes fade-out {
+          0%{
+            opacity: 1;
+            z-index: 11;
+          }
+          99%{
+            opacity: 0;
+            z-index: 11;
+          }
+          100%{
+            opacity: 0;
+            z-index: -10;
+          }
         }
         @media screen and (max-width: 1024px) {
           .DropDownContainerO {
@@ -173,3 +279,23 @@ export const DropDownContainerB = ({
     </>
   );
 };
+
+{
+  /* <li className="contentO">
+              <div className="textO">
+                <p className="descriptionP">{data.contents[0].description}</p>
+              </div>
+              <div className="imgO">
+                <img src={data.contents[0].img} alt="" />
+              </div>
+            </li>
+
+            <li className="contentO">
+              <div className="textO">
+                <p className="descriptionP">{data.contents[1].description}</p>
+              </div>
+              <div className="imgO">
+                <img src={data.contents[1].img} alt="" />
+              </div>
+            </li> */
+}

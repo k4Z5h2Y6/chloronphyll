@@ -1,6 +1,6 @@
-import { DropDownContainerSingleType } from "@/libs/colorData";
+import { DropDownContainerType } from "@/libs/colorData";
 
-export const DropDownContainerA = ({data}: { data: DropDownContainerSingleType }) => {
+export const DropDownContainerA = ({data}: { data: DropDownContainerType }) => {
   return (
     <>
       <div className="DropDownContainerO">
@@ -8,10 +8,10 @@ export const DropDownContainerA = ({data}: { data: DropDownContainerSingleType }
           <div className="contentO">
             <div className="textO">
               <h5>{data.title}</h5>
-              <p className="descriptionP">{data.description}</p>
+              <p className="descriptionP">{data.contents[0].description}</p>
             </div>
             <div className="imgO">
-              <img src={data.img} alt="" />
+              <img src={data.contents[0].img} alt="" />
             </div>
           </div>
           <div className="buttonO"></div>

@@ -5,8 +5,9 @@ import { DropDownContainerA } from "@/components/elements/DropDownContainerA";
 import { colorData0, colorData1, colorData2 } from "@/libs/colorData";
 import { DropDownContainerB } from "@/components/elements/DropDownContainerB";
 import { DropDownContainerC } from "@/components/elements/DropDownContainerC";
+import { useEffect } from "react";
 
-export default function color() {
+export default function Color() {
   return (
     <>
       <section className="topSct">

@@ -393,6 +393,8 @@ export default function Document() {
         </div>
       </section>
 
+      {/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */}
+
       <div className={isModalShown ? "modalShownO" : "modalClosedO"}>
         <div className="enlargedDoukondataImgO">
           <Image

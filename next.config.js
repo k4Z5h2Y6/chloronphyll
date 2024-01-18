@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  //trueだと安全のため2回レンダリングされる
+  reactStrictMode: false,
 }
 
 module.exports = nextConfig
