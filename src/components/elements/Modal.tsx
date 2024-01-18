@@ -14,7 +14,7 @@ export const Modal = ({
 }) => {
 
   //stateは上階層で管理
-  const []
+  // const []
 
   return (
     <>
