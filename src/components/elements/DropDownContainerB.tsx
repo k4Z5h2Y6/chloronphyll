@@ -169,7 +169,6 @@ export const DropDownContainerB = ({
           height: 100%;
           border-radius: var(--borderRadius-20);
         }
-
         .dropDownContentsOOpened {
           width: 100%;
           height: 560px; //
@@ -184,7 +183,6 @@ export const DropDownContainerB = ({
           transition: var(--transition1s);
           overflow: hidden;
         }
-
         .buttonO {
           width: 100%;
           height: 40px;
