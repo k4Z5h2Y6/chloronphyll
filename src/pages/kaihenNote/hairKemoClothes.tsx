@@ -1,5 +1,6 @@
 import { PageTitle } from '@/components/elements/PageTitle';
 import Image from "next/image";
+// import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 // $ npm install @splidejs/react-splide
 
@@ -24,7 +25,7 @@ export default function hairKemoClothes() {
           </div>
         </div>
       </section>
-{/* 
+
       <Splide
         aria-label="私のお気に入りの画像集"
         options={{
@@ -33,15 +34,15 @@ export default function hairKemoClothes() {
         }}
       >
         <SplideSlide>
-          <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/shikun20220402_114719-2_TP_V.jpg" alt="かわいい猫の画像 part1" />
+          {/* <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/shikun20220402_114719-2_TP_V.jpg" alt="かわいい猫の画像 part1" /> */}
         </SplideSlide>
         <SplideSlide>
-          <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/shikun20220402_122123_TP_V.jpg" alt="かわいい猫の画像 part2" />
+          {/* <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/shikun20220402_122123_TP_V.jpg" alt="かわいい猫の画像 part2" /> */}
         </SplideSlide>
         <SplideSlide>
-          <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/sikun_20220402-180657-2_TP_V.jpg" alt="かわいい猫の画像 part3" />
+          {/* <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/sikun_20220402-180657-2_TP_V.jpg" alt="かわいい猫の画像 part3" /> */}
         </SplideSlide>
-      </Splide> */}
+      </Splide>
 
       <style jsx>{`
         //todo:全体要整理
