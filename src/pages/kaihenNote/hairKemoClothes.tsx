@@ -24,8 +24,6 @@ export default function hairKemoClothes() {
         </div>
       </section>
 
-      <Splider/>
-
       <style jsx>{`
         //todo:全体要整理
         .topSct {
