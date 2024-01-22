@@ -1,6 +1,6 @@
 import { PageTitle } from '@/components/elements/PageTitle';
+import { Splider } from '@/components/elements/Splide';
 import Image from "next/image";
-// import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 export default function hairKemoClothes() {
 
@@ -24,23 +24,7 @@ export default function hairKemoClothes() {
         </div>
       </section>
 
-      {/* <Splide
-        aria-label="私のお気に入りの画像集"
-        options={{
-          autoplay: true, // 自動再生を有効
-          interval: 3000, // 自動再生の間隔を3秒に設定
-        }}
-      >
-        <SplideSlide>
-          <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/shikun20220402_114719-2_TP_V.jpg" alt="かわいい猫の画像 part1" />
-        </SplideSlide>
-        <SplideSlide>
-          <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/shikun20220402_122123_TP_V.jpg" alt="かわいい猫の画像 part2" />
-        </SplideSlide>
-        <SplideSlide>
-          <img className="slide-img" src="https://www.pakutaso.com/shared/img/thumb/sikun_20220402-180657-2_TP_V.jpg" alt="かわいい猫の画像 part3" />
-        </SplideSlide>
-      </Splide> */}
+      <Splider/>
 
       <style jsx>{`
         //todo:全体要整理
@@ -59,6 +43,13 @@ export default function hairKemoClothes() {
           margin: 0 auto;
           display: flex;
           align-items: center;
+        }
+        //splideテスト
+        .slide-img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       `}</style>
     </>

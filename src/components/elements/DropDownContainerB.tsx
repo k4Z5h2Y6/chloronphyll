@@ -5,34 +5,75 @@ import {
 import Image from "next/image";
 import { useEffect, useLayoutEffect, useState } from "react";
 import { Modal } from "./Modal";
+import { Splider } from "./Splide";
 
 export const DropDownContainerB = ({
   data,
 }: {
   data: DropDownContainerType;
 }) => {
+  
+  //アコーディオン開閉関係
   const [isContainerOpened, setIsContainerOpened] = useState<boolean>(false);
-  const [isModalShown, setIsModalShown] = useState<boolean>(false);
 
+  //モーダル関係
+  const [isModalShown, setIsModalShown] = useState<boolean>(false);
+  const [currentIndex, setCurrentIndex] = useState<number>(1);
+
+  const handleModalShow = (index: number) => {
+    setCurrentIndex(index);
+    setIsModalShown(true);
+  };
+
+  function disableScroll(e: any) {
+    e.preventDefault();
+  }
+
+  useEffect(() => {
+    setIsModalShown(false);
+  }, []);
+
+  useEffect(() => {
+    if (isModalShown === false) {
+      setCurrentIndex(0)
+    }
+  }, [isModalShown])
+
+  useEffect(() => {
+    const handleScroll = (e: Event) => {
+      disableScroll(e);
+    };
+
+    if (isModalShown) {
+      document.addEventListener("touchmove", handleScroll, { passive: false });
+      document.addEventListener("wheel", handleScroll, { passive: false });
+      document.addEventListener("mousewheel", handleScroll, { passive: false });
+    } else {
+      document.removeEventListener("touchmove", handleScroll);
+      document.removeEventListener("wheel", handleScroll);
+      document.removeEventListener("mousewheel", handleScroll);
+    }
+
+    return () => {
+      document.removeEventListener("touchmove", handleScroll);
+      document.removeEventListener("wheel", handleScroll);
+      document.removeEventListener("mousewheel", handleScroll);
+    };
+  }, [isModalShown]);
+
+  //props配置用に調整
   const [firstContent, setFirstContent] =
     useState<DropDownContainerContentsType>();
   const [exceptFirstContent, setExceptFirstContent] =
     useState<DropDownContainerContentsType[]>();
   const dataContents: DropDownContainerContentsType[] = data.contents;
 
-  useEffect(() => {
-    setIsModalShown(false);
-  }, []);
-
+  //useLayoutEffectはレンダリング前に実行される
+  //レンダリイグ前に実行しないと、コンテンツを表示できない
   useLayoutEffect(() => {
     setFirstContent(dataContents.shift());
     setExceptFirstContent(dataContents);
   }, []);
-
-  const handleModalShow = (index: number) => {
-    setIsModalShown(true);
-    console.log(index)
-  };
 
   return (
     <>
@@ -43,7 +84,7 @@ export const DropDownContainerB = ({
               <h5>{data.title}</h5>
               <p className="descriptionP">{firstContent?.description}</p>
             </div>
-            <div className="imgO" onClick={() => handleModalShow(-1)}>
+            <div className="imgO" onClick={() => handleModalShow(0)}>
               <img src={firstContent?.img} alt="" />
             </div>
           </div>
@@ -60,8 +101,7 @@ export const DropDownContainerB = ({
                   <div className="textO">
                     <p className="descriptionP">{e.description}</p>
                   </div>
-                  {/* <div className="imgO" onClick={() => setIsModalShown(true)}> */}
-                  <div className="imgO" onClick={() => handleModalShow(index)}>
+                  <div className="imgO" onClick={() => handleModalShow(index + 1)}>
                     <img src={e.img} alt="" />
                   </div>
                 </li>
@@ -106,11 +146,11 @@ export const DropDownContainerB = ({
 
       <div className={isModalShown ? "modalShownO" : "modalClosedO"}>
         <div className="enlargedDoukondataImgO">
-          <Image
-            src="/Document/DoukonDate1280_720.png"
-            alt=""
-            layout="fill"
-            objectFit="contain"
+          <Splider
+            firstContent={firstContent!}
+            exceptFirstContent={exceptFirstContent!}
+            currentIndex={currentIndex}
+            data={data}
           />
         </div>
         <div className="closingModalO" onClick={() => setIsModalShown(false)}>
@@ -219,6 +259,9 @@ export const DropDownContainerB = ({
           width: 100%;
           height: 100%;
           position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
         .closingModalO {
           position: absolute;
@@ -227,23 +270,23 @@ export const DropDownContainerB = ({
         }
         //アニメーション
         @keyframes fade-in {
-          0%{
+          0% {
             opacity: 0;
           }
-          100%{
+          100% {
             opacity: 1;
           }
         }
         @keyframes fade-out {
-          0%{
+          0% {
             opacity: 1;
             z-index: 11;
           }
-          99%{
+          99% {
             opacity: 0;
             z-index: 11;
           }
-          100%{
+          100% {
             opacity: 0;
             z-index: -10;
           }
@@ -254,7 +297,7 @@ export const DropDownContainerB = ({
             height: fit-content;
           }
           .contentO {
-            height: 100%;
+            height: 100%; 
             flex-direction: column;
           }
           img {
@@ -277,23 +320,3 @@ export const DropDownContainerB = ({
     </>
   );
 };
-
-{
-  /* <li className="contentO">
-              <div className="textO">
-                <p className="descriptionP">{data.contents[0].description}</p>
-              </div>
-              <div className="imgO">
-                <img src={data.contents[0].img} alt="" />
-              </div>
-            </li>
-
-            <li className="contentO">
-              <div className="textO">
-                <p className="descriptionP">{data.contents[1].description}</p>
-              </div>
-              <div className="imgO">
-                <img src={data.contents[1].img} alt="" />
-              </div>
-            </li> */
-}
