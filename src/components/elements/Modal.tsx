@@ -13,9 +13,6 @@ export const Modal = ({
   setIsModalShown: Dispatch<SetStateAction<boolean>>;
 }) => {
 
-  //stateは上階層で管理
-  // const []
-
   return (
     <>
       <div className={isModalShown ? "modalShownO" : "modalClosedO"}>

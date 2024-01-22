@@ -2,40 +2,31 @@ import { Splide, SplideSlide } from "splide-nextjs/react-splide";
 import "@splidejs/splide/css";
 import {
   DropDownContainerContentsType,
-  DropDownContainerType,
 } from "@/libs/colorData";
-import { useLayoutEffect, useState } from "react";
 
 export const Splider = ({
-  firstContent,
-  exceptFirstContent,
   currentIndex,
-  data,
+  contents,
 }: {
-  firstContent: DropDownContainerContentsType;
-  exceptFirstContent: DropDownContainerContentsType[];
   currentIndex: number;
-  data: DropDownContainerType;
+  contents: DropDownContainerContentsType[];
 }) => {
-
-  const dataContents: DropDownContainerContentsType[] = [firstContent, ...(exceptFirstContent || [])]
-  // console.log(data)
 
   return (
     <>
       <div className="SplideO">
         <Splide
+          id="main-carousel"
           aria-label="私のお気に入りの画像集"
           options={{
-            start: 1,
+            start: currentIndex,
             perPage: 1,
-            width: "100%",
-            height: "100%",
+            width: "95vw",
+            height: "95vh",
             pagination: "true",
           }}
         >
-          {/* {dataContents?.map( */}
-          {exceptFirstContent?.map(
+          {contents.map(
             (dc: DropDownContainerContentsType, index: number) => (
               <SplideSlide key={index}>
                 <img
@@ -58,9 +49,10 @@ export const Splider = ({
           align-items: center;
         }
         .slide-img {
-          display: block;
           width: 100%;
           height: 100%;
+          padding: var(--document-8px);
+          display: block;
           object-fit: contain;
         }
       `}</style>
