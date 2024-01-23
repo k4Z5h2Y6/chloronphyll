@@ -16,7 +16,7 @@ export const DropDownContainerB = ({
   //モーダル関係
   const [isModalShown, setIsModalShown] = useState<boolean>(false);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [key, setKey] = useState(1);
+  const [key, setKey] = useState<number>(1);
 
   const handleModalShow = (index: number) => {
     setCurrentIndex(index);
