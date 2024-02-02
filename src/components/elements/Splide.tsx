@@ -2,7 +2,10 @@ import { Splide, SplideSlide } from "splide-nextjs/react-splide";
 import "@splidejs/splide/css";
 import { DropDownContainerContentsType } from "@/libs/colorData";
 import { useEffect, useRef } from "react";
-import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
+
+import customPrevArrow from "/public/KaihenNote/Color/popup_left128_128.png";
+import customNextArrow from "/public/KaihenNote/Color/popup_left128_128.png";
 
 export const Splider = ({
   currentIndex,
@@ -24,8 +27,13 @@ export const Splider = ({
             perPage: 1,
             pagination: true,
             detectResize: false,
+            arrowPath: {
+              prev: customPrevArrow,
+              next: customNextArrow,
+            },
           }}
         >
+
           {contents.map((dc: DropDownContainerContentsType, index: number) => (
             <SplideSlide key={index}>
               <img

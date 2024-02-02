@@ -1,6 +1,7 @@
+import { Modal } from "@/components/elements/Modal";
 import { PageTitle } from "@/components/elements/PageTitle";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 
 export default function Document() {
   const [isModalShown, setIsModalShown] = useState<boolean>(false);
@@ -395,28 +396,7 @@ export default function Document() {
 
       {/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */}
 
-      <div className={isModalShown ? "modalShownO" : "modalClosedO"}>
-        <div className="enlargedDoukondataImgO">
-          <Image
-            src="/Document/DoukonDate1280_720.png"
-            alt=""
-            layout="fill"
-            objectFit="contain"
-          />
-        </div>
-        <div className="closingModalO" onClick={() => setIsModalShown(false)}>
-          <Image
-            src="/Document/DocumentBatu256_256.png"
-            alt=""
-            width={256}
-            height={256}
-            style={{
-              width: "48px",
-              height: "48px",
-            }}
-          />
-        </div>
-      </div>
+      <Modal isModalShown={isModalShown} setIsModalShown={setIsModalShown} img={"/Document/DoukonDate1280_720.png"}/>
 
       <style jsx>{`
         //todo:全体要整理
@@ -651,64 +631,6 @@ export default function Document() {
         .seisakuTextP, .kanriTextP {
           width: fit-content;
           line-height: 32px;
-        }
-        //モーダル
-        .modalShownO {
-          width: 95vw;
-          height: 95vh;
-          padding: var(--document-8px);
-          position: fixed;
-          top: 2.5vh;
-          left: 2.5vw;
-          z-index: 11;
-          border-radius: var(--borderRadius-20);
-          background-color: rgba(128, 128, 128, 0.8); //
-          animation: fade-in 0.5s ease 0s 1 normal none running;
-        }
-        .modalClosedO {
-          width: 95vw;
-          height: 95vh;
-          padding: var(--document-8px);
-          position: fixed;
-          top: 2.5vh;
-          left: 2.5vw;
-          z-index: -10;
-          border-radius: var(--borderRadius-20);
-          background-color: rgba(128, 128, 128, 0.8); //
-          animation: fade-out 0.5s ease 0s 1 normal none running;
-        }
-        .enlargedDoukondataImgO {
-          width: 100%;
-          height: 100%;
-          position: relative;
-        }
-        .closingModalO {
-          position: absolute;
-          top: var(--document-8px);
-          right: var(--document-8px);
-        }
-        //アニメーション
-        @keyframes fade-in {
-          0%{
-            opacity: 0;
-          }
-          100%{
-            opacity: 1;
-          }
-        }
-        @keyframes fade-out {
-          0%{
-            opacity: 1;
-            z-index: 11;
-          }
-          99%{
-            opacity: 0;
-            z-index: 11;
-          }
-          100%{
-            opacity: 0;
-            z-index: -10;
-          }
         }
         @media screen and (max-width: 1024px) {
           .topSct {

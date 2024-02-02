@@ -1,7 +1,7 @@
 import { DropDownContainerType } from "@/libs/colorData";
 import { Splider } from "./Splide";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Modal } from "./Modal";
 
 export const DropDownContainerA = ({
@@ -13,6 +13,37 @@ export const DropDownContainerA = ({
   const handleModalShow = (index: number) => {
     setIsModalShown(true);
   };
+
+  function disableScroll(e: any) {
+    e.preventDefault();
+  }
+
+  useEffect(() => {
+    setIsModalShown(false);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = (e: Event) => {
+      disableScroll(e);
+    };
+
+    if (isModalShown) {
+      document.addEventListener("touchmove", handleScroll, { passive: false });
+      document.addEventListener("wheel", handleScroll, { passive: false });
+      document.addEventListener("mousewheel", handleScroll, { passive: false });
+    } else {
+      document.removeEventListener("touchmove", handleScroll);
+      document.removeEventListener("wheel", handleScroll);
+      document.removeEventListener("mousewheel", handleScroll);
+    }
+
+    return () => {
+      document.removeEventListener("touchmove", handleScroll);
+      document.removeEventListener("wheel", handleScroll);
+      document.removeEventListener("mousewheel", handleScroll);
+    };
+  }, [isModalShown]);
+  
   return (
     <>
       <div className="DropDownContainerO">
@@ -32,7 +63,7 @@ export const DropDownContainerA = ({
 
       {/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */}
 
-      <Modal isModalShown={isModalShown} setIsModalShown={setIsModalShown}/>
+      <Modal isModalShown={isModalShown} setIsModalShown={setIsModalShown} img={data.contents[0].img}/>
 
       {/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */}
 

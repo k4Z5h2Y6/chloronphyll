@@ -165,25 +165,33 @@ export const DropDownContainerC = ({
 
       <div className="modalCover" />
 
-      <div className={isModalShown ? "modalShownO" : "modalClosedO"}>
-        <div className="enlargedDoukondataImgO">
-          <Splider
-            key={key}
-            currentIndex={currentIndex}
-            contents={data.contents}
-          />
-        </div>
-        <div className="closingModalO" onClick={() => setIsModalShown(false)}>
-          <Image
-            src="/Document/DocumentBatu256_256.png"
-            alt=""
-            width={256}
-            height={256}
-            style={{
-              width: "48px",
-              height: "48px",
-            }}
-          />
+      <div
+        className={isModalShown ? "modalShownO" : "modalClosedO"}
+      >
+        <div
+          className="closingModalBackgroundO"
+          onClick={() => setIsModalShown(false)}
+        />
+        <div className="modalO">
+          <div className="enlargedDoukondataImgO">
+            <Splider
+              key={key}
+              currentIndex={currentIndex}
+              contents={data.contents}
+            />
+          </div>
+          <div className="closingModalO" onClick={() => setIsModalShown(false)}>
+            <Image
+              src="/Document/DocumentBatu256_256.png"
+              alt=""
+              width={256}
+              height={256}
+              style={{
+                width: "48px",
+                height: "48px",
+              }}
+            />
+          </div>
         </div>
       </div>
 
@@ -263,26 +271,40 @@ export const DropDownContainerC = ({
         }
         //モーダル
         .modalShownO {
-          width: 95vw;
-          height: 95vh;
           position: fixed;
-          top: 2.5vh;
-          left: 2.5vw;
-          z-index: 11;
-          border-radius: var(--borderRadius-20);
-          background-color: rgba(128, 128, 128, 0.8); //
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 11;//
           animation: fade-in 0.5s ease 0s 1 normal none running;
         }
         .modalClosedO {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: -10;//
+          animation: fade-out 0.5s ease 0s 1 normal none running;
+        }
+        .closingModalBackgroundO {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 12; //
+        }
+        .modalO {
           width: 95vw;
           height: 95vh;
           position: fixed;
           top: 2.5vh;
           left: 2.5vw;
-          z-index: -10;
+          z-index: 13;//
           border-radius: var(--borderRadius-20);
-          background-color: rgba(128, 128, 128, 0.8); //
-          animation: fade-out 0.5s ease 0s 1 normal none running;
+          background-color: var(--backgroundColor-modal);
         }
         .enlargedDoukondataImgO {
           width: 100%;
