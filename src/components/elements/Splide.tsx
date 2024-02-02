@@ -1,11 +1,13 @@
-import { Splide, SplideSlide } from "splide-nextjs/react-splide";
+// import { Splide, SplideTrack, SplideSlide } from "splide-nextjs/react-splide";
+import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import "@splidejs/splide/css";
-import { DropDownContainerContentsType } from "@/libs/colorData";
-import { useEffect, useRef } from "react";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
+import { DropDownContainerContentsType } from "@/libs/colorData";
 
-import customPrevArrow from "/public/KaihenNote/Color/popup_left128_128.png";
-import customNextArrow from "/public/KaihenNote/Color/popup_left128_128.png";
+import '@splidejs/react-splide/css';
+import '@splidejs/react-splide/css/skyblue';
+import '@splidejs/react-splide/css/sea-green';
+import '@splidejs/react-splide/css/core';
 
 export const Splider = ({
   currentIndex,
@@ -20,29 +22,34 @@ export const Splider = ({
         <Splide
           id="main-carousel"
           aria-label="私のお気に入りの画像集"
+          hasTrack={ false }
           options={{
             width: "95vw",
             height: "95vh",
             start: currentIndex,
             perPage: 1,
-            pagination: true,
+            // pagination: true,
             detectResize: false,
-            arrowPath: {
-              prev: customPrevArrow,
-              next: customNextArrow,
-            },
           }}
         >
+          <SplideTrack>
+            {contents.map(
+              (dc: DropDownContainerContentsType, index: number) => (
+                <SplideSlide key={index}>
+                  <img
+                    className="slide-img"
+                    src={dc?.img}
+                    alt={`${dc?.description}`}
+                  />
+                </SplideSlide>
+              )
+            )}
+          </SplideTrack>
 
-          {contents.map((dc: DropDownContainerContentsType, index: number) => (
-            <SplideSlide key={index}>
-              <img
-                className="slide-img"
-                src={dc?.img}
-                alt={`${dc?.description}`}
-              />
-            </SplideSlide>
-          ))}
+          <div className="splide__arrows">
+            <button className="splide__arrow splide__arrow--prev">Prev</button>
+            <button className="splide__arrow splide__arrow--next">Next</button>
+          </div>
         </Splide>
       </div>
 
