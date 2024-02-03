@@ -107,6 +107,10 @@ export const Modal = ({
           position: absolute;
           top: 13px;//
           right: 13px;//
+          opacity: 0.8;
+        }
+        .closingModalO:hover {
+          opacity: 1;
         }
         //アニメーション
         @keyframes fade-in {
