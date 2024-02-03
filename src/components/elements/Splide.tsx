@@ -5,7 +5,7 @@ import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 //ここから下必要か精査
 import "@splidejs/react-splide/css";
 import "@splidejs/react-splide/css/skyblue";
-import "@splidejs/react-splide/css/sea-green";
+// import "@splidejs/react-splide/css/sea-green";
 import "@splidejs/react-splide/css/core";
 
 import { DropDownContainerContentsType } from "@/libs/colorData";
