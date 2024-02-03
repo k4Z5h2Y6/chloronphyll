@@ -1,13 +1,15 @@
 // import { Splide, SplideTrack, SplideSlide } from "splide-nextjs/react-splide";
-import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
+import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
-import { DropDownContainerContentsType } from "@/libs/colorData";
+//ここから下必要か精査
+import "@splidejs/react-splide/css";
+import "@splidejs/react-splide/css/skyblue";
+import "@splidejs/react-splide/css/sea-green";
+import "@splidejs/react-splide/css/core";
 
-import '@splidejs/react-splide/css';
-import '@splidejs/react-splide/css/skyblue';
-import '@splidejs/react-splide/css/sea-green';
-import '@splidejs/react-splide/css/core';
+import { DropDownContainerContentsType } from "@/libs/colorData";
+import Image from "next/image";
 
 export const Splider = ({
   currentIndex,
@@ -22,16 +24,17 @@ export const Splider = ({
         <Splide
           id="main-carousel"
           aria-label="私のお気に入りの画像集"
-          hasTrack={ false }
+          hasTrack={false}
           options={{
             width: "95vw",
             height: "95vh",
             start: currentIndex,
             perPage: 1,
-            // pagination: true,
+            pagination: true,
             detectResize: false,
           }}
         >
+          {/* <ul className="splide__pagination"></ul> */}
           <SplideTrack>
             {contents.map(
               (dc: DropDownContainerContentsType, index: number) => (
@@ -47,8 +50,30 @@ export const Splider = ({
           </SplideTrack>
 
           <div className="splide__arrows">
-            <button className="splide__arrow splide__arrow--prev">Prev</button>
-            <button className="splide__arrow splide__arrow--next">Next</button>
+            <button className="splide__arrow splide__arrow--prev">
+              <Image
+                src="/KaihenNote/Color/popup_left_128_128.png"
+                alt=""
+                width={128}
+                height={128}
+                style={{
+                  width: "32px",
+                  height: "32px",
+                }}
+              />
+            </button>
+            <button className="splide__arrow splide__arrow--next">
+              <Image
+                src="/KaihenNote/Color/popup_right_128_128.png"
+                alt=""
+                width={128}
+                height={128}
+                style={{
+                  width: "32px",
+                  height: "32px",
+                }}
+              />
+            </button>
           </div>
         </Splide>
       </div>

@@ -165,9 +165,7 @@ export const DropDownContainerC = ({
 
       <div className="modalCover" />
 
-      <div
-        className={isModalShown ? "modalShownO" : "modalClosedO"}
-      >
+      <div className={isModalShown ? "modalShownO" : "modalClosedO"}>
         <div
           className="closingModalBackgroundO"
           onClick={() => setIsModalShown(false)}
@@ -182,13 +180,13 @@ export const DropDownContainerC = ({
           </div>
           <div className="closingModalO" onClick={() => setIsModalShown(false)}>
             <Image
-              src="/Document/DocumentBatu256_256.png"
+              src="/KaihenNote/Color/popup_batu_128_128.png"
               alt=""
-              width={256}
-              height={256}
+              width={128}
+              height={128}
               style={{
-                width: "48px",
-                height: "48px",
+                width: "32px",
+                height: "32px",
               }}
             />
           </div>
@@ -276,7 +274,7 @@ export const DropDownContainerC = ({
           right: 0;
           bottom: 0;
           left: 0;
-          z-index: 11;//
+          z-index: 11; //
           animation: fade-in 0.5s ease 0s 1 normal none running;
         }
         .modalClosedO {
@@ -285,7 +283,7 @@ export const DropDownContainerC = ({
           right: 0;
           bottom: 0;
           left: 0;
-          z-index: -10;//
+          z-index: -10; //
           animation: fade-out 0.5s ease 0s 1 normal none running;
         }
         .closingModalBackgroundO {
@@ -302,7 +300,7 @@ export const DropDownContainerC = ({
           position: fixed;
           top: 2.5vh;
           left: 2.5vw;
-          z-index: 13;//
+          z-index: 13; //
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-modal);
         }

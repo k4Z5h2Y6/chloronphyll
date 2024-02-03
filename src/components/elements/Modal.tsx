@@ -31,13 +31,13 @@ export const Modal = ({
           </div>
           <div className="closingModalO" onClick={() => setIsModalShown(false)}>
             <Image
-              src="/Document/DocumentBatu256_256.png"
+              src="/KaihenNote/Color/popup_batu_128_128.png"
               alt=""
-              width={256}
-              height={256}
+              width={128}
+              height={128}
               style={{
-                width: "48px",
-                height: "48px",
+                width: "32px",
+                height: "32px",
               }}
             />
           </div>
