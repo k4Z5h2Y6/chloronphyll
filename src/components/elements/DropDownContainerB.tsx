@@ -280,8 +280,8 @@ export const DropDownContainerB = ({
         }
         .closingModalO {
           position: absolute;
-          top: var(--document-8px);
-          right: var(--document-8px);
+          top: 13px;//
+          right: 13px;//
         }
         //アニメーション
         @keyframes fade-in {
