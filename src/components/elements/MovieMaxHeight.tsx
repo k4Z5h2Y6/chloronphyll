@@ -3,10 +3,11 @@ type Props = {
 };
 
 export const MovieMaxHeight = ({ src }: Props) => {
+  console.log(src)
   return (
     <>
       <div className="MovieO">
-        <video src={src} muted loop controls playsInline />
+        <video src={src} autoPlay muted loop controls playsInline />
       </div>
 
       <style jsx>{`
