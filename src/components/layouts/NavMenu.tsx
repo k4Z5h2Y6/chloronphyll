@@ -53,8 +53,8 @@ export const NavMenu = ({ isNavOpened, setIsNavOpened }: Props) => {
                 <li className='navMenuLi navMenuH2O'><Link href='/kaihenNote'><h2>改変ノート output</h2></Link></li>
                 <li className='navMenuLi navMenuSubH2O'><Link href='/kaihenNote/upload'><h2>　アップロード手順</h2></Link></li>
                 <li className='navMenuLi navMenuSubH2O'><Link href='/kaihenNote/performance'><h2>　パフォーマンスランク</h2></Link></li>
-                <li className='navMenuLi navMenuSubH2O'><Link href='/kaihenNote/shape'><h2>　シェイプキー</h2></Link></li>
                 <li className='navMenuLi navMenuSubH2O'><Link href='/kaihenNote/ex'><h2>　ExParameters / ExMenu</h2></Link></li>
+                <li className='navMenuLi navMenuSubH2O'><Link href='/kaihenNote/shape'><h2>　シェイプキー</h2></Link></li>
                 <li className='navMenuLi navMenuSubH2O'><Link href='/kaihenNote/color'><h2>　01 いろ改変</h2></Link></li>
                 <li className='navMenuLi navMenuSubH2O'><Link href='/kaihenNote/hairKemoClothes'><h2>　02 ヘア,ケモ,ふく改変</h2></Link></li>
                 <li className='navMenuLi navMenuSubH2O'><Link href='/kaihenNote/facial'><h2>　03 表情改変</h2></Link></li>
