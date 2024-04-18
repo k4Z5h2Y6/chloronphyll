@@ -65,7 +65,6 @@ export const Motion = () => {
               <p>全エモート対応<br />両手パーで腰固定<br />全身固定で腰固定</p>
             </div>
             <div className='sitImgO'>
-              {/* <MovieMaxWidth src='/SettingManual/07/motion_sit_852_480.mp4' /> */}
               <RadiusedImg src="/SettingManual/07/motion_sit_1920_1080.jpg" />
             </div>
           </div>
