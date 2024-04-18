@@ -9,7 +9,7 @@ export const Emote = () => {
         <div className="curtsyO">
           <div className="curtsyI">
             <div className="curtsyMovieO">
-              <MovieMaxHeight src="/SettingManual/emote_curtsy_720_720.mp4" />
+              <MovieMaxHeight src="/SettingManual/08/emote_curtsy_1024_1024.mp4" />
             </div>
             <div className="curtsyTextO">
               <h5>e1_カーテシー</h5>
@@ -21,7 +21,7 @@ export const Emote = () => {
             </div>
             <div className="curtsySubO">
               <div className="curtsySubImgO">
-                <RadiusedImg src="/SettingManual/emote_curtsy_sub_720_720.jpg" />
+                <RadiusedImg src="/SettingManual/08/emote_curtsy_sub_720_720.jpg" />
               </div>
               <div className="curtsySubTextO">
                 <p>
@@ -54,7 +54,7 @@ export const Emote = () => {
               </p>
             </div>
             <div className="yesnoMovieO">
-              <MovieMaxWidth src="/SettingManual/emote_yesno_852_480.mp4" />
+              <MovieMaxWidth src="/SettingManual/08/emote_yesno_640_360.mp4" />
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ export const Emote = () => {
         <div className="utoutoO">
           <div className="utoutoI">
             <div className="utoutoMovieO">
-              <MovieMaxWidth src="/SettingManual/emote_utouto_640_194.mp4" />
+              <MovieMaxWidth src="/SettingManual/08/emote_utouto_640_194.mp4" />
             </div>
             <div className="utoutoTextO">
               <h5>e3_うとうと</h5>
@@ -80,7 +80,7 @@ export const Emote = () => {
         <div className="vsuiO">
           <div className="vsuiI">
             <div className="vsuiMovieO">
-              <MovieMaxWidth src="/SettingManual/emote_vsui_640_194.mp4" />
+              <MovieMaxWidth src="/SettingManual/08/emote_vsui_640_194.mp4" />
             </div>
             <div className="vsuiTextO">
               <h5>e4_V睡</h5>

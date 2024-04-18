@@ -73,7 +73,7 @@ export const System = () => {
             </div>
 
             <div className="akarusachouseiMovieO">
-              <MovieMaxWidth src="/SettingManual/system_akarusachousei_852_480.mp4" />
+              <MovieMaxWidth src="/SettingManual/09/system_akarusachousei_640_360.mp4" />
             </div>
             
           </div>

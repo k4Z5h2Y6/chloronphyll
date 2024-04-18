@@ -11,7 +11,7 @@ export const Gesture = () => {
         <div className="katateturntableO">
           <div className="katateturntableI">
             <div className="katateturntableMovieO">
-              <MovieMaxWidth src="/SettingManual/gesture_katateturntableI_720_720.mp4" />
+              <MovieMaxWidth src="/SettingManual/04/gesture_katateturntableI_720_720.mp4" />
             </div>
             <div className="katateturntableTextO">
               <div className="katateturntableTextI">
@@ -58,7 +58,7 @@ export const Gesture = () => {
               <div className="katateturntableSubO">
                 <div className="katateturntableSubI">
                   <div className="katateturntableSubMovieO">
-                    <MovieMaxWidth src="/SettingManual/gesture_katateturntable_sub_720_720.mp4" />
+                    <MovieMaxWidth src="/SettingManual/04/gesture_katateturntable_sub_720_720.mp4" />
                   </div>
                   <div className="katateturntableSubTextO">
                     <p className="katateturntableSubTextP">
@@ -76,22 +76,21 @@ export const Gesture = () => {
 
         <div className="ryoutekirakiraposeO">
           <div className="ryoutekirakiraposeMovieO">
-            <MovieMaxWidth src="/SettingManual/gesture_ryoutekirakirapose_720_720.mp4" />
+            <MovieMaxWidth src="/SettingManual/04/gesture_ryoutekirakirapose_720_720.mp4" />
           </div>
         </div>
 
         <div className="kakatoBilliardsSetsumeiO">
           <div className="kakatodachiO">
             <div className="kakatodachiImgO">
-              <RadiusedImg src="/SettingManual/gesture_kakatodachi_720_720.jpg" />
+              <RadiusedImg src="/SettingManual/04/gesture_kakatodachi_720_720.jpg" />
             </div>
           </div>
 
           <div className="billiardsSetsumeiO">
             <div className="billiardsmodeO">
               <div className="billiardsmodeImgO">
-                <RadiusedImgForHeight src="/SettingManual/gesture_shutterpose_1280_720.jpg" />
-                {/* <RadiusedImg src="/SettingManual/gesture_shutterpose_1280_720.jpg" /> */}
+                <RadiusedImgForHeight src="/SettingManual/04/gesture_shutterpose_1280_720.jpg" />
               </div>
             </div>
 
@@ -111,19 +110,19 @@ export const Gesture = () => {
 
         <div className="penwonigiruO">
           <div className="penwonigiruImgO">
-            <RadiusedImg src="/SettingManual/gesture_penwonigiru_1280_388.jpg" />
+            <RadiusedImg src="/SettingManual/04/gesture_penwonigiru_1280_388.jpg" />
           </div>
         </div>
 
         <div className="mizuwosukuuO">
           <div className="mizuwosukuuImgO">
-            <RadiusedImg src="/SettingManual/gesture_mizuwosukuu_1280_388.jpg" />
+            <RadiusedImg src="/SettingManual/04/gesture_mizuwosukuu_1280_388.jpg" />
           </div>
         </div>
 
         <div className="uekibachiO">
           <div className="uekibachiImgO">
-            <RadiusedImg src="/SettingManual/gesture_uekibachi_1280_388.jpg" />
+            <RadiusedImg src="/SettingManual/04/gesture_uekibachi_1280_388.jpg" />
           </div>
         </div>
       </div>

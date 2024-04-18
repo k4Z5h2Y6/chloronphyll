@@ -1,14 +1,5 @@
 import { MovieMaxWidth } from '@/components/elements/MovieMaxWidth';
 import { PageTitle } from '@/components/elements/PageTitle';
-// import { Clothes } from '@/components/settingManual/Clothes';
-// import { Emote } from '@/components/settingManual/Emote';
-// import { Expression } from '@/components/settingManual/Expression';
-// import { Gesture } from '@/components/settingManual/Gesture';
-// import { Hair } from '@/components/settingManual/Hair';
-// import { Item } from '@/components/settingManual/Item';
-// import { Kemo } from '@/components/settingManual/Kemo';
-// import { Motion } from '@/components/settingManual/Motion';
-// import { System } from '@/components/settingManual/System';
 import dynamic from 'next/dynamic';
 import { useState } from 'react';
 
@@ -55,7 +46,7 @@ export default function SettingManual() {
           </div>
 
           <div className='section0ContentMovieO'>
-            <MovieMaxWidth src='/SettingManual/section0_content_852_480.mp4' />
+            <MovieMaxWidth src='/SettingManual/00/settingManuel_1024_576.mp4' />
           </div>
         </div>
       </section>

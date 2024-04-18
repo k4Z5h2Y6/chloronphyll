@@ -1,6 +1,5 @@
 import { Button } from "../elements/Button";
 import { MovieMaxWidth } from "../elements/MovieMaxWidth";
-import Image from "next/image";
 import { RadiusedImg } from "../elements/RadiusedImg";
 
 export const Item = () => {
@@ -26,7 +25,7 @@ export const Item = () => {
               <Button title="イメージボード画像変更 (Unity改変)" />
             </div>
             <div className="imageboardImgO">
-              <RadiusedImg src="/SettingManual/item_imageboard_720_720.jpg" />
+              <RadiusedImg src="/SettingManual/06/item_imageboard_720_720.jpg" />
             </div>
           </div>
         </div>
@@ -34,7 +33,7 @@ export const Item = () => {
         <div className="fuusenO">
           <div className="fuusenI">
             <div className="fuusenImgO">
-              <RadiusedImg src="/SettingManual/item_fuusen_720_720.jpg" />
+              <RadiusedImg src="/SettingManual/06/item_fuusen_720_720.jpg" />
             </div>
             <div className="fuusenTextO">
               <h5>z1_ふうせん</h5>
@@ -54,7 +53,7 @@ export const Item = () => {
         <div className="candyO">
           <div className="candyI">
             <div className="candyImgO">
-              <RadiusedImg src="/SettingManual/item_candy_720_720.jpg" />
+              <RadiusedImg src="/SettingManual/06/item_candy_720_720.jpg" />
             </div>
             <div className="candyTextO">
               <h5>z2_キャンディ / 木の実</h5>
@@ -77,7 +76,7 @@ export const Item = () => {
         <div className="flemingO">
           <div className="flemingI">
             <div className="flemingImgO">
-              <RadiusedImg src="/SettingManual/item_fleming_720_720.jpg" />
+              <RadiusedImg src="/SettingManual/06/item_fleming_720_720.jpg" />
             </div>
             <div className="flemingTextO">
               <div className="flemingTextI">
@@ -90,7 +89,7 @@ export const Item = () => {
                 </p>
               </div>
               <div className="flemingSubMovieO">
-                <MovieMaxWidth src="/SettingManual/item_fleming_sub_1280_388.mp4" />
+                <MovieMaxWidth src="/SettingManual/06/item_fleming_sub_1280_388.mp4" />
               </div>
             </div>
           </div>
@@ -99,7 +98,7 @@ export const Item = () => {
         <div className="ohoshisamaO">
           <div className="ohoshisamaI">
             <div className="ohoshisamaImgO">
-              <RadiusedImg src="/SettingManual/item_ohoshisama_720_720.jpg" />
+              <RadiusedImg src="/SettingManual/06/item_ohoshisama_720_720.jpg" />
             </div>
             <div className="ohoshisamaTextO">
               <h5>z4_お星さま</h5>
@@ -138,7 +137,7 @@ export const Item = () => {
         <div className="kuukiO">
           <div className="kuukiI">
             <div className="kuukiImgO">
-              <RadiusedImg src="/SettingManual/item_kuuki_720_720.jpg" />
+              <RadiusedImg src="/SettingManual/06/item_kuuki_720_720.jpg" />
             </div>
             <div className="kuukiTextO">
               <h5>z5_空気</h5>
@@ -169,7 +168,7 @@ export const Item = () => {
         <div className="henrudaO">
           <div className="henrudaI">
             <div className="henrudaMovieO">
-              <MovieMaxWidth src="/SettingManual/item_henruda_720_720.mp4" />
+              <MovieMaxWidth src="/SettingManual/06/item_henruda_720_720.mp4" />
             </div>
             <div className="henrudaTextO">
               <h5>z6_ヘンルーダ</h5>

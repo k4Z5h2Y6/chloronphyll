@@ -7,7 +7,7 @@ export const Clothes = () => {
       <div className='sectionContentsCO'>
 
         <div className='clothesMovieO'>
-          <MovieMaxHeight src='/SettingManual/clothes_all_1280_1280.mp4' />
+          <MovieMaxHeight src='/SettingManual/03/clothes_all_1280_1280.mp4' />
         </div>
 
         <div className='clothesTextO'>
@@ -57,7 +57,7 @@ export const Clothes = () => {
           <div className='skirtO'>
             <div className='skirtI'>
               <div className='skirtMovieO'>
-                <MovieMaxWidth src='/SettingManual/clothes_skirt_720_720.mp4' />
+                <MovieMaxWidth src='/SettingManual/03/clothes_skirt_720_720.mp4' />
               </div>
               <div className='skirtTextO'>
                 <h5>スカート</h5>

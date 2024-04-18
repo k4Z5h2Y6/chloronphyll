@@ -24,7 +24,6 @@ export default function History() {
                 height={720}
                 layout='responsive'
               />
-              {/* <MovieMaxWidth src='/SettingManual/00SettingManual/test10m1280_720.mov' /> */}
             </div>
           </div>
           <div className='section0ContentTextO'>

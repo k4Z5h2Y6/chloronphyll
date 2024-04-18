@@ -1,4 +1,5 @@
 import { MovieMaxWidth } from "../elements/MovieMaxWidth";
+import { RadiusedImg } from "../elements/RadiusedImg";
 
 export const Motion = () => {
   return (
@@ -8,7 +9,7 @@ export const Motion = () => {
         <div className='motionO'>
           <div className='motionI'>
             <div className='motionMovieO'>
-              <MovieMaxWidth src='/SettingManual/motion_all_852_480.mp4' />
+              <MovieMaxWidth src='/SettingManual/07/motion_all_1024_576.mp4' />
             </div>
             <div className='motionTextO'>
               <div className='tachiO'>
@@ -63,8 +64,9 @@ export const Motion = () => {
               <h5>Sit</h5>
               <p>全エモート対応<br />両手パーで腰固定<br />全身固定で腰固定</p>
             </div>
-            <div className='sitMovieO'>
-              <MovieMaxWidth src='/SettingManual/motion_sit_852_480.mp4' />
+            <div className='sitImgO'>
+              {/* <MovieMaxWidth src='/SettingManual/07/motion_sit_852_480.mp4' /> */}
+              <RadiusedImg src="/SettingManual/07/motion_sit_1920_1080.jpg" />
             </div>
           </div>
         </div>
@@ -181,7 +183,7 @@ export const Motion = () => {
           display: flex;
           flex-direction: column;
         }
-        .sitMovieO {
+        .sitImgO {
           width: calc(100% / 7 * 4);
           height: 100%;
           padding: var(--settingManual-8px);

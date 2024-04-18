@@ -8,7 +8,7 @@ export const Hair = () => {
         <div className="yokogamiO">
           <div className="yokogamiI">
             <div className="yokogamiMovieO">
-              <MovieMaxHeight src='/SettingManual/hair_yokogami_1280_720.mp4' />
+              <MovieMaxHeight src='/SettingManual/01/hair_yokogami_1280_720.mp4' />
             </div>
             <div className="yokogamiTextO">
               <div className="yokogamiTextI">
@@ -35,7 +35,7 @@ export const Hair = () => {
                 </p>
               </div>
               <div className="yokogamiSubMovieO">
-                <MovieMaxWidth src="/SettingManual/hair_yokogami_sub_1280_720.mp4" />
+                <MovieMaxWidth src="/SettingManual/01/hair_yokogami_sub_1280_720.mp4" />
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ export const Hair = () => {
         <div className="maegamiO">
           <div className="maegamiI">
             <div className="maegamiMovieO">
-              <MovieMaxWidth src="/SettingManual/hair_maegami_1280_388.mp4" />
+              <MovieMaxWidth src="/SettingManual/01/hair_maegami_1280_388.mp4" />
             </div>
             <div className="maegamiTextO">
               <h5>前髪</h5>
@@ -67,7 +67,7 @@ export const Hair = () => {
         <div className="mimikakeO">
           <div className="mimikakeI">
             <div className="mimikakeMovieO">
-              <MovieMaxWidth src="/SettingManual/hair_mimikake_720_720.mp4" />
+              <MovieMaxWidth src="/SettingManual/01/hair_mimikake_720_720.mp4" />
             </div>
             <div className="mimikakeTextO">
               <h5>みみかけ4種類</h5>
