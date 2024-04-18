@@ -1,13 +1,34 @@
+import { useEffect, useRef } from "react";
+
 type Props = {
   src: string;
 };
 
 export const MovieMaxHeight = ({ src }: Props) => {
-  console.log(src)
+
+  //loadingアニメーション用、コードが冗長？、アニメ入れる？
+
+  // const videoRef = useRef<HTMLVideoElement>(null);
+  // useEffect(() => {
+  //   const video = videoRef.current;
+  //   if (video) {
+  //     video.addEventListener("loadeddata", handleLoadedData);
+  //     return () => {
+  //       video.removeEventListener("loadeddata", handleLoadedData);
+  //     };
+  //   }
+  // }, []);
+
+  // const handleLoadedData = () => {
+  //   console.log("loadeddata発生");
+  // };
+
   return (
     <>
       <div className="MovieO">
-        <video src={src} autoPlay muted loop controls playsInline />
+        <video
+          // ref={videoRef} 
+          src={src} autoPlay muted loop controls playsInline />
       </div>
 
       <style jsx>{`
