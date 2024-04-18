@@ -2,10 +2,9 @@ import { PageTitle } from "@/components/elements/PageTitle";
 import Image from "next/image";
 import { MovieMaxWidth } from "@/components/elements/MovieMaxWidth";
 import { DropDownContainerA } from "@/components/elements/DropDownContainerA";
-import { colorData0, colorData1, colorData2 } from "@/libs/colorData";
+import { colorData0, colorData1, colorData2, colorData3, colorData4, colorData5, colorData6, colorData7 } from "@/libs/colorData";
 import { DropDownContainerB } from "@/components/elements/DropDownContainerB";
 import { DropDownContainerC } from "@/components/elements/DropDownContainerC";
-import { useEffect } from "react";
 
 export default function Color() {
   return (
@@ -59,8 +58,13 @@ export default function Color() {
 
       <section className="endSct">
         <DropDownContainerA data={colorData0} />
-        <DropDownContainerB data={colorData1} />
+        <DropDownContainerB data={colorData1} /> 
         <DropDownContainerC data={colorData2} />
+        <DropDownContainerC data={colorData3} />
+        <DropDownContainerB data={colorData4} /> 
+        <DropDownContainerB data={colorData5} /> 
+        <DropDownContainerB data={colorData6} /> 
+        <DropDownContainerC data={colorData7} />
       </section>
 
       <style jsx>{`
