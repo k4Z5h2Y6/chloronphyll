@@ -33,7 +33,8 @@ export default function performance() {
                 <br />
                 環境に合わせてアバターの容量を選ぶことができます。
               </p>
-              <p>
+              {/* 1 消す */}
+              <p> 
                 「パフォーマンスランク」は、VRChat公式が定めている容量の基準値です。
               </p>
               <div className="section0ContentTextSubImgO">
@@ -206,7 +207,7 @@ export default function performance() {
           .section1ContentTextI,
           .section2ContentTextI {
             width: 100%;
-            margin-bottom: 10px;
+            margin-bottom: 10px; //
           }
           .vrchatImgO {
             margin-bottom: 12px;
@@ -220,7 +221,6 @@ export default function performance() {
           }
           .section0ContentTextSubImgO {
             padding-top: 10px;
-            {/* margin-bottom: 20px; */}
           }
           //
           .middleSct {

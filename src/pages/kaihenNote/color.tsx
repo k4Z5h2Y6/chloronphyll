@@ -2,7 +2,16 @@ import { PageTitle } from "@/components/elements/PageTitle";
 import Image from "next/image";
 import { MovieMaxWidth } from "@/components/elements/MovieMaxWidth";
 import { DropDownContainerA } from "@/components/elements/DropDownContainerA";
-import { colorData0, colorData1, colorData2, colorData3, colorData4, colorData5, colorData6, colorData7 } from "@/libs/colorData";
+import {
+  colorData0,
+  colorData1,
+  colorData2,
+  colorData3,
+  colorData4,
+  colorData5,
+  colorData6,
+  colorData7,
+} from "@/libs/colorData";
 import { DropDownContainerB } from "@/components/elements/DropDownContainerB";
 import { DropDownContainerC } from "@/components/elements/DropDownContainerC";
 
@@ -37,20 +46,22 @@ export default function Color() {
                 <br />
                 PSDファイルは存在しません。協力者を探しています。
               </p>
-              <p className="section0ContentTextEndP">
+              <p>
                 blender内で、アバターの見た目を確認しながら色を調整できるので、
                 理想の見た目に近づけやすいです。
               </p>
-              <Image
-                src="/KaihenNote/Color/colorTime1280_720.png"
-                alt=""
-                width={1280}
-                height={720}
-                style={{
-                  width: "100%",
-                  height: "auto",
-                }}
-              />
+              <div className="section0ContentTextSubImgO">
+                <Image
+                  src="/KaihenNote/Color/colorTime1280_720.png"
+                  alt=""
+                  width={1280}
+                  height={720}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -58,12 +69,12 @@ export default function Color() {
 
       <section className="endSct">
         <DropDownContainerA data={colorData0} />
-        <DropDownContainerB data={colorData1} /> 
+        <DropDownContainerB data={colorData1} />
         <DropDownContainerC data={colorData2} />
         <DropDownContainerC data={colorData3} />
-        <DropDownContainerB data={colorData4} /> 
-        <DropDownContainerB data={colorData5} /> 
-        <DropDownContainerB data={colorData6} /> 
+        <DropDownContainerB data={colorData4} />
+        <DropDownContainerB data={colorData5} />
+        <DropDownContainerB data={colorData6} />
         <DropDownContainerC data={colorData7} />
       </section>
 
@@ -104,8 +115,8 @@ export default function Color() {
           font-size: 20px;
           line-height: 24px;
         }
-        .section0ContentTextEndP {
-          margin-bottom: 32px;
+        .section0ContentTextSubImgO {
+          padding-top: 16px;
         }
         //end
         .endSct {
@@ -115,6 +126,10 @@ export default function Color() {
           margin-bottom: 240px;
         }
         @media screen and (max-width: 1024px) {
+          .topSct {
+            height: fit-content;
+            margin-bottom: 20px;
+          }
           .section0contentO {
             flex-direction: column;
           }
@@ -128,8 +143,22 @@ export default function Color() {
           }
           .section0ContentTextI {
             width: 100%;
+            margin-bottom: 10px;
           }
+          .vrchatImgO {
+            margin-bottom: 12px;
+          }
+          .section0ContentTextTitleP {
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 12px;
+          }
+          .section0ContentTextSubImgO {
+            padding-top: 10px;
+          }
+          //
           .endSct {
+            padding-top: 0;
             margin-bottom: 80px;
           }
         }

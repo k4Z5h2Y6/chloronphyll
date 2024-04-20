@@ -44,7 +44,7 @@ export const colorData2: DropDownContainerType = {
       img: "/KaihenNote/Color/02/colorStep2_1920_1080.jpg",
     },
     {
-      description: `保存したTextureをシェーダー「Fuki」に割り当てます。\nシェーダータブ(最初の画面) のまま、\nExplorerまたはFinderから保存したTextureをドラッグ&ドロップ。\n↓\nカラーとベースカラーを繋いでアバターに色がついたら成功です。\n|\n(((時短で済ませる場合はここからStep3に飛んでください。)))`,
+      description: `保存したTextureをシェーダー「Fuki」に割り当てます。\nシェーダータブ(最初の画面) のまま、\nExplorerまたはFinderから保存したTextureをドラッグ&ドロップ。\n↓\nカラーとベースカラーを繋いでアバターに色がついたら成功です。\n\n(((時短で済ませる場合はここからStep3に飛んでください。)))`,
       img: "/KaihenNote/Color/02/colorStep2a1920_1080.jpg",
     },
     {
@@ -60,7 +60,7 @@ export const colorData2: DropDownContainerType = {
       img: "/KaihenNote/Color/02/colorStep2d1920_1080.jpg",
     },
     {
-      description: `0p , 16pのシェーダーにもそれぞれのTextureを割り当てます。\nオブジェクトz0を選択した状態(最初の状態)で、\n画面右にあるシェーダーの項目から0pを選びます。\n↓\nImageboardのフォルダ内の「0pA」\nをドラッグ&ドロップしてプリンシプルBSDFに繋げます。\n↓\n16pのシェーダーも同様に「16pA」のTextureを割り当てます。\n|\n(((いろ改変に直接影響が出るわけではないので、割り当てなくても問題ありません。好きな画像を差し込んでもokです。)))`,
+      description: `0p , 16pのシェーダーにもそれぞれのTextureを割り当てます。\nオブジェクトz0を選択した状態(最初の状態)で、\n画面右にあるシェーダーの項目から0pを選びます。\n↓\nImageboardのフォルダ内の「0pA」\nをドラッグ&ドロップしてプリンシプルBSDFに繋げます。\n↓\n16pのシェーダーも同様に「16pA」のTextureを割り当てます。\n\n(((いろ改変に直接影響が出るわけではないので、割り当てなくても問題ありません。好きな画像を差し込んでもokです。)))`,
       img: "/KaihenNote/Color/02/colorStep2e1920_1080.jpg",
     },
     {
@@ -90,7 +90,7 @@ export const colorData3: DropDownContainerType = {
       img: "/KaihenNote/Color/03/colorStep3c1920_1080.jpg",
     },
     {
-      description: `d. Auto Reload\n(画面右上) Auto Reload > Reload Images\n|\nAuto Reloadとは、Textureを再読み込みするblenderのアドオンです。\nレンダリングする度にblenderソフトを立ち上げ直せばアドオンは必要ありませんが、\n何度も色を調整するとなると手間となるので、インストールをおすすめします。(下記参照)\n|\nNode Wranglerがあれば、ShadingタブでAlt+RすることでTextureを再読み込みすることができます。`,
+      description: `d. Auto Reload\n(画面右上) Auto Reload > Reload Images\n\nAuto Reloadとは、Textureを再読み込みするblenderのアドオンです。\nレンダリングする度にblenderソフトを立ち上げ直せばアドオンは必要ありませんが、\n何度も色を調整するとなると手間となるので、インストールをおすすめします。(下記参照)\n\nNode Wranglerがあれば、ShadingタブでAlt+RすることでTextureを再読み込みすることができます。`,
       img: "/KaihenNote/Color/03/colorStep3d1920_1080.jpg",
     },
     {
@@ -98,7 +98,7 @@ export const colorData3: DropDownContainerType = {
       img: "/KaihenNote/Color/03/colorStep3e1920_1080.jpg",
     },
     {
-      description: `補足1\nアニメーションを再生するとターンテーブルします。\n|\n補足2\nアバターの各部位を選択するとシェイプで見た目を変えられます。\n|\n補足3\nUVを照らし合わせることができます。(画像参照)`,
+      description: `補足1\nアニメーションを再生するとターンテーブルします。\n\n補足2\nアバターの各部位を選択するとシェイプで見た目を変えられます。\n\n補足3\nUVを照らし合わせることができます。(画像参照)`,
       img: "/KaihenNote/Color/03/colorStep3f1920_1080.jpg",
     },
   ],
@@ -108,7 +108,7 @@ export const colorData4: DropDownContainerType = {
   title: "Step4. Unityに移動",
   contents: [
     {
-      description: `作ったテクスチャをUnityでImportします。\n|\n※アップロードできる状態から説明しています。\n未Upの場合は、アップロード手順のページを参照してください。`,
+      description: `作ったテクスチャをUnityでImportします。\n\n※アップロードできる状態から説明しています。\n未Upの場合は、アップロード手順のページを参照してください。`,
       img: "/KaihenNote/Color/04/colorStep4_1920_1080.jpg",
     },
     {
@@ -116,7 +116,7 @@ export const colorData4: DropDownContainerType = {
       img: "/KaihenNote/Color/04/colorStep4a1920_1080.jpg",
     },
     {
-      description: `(Projectタブ) Assets > Chloronphyll > Fuki > 2_Material\nMaterialフォルダに改変Textureをドラッグ&ドロップ。\n|\n(Textureサイズ)\nTextureの設定はデフォルトのままでokです。\nAO焼き込み後もそのままでokです。\n(1024px , NoneAlfaにしても容量は変わりません。)`,
+      description: `(Projectタブ) Assets > Chloronphyll > Fuki > 2_Material\nMaterialフォルダに改変Textureをドラッグ&ドロップ。\n\n(Textureサイズ)\nTextureの設定はデフォルトのままでokです。\nAO焼き込み後もそのままでokです。\n(1024px , NoneAlfaにしても容量は変わりません。)`,
       img: "/KaihenNote/Color/04/colorStep4b1920_1080.jpg",
     },
   ],
