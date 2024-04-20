@@ -71,7 +71,7 @@ export const colorData2: DropDownContainerType = {
 };
 
 export const colorData3: DropDownContainerType = {
-  title: "Step2. Texture割り当て",
+  title: "Step3. いろ改変",
   contents: [
     {
       description: `a. 変えたい色を選ぶ\n↓\nb. 色を変える\n↓\nc. レンダリング\n↓\nd. Auto Reload\n→↑`,

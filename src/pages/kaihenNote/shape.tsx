@@ -211,7 +211,6 @@ export default function Shape() {
         </div>
       </section>
 
-
       <style jsx>{`
         //top
         .topSct {
