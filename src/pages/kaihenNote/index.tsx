@@ -29,12 +29,12 @@ export default function KaihenNote() {
               </div>
               <div className='kaihenNoteMenuItemO'>
                 <div className='kaihenNoteMenuItemI'>
-                  <div className='kaihenNoteMenuItemTextO'>シェイプキー</div>
+                  <div className='kaihenNoteMenuItemTextO'>ExParameters / ExMenu</div>
                 </div>
               </div>
               <div className='kaihenNoteMenuItemO'>
                 <div className='kaihenNoteMenuItemI'>
-                  <div className='kaihenNoteMenuItemTextO'>ExParameters / ExMenu</div>
+                  <div className='kaihenNoteMenuItemTextO'>シェイプキー</div>
                 </div>
               </div>
               <div className='kaihenNoteMenuItemO'>

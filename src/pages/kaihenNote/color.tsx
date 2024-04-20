@@ -112,6 +112,7 @@ export default function Color() {
           width: 100%;
           height: fit-content;
           padding-top: 40px;
+          margin-bottom: 240px;
         }
         @media screen and (max-width: 1024px) {
           .section0contentO {
@@ -127,6 +128,9 @@ export default function Color() {
           }
           .section0ContentTextI {
             width: 100%;
+          }
+          .endSct {
+            margin-bottom: 80px;
           }
         }
       `}</style>
