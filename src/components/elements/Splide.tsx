@@ -1,15 +1,14 @@
-// import { Splide, SplideTrack, SplideSlide } from "splide-nextjs/react-splide";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 //ここから下必要か精査
 import "@splidejs/react-splide/css";
 import "@splidejs/react-splide/css/skyblue";
-// import "@splidejs/react-splide/css/sea-green";
 import "@splidejs/react-splide/css/core";
 
 import { DropDownContainerContentsType } from "@/libs/colorData";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 export const Splider = ({
   currentIndex,
@@ -18,6 +17,22 @@ export const Splider = ({
   currentIndex: number;
   contents: DropDownContainerContentsType[];
 }) => {
+  const splideRef = useRef<any>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (event: any) => {
+      if (event.key === "ArrowRight") {
+        splideRef.current.go("+1"); // 右矢印キーが押されたら次のスライドへ
+      } else if (event.key === "ArrowLeft") {
+        splideRef.current.go("-1"); // 左矢印キーが押されたら前のスライドへ
+      }
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   return (
     <>
       <div className="SplideO">
@@ -25,6 +40,7 @@ export const Splider = ({
           id="main-carousel"
           aria-label="私のお気に入りの画像集"
           hasTrack={false}
+          ref={splideRef}
           options={{
             width: "95vw",
             height: "95vh",
@@ -32,9 +48,9 @@ export const Splider = ({
             perPage: 1,
             pagination: true,
             detectResize: false,
+            keyboard: true,
           }}
         >
-          {/* <ul className="splide__pagination"></ul> */}
           <SplideTrack>
             {contents.map(
               (dc: DropDownContainerContentsType, index: number) => (
