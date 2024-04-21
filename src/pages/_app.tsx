@@ -22,7 +22,6 @@ export default function App({ Component, pageProps }: AppProps) {
           </main>
           <div className={isNavOpened ? 'navMenuOopenedO' : 'navMenuClosedO'}>
             <NavMenu
-              isNavOpened={isNavOpened}
               setIsNavOpened={setIsNavOpened}
             />
           </div>
