@@ -1,7 +1,11 @@
 import { DropDownContainerType } from "@/libs/colorData";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Splider } from "./Splide";
+
+const DynamicModalSplide = dynamic(() =>
+  import("./ModalSplide").then((mod) => mod.ModalSplide)
+);
 
 export const DropDownContainerC = ({
   data,
@@ -72,60 +76,19 @@ export const DropDownContainerC = ({
                 : "dropDownContentsOClosed"
             }
           >
-            {/* TODO : 後で、map関数に整理 */}
-            <li className="contentO">
-              <div className="textO">
-                <p className="descriptionP">{data.contents[1].description}</p>
-              </div>
-              <div className="imgO" onClick={() => handleModalShow(1)}>
-                <img src={data.contents[1].img} alt="" />
-              </div>
-            </li>
-
-            <li className="contentO">
-              <div className="textO">
-                <p className="descriptionP">{data.contents[2].description}</p>
-              </div>
-              <div className="imgO" onClick={() => handleModalShow(2)}>
-                <img src={data.contents[2].img} alt="" />
-              </div>
-            </li>
-
-            <li className="contentO">
-              <div className="textO">
-                <p className="descriptionP">{data.contents[3].description}</p>
-              </div>
-              <div className="imgO" onClick={() => handleModalShow(3)}>
-                <img src={data.contents[3].img} alt="" />
-              </div>
-            </li>
-
-            <li className="contentO">
-              <div className="textO">
-                <p className="descriptionP">{data.contents[4].description}</p>
-              </div>
-              <div className="imgO" onClick={() => handleModalShow(4)}>
-                <img src={data.contents[4].img} alt="" />
-              </div>
-            </li>
-
-            <li className="contentO">
-              <div className="textO">
-                <p className="descriptionP">{data.contents[5].description}</p>
-              </div>
-              <div className="imgO" onClick={() => handleModalShow(5)}>
-                <img src={data.contents[5].img} alt="" />
-              </div>
-            </li>
-
-            <li className="contentO">
-              <div className="textO">
-                <p className="descriptionP">{data.contents[6].description}</p>
-              </div>
-              <div className="imgO" onClick={() => handleModalShow(6)}>
-                <img src={data.contents[6].img} alt="" />
-              </div>
-            </li>
+            {data?.contents.slice(1).map((dc, index) => (
+              <li className="contentO" key={index}>
+                <div className="textO">
+                  <p className="descriptionP">{dc.description}</p>
+                </div>
+                <div
+                  className="imgO"
+                  onClick={() => handleModalShow(index + 1)}
+                >
+                  <img src={dc.img} alt="" />
+                </div>
+              </li>
+            ))}
           </ul>
 
           <div
@@ -161,39 +124,15 @@ export const DropDownContainerC = ({
         </div>
       </div>
 
-      {/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */}
-
-      <div className="modalCover" />
-
-      <div className={isModalShown ? "modalShownO" : "modalClosedO"}>
-        <div
-          className="closingModalBackgroundO"
-          onClick={() => setIsModalShown(false)}
+      {isModalShown ? (
+        <DynamicModalSplide
+          isModalShown={isModalShown}
+          setIsModalShown={setIsModalShown}
+          currentIndex={currentIndex}
+          data={data}
+          key={key}
         />
-        <div className="modalO">
-          <div className="enlargedDoukondataImgO">
-            <Splider
-              key={key}
-              currentIndex={currentIndex}
-              contents={data.contents}
-            />
-          </div>
-          <div className="closingModalO" onClick={() => setIsModalShown(false)}>
-            <Image
-              src="/KaihenNote/Color/popup_batu_128_128.png"
-              alt=""
-              width={128}
-              height={128}
-              style={{
-                width: "32px",
-                height: "32px",
-              }}
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */}
+      ) : null}
 
       <style jsx>{`
         .DropDownContainerO {
@@ -256,70 +195,6 @@ export const DropDownContainerC = ({
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-        //オーバースクロール用モーダルカバー
-        .modalCover {
-          position: fixed;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          z-index: -1;
-          background-color: var(--backgroundColor-base);
-        }
-        //モーダル
-        .modalShownO {
-          position: fixed;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          z-index: 11; //
-          animation: fade-in 0.5s ease 0s 1 normal none running;
-        }
-        .modalClosedO {
-          position: fixed;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          z-index: -10; //
-          animation: fade-out 0.5s ease 0s 1 normal none running;
-        }
-        .closingModalBackgroundO {
-          position: fixed;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          z-index: 12; //
-        }
-        .modalO {
-          width: 95vw;
-          height: 95vh;
-          position: fixed;
-          top: 2.5vh;
-          left: 2.5vw;
-          z-index: 13; //
-          border-radius: var(--borderRadius-20);
-          background-color: var(--backgroundColor-modal);
-        }
-        .enlargedDoukondataImgO {
-          width: 100%;
-          height: 100%;
-          position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .closingModalO {
-          position: absolute;
-          top: 13px;//
-          right: 13px;//
-          opacity: 0.8;
-        }
-        .closingModalO:hover {
-          opacity: 1;
         }
         //アニメーション
         @keyframes fade-in {

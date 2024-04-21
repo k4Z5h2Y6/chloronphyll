@@ -1,8 +1,9 @@
 import { DropDownContainerType } from "@/libs/colorData";
-import { Splider } from "./Splide";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Modal } from "./Modal";
+import dynamic from "next/dynamic";
+
+const DynamicModal = dynamic(() => import("./Modal").then((mod) => mod.Modal));
 
 export const DropDownContainerA = ({
   data,
@@ -10,13 +11,14 @@ export const DropDownContainerA = ({
   data: DropDownContainerType;
 }) => {
   const [isModalShown, setIsModalShown] = useState<boolean>(false);
-  const handleModalShow = (index: number) => {
+
+  const handleModalShow = () => {
     setIsModalShown(true);
   };
 
-  function disableScroll(e: any) {
+  const disableScroll = (e: any) => {
     e.preventDefault();
-  }
+  };
 
   useEffect(() => {
     setIsModalShown(false);
@@ -43,7 +45,7 @@ export const DropDownContainerA = ({
       document.removeEventListener("mousewheel", handleScroll);
     };
   }, [isModalShown]);
-  
+
   return (
     <>
       <div className="DropDownContainerO">
@@ -53,7 +55,7 @@ export const DropDownContainerA = ({
               <h5>{data.title}</h5>
               <p className="descriptionP">{data.contents[0].description}</p>
             </div>
-            <div className="imgO" onClick={() => handleModalShow(0)}>
+            <div className="imgO" onClick={() => handleModalShow()}>
               <img src={data.contents[0].img} alt="" />
             </div>
           </div>
@@ -61,11 +63,13 @@ export const DropDownContainerA = ({
         </div>
       </div>
 
-      {/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */}
-
-      <Modal isModalShown={isModalShown} setIsModalShown={setIsModalShown} img={data.contents[0].img}/>
-
-      {/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */}
+      {isModalShown ? (
+        <DynamicModal
+          isModalShown={isModalShown}
+          setIsModalShown={setIsModalShown}
+          img={data.contents[0].img}
+        />
+      ) : null}
 
       <style jsx>{`
         .DropDownContainerO {

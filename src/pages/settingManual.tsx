@@ -62,7 +62,7 @@ export default function SettingManual() {
         </div>
         <div className={isSection1Opened ? 'section1OpenedO' : 'section1ClosedO'}>
           {/* <Hair /> */}
-          {isSection1Opened ? <DynamicHair/> : null}
+          {isSection1Opened ? <DynamicHair/> : (setTimeout(() => { return null; }, 1000), <DynamicHair/>)}
         </div>
       </section>
 
@@ -77,7 +77,7 @@ export default function SettingManual() {
         </div>
         <div className={isSection2Opened ? 'section2OpenedO' : 'section2ClosedO'}>
           {/* <Kemo /> */}
-          {isSection2Opened ? <DynamicKemo/> : null}
+          {isSection2Opened ? <DynamicKemo/> : (setTimeout(() => { return null; }, 1000), <DynamicKemo/>)}
         </div>
       </section>
 
@@ -92,7 +92,7 @@ export default function SettingManual() {
         </div>
         <div className={isSection3Opened ? 'section3OpenedO' : 'section3ClosedO'}>
           {/* <Clothes /> */}
-          {isSection3Opened ? <DynamicClothes/> : null}
+          {isSection3Opened ? <DynamicClothes/> : (setTimeout(() => { return null; }, 1000), <DynamicClothes/>)}
         </div>
       </section>
 
@@ -107,7 +107,7 @@ export default function SettingManual() {
         </div>
         <div className={isSection4Opened ? 'section4OpenedO' : 'section4ClosedO'}>
           {/* <Gesture /> */}
-          {isSection4Opened ? <DynamicGesture/> : null}
+          {isSection4Opened ? <DynamicGesture/> : (setTimeout(() => { return null; }, 1000), <DynamicGesture/>)}
         </div>
       </section>
 
@@ -122,7 +122,7 @@ export default function SettingManual() {
         </div>
         <div className={isSection5Opened ? 'section5OpenedO' : 'section5ClosedO'}>
           {/* <Expression /> */}
-          {isSection5Opened ? <DynamicExpression/> : null}
+          {isSection5Opened ? <DynamicExpression/> : (setTimeout(() => { return null; }, 1000),  <DynamicExpression/>)}
         </div>
       </section>
 
@@ -137,7 +137,7 @@ export default function SettingManual() {
         </div>
         <div className={isSection6Opened ? 'section6OpenedO' : 'section6ClosedO'}>
           {/* <Item /> */}
-          {isSection6Opened ? <DynamicItem/> : null}
+          {isSection6Opened ? <DynamicItem/> : (setTimeout(() => { return null; }, 1000), <DynamicItem/>)}
         </div>
       </section>
 
@@ -152,7 +152,7 @@ export default function SettingManual() {
         </div>
         <div className={isSection7Opened ? 'section7OpenedO' : 'section7ClosedO'}>
           {/* <Motion /> */}
-          {isSection7Opened ? <DynamicMotion/> : null}
+          {isSection7Opened ? <DynamicMotion/> : (setTimeout(() => { return null; }, 1000), <DynamicMotion/>)}
         </div>
       </section>
 
@@ -167,7 +167,7 @@ export default function SettingManual() {
         </div>
         <div className={isSection8Opened ? 'section8OpenedO' : 'section8ClosedO'}>
           {/* <Emote /> */}
-          {isSection8Opened ? <DynamicEmote/> : null}
+          {isSection8Opened ? <DynamicEmote/> : (setTimeout(() => { return null; }, 1000), <DynamicEmote/>)}
         </div>
       </section>
 
@@ -182,7 +182,7 @@ export default function SettingManual() {
         </div>
         <div className={isSection9Opened ? 'section9OpenedO' : 'section9ClosedO'}>
           {/* <System /> */}
-          {isSection9Opened ? <DynamicSystem/> : null}
+          {isSection9Opened ? <DynamicSystem/> : (setTimeout(() => { return null; }, 1000), <DynamicSystem/>)}
         </div>
       </section>
 

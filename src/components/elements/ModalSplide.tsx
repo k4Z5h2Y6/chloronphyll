@@ -1,29 +1,39 @@
 import Image from "next/image";
 import { Dispatch, SetStateAction } from "react";
+import { Splider } from "./Splide";
+import { DropDownContainerType } from "@/libs/colorData";
 
-export const Modal = ({
+export const ModalSplide = ({
   isModalShown,
   setIsModalShown,
-  img,
+  currentIndex,
+  data,
+  key,
 }: {
   isModalShown: boolean;
   setIsModalShown: Dispatch<SetStateAction<boolean>>;
-  img: string;
+  currentIndex: number;
+  data: DropDownContainerType;
+  key: number;
 }) => {
-  //単一画像モーダル
-  //DropDownContainerAと同梱データで使用中
+  //複数画像モーダル
+  //DropDownContainerBとropDownContainerCで使用中
   return (
     <>
       <div className="modalCover" />
 
       <div className={isModalShown ? "modalShownO" : "modalClosedO"}>
         <div
-          className="closeingModalBackgroundO"
+          className="closingModalBackgroundO"
           onClick={() => setIsModalShown(false)}
         />
         <div className="modalO">
           <div className="enlargedDoukondataImgO">
-            <img className="imgO" src={img} alt="" />
+            <Splider
+              key={key}
+              currentIndex={currentIndex}
+              contents={data.contents}
+            />
           </div>
           <div className="closingModalO" onClick={() => setIsModalShown(false)}>
             <Image
@@ -39,6 +49,7 @@ export const Modal = ({
           </div>
         </div>
       </div>
+
       <style jsx>{`
         .modalCover {
           position: fixed;
@@ -67,14 +78,6 @@ export const Modal = ({
           z-index: -10; //
           animation: fade-out 0.5s ease 0s 1 normal none running;
         }
-        .closeingModalBackgroundO {
-          position: fixed;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          z-index: 12; //
-        }
         .modalO {
           width: 95vw;
           height: 95vh;
@@ -85,24 +88,16 @@ export const Modal = ({
           border-radius: var(--borderRadius-20);
           background-color: var(--backgroundColor-modal);
         }
-
         .enlargedDoukondataImgO {
           width: 100%;
           height: 100%;
           position: relative;
           display: flex;
         }
-        .imgO {
-          width: 100%;
-          height: 100%;
-          padding: var(--document-8px);
-          display: block;
-          object-fit: contain;
-        }
         .closingModalO {
           position: absolute;
-          top: 13px;//
-          right: 13px;//
+          top: 13px; //
+          right: 13px; //
           opacity: 0.8;
         }
         .closingModalO:hover {
