@@ -20,4 +20,5 @@ https://chloronphyll.vercel.app/
 ### 補足
 - ルーティングはPages Router
 - スタイリングはstyled-jsxを採用
+- レスポンシブ対応
 - ダークモード搭載
