@@ -7,7 +7,7 @@
 当サイトも軽量を意識して作成しております。
 
 ### リンク
-https://chloronphyll.vercel.app/
+https://chloronphyll.com/
 
 ### 技術
 - HTML
