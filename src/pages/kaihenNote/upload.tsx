@@ -1,9 +1,9 @@
 import { DropDownContainerA } from "@/components/elements/DropDownContainerA";
 import { DropDownContainerB } from "@/components/elements/DropDownContainerB";
 import { DropDownContainerC } from "@/components/elements/DropDownContainerC";
-import { MovieMaxWidth } from "@/components/elements/MovieMaxWidth";
 import { PageTitle } from "@/components/elements/PageTitle";
-import { uploadData0, uploadData1, uploadData2 } from "@/libs/uploadData";
+import { RadiusedImg } from "@/components/elements/RadiusedImg";
+import { uploadData0, uploadData1, uploadData2, uploadData3, uploadData4, uploadData5 } from "@/libs/uploadData";
 import Image from "next/image";
 
 export default function Upload() {
@@ -12,14 +12,14 @@ export default function Upload() {
       <section className="topSct">
         <PageTitle pageTitle="アップロード手順" />
         <div className="section0contentO">
-          <div className="section0ContentMovieO">
-            <MovieMaxWidth src="/KaihenNote/Color/color1920_1080.mp4" />
+          <div className="section0ContentImgO">
+            <RadiusedImg src="/KaihenNote/Upload/upload_1280_720.jpg" />
           </div>
           <div className="section0ContentTextO">
             <div className="section0ContentTextI">
               <div className="vrchatImgO">
                 <Image
-                  src="/KaihenNote/vrchatLogo516_225.png"
+                  src="/KaihenNote/Upload/upload_sub_1280_720.jpg"
                   alt=""
                   width={516}
                   height={225}
@@ -57,11 +57,11 @@ export default function Upload() {
 
       <section className="endSct">
         <DropDownContainerB data={uploadData0} />
-        <DropDownContainerB data={uploadData0} />
-        <DropDownContainerA data={uploadData1} />
-        <DropDownContainerA data={uploadData1} />
-        <DropDownContainerA data={uploadData1} />
-        <DropDownContainerC data={uploadData2} />
+        <DropDownContainerB data={uploadData1} />
+        <DropDownContainerA data={uploadData2} />
+        <DropDownContainerA data={uploadData3} />
+        <DropDownContainerA data={uploadData4} />
+        <DropDownContainerC data={uploadData5} />
       </section>
 
       <style jsx>{`
@@ -76,7 +76,7 @@ export default function Upload() {
           display: flex;
           flex-direction: row-reverse;
         }
-        .section0ContentMovieO {
+        .section0ContentImgO {
           width: 60%;
           height: 100%;
           padding: 24px;
@@ -119,7 +119,7 @@ export default function Upload() {
           .section0contentO {
             flex-direction: column;
           }
-          .section0ContentMovieO {
+          .section0ContentImgO {
             width: 80%;
             margin: 0 auto;
             padding: 0 0 20px 0;

@@ -18,7 +18,7 @@ export const Modal = ({
 
       <div className={isModalShown ? "modalShownO" : "modalClosedO"}>
         <div
-          className="closeingModalBackgroundO"
+          className="closingModalBackgroundO"
           onClick={() => setIsModalShown(false)}
         />
         <div className="modalO">
@@ -67,7 +67,7 @@ export const Modal = ({
           z-index: -10; //
           animation: fade-out 0.5s ease 0s 1 normal none running;
         }
-        .closeingModalBackgroundO {
+        .closingModalBackgroundO {
           position: fixed;
           top: 0;
           right: 0;
