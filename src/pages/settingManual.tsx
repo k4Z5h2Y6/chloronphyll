@@ -264,15 +264,12 @@ export default function SettingManual() {
           .topSct {
             height: auto;
           }
-          .section0contentO {
-            height: 158px;
-            padding: 0;
-          }
           .section0ContentTextO {
             display: none;
           }
-          .section0ContentMovieOO {
-            width: 100%;
+          .section0ContentMovieO {
+            width: 80%;
+            margin: 0 auto;
             padding: 0 0 20px 0; 
             align-items: stretch;
           }

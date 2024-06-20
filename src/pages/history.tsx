@@ -20,9 +20,15 @@ export default function History() {
               <Image
                 src='/History/RueWalkFirst1280_720.gif'
                 alt=''
-                width={1280}
-                height={720}
-                layout='responsive'
+                // width={1280}
+                // height={720}
+                // style={{
+                //   width: "100%",
+                //   height: "auto",
+                // }}
+                // layout='responsive'
+                layout='fill'
+                objectFit='contain'
               />
             </div>
           </div>
@@ -123,8 +129,10 @@ export default function History() {
           margin: 0 auto;
           display: flex;
           justify-content: center;
+          position: relative; //--------------------
           border-radius: var(--borderRadius-20);
           overflow: hidden;
+          background-color: pink;
         }
         .section0ContentTextO {
           width: 100%;
@@ -274,6 +282,7 @@ export default function History() {
             height: 96px;
             margin: 32px auto;
             display: flex;
+            position: relative; //--------------------
           }
           .section0Ul {
             width: 280px;

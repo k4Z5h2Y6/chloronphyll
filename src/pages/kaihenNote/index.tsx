@@ -96,7 +96,7 @@ export default function KaihenNote() {
           height: 416px;
           display: flex;
           position: absolute;
-          z-index: 10;
+          z-index: 9; //10だとsoilの上に重なる
         }
         .kaihenNoteMenuI {
           width: 800px;

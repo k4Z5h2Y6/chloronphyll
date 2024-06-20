@@ -78,6 +78,14 @@ export const ModalSplide = ({
           z-index: -10; //
           animation: fade-out 0.5s ease 0s 1 normal none running;
         }
+        .closingModalBackgroundO {
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 12; //
+        }
         .modalO {
           width: 95vw;
           height: 95vh;
