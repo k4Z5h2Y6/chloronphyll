@@ -12,7 +12,7 @@ export const Kemo = () => {
               <MovieMaxHeight src='/SettingManual/02/kemo_tsuno_1280_720.mp4' />
             </div>
             <div className='tsunoTextO'>
-              <h5>ツノ16種類 <span>(ExMenuで選択)</span></h5>
+              <h5>ツノ16種 <span>(ExMenuで選択)</span></h5>
             </div>
           </div>
         </div>
@@ -21,7 +21,7 @@ export const Kemo = () => {
           <div className='kemozokuseiI'>
             <div className='kemozokuseiTextO'>
               <h5>ケモ属性</h5>
-              <p>シュバルツナーゼというスイスアルプスが原産の山羊がモデルです</p>
+              <p>シュバルツナーゼというスイスアルプスが原産の羊がモデルです</p>
               <p>オスメスどちらもツノがありますが , ツノがないメス羊もたまに見かけます<br />耳しっぽ のみにしたい場合はUnityでシェイプを調整してください<br />(シェイプ)22_c2_ツノOFF</p>
               <p>シュバルツナーゼ Walliser Schwarznasen<br />ヴァレー ブラックノーズ シープ Walliser Schwarznasenschaf<br />(Youtubeで検索するといろんな形のツノが見られます)</p>
             </div>

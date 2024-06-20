@@ -22,17 +22,17 @@ export const Gesture = () => {
                     <br />
                     g1_グー
                     <br />
-                    g2_パー(~)
+                    g2_パー
                     <br />
                     g3_ご案内する手
                     <br />
-                    g4_無敵のぴーす(~)
+                    g4_無敵のぴーす
                     <br />
                     g5_okサイン
                     <br />
                     g6_スティックを握る手
                     <br />
-                    g7_ものをつまむ手(~)
+                    g7_ものをつまむ手
                   </p>
                 </div>
                 <div className="katateturntableTextRightO">
@@ -45,7 +45,7 @@ export const Gesture = () => {
                     <br />
                     gg3_ないしょ
                     <br />
-                    gg4_無力のぴーす(~)
+                    gg4_無力のぴーす
                     <br />
                     gg5_シャッターポーズ
                     <br />

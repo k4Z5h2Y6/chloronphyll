@@ -70,7 +70,7 @@ export const Hair = () => {
               <MovieMaxWidth src="/SettingManual/01/hair_mimikake_720_720.mp4" />
             </div>
             <div className="mimikakeTextO">
-              <h5>みみかけ4種類</h5>
+              <h5>みみかけ4種</h5>
               <p>
                 ケモみみの時は
                 <br />

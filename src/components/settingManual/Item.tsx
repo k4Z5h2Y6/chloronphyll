@@ -107,7 +107,7 @@ export const Item = () => {
                   <p>
                     a_火花星
                     <br />
-                    b_ビックバン
+                    b_ビッグバン
                     <br />
                     c_火花星
                     <br />
