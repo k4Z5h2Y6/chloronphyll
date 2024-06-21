@@ -2,7 +2,14 @@ import { DropDownContainerA } from "@/components/elements/DropDownContainerA";
 import { DropDownContainerC } from "@/components/elements/DropDownContainerC";
 import { MovieMaxWidth } from "@/components/elements/MovieMaxWidth";
 import { PageTitle } from "@/components/elements/PageTitle";
-import { exData0, exData1, exData2, exData3 } from "@/libs/exData";
+import { PreviewEx } from "@/components/kaihenNote/PreviewEx";
+import {
+  exData0,
+  exData1,
+  exData2,
+  exData3,
+  previewExData,
+} from "@/libs/exData";
 import Image from "next/image";
 
 export default function Ex() {
@@ -12,7 +19,7 @@ export default function Ex() {
         <PageTitle pageTitle="ExParameters / ExMenu" />
         <div className="section0contentO">
           <div className="section0ContentMovieO">
-            <MovieMaxWidth src="/KaihenNote/Color/color1920_1080.mp4" />
+            <MovieMaxWidth src="/KaihenNote/Ex/ex_1024_576.mp4" />
           </div>
           <div className="section0ContentTextO">
             <div className="section0ContentTextI">
@@ -39,7 +46,7 @@ export default function Ex() {
               </p>
               <div className="section0ContentTextSubImgO">
                 <Image
-                  src="/KaihenNote/Color/colorTime1280_720.png"
+                  src="/KaihenNote/Ex/ex_sub_1280_720.png"
                   alt=""
                   width={1280}
                   height={720}
@@ -54,9 +61,25 @@ export default function Ex() {
         </div>
       </section>
 
+      <section className="cheatSheetSct">
+        <PreviewEx data={previewExData} />
+      </section>
+
       <section className="endSct">
         <DropDownContainerC data={exData0} />
         <DropDownContainerC data={exData1} />
+        <div className="pianoO">
+          <Image
+            src={"/KaihenNote/Ex/ex_piano_256_256.png"}
+            alt={""}
+            width={256}
+            height={256}
+            style={{
+              width: "128px",
+              height: "128px",
+            }}
+          />
+        </div>
         <DropDownContainerA data={exData2} />
         <DropDownContainerA data={exData3} />
       </section>
@@ -66,6 +89,7 @@ export default function Ex() {
         .topSct {
           width: 100%;
           height: calc(100vh - 24px);
+          margin-bottom: 7vh;
         }
         .section0contentO {
           width: 100%;
@@ -101,12 +125,23 @@ export default function Ex() {
         .section0ContentTextSubImgO {
           padding-top: 16px;
         }
+        //cheatSheet
+        .cheatSheetSct {
+          width: 100%;
+        }
         //end
         .endSct {
           width: 100%;
           height: fit-content;
           padding-top: 40px;
           margin-bottom: 240px;
+        } //
+        .pianoO {
+          width: 100%;
+          height: 80vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
         @media screen and (max-width: 1024px) {
           .topSct {
