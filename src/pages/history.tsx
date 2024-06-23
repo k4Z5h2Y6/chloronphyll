@@ -1,9 +1,6 @@
-import { MovieMaxWidth } from "@/components/elements/MovieMaxWidth";
 import { PageTitle } from "@/components/elements/PageTitle";
 import { useState } from "react";
-import Image from "next/image";
 import { RadiusedImg } from "@/components/elements/RadiusedImg";
-import { RadiusedImgForHeight } from "@/components/elements/RadiusedImgForHeight";
 
 export default function History() {
   const [isSection0Li1Opened, setIsSection0Li1Opened] =
