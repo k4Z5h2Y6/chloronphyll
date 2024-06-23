@@ -69,16 +69,18 @@ export default function Ex() {
         <DropDownContainerC data={exData0} />
         <DropDownContainerC data={exData1} />
         <div className="pianoO">
-          <Image
-            src={"/KaihenNote/Ex/ex_piano_256_256.png"}
-            alt={""}
-            width={256}
-            height={256}
-            style={{
-              width: "128px",
-              height: "128px",
-            }}
-          />
+          <div className="pianoI">
+            <Image
+              src={"/KaihenNote/Ex/ex_piano_256_256.png"}
+              alt={""}
+              width={256}
+              height={256}
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+            />
+          </div>
         </div>
         <DropDownContainerA data={exData2} />
         <DropDownContainerA data={exData3} />
@@ -135,13 +137,18 @@ export default function Ex() {
           height: fit-content;
           padding-top: 40px;
           margin-bottom: 240px;
-        } //
+        }
+        //piano
         .pianoO {
           width: 100%;
           height: 80vh;
           display: flex;
           align-items: center;
           justify-content: center;
+        }
+        .pianoI {
+          width: 128px;
+          height: 128px;
         }
         @media screen and (max-width: 1024px) {
           .topSct {
@@ -178,6 +185,14 @@ export default function Ex() {
           .endSct {
             padding-top: 0;
             margin-bottom: 80px;
+          }
+          //piano
+          .pianoO {
+            height: 40vh;
+          }
+          .pianoI {
+            width: 64px;
+            height: 64px;
           }
         }
       `}</style>

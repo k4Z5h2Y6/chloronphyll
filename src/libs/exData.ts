@@ -1,11 +1,26 @@
 import { DropDownContainerType } from "./colorData";
 
-export const previewExData = [
-  "/KaihenNote/Ex/CheatSheet/ex_01_1920_1080.jpg",
-  "/KaihenNote/Ex/CheatSheet/ex_02_1920_1080.jpg",
-  "/KaihenNote/Ex/00/ex_17_1920_1080.jpg",
-  "/KaihenNote/Ex/01/ex_40_1920_1080.jpg",
-];
+export const previewExData: DropDownContainerType = {
+  title: "",
+  contents: [
+    {
+      description: "",
+      img: "/KaihenNote/Ex/CheatSheet/ex_01_1920_1080.jpg",
+    },
+    {
+      description: "",
+      img: "/KaihenNote/Ex/CheatSheet/ex_02_1920_1080.jpg",
+    },
+    {
+      description: "",
+      img: "/KaihenNote/Ex/00/ex_17_1920_1080.jpg",
+    },
+    {
+      description: "",
+      img: "/KaihenNote/Ex/01/ex_40_1920_1080.jpg",
+    },
+  ],
+};
 
 export const exData0: DropDownContainerType = {
   title: "17byte確保する方法 (前髪を除外)",

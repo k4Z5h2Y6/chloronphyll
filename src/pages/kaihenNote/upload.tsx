@@ -19,7 +19,7 @@ export default function Upload() {
             <div className="section0ContentTextI">
               <div className="vrchatImgO">
                 <Image
-                  src="/KaihenNote/Upload/upload_sub_1280_720.jpg"
+                  src="/KaihenNote/vrchatLogo516_225.png"
                   alt=""
                   width={516}
                   height={225}

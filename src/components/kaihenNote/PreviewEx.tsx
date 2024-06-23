@@ -5,57 +5,54 @@ import { useEffect, useState } from "react";
 import { RadiusedImg } from "../elements/RadiusedImg";
 import { RadiusedImgForHeight } from "../elements/RadiusedImgForHeight";
 
-// const DynamicModalSplide = dynamic(() =>
-//   import("./ModalSplide").then((mod) => mod.ModalSplide)
-// );
+const DynamicModalSplide = dynamic(() =>
+  import("../elements/ModalSplide").then((mod) => mod.ModalSplide)
+);
 
-export const PreviewEx = ({ data }: { data: string[] }) => {
-  // //アコーディオン開閉関係
-  // const [isContainerOpened, setIsContainerOpened] = useState<boolean>(false);
+export const PreviewEx = ({ data }: { data: DropDownContainerType }) => {
+  //モーダル関係
+  const [isModalShown, setIsModalShown] = useState<boolean>(false);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [key, setKey] = useState(1); //レンダリングさせるため
 
-  // //モーダル関係
-  // const [isModalShown, setIsModalShown] = useState<boolean>(false);
-  // const [currentIndex, setCurrentIndex] = useState<number>(0);
-  // const [key, setKey] = useState(1); //レンダリングさせるため
+  const handleModalShow = (index: number) => {
+    setCurrentIndex(index);
+    setIsModalShown(true);
+    setKey((prevKey) => prevKey + 1);
+  };
 
-  // const handleModalShow = (index: number) => {
-  //   setCurrentIndex(index);
-  //   setIsModalShown(true);
-  //   setKey((prevKey) => prevKey + 1);
-  // };
+  function disableScroll(e: any) {
+    e.preventDefault();
+  }
 
-  // function disableScroll(e: any) {
-  //   e.preventDefault();
-  // }
+  useEffect(() => {
+    setIsModalShown(false);
+  }, []);
 
-  // useEffect(() => {
-  //   setIsModalShown(false);
-  // }, []);
+  useEffect(() => {
+    const handleScroll = (e: Event) => {
+      disableScroll(e);
+    };
 
-  // useEffect(() => {
-  //   const handleScroll = (e: Event) => {
-  //     disableScroll(e);
-  //   };
+    if (isModalShown) {
+      document.addEventListener("touchmove", handleScroll, { passive: false });
+      document.addEventListener("wheel", handleScroll, { passive: false });
+      document.addEventListener("mousewheel", handleScroll, { passive: false });
+    } else {
+      document.removeEventListener("touchmove", handleScroll);
+      document.removeEventListener("wheel", handleScroll);
+      document.removeEventListener("mousewheel", handleScroll);
+    }
 
-  //   if (isModalShown) {
-  //     document.addEventListener("touchmove", handleScroll, { passive: false });
-  //     document.addEventListener("wheel", handleScroll, { passive: false });
-  //     document.addEventListener("mousewheel", handleScroll, { passive: false });
-  //   } else {
-  //     document.removeEventListener("touchmove", handleScroll);
-  //     document.removeEventListener("wheel", handleScroll);
-  //     document.removeEventListener("mousewheel", handleScroll);
-  //   }
-
-  //   return () => {
-  //     document.removeEventListener("touchmove", handleScroll);
-  //     document.removeEventListener("wheel", handleScroll);
-  //     document.removeEventListener("mousewheel", handleScroll);
-  //   };
-  // }, [isModalShown]);
+    return () => {
+      document.removeEventListener("touchmove", handleScroll);
+      document.removeEventListener("wheel", handleScroll);
+      document.removeEventListener("mousewheel", handleScroll);
+    };
+  }, [isModalShown]);
   return (
     <>
-      <div className="firstPreviewO">
+      <div className="firstPreviewO" onClick={() => handleModalShow(0)}>
         <RadiusedImg src="/KaihenNote/Ex/CheatSheet/ex_01_1920_1080.jpg" />
       </div>
 
@@ -78,10 +75,21 @@ export const PreviewEx = ({ data }: { data: string[] }) => {
             </p>
           </div>
         </div>
-        <div className="secondPreviewImgO">
-          <RadiusedImgForHeight src="/KaihenNote/Ex/CheatSheet/ex_02_1920_1080.jpg" />
+        <div className="secondPreviewImgO" onClick={() => handleModalShow(1)}>
+          {/* <RadiusedImgForHeight src="/KaihenNote/Ex/CheatSheet/ex_02_1920_1080.jpg" /> */}
+          <RadiusedImg src="/KaihenNote/Ex/CheatSheet/ex_02_1920_1080.jpg" />
         </div>
       </div>
+
+      {isModalShown ? (
+        <DynamicModalSplide
+          isModalShown={isModalShown}
+          setIsModalShown={setIsModalShown}
+          currentIndex={currentIndex}
+          data={data}
+          key={key}
+        />
+      ) : null}
 
       <style jsx>{`
         //
@@ -118,6 +126,36 @@ export const PreviewEx = ({ data }: { data: string[] }) => {
           width: 60%;
           height: 100%;
           padding: 24px;
+        }
+        @media screen and (max-width: 1024px) {
+          .firstPreviewO {
+            height: fit-content;
+            margin-bottom: 20px;
+          }
+          .secondPreviewO {
+            height: fit-content;
+            flex-direction: column;
+          }
+          .secondPreviewTextO {
+            width: 100%;
+          }
+          .secondPreviewTextI {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+          .secondPreviewTextTitleP {
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 12px;
+          }
+          .secondPreviewTextSubImgO {
+            padding-top: 10px;
+          }
+          .secondPreviewImgO {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0;
+          }
         }
       `}</style>
     </>

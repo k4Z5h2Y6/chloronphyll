@@ -1,107 +1,124 @@
-import { MovieMaxWidth } from '@/components/elements/MovieMaxWidth';
-import { PageTitle } from '@/components/elements/PageTitle';
-import { useState } from 'react';
+import { MovieMaxWidth } from "@/components/elements/MovieMaxWidth";
+import { PageTitle } from "@/components/elements/PageTitle";
+import { useState } from "react";
 import Image from "next/image";
-
+import { RadiusedImg } from "@/components/elements/RadiusedImg";
+import { RadiusedImgForHeight } from "@/components/elements/RadiusedImgForHeight";
 
 export default function History() {
-
-  const [isSection0Li1Opened, setIsSection0Li1Opened] = useState<boolean>(false);
-  const [isSection0Li2Opened, setIsSection0Li2Opened] = useState<boolean>(false);
-  const [isSection1Li1Opened, setIsSection1Li1Opened] = useState<boolean>(false);
+  const [isSection0Li1Opened, setIsSection0Li1Opened] =
+    useState<boolean>(false);
+  const [isSection0Li2Opened, setIsSection0Li2Opened] =
+    useState<boolean>(false);
+  const [isSection1Li1Opened, setIsSection1Li1Opened] =
+    useState<boolean>(false);
 
   return (
     <>
-      <section className='topSct'>
-        <PageTitle pageTitle='更新履歴' />
-        <div className='section0contentO'>
-          <div className='section0ContentMovieO'>
-            <div className='section0ContentMovieI'>
-              <Image
-                src='/History/RueWalkFirst1280_720.gif'
-                alt=''
-                // width={1280}
-                // height={720}
-                // style={{
-                //   width: "100%",
-                //   height: "auto",
-                // }}
-                // layout='responsive'
-                layout='fill'
-                objectFit='contain'
-              />
+      <section className="topSct">
+        <PageTitle pageTitle="更新履歴" />
+        <div className="section0contentO">
+          <div className="section0ContentMovieO">
+            <div className="section0ContentMovieI">
+              <RadiusedImg src={"/History/RueWalkFirst1280_720.gif"} />
             </div>
           </div>
-          <div className='section0ContentTextO'>
-            <ul className='section0Ul'>
-
+          <div className="section0ContentTextO">
+            <ul className="section0Ul">
               <li>
                 <div
-                  className={isSection0Li1Opened ? 'section0Li1Opened' : 'section0Li1Closed'}
-                  onClick={() => { setIsSection0Li1Opened(!isSection0Li1Opened); }}
+                  className={
+                    isSection0Li1Opened
+                      ? "section0Li1Opened"
+                      : "section0Li1Closed"
+                  }
+                  onClick={() => {
+                    setIsSection0Li1Opened(!isSection0Li1Opened);
+                  }}
                 >
-                  <div className='section0LiTitleO'>
-                    <td className='dateTd'>0000/00/00</td>
-                    <td className='volumeTd'>v01</td>
-                    <td className='descriptionTd'>公開</td>
+                  <div className="section0LiTitleO">
+                    <td className="dateTd">0000/00/00</td>
+                    <td className="volumeTd">v01</td>
+                    <td className="descriptionTd">公開</td>
                   </div>
-                  <div className='section0LiContentO'></div>
+                  <div className="section0LiContentO"></div>
                 </div>
               </li>
 
               <li>
                 <div
-                  className={isSection0Li2Opened ? 'section0Li2Opened' : 'section0Li2Closed'}
-                  onClick={() => { setIsSection0Li2Opened(!isSection0Li2Opened); }}
+                  className={
+                    isSection0Li2Opened
+                      ? "section0Li2Opened"
+                      : "section0Li2Closed"
+                  }
+                  onClick={() => {
+                    setIsSection0Li2Opened(!isSection0Li2Opened);
+                  }}
                 >
-                  <div className='section0LiTitleO'>
-                    <td className='dateTd'>0000/00/00</td>
-                    <td className='volumeTd'>v02</td>
-                    <td className='descriptionTd'>公開</td>
+                  <div className="section0LiTitleO">
+                    <td className="dateTd">0000/00/00</td>
+                    <td className="volumeTd">v02</td>
+                    <td className="descriptionTd">公開</td>
                   </div>
-                  <div className='section0LiContentO'></div>
+                  <div className="section0LiContentO"></div>
                 </div>
               </li>
 
-              <li className='endLi'>
-                <div className='dotO'><div className='dot' /></div>
-                <div className='dotO'><div className='dot' /></div>
-                <div className='dotO'><div className='dot' /></div>
+              <li className="endLi">
+                <div className="dotO">
+                  <div className="dot" />
+                </div>
+                <div className="dotO">
+                  <div className="dot" />
+                </div>
+                <div className="dotO">
+                  <div className="dot" />
+                </div>
               </li>
-
             </ul>
           </div>
         </div>
       </section>
 
-      <section className='endSec'>
-        <div className='section1contentO'>
-          <div className='section1titleO'>
-            <div className='section1titleI'>
-              <p className='section1titleP'>確認済/対応中</p>
+      <section className="endSec">
+        <div className="section1contentO">
+          <div className="section1titleO">
+            <div className="section1titleI">
+              <p className="section1titleP">確認済/対応中</p>
             </div>
           </div>
-          <ul className='section1Ul'>
-
+          <ul className="section1Ul">
             <li>
               <div
-                className={isSection1Li1Opened ? 'section1Li1Opened' : 'section1Li1Closed'}
-                onClick={() => { setIsSection1Li1Opened(!isSection1Li1Opened); }}
+                className={
+                  isSection1Li1Opened
+                    ? "section1Li1Opened"
+                    : "section1Li1Closed"
+                }
+                onClick={() => {
+                  setIsSection1Li1Opened(!isSection1Li1Opened);
+                }}
               >
-                <div className='section1LiTitleO'>
-                  <td className='section1firstTd'>(…未確認)</td>
-                  <td className='section1secondTd'>受付中…</td>
+                <div className="section1LiTitleO">
+                  <td className="section1firstTd">(…未確認)</td>
+                  <td className="section1secondTd">受付中…</td>
                 </div>
-                <div className='sectionLiContentO'></div>
+                <div className="sectionLiContentO"></div>
               </div>
             </li>
 
-            <li className='endLi'>
-              <div className='dotO'><div className='dot' /></div>
-              <div className='dotO'><div className='dot' /></div>
-              <div className='dotO'><div className='dot' /></div>
+            <li className="endLi">
+              <div className="dotO">
+                <div className="dot" />
+              </div>
+              <div className="dotO">
+                <div className="dot" />
+              </div>
+              <div className="dotO">
+                <div className="dot" />
+              </div>
             </li>
-
           </ul>
         </div>
       </section>
@@ -117,7 +134,7 @@ export default function History() {
           flex-direction: column;
         }
         .section0ContentMovieO {
-          width: 100%;
+          width: 100%
           height: 40%;
           padding-bottom: 40px;
           display: flex;
@@ -129,10 +146,6 @@ export default function History() {
           margin: 0 auto;
           display: flex;
           justify-content: center;
-          position: relative; //--------------------
-          border-radius: var(--borderRadius-20);
-          overflow: hidden;
-          background-color: pink;
         }
         .section0ContentTextO {
           width: 100%;
@@ -269,20 +282,18 @@ export default function History() {
             min-height: fit-content;
           }
           .section0ContentMovieO {
-            padding-bottom: 20px;
-          }
-          .section0ContentTextO {
-            margin-top: 40px;
-          }
-          .section0ContentMovieO {
-            height: fit-content;
+            height: 160px;
+            padding-bottom: 0px;
           }
           .section0ContentMovieI {
             width: 140px;
             height: 96px;
             margin: 32px auto;
             display: flex;
-            position: relative; //--------------------
+            position: relative;
+          }
+          .section0ContentTextO {
+            margin-top: 40px;
           }
           .section0Ul {
             width: 280px;
