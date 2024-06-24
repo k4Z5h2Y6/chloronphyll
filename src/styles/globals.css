@@ -90,6 +90,7 @@ body {
   overflow-x: hidden;
   background-color: var(--backgroundColor-base);
   transition: var(--transition1s);
+  cursor: url(../../public/cursor.png), default;
 }
 
 /* h1…navMenu内ホームリンク */
