@@ -40,7 +40,7 @@ export default function Upload() {
               <p>フォールバックを設定する手順も記載しています。</p>
               <div className="section0ContentTextSubImgO">
                 <Image
-                  src="/KaihenNote/Color/colorTime1280_720.png"
+                  src="/KaihenNote/Upload/upload_sub_1280_720.png"
                   alt=""
                   width={1280}
                   height={720}

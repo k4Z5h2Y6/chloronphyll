@@ -9,11 +9,11 @@ export const uploadData0: DropDownContainerType = {
     },
     {
       description: `Unity Hubをダウンロード\nhttps://unity.com/ja/download\n“Windows用ダウンロード”の青いボタンを押すとUnity Hubのダウンロードが始まります。\n↓\nUnityをインストール\nUnity Hubを立ち上げて、Installs > Install Editor\n(Install Unity Editor画面) Archive > download archive\n(download archive画面) Unity2022.3.22f1をダウンロード\n\n今までUnity2019や6f1をを使用していた場合は、この後VCCをアップデートすれば22f1を使用できるようになります。`,
-      img: "/KaihenNote/Upload/00/upload_0_1920_1080b.jpg",
+      img: "/KaihenNote/Upload/00/upload_0a_1920_1080.jpg",
     },
     {
       description: `VCCをインストール\nhttps://vrchat.com/home/download\n(画像中央) Creator Companion\n↓\nlilToonをダウンロード\nhttps://booth.pm/ja/items/3087170\n↓\nBOOTHからFuki_v01.unitypacageをダウンロード\nhttps://chloronphyll.booth.pm/items/5244140`,
-      img: "/KaihenNote/Upload/00/upload_0a_1920_1080.jpg",
+      img: "/KaihenNote/Upload/00/upload_0b_1920_1080.jpg",
     },
   ],
 };
